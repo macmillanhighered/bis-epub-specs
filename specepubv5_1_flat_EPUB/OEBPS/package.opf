@@ -1,0 +1,452 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package xmlns="http://www.idpf.org/2007/opf" xmlns:m="http://www.w3.org/1998/Math/MathML" version="3.0" prefix="rendition: http://www.idpf.org/vocab/rendition/# rdf: http://www.w3.org/1999/02/22-rdf-syntax-ns# a11y: http://www.idpf.org/epub/vocab/package/a11y/# ibooks: http://vocabulary.itunes.apple.com/rdf/ibooks/vocabulary-extensions-1.0/" xml:lang="en" unique-identifier="isbnspecepubv5_1_flat">
+  <metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+    <dc:title id="t1">Macmillan Accessible EPUB Specification 5.1</dc:title>
+    <meta refines="#t1" property="title-type">main</meta>
+    <meta refines="#t1" property="display-seq">1</meta>
+    <meta name="book_type" content="Chapter"></meta>
+    <meta name="process" content="published"></meta>
+    <dc:title id="t2">Spec EPUB 5.1  </dc:title>
+    <meta refines="#t2" property="title-type">extended</meta>
+    <meta refines="#t2" property="display-seq">2</meta>
+    <dc:identifier id="isbnspecepubv5_1_flat">specepubv5_1_flat</dc:identifier>
+    <dc:publisher>Macmillan Learning</dc:publisher>
+    <dc:description>Default</dc:description>
+    <dc:creator id="creator">Macmillan Learning</dc:creator>
+    <dc:language>en</dc:language>
+    <dc:type>education</dc:type>
+    <dc:source id="srcspecepubv5_1_flat">specepubv5_1_flat</dc:source>
+    <meta refines="#srcspecepubv5_1_flat" property="source-of">pagination</meta>
+    <meta refines="#isbnspecepubv5_1_flat" property="identifier-type" scheme="onix:codelist5">15</meta>
+    <meta property="dcterms:modified">2022-09-20T09:41:28Z</meta>
+    <meta name="profile" content="flat"></meta>
+    <meta name="cover" content="cover-image"></meta>
+    <meta property="schema:accessibilitySummary">This publication meets the EPUB Accessibility requirements and it also meets the Web Content Accessibility Guidelines (WCAG) at the double AA level. It is screen-reader friendly and is accessible to persons with disabilities. The publication was designed to be as accessible as possible to all persons with disabilities. It is compatible with the wide range of Assistive Technology on the market today. Extensive navigation is provided to make it easy to use via a table of contents and page numbers. All non-decorative images have alt text or captions, or are described in the surrounding text. | Math and chemistry was created with and is represented by MathML. | There is no print version of this publication, but digital page numbers are provided for ease of use. | Enabling the reading of punctuation in accessibility technology is necessary to hear pedagogical information. | Long descriptions are present for complex images and graphs that are necessary for understanding content. | Math was created with and is represented by MathML.</meta>
+    <meta property="a11y:certifiedBy">Benetech</meta>
+    <meta property="a11y:certifierCredential">https://bornaccessible.org/certification/gca-credential/</meta>
+    <meta property="schema:audience" id="aud01">schema:audience</meta>
+    <meta refines="#aud01" property="rdf:type">http://www.schema.org/EducationalAudience</meta>
+    <meta property="schema:educationalRole" refines="#aud01">student</meta>
+    <meta property="schema:educationalUse">reading</meta>
+    <meta property="schema:interactivityType">mixed</meta>
+    <meta property="schema:accessMode">textual</meta>
+    <meta property="schema:accessMode">visual</meta>
+    <meta property="schema:accessModeSufficient">textual</meta>
+    <meta property="schema:accessModeSufficient">visual</meta>
+    <meta property="schema:accessibilityFeature">alternativeText</meta>
+    <meta property="schema:accessibilityFeature">displayTransformability/font-size</meta>
+    <meta property="schema:accessibilityFeature">displayTransformability/font-family</meta>
+    <meta property="schema:accessibilityFeature">displayTransformability/line-height</meta>
+    <meta property="schema:accessibilityFeature">displayTransformability/word-spacing</meta>
+    <meta property="schema:accessibilityFeature">displayTransformability/color</meta>
+    <meta property="schema:accessibilityFeature">displayTransformability/background color</meta>
+    <meta property="schema:accessibilityFeature">highContrastDisplay</meta>
+    <meta property="schema:accessibilityFeature">index</meta>
+    <meta property="schema:accessibilityFeature">longDescription</meta>
+    <meta property="schema:accessibilityFeature">printPageNumbers</meta>
+    <meta property="schema:accessibilityFeature">readingOrder</meta>
+    <meta property="schema:accessibilityFeature">structuralNavigation</meta>
+    <meta property="schema:accessibilityFeature">tableOfContents</meta>
+    <meta property="schema:accessibilityFeature">unlocked</meta>
+    <meta property="schema:accessibilityFeature">describedMath</meta>
+    <meta property="schema:accessibilityFeature">MathML</meta>
+    <meta property="schema:accessibilityHazard">noFlashingHazard</meta>
+    <meta property="schema:accessibilityHazard">noMotionSimulationHazard</meta>
+    <meta property="schema:accessibilityHazard">noSoundHazard</meta>
+    <meta property="schema:accessibilityAPI">ARIA</meta>
+    <meta property="schema:accessibilityControl">fullKeyboardControl</meta>
+    <meta property="schema:accessibilityControl">fullMouseControl</meta>
+    <link rel="dcterms:conformsTo" href="https://www.w3.org/Submission/epub-a11y"></link>
+    <link rel="dcterms:conformsTo" href="http://www.idpf.org/epub/a11y/accessibility-20170105.html#wcag-aa"></link>
+  </metadata>
+  <manifest>
+    <item href="toc.ncx" id="toc" media-type="application/x-dtbncx+xml"></item>
+    <item id="cover-image" properties="cover-image" href="images/eISBN_FC.jpg" media-type="image/jpeg"></item>
+    <item id="d4f3ecfa75a13268bf84c393b359c294" href="xhtml/mac_printisbn_cover.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="c7153d1970c13f36869068e1e45fcbc5" href="xhtml/mac_printisbn_FM_contents.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="cbb0ee91273835548d2946bd67cadcbd" href="xhtml/mac_printisbn_ch01_01.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="dc361799262634e5912f263b3c91a861" href="xhtml/mac_printisbn_ch01_02.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="dfe65e13512332f097e2ea4de44d902e" href="xhtml/mac_printisbn_ch01_03.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="mbc4ef6294d838ed9e7ce47c7139992a" href="xhtml/mac_printisbn_ch01_04.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="l8cde2accc3f383b82e610f6ff7d17c0" href="xhtml/mac_printisbn_ch02_01.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="db871f52409136a9b5d21ec9690e007f" href="xhtml/mac_printisbn_ch02_02.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="e2dc5c1158923469b395f4220f2bda58" href="xhtml/mac_printisbn_ch02_03.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="b0e64f923b873c63848100382e04d59a" href="xhtml/mac_printisbn_ch02_04.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="wbc0fc2fd9223050ab3c3fe54e3d0057" href="xhtml/mac_printisbn_ch03_01.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="ac5d387eb8043af4bf767965ef75a68e" href="xhtml/mac_printisbn_ch03_02.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="g31cbdae30f530079958d6deb9a55cda" href="xhtml/mac_printisbn_ch03_03.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="b02857adc10b34b58fa09baca281f273" href="xhtml/mac_printisbn_ch03_04.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="ab26a06482e73d1fb6609866dd588a90" href="xhtml/mac_printisbn_ch03_05.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="bc1c3e2a368933e8a1a37771205eae47" href="xhtml/mac_printisbn_ch04_01.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="hacf087e3b1a32639ee460df11e4a6a8" href="xhtml/mac_printisbn_ch04_02.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="a905c89717d039739a6be71c0f7851bb" href="xhtml/mac_printisbn_ch04_03.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="pdc171d775183b6aa89e5460cd8672d2" href="xhtml/mac_printisbn_ch05_01.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="a1aa9c60a8333c7f9d487a86792be4f6" href="xhtml/mac_printisbn_ch05_02.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="a1d1ffbc6e1334a59f4553f19db7d498" href="xhtml/mac_printisbn_ch05_03.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="adb8486f00ac3ad4a526ae0eb3e8a23a" href="xhtml/mac_printisbn_ch05_04.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="a39bb2778dba3f92b5bebbac38e8191d" href="xhtml/mac_printisbn_ch05_05.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="c4abe176758231a4861c0ea3a86ce0aa" href="xhtml/mac_printisbn_ch06_01.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="e14ff7d70e893f48aebf731d66b29ef1" href="xhtml/mac_printisbn_ch06_02.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="cbd041f96e8a3f7f842b9ab206141b63" href="xhtml/mac_printisbn_ch06_03.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="lec6129e2f053902bb9365db6ae8fc0f" href="xhtml/mac_printisbn_ch06_04.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="cf76658f848839d8bc8cb07dbaa3e897" href="xhtml/mac_printisbn_ch06_06.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="a7d8c9065fd73836a7fba485cf1405e2" href="xhtml/mac_printisbn_ch06_07.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="vdf2f70c6f98362ba3795b5d6a52f405" href="xhtml/mac_printisbn_ch06_08.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="bfe9f46b937c34818ee555f341d1bbe5" href="xhtml/mac_printisbn_ch06_09.xhtml" media-type="application/xhtml+xml" properties="mathml"></item>
+    <item id="o18b63d06de839a5b933a353c64f57cc" href="xhtml/mac_printisbn_ch07_01.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="d4c4afbf10413093a3d87cd94119cb8c" href="xhtml/mac_printisbn_ch07_02.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="f04b485168303062947cfb11fb43eb92" href="xhtml/mac_printisbn_ch07_03.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="b7648da2bca33a86aeee11325ef0e361" href="xhtml/mac_printisbn_ch07_04.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="b2e7333a15b23de2b03a42f4a8bface1" href="xhtml/mac_printisbn_ch08_01.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="ld4f4f5c5fbb3dcfa129495949a7a785" href="xhtml/mac_printisbn_ch08_02.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="y2d5cddf258b3653aacbb2d0b585435e" href="xhtml/mac_printisbn_ch08_03.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="z6ec4c13e42e34c4b1e3cf239bcee199" href="xhtml/mac_printisbn_ch08_04.xhtml" media-type="application/xhtml+xml" properties="mathml"></item>
+    <item id="de292f42ee5d3339a66b3c730265620d" href="xhtml/mac_printisbn_ch08_05.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="c7702ee7fd0b34f7b7f98c264e170617" href="xhtml/mac_printisbn_ch08_06.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="be4a694b1cfd39b585e66c294f91cf30" href="xhtml/mac_printisbn_ch08_07.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="i51a4e0f42de3f3faf7ad4effb94b67f" href="xhtml/mac_printisbn_ch09_01.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="g2b4c706e20a3efcbd338ba9a7746c30" href="xhtml/mac_printisbn_ch09_02.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="d2a0bd50c6323b76a878e41d41aac267" href="xhtml/mac_printisbn_ch09_03.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="d428acd0e4383affb537fd36ba06d636" href="xhtml/mac_printisbn_ch09_04.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="de3ac71f815f3e78b047f227deac940b" href="xhtml/xeh_10_enhancements1313.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="bc19609d507e39b9b42865aa095872f2" href="xhtml/video51b9.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="p3d3c7551e0e3156b048ef1b336ad843" href="xhtml/audio6621.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="of76d4472138343087235c8ece906b5e" href="xhtml/flat_file_download_linkee2b.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="bf320865507b3684aa7718ef632d0f01" href="xhtml/slideline246d.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="ce617c7819eb3f7db79b38df13e1f982" href="xhtml/image_widgets0ca4.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="p5fbc9f4107f377a8c52ca1d75dc0627" href="xhtml/dataset36be.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="n6f811970e49358b97c39d7ef42d85e6" href="xhtml/make_image_linkable_to_outside_resourceb2f9.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="ye1fe7b5d1bc34adb458a41279e07d06" href="xhtml/show_hide_answer1d09.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="x2b72b28e1f338859f6dcba7a7f6698a" href="xhtml/simple_question_show_answerfadf.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="d3a18ac753323dc8b858fa04353d8d56" href="xhtml/question_with_image_show_answere508.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="d2bd094759a0304fa70e91acad612b4f" href="xhtml/question_with_image_show_answer_with_ima5bc6.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="e1d612cbcd3830b3afdfc1cfba7ea1a8" href="xhtml/question_with_math_or_formula_show_answed9bd.xhtml" media-type="application/xhtml+xml" properties="mathml"></item>
+    <item id="x2f00e340ace3b19b609aa8d638bf5eb" href="xhtml/question_with_link_show_answer3797.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="nf0da1297c643855b32ea83ed96bf402" href="xhtml/simple_question_show_answer_with_link8698.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="q563040c601939d2aeaf38f6e5069b9f" href="xhtml/show_answer_with_list5333.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="a21b5f5930503680967b0e1caf143e5f" href="xhtml/question_with_list_show_answer_with_listf564.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="x1e2578af3ba3e0ba492a57393c17be0" href="xhtml/show_answer_with_hinta61f.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="l8599a0b82213c29b142746d020192ea" href="xhtml/question_with_image_show_answer0cb7.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="f77f13a1a5d7332297cfebfa31c4b8b0" href="xhtml/assessment9181.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="u290880a67843958abde3507f44b7941" href="xhtml/part_iie76d.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="e8f034462b7c3bc381654dfc1449ba2c" href="xhtml/savi178c.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="bbeeb7c1d7f238e199190a3a8145fd94" href="xhtml/astronomy0e82.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="z3d7c5c5136034008bf7d52acc8e7e26" href="xhtml/concept79c4.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="a2a5d458db783af0b09f30f95d4f2452" href="xhtml/concept_practices_ii77ac.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="cfed8388415239f1acdb3e4144b8c63f" href="xhtml/concept_practicesb29f.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="e0acf16c8c5e3bd7a579ffccf908081a" href="xhtml/economics285f.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="g24cf33765e93839846ed92fa2d2bee3" href="xhtml/part_13f67.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="d28d1a2de4403c7798f9f86d624f5fdb" href="xhtml/part_2f634.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="qacd02f5525f32f2a978b6a1b46644a4" href="xhtml/part_3baab.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="yd7ab2862196357cb983466c202dc6a6" href="xhtml/part_4678a.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="td3856f9460335569b61ba03c43b16d3" href="xhtml/test9119.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="ged672222bf73db2b4a3de78147fc391" href="xhtml/revelle2d5.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="d4e96343c1dd31a581889eacdcdccaa2" href="xhtml/revell_ii1b15.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="qe02b998717a3551aa192dc3d8d4d1a6" href="xhtml/revell_iii1e86.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="ia27f0ace4e73f99a6f3056de0a56701" href="xhtml/revell_ivec54.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="xea7f036e8493c86860f4edb4625b27a" href="xhtml/revell_v7ef5.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="d6a5ec810b343b6db19f731114f65c38" href="xhtml/revell_vi8ceb.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="j694134a95903f80aeabbbb5c0d6a97c" href="xhtml/part_1fd36.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="x34948c74f8e3bffbb52d7fe180f6285" href="xhtml/part_35065.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="fe4c055b3b383fdd8539503ec68b8660" href="xhtml/part_3fc5c.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="eca4180131c43d95a1d29bbc46cfd543" href="xhtml/chem_iv40bd.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="k1034040948e3fd6a5d36b6a5b03a6e6" href="xhtml/chem_v7b15.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="af98314ca91b3788af3df16c0d923419" href="xhtml/chem_vi28dd.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="wa3fce463a8e3062b160b50cddc33d42" href="xhtml/revell_vii21d8.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="dc1320091973308dbd89ac7ca86bf980" href="xhtml/mol3d5489.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="c3ea4e459fac3583bc13537f7471d5a1" href="xhtml/statistical_appletsb274.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="c682bbd2981f3a559be07a5024fc4533" href="xhtml/periodic_table7050.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="td35fdf9ecce3b449213656c6a9fd45f" href="xhtml/mac_printisbn_ch10_01.xhtml" media-type="application/xhtml+xml" properties="mathml"></item>
+    <item id="cccd7359531738f1aa7d6940297c4253" href="xhtml/mac_printisbn_ch11_01.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="e12748ebf6c03566be5c882f78a3cfe9" href="xhtml/mac_printisbn_ch12_01.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="o275ad6cbafb3910af551dd84d31d4a0" href="xhtml/mac_printisbn_ch13_01.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="df78d3475e9b3274a56a23bc0104bf98" href="xhtml/mac_printisbn_ch13_01_ch0305extdesc_01.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="ad883fc7dda13970b02d1528432e3248" href="xhtml/mac_printisbn_ch13_01_ch0305extdesc_02.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="ca510bcff786321a8ee1859c876008ef" href="xhtml/sample_conclusion9c07.xhtml" media-type="application/xhtml+xml"></item>
+    <item id="a68ff1cb00523b518f018c1abc037131" href="images/devg7c1d3ca6abc7133dd79e79b3df78_Image2020-09-28_16-59_line-number-print.png" media-type="image/png"></item>
+    <item id="a85015c9ab8d3b899bf4701dd49c27c4" href="images/ea87ccee-8ab1-321c-9787-421836e25eaa.png" media-type="image/png"></item>
+    <item id="a94853e0aae83ac4b7f66720ac045caf" href="images/image8.png" media-type="image/png"></item>
+    <item id="a9e18f830dcd371eb560d0ffe795489b" href="images/image9.png" media-type="image/png"></item>
+    <item id="aa57d80db8c33ebb9d484c676dd30a16" href="images/qptc272d82c007a806af5284817446a4.png" media-type="image/png"></item>
+    <item id="abc4f683a2763569a20134a2021db0ea" href="images/dytebad7b578fc4f8210b7060046af5b.png" media-type="image/png"></item>
+    <item id="ae0e7d09932136a0813965ecab5b4725" href="images/image5.png" media-type="image/png"></item>
+    <item id="b5456d69f7ee30ee9f387bb8a22c39bc" href="images/5_92759256-26e1-4625-a2e4-dbe19f4c1c7e_mac_printisbn_ch03_05.png" media-type="image/png"></item>
+    <item id="b6934f521eed3afb9bc7ddee685a24a8" href="images/jgql23a54dda7dc754471117a61f004d.png" media-type="image/png"></item>
+    <item id="b6a3ed9e915d379b97509304c377348c" href="images/kipia7cea1f7df5e5266c01204af07ab.png" media-type="image/png"></item>
+    <item id="b7ddbf2ada033821969795a70f5b7a1f" href="images/p85c5c03-6c59-38d4-a39b-68c222fe4146.png" media-type="image/png"></item>
+    <item id="bcf0b827c13f3ca2af5e6af5e7cfda61" href="images/xwmoe9a5a7c208b6e556fe1b4d3543a7_Image2020-09-28_16-59_section-drama-1.png" media-type="image/png"></item>
+    <item id="bdcd118edcb4334dba0b75d3077bf45c" href="images/kdzme06f45bff261b44e8c048bf3b762.png" media-type="image/png"></item>
+    <item id="bfa73026f47c3e68aa6bdb5071fa0993" href="images/e5243ec4-19c8-374e-8f4c-13f7eee96d97_ScreenShot2021-05-12at30746PM.png" media-type="image/png"></item>
+    <item id="c3122e3d957130ba8110427a61905605" href="images/vnhp58da650a9b85ce6ef9b2653fc1f7.png" media-type="image/png"></item>
+    <item id="c3866acb313d39e4a9cbeaffc4f11278" href="images/image15.png" media-type="image/png"></item>
+    <item id="c3915cfc22f732eeac6f30c2bcb6b598" href="images/image1.png" media-type="image/png"></item>
+    <item id="c410871156a33364991416a40a8f67fa" href="images/image27.png" media-type="image/png"></item>
+    <item id="c53a644bc30e3c16b9e826b587ca1c6d" href="images/yuavbef71ed78ce143053a21ae86ea76_FreedmanCP3e_ans_01_341728.png" media-type="image/png"></item>
+    <item id="c5d15c95b1e632bc9459abf09482ae8f" href="images/f9537ca8-eee8-3888-8d3b-e72099abbd56.png" media-type="image/png"></item>
+    <item id="c710f9d0f5f93d89a76e57519115e99b" href="images/fpny9c77ac96f18fd52fd6db07b9bed7.png" media-type="image/png"></item>
+    <item id="ca40afd40d1f3655aa9905c93bc40128" href="images/cddx69be5542491754e10b0444a3e189_Image2020-09-28_16-59_a-external-print.png" media-type="image/png"></item>
+    <item id="ca5ec749dc2730b7b6f0276bcac65a6d" href="images/dcfnc1d462b86c913829c15edf1a598f.png" media-type="image/png"></item>
+    <item id="cc9ce426f2ba328ea29727af79606540" href="images/image19.png" media-type="image/png"></item>
+    <item id="ccef7542a0c43a9a8e05bc122fbc9b2d" href="images/image13.png" media-type="image/png"></item>
+    <item id="ce3c02923b643b5d85a94bff49e1a4ca" href="images/image11.png" media-type="image/png"></item>
+    <item id="cfc8a285203f3242bd10628bc02440cf" href="images/milx7a20ed5a2856b78a54db71bf0972_cflpabecfaadfa847a7742941b2e44d1_ex2.png" media-type="image/png"></item>
+    <item id="d0c7e1166da33f26a8ace6d18bbd850a" href="images/uaoxcc55212952c125cc821cd27e6d13.png" media-type="image/png"></item>
+    <item id="d140de6f7fb33f7d8b3c94a7217b8a9b" href="images/3_867dd078-6dad-400e-871c-ab56a2f37164_mac_printisbn_ch03_05.png" media-type="image/png"></item>
+    <item id="d16d991f07f13a5cbcf79d12f3e521a0" href="images/image6.png" media-type="image/png"></item>
+    <item id="d303211153e33267ad94376442fbe7be" href="images/pebgbcaca00c0f67b0ad364a56fb4dba_Image2020-09-28_16-59_span-highlight-print.png" media-type="image/png"></item>
+    <item id="d3a95e47064c30b5b119d68f550624bf" href="images/image28.png" media-type="image/png"></item>
+    <item id="d48504724ce33d45bbfebb207a617bd4" href="images/oudq7a602ae4e6aee3ea0b410a8b5fd5_Image2020-09-28_16-59_section-aheads-print.png" media-type="image/png"></item>
+    <item id="d50151ec8d8d3ce3bdf0e97891449456" href="images/wa36243d-c56b-331b-87af-fc3b8cd7190e.png" media-type="image/png"></item>
+    <item id="d5e6e65c0c9c35faa6911321fad6f887" href="images/hxai7b0992a378af80cdc9a88b8651d4.png" media-type="image/png"></item>
+    <item id="d8eed579f08e37baaa8c951396c96ae3" href="images/bhtq5c48ebf58544744223e4ac5d5464.png" media-type="image/png"></item>
+    <item id="db114a85a23d393494d1701901958d20" href="images/ydaoa63358d1406b478f0004dcf62247.png" media-type="image/png"></item>
+    <item id="dd96aa1771ba37519eb5e7bd765f0c3d" href="images/195be970-7689-4e03-b96c-490f9adb909d_mac_printisbn_ch07_03.png" media-type="image/png"></item>
+    <item id="dea9346d8ecb33bb869b1bc82ca66146" href="images/hec42665-8af5-3b3a-b23e-862490a9c408.png" media-type="image/png"></item>
+    <item id="defa2d174c3f3f8eb24581afdee7df1c" href="images/image16.png" media-type="image/png"></item>
+    <item id="deff07aa3f4b3d60a5333ddba41b1910" href="images/yambf557f7d7ddc8957fa177a1c341eb_myerspsy13e_01_03_01006.png" media-type="image/png"></item>
+    <item id="e0459aa84f9e3d93b91cde7d05810b44" href="images/fdc4e552-c77c-346f-9780-80d22b889c9a.png" media-type="image/png"></item>
+    <item id="e2fca22a1f6b3f5ea9dbc924de006511" href="images/rldebc4e608095349ff094eb6d822a7c_Image2020-09-28_16-59_a-noteref-print.png" media-type="image/png"></item>
+    <item id="e3bc322208e031eebaa2d29180236da6" href="images/trogd0028452c5e85810ea0e18f1cd2d.png" media-type="image/png"></item>
+    <item id="e4f1333d4e5e37c1b6b9de072676eb23" href="images/rrcv373a538429f366af050d41c51e9a_Image2020-09-28_16-59_span-underline-print.png" media-type="image/png"></item>
+    <item id="e59bb25758fb3fcd827252f29f9dfc72" href="images/4_e04ed795-e3b6-4919-bea5-39d8be93699a_mac_printisbn_ch03_05a.png" media-type="image/png"></item>
+    <item id="e5d56bd92e6732ccb6bdd312a936c0a9" href="images/f9dc4ceb-60c4-335c-ade9-6c2f8b4ff7ba.png" media-type="image/png"></item>
+    <item id="e611788fe06d3b8bbba1b6c8a3a837eb" href="images/xjun0c4ec02e501505aa0a492d59c693_myerspsy13e_01_un04_01007.png" media-type="image/png"></item>
+    <item id="e62e9d2ea9ac3c90bed863781d20a6f6" href="images/sjay55bf4c39cfcd07dbb46c22a4a167_Image2020-09-28_16-59_figure-unnum-print.png" media-type="image/png"></item>
+    <item id="e6776c319643316a8792900f1cd01791" href="images/pzzh68c2b4f3e2211e6ed4d9efbfdb02.png" media-type="image/png"></item>
+    <item id="e8c7c9cb6faf355698276a3df92f4649" href="images/pwxd4e09f25829c895393503340471c8_Image2020-09-28_16-59_a-indexlocator-print.png" media-type="image/png"></item>
+    <item id="e9e37dc17bb033a7873d08e8200b3846" href="images/srmr82d646d2c1199e8a982c37ace869_axelrodconcise9e_17_Page_414_24506.png" media-type="image/png"></item>
+    <item id="ec0ddc6120113594b0c4d37cf2e85ac2" href="images/addm0147f19b348b61f2b9958215069b.png" media-type="image/png"></item>
+    <item id="eefcf5efdd593bdaaf31d8993d8beaec" href="images/gkgq913f5c1572984fc594a2ea3e4b1c_hackerpocket9e_16954_pt01_pg_04b.png" media-type="image/png"></item>
+    <item id="ef9739a9ccff3b40b5df6044d99e61dc" href="images/1_2688d426-4307-46e6-b4f1-29cebf937f75_mac_printisbn_ch03_05.png" media-type="image/png"></item>
+    <item id="f0e6907e55a232b49031f156fd7b2f53" href="images/g0334da1-0367-3d50-98d9-ffb06feb1885.png" media-type="image/png"></item>
+    <item id="f0ecdd5c72f930a78c2c24bb7e7b48b5" href="images/jacc79934389833a8e4344f430e8ce8b.png" media-type="image/png"></item>
+    <item id="f2227fa5b61c3fc7ad2414ee2958e34f" href="images/ze6bc492-129f-3586-96c7-6ec9f73fa3e3.png" media-type="image/png"></item>
+    <item id="f752f60ce2e138cbaf92a1479124eb02" href="images/odcdd99e-5111-394f-8a04-03033845d17a.png" media-type="image/png"></item>
+    <item id="f9a5332487133b619bf920fa3c2c7c0d" href="images/ezuw1a364c600cb15d8bca4359aae0c5.png" media-type="image/png"></item>
+    <item id="fa3977c2fb21321fb410432f2991b400" href="images/fa10bab1-e9ab-3764-8b73-ec18e03ad8e6.png" media-type="image/png"></item>
+    <item id="fac49d27864c3326b5e5f205001f7987" href="images/image24.png" media-type="image/png"></item>
+    <item id="fb60aba491353d85adb96c0074331e64" href="images/df60c9be-ffc0-3e7c-87ce-14e5087708d1.png" media-type="image/png"></item>
+    <item id="fc1ec3ee567f3b6ca6cf35a8f45e7bd6" href="images/l62e63ea-d9ed-3e2b-9eb8-6730837f2ad7.png" media-type="image/png"></item>
+    <item id="fd47a799746b31699b96e44388b15b58" href="images/vbd87700-ab9c-3a7b-b0cd-19f8b6442005.png" media-type="image/png"></item>
+    <item id="fda7a2933577320b9254d89412235cb7" href="images/xniw0b9b6f1ec5d2e8dcb9e84b045f2b_ldcebbaac58fced3828c5d956ffd7f51_ex22.png" media-type="image/png"></item>
+    <item id="fdbe3d5461e838ab872a5cf07cec739c" href="images/b381421e-bff9-3422-b511-6217193a129d.png" media-type="image/png"></item>
+    <item id="feb28d3f82f93760b91cb964dab2de75" href="images/ugvf472ad650aa46180d79ebc18d6ece.png" media-type="image/png"></item>
+    <item id="ffbc2c1dd5173f9296570ae21dafba16" href="images/zfcz0b78928cb44184eaefe01b3d8f85.png" media-type="image/png"></item>
+    <item id="ffeaaab79c413131b2730b985120a7af" href="images/image12.png" media-type="image/png"></item>
+    <item id="g054519feeff34aba2884417b5ee4018" href="images/drwrc27dbafae22d8b37d7b188d4b9e0_Image2020-09-28_16-59_p-non-hier-print.png" media-type="image/png"></item>
+    <item id="g22714a5b54737cf964a436f9a272360" href="images/x4d3a979-4ab6-3251-b40f-782b9420c20b.png" media-type="image/png"></item>
+    <item id="g2901c651e37363aa069450a93e2ae7d" href="images/qskz7eb5f36f0f52ca4ebc0f0d0c16a4.png" media-type="image/png"></item>
+    <item id="g2cbc4ce6f163d85890ac257f60a98de" href="images/jtby31a151caa74a49d6331bd0fc8eee.png" media-type="image/png"></item>
+    <item id="g89e23f3de003fa79bb77475e2cb3ec9" href="images/mjitf7a193102ff24fedfc6cc8feed2e.png" media-type="image/png"></item>
+    <item id="gcb10786a3643efaac1070dd0596d750" href="images/x418982b-c7bd-3d4e-9229-1ee313c783cd.png" media-type="image/png"></item>
+    <item id="h6136a0c7df238c7921fb94ad01e39db" href="images/image7.png" media-type="image/png"></item>
+    <item id="h7f8e5afe9063e50add723bcba9d80a6" href="images/d8d632fe-917e-3398-90e0-eede32fd80c5.png" media-type="image/png"></item>
+    <item id="hf98f8c87b4e3f63a7d4352ffbd8d920" href="images/image18.png" media-type="image/png"></item>
+    <item id="i498c07f96ba34d8af0bb870891cba61" href="images/infos.png" media-type="image/png"></item>
+    <item id="i8b4bb465df732e3abdb5b7d3a8b9083" href="images/txbj40903633b23c25e7cd86d065836b_Image2020-09-28_16-59_a-crossref-epub.png" media-type="image/png"></item>
+    <item id="ka3eb9ead89a3ce289b8b13f33a67f88" href="images/dlgx91009a73f1eef0031f84faf72b42_hackerpocket9e_16954_pt03_pg_55b.png" media-type="image/png"></item>
+    <item id="l5cb3bdbbf27340fbefaf198db4ec2fb" href="images/b9e48fb6-782e-3676-9a04-4ebaa7c017e3.png" media-type="image/png"></item>
+    <item id="la5a9c122af637768072ea89e5b0c477" href="images/xe4d077a-1b03-3723-ba87-cf72c5adf199.png" media-type="image/png"></item>
+    <item id="m819c4d066fb3b80aca273d9a2b3ca59" href="images/vd6d12e4-3791-3e21-b533-a0790a48313f.png" media-type="image/png"></item>
+    <item id="m89d97bf4c4731918434ecda0263061f" href="images/4_e04ed795-e3b6-4919-bea5-39d8be93699a_mac_printisbn_ch03_05.png" media-type="image/png"></item>
+    <item id="ma248ecfc657326ab8febc2266b6f376" href="images/ic355903-2fc2-30da-a0e3-3f7cb0498212.png" media-type="image/png"></item>
+    <item id="maaf210eacd130a094dfca509fdeba3e" href="images/tkyt219832f64f8dae7d6fb2bc34b899_Image2020-09-28_16-59_section-drama-2.png" media-type="image/png"></item>
+    <item id="n03f0aa8feda36bda7faa50d8aa264b1" href="images/jc652c23-1649-3c4b-8895-bca5503b371b.png" media-type="image/png"></item>
+    <item id="n52ca932851e38d9a190c9b55fb6a82c" href="images/ldqt100e52cc2b8329f5617e39bbf40f_Image2020-09-28_16-59_section-reading-print-2.png" media-type="image/png"></item>
+    <item id="ncf5ed693a323da8bbced00b97571246" href="images/psxm7b9e270b3eefff5bbf878c21aefc_vfxa72888f7a39bab5b64d54f4cd1c85_ex21.png" media-type="image/png"></item>
+    <item id="o59330dbe3f9383786eaa7e619f27b3e" href="images/ouehf171bd088f7403ddd8c58e5f7cf8.png" media-type="image/png"></item>
+    <item id="o9bb447318183d77b3625710d5dff37f" href="images/jtrvb745201901aa5d5259106c0ba579_Image2020-09-28_16-59_table-print.png" media-type="image/png"></item>
+    <item id="oa05795b6cb63a3aa48991b9447760ec" href="images/iube4003bf9ed778a2be423932eb7d03.png" media-type="image/png"></item>
+    <item id="ob3decb62725305995e3c19119331f2f" href="images/BelskyLifespan6e_06_01_0602-print.png" media-type="image/png"></item>
+    <item id="ofd4a1a16f8c3792926b12cd44bd4053" href="images/image22.png" media-type="image/png"></item>
+    <item id="p3d65c8c9fc33963b3137c560fd7afa5" href="images/bde7940c-5ae5-33d6-ad57-6734b81081c0.png" media-type="image/png"></item>
+    <item id="pa1d3b643feb3055a4f306e2138e4305" href="images/dywl0c2648f1afcac9f2b756ca3857d6.png" media-type="image/png"></item>
+    <item id="pa49f83936c335e5ae77611e5b1a7062" href="images/wtog01e68466906161ab634d606374a8.png" media-type="image/png"></item>
+    <item id="pcbc5a8034ab3d6484abce0dce9436ab" href="images/sta_9781319333355_ch07_01EQ_0002.png" media-type="image/png"></item>
+    <item id="pf9638a230363f53856263f60933626e" href="images/quej7ee79450ac6488c774ef0da0dbd2_Annotated_Text_Decision_Tree.png" media-type="image/png"></item>
+    <item id="q2a06b7264e2392c869f2821ee34bdd9" href="images/xhul04eaacfde32d4b903990b2aabade_Image2020-09-28_16-59_span-fill-word-print.png" media-type="image/png"></item>
+    <item id="q723d4c47bcf31449236767e7bcb3812" href="images/cmuia785bb9200efbf30fb8295fca939_Image2020-09-28_16-59_section-eos-print.png" media-type="image/png"></item>
+    <item id="qc219c28a06e3159b4d0736ccc0e3035" href="images/tzsbb5f52f8b1494cb35b0da6ceb0b63_Image2018-05-14_09-47_span-highlight-all.png" media-type="image/png"></item>
+    <item id="qc96424762dd3f138e912c57b917dd52" href="images/rthgb7e5a7a29358c70148fd8214b7fb.png" media-type="image/png"></item>
+    <item id="qcf3ffb5f9fa32328fef655727147123" href="images/image29.png" media-type="image/png"></item>
+    <item id="r00552ea35523b82974b55603593c0ee" href="images/isgk4ca906d2d3f61217443442d6175a_Image2020-09-28_16-59_img-icon-print.png" media-type="image/png"></item>
+    <item id="r1ba072a40293571bac9eb611732b9ce" href="images/image10.png" media-type="image/png"></item>
+    <item id="r5e68f16a1493a19aad93b2f01e69b33" href="images/vlyg29518cee859697917eab4cadd1a1_hackerpocket9e_16954_pt03_pg_57a.png" media-type="image/png"></item>
+    <item id="r6203859b9073fb89d213b853e8484e2" href="images/image17.png" media-type="image/png"></item>
+    <item id="rb3d3ec86eb734acb7499cbefc85cd7f" href="images/dea4f2d4-bbf2-3670-9710-ccf508afab56.png" media-type="image/png"></item>
+    <item id="rd153df7babc38c0895e514afa9ce6dc" href="images/wath6613a64574b4238b42c13c141820_sejl4b76b3960da83ebbbbe6969141a7_ex23.png" media-type="image/png"></item>
+    <item id="s063acfb50773c369859f4246edf40f4" href="images/ldyace7e9868079f9d90c1c9afcda7d7_Image2020-09-28_16-59_figure-num-print.png" media-type="image/png"></item>
+    <item id="s3b047cb30f730e58e60caa24e441a3c" href="images/cdbee5a7d55a8b74a49a8ac02f2a97ba_ygfdafe1c94b012b91c5186d4ca1b887_ex1.png" media-type="image/png"></item>
+    <item id="sd515b9fc3153e3c8c3d972f9c336af2" href="images/gqdr3cfa6a5175a7d7300ba69f94439e_FreedmanCP3e_02_28_290479.png" media-type="image/png"></item>
+    <item id="sd609c9066883562b60462408ab5b986" href="images/image21.png" media-type="image/png"></item>
+    <item id="ub3629726f4b3adf956ee737b04ad6ca" href="images/gfeb31626cefd56ebadaf30eb89302fa_Image2018-05-14_09-46_span-underline-all.png" media-type="image/png"></item>
+    <item id="uceabf4a1bed3078ba06cfd4f3f0bcd8" href="images/movtc025d57ca911673dda9e84b2fbf5_Image2020-09-28_16-59_glossary-sect-print.png" media-type="image/png"></item>
+    <item id="v5ddae12cf153ec4b7e842c2b651a0f8" href="images/yliv868c602874b13dd088d6a37d3963.png" media-type="image/png"></item>
+    <item id="v867813f1b183aa590a42701b025d5a7" href="images/f08792ab-712d-3def-9a8e-9f0a83845c0c.png" media-type="image/png"></item>
+    <item id="vaaf16bedc9d399e82fb309865cd6e8f" href="images/BelskyLifespan6e_06_01_0602.png" media-type="image/png"></item>
+    <item id="vea4bdfb44c63c099e41514461444c11" href="images/drpvdd88d97d910590fdcc26cb806ffb.png" media-type="image/png"></item>
+    <item id="veb6a831ef203039965b0bb1df650acb" href="images/fwgrf376d3ee2e4ec265f1ebbaedd346_Image2020-09-28_16-59.png" media-type="image/png"></item>
+    <item id="w01081ebd531358794a7229e3e8e031a" href="images/eshdbdf16906ed0452918789d8fab9a5_Image2020-09-28_16-59_a-crossref-print.png" media-type="image/png"></item>
+    <item id="w45b8da738983fa0bd05836cad3b04ac" href="images/image4.png" media-type="image/png"></item>
+    <item id="wbf6043e97693e98a5f597e1d9a99be9" href="images/sta_9781319333355_ch07_01EQ_0001.png" media-type="image/png"></item>
+    <item id="wc04f4b61c8f3aa8ba3b9756df903bdf" href="images/image23.png" media-type="image/png"></item>
+    <item id="x3dd05c843503ed598831cab7739e8c1" href="images/itmga2a79a00fd001fef2ec9eac24297_Comer10e_sp_pg153b.png" media-type="image/png"></item>
+    <item id="x67b9edf325e3242b25d20f563d5be80" href="images/dmbe1e075e155c9d82f9bc45ecd718ad_hackerpocket9e_16954_pt02_pg_19.png" media-type="image/png"></item>
+    <item id="x7eedd6eb6133f1c9c5547f84b70110d" href="images/image2.png" media-type="image/png"></item>
+    <item id="x8a47bd93b243d6098b37a88a4478509" href="images/a06685cf-b1e4-3423-b581-ee0fdcf0cea0.png" media-type="image/png"></item>
+    <item id="x96f8b00c2353d3fb408f24dc3d8a65b" href="images/vmwme961d3bb15aeffa65ec13fedd676_FreedmanCP3e_03_44_291968.png" media-type="image/png"></item>
+    <item id="xdf013a8ee1f391cad0e96c7ba31a675" href="images/injvf63241c17f27f5bb2563b312b4d8_FreedmanCP3e_ans_02abc_341729.png" media-type="image/png"></item>
+    <item id="ydb1295b79aa3516aa5d97a94f5f1185" href="images/fwwr3f6be5e3b14b745363e40b5915ea_image2017-12-11_9-19-31.png" media-type="image/png"></item>
+    <item id="yf620b2b1ed83b98807878897e92fe93" href="images/aacc9a41-f3a3-32b5-97a6-ac4d82390300.png" media-type="image/png"></item>
+    <item id="yf876bc8888b37728371e81c17ee7bc7" href="images/image3.png" media-type="image/png"></item>
+    <item id="z34e0f82ada83a929e14b5009c321843" href="images/awph46b58268a2d39847a628ee00a8f8_Image2018-02-02_12-14-48.png" media-type="image/png"></item>
+    <item id="z3f9999e1bf6311398b82aab91ed88b3" href="images/tprg52007caa52225905258c86f55aa0_Image2020-09-28_16-59_section-reading-print-1.png" media-type="image/png"></item>
+    <item id="zd24376f02aa3a4bb94b757c47cb7780" href="images/xwme4a11b2cd96c39b976b8833ae1f0b.png" media-type="image/png"></item>
+    <item id="ka6b94df7ca53b31b2b492450587886f" href="images/o7529d24-17c4-31ca-8b4c-3c58dcc72a6a_slideline2.png" media-type="image/png"></item>
+    <item id="m134b589b53f36e9a943df0950331b0d" href="images/cfab7c4b-877a-3e5e-893f-dbcc63fac286_starbucks.png" media-type="image/png"></item>
+    <item id="jb6befc6a08236358b5bb21c91583356" href="images/t65b8e54-17ff-32a4-930e-ee3973f5d32b_imageslideshow1.png" media-type="image/png"></item>
+    <item id="c48e3fcb34b030f69e37e685f1b0920f" href="images/a1e3a0c1-6f07-311b-a26e-80e64ad11ed3_markelcover.jpeg" media-type="image/jpeg"></item>
+    <item id="had71c577a1e30f9867241001cf87164" href="other/man.obj" media-type="text/plain"></item>
+    <item href="xhtml/toc.xhtml" id="toc1" properties="nav" media-type="application/xhtml+xml"></item>
+    <item id="item-1" href="css/common/images/collapse.svg" media-type="image/svg+xml"></item>
+    <item id="item-2" href="css/common/images/datasetX.svg" media-type="image/svg+xml"></item>
+    <item id="item-3" href="css/common/images/expand.svg" media-type="image/svg+xml"></item>
+    <item id="item-4" href="css/common/images/left-arrow.svg" media-type="image/svg+xml"></item>
+    <item id="item-5" href="css/common/images/right-arrow.svg" media-type="image/svg+xml"></item>
+    <item id="item-6" href="css/common/images/x.svg" media-type="image/svg+xml"></item>
+    <item id="item-7" href="css/common/images/zoom-in.svg" media-type="image/svg+xml"></item>
+    <item id="item-8" href="css/common/images/zoom-out.svg" media-type="image/svg+xml"></item>
+    <item id="item-9" href="css/common/lm_ui.css" media-type="text/css"></item>
+    <item id="item-10" href="css/flat_mac_printisbn.css" media-type="text/css"></item>
+    <item id="item-11" href="css/fonts/Courier.ttf" media-type="font/ttf"></item>
+    <item id="item-12" href="css/fonts/CourierNew-Bold.ttf" media-type="font/ttf"></item>
+    <item id="item-13" href="css/fonts/CourierNew-BoldItalic.ttf" media-type="font/ttf"></item>
+    <item id="item-14" href="css/fonts/CourierNew-Italic.ttf" media-type="font/ttf"></item>
+    <item id="item-15" href="css/fonts/CourierNew.ttf" media-type="font/ttf"></item>
+    <item id="item-16" href="css/fonts/Kalam-Bold.ttf" media-type="font/ttf"></item>
+    <item id="item-17" href="css/fonts/Kalam-Light.ttf" media-type="font/ttf"></item>
+    <item id="item-18" href="css/fonts/Kalam-Regular.ttf" media-type="font/ttf"></item>
+    <item id="item-19" href="css/fonts/SourceSansPro-Black.ttf" media-type="font/ttf"></item>
+    <item id="item-20" href="css/fonts/SourceSansPro-BlackItalic.ttf" media-type="font/ttf"></item>
+    <item id="item-21" href="css/fonts/SourceSansPro-Bold.ttf" media-type="font/ttf"></item>
+    <item id="item-22" href="css/fonts/SourceSansPro-BoldItalic.ttf" media-type="font/ttf"></item>
+    <item id="item-23" href="css/fonts/SourceSansPro-ExtraLight.ttf" media-type="font/ttf"></item>
+    <item id="item-24" href="css/fonts/SourceSansPro-ExtraLightItalic.ttf" media-type="font/ttf"></item>
+    <item id="item-25" href="css/fonts/SourceSansPro-Italic.ttf" media-type="font/ttf"></item>
+    <item id="item-26" href="css/fonts/SourceSansPro-Light.ttf" media-type="font/ttf"></item>
+    <item id="item-27" href="css/fonts/SourceSansPro-LightItalic.ttf" media-type="font/ttf"></item>
+    <item id="item-28" href="css/fonts/SourceSansPro-Regular.ttf" media-type="font/ttf"></item>
+    <item id="item-29" href="css/fonts/SourceSansPro-Semibold.ttf" media-type="font/ttf"></item>
+    <item id="item-30" href="css/fonts/SourceSansPro-SemiboldItalic.ttf" media-type="font/ttf"></item>
+    <item id="item-31" href="css/fonts/SourceSerifPro-Bold.ttf" media-type="font/ttf"></item>
+    <item id="item-32" href="css/fonts/SourceSerifPro-BoldIt.ttf" media-type="font/ttf"></item>
+    <item id="item-33" href="css/fonts/SourceSerifPro-It.ttf" media-type="font/ttf"></item>
+    <item id="item-34" href="css/fonts/SourceSerifPro-Regular.ttf" media-type="font/ttf"></item>
+    <item id="item-35" href="css/fonts/SourceSerifPro-Semibold.ttf" media-type="font/ttf"></item>
+    <item id="item-36" href="css/fonts/SourceSerifPro-SemiboldIt.ttf" media-type="font/ttf"></item>
+    <item id="item-37" href="css/fonts/monospace.ttf" media-type="font/ttf"></item>
+  </manifest>
+  <spine toc="toc">
+    <itemref idref="d4f3ecfa75a13268bf84c393b359c294" id="mac_printisbn_cover"></itemref>
+    <itemref idref="c7153d1970c13f36869068e1e45fcbc5" id="mac_printisbn_FM_contents"></itemref>
+    <itemref idref="cbb0ee91273835548d2946bd67cadcbd" id="mac_printisbn_ch01_01"></itemref>
+    <itemref idref="dc361799262634e5912f263b3c91a861" id="mac_printisbn_ch01_02"></itemref>
+    <itemref idref="dfe65e13512332f097e2ea4de44d902e" id="mac_printisbn_ch01_03"></itemref>
+    <itemref idref="mbc4ef6294d838ed9e7ce47c7139992a" id="mac_printisbn_ch01_04"></itemref>
+    <itemref idref="l8cde2accc3f383b82e610f6ff7d17c0" id="mac_printisbn_ch02_01"></itemref>
+    <itemref idref="db871f52409136a9b5d21ec9690e007f" id="mac_printisbn_ch02_02"></itemref>
+    <itemref idref="e2dc5c1158923469b395f4220f2bda58" id="mac_printisbn_ch02_03"></itemref>
+    <itemref idref="b0e64f923b873c63848100382e04d59a" id="mac_printisbn_ch02_04"></itemref>
+    <itemref idref="wbc0fc2fd9223050ab3c3fe54e3d0057" id="mac_printisbn_ch03_01"></itemref>
+    <itemref idref="ac5d387eb8043af4bf767965ef75a68e" id="mac_printisbn_ch03_02"></itemref>
+    <itemref idref="g31cbdae30f530079958d6deb9a55cda" id="mac_printisbn_ch03_03"></itemref>
+    <itemref idref="b02857adc10b34b58fa09baca281f273" id="mac_printisbn_ch03_04"></itemref>
+    <itemref idref="ab26a06482e73d1fb6609866dd588a90" id="mac_printisbn_ch03_05"></itemref>
+    <itemref idref="bc1c3e2a368933e8a1a37771205eae47" id="mac_printisbn_ch04_01"></itemref>
+    <itemref idref="hacf087e3b1a32639ee460df11e4a6a8" id="mac_printisbn_ch04_02"></itemref>
+    <itemref idref="a905c89717d039739a6be71c0f7851bb" id="mac_printisbn_ch04_03"></itemref>
+    <itemref idref="pdc171d775183b6aa89e5460cd8672d2" id="mac_printisbn_ch05_01"></itemref>
+    <itemref idref="a1aa9c60a8333c7f9d487a86792be4f6" id="mac_printisbn_ch05_02"></itemref>
+    <itemref idref="a1d1ffbc6e1334a59f4553f19db7d498" id="mac_printisbn_ch05_03"></itemref>
+    <itemref idref="adb8486f00ac3ad4a526ae0eb3e8a23a" id="mac_printisbn_ch05_04"></itemref>
+    <itemref idref="a39bb2778dba3f92b5bebbac38e8191d" id="mac_printisbn_ch05_05"></itemref>
+    <itemref idref="c4abe176758231a4861c0ea3a86ce0aa" id="mac_printisbn_ch06_01"></itemref>
+    <itemref idref="e14ff7d70e893f48aebf731d66b29ef1" id="mac_printisbn_ch06_02"></itemref>
+    <itemref idref="cbd041f96e8a3f7f842b9ab206141b63" id="mac_printisbn_ch06_03"></itemref>
+    <itemref idref="lec6129e2f053902bb9365db6ae8fc0f" id="mac_printisbn_ch06_04"></itemref>
+    <itemref idref="cf76658f848839d8bc8cb07dbaa3e897" id="mac_printisbn_ch06_06"></itemref>
+    <itemref idref="a7d8c9065fd73836a7fba485cf1405e2" id="mac_printisbn_ch06_07"></itemref>
+    <itemref idref="vdf2f70c6f98362ba3795b5d6a52f405" id="mac_printisbn_ch06_08"></itemref>
+    <itemref idref="bfe9f46b937c34818ee555f341d1bbe5" id="mac_printisbn_ch06_09"></itemref>
+    <itemref idref="o18b63d06de839a5b933a353c64f57cc" id="mac_printisbn_ch07_01"></itemref>
+    <itemref idref="d4c4afbf10413093a3d87cd94119cb8c" id="mac_printisbn_ch07_02"></itemref>
+    <itemref idref="f04b485168303062947cfb11fb43eb92" id="mac_printisbn_ch07_03"></itemref>
+    <itemref idref="b7648da2bca33a86aeee11325ef0e361" id="mac_printisbn_ch07_04"></itemref>
+    <itemref idref="b2e7333a15b23de2b03a42f4a8bface1" id="mac_printisbn_ch08_01"></itemref>
+    <itemref idref="ld4f4f5c5fbb3dcfa129495949a7a785" id="mac_printisbn_ch08_02"></itemref>
+    <itemref idref="y2d5cddf258b3653aacbb2d0b585435e" id="mac_printisbn_ch08_03"></itemref>
+    <itemref idref="z6ec4c13e42e34c4b1e3cf239bcee199" id="mac_printisbn_ch08_04"></itemref>
+    <itemref idref="de292f42ee5d3339a66b3c730265620d" id="mac_printisbn_ch08_05"></itemref>
+    <itemref idref="c7702ee7fd0b34f7b7f98c264e170617" id="mac_printisbn_ch08_06"></itemref>
+    <itemref idref="be4a694b1cfd39b585e66c294f91cf30" id="mac_printisbn_ch08_07"></itemref>
+    <itemref idref="i51a4e0f42de3f3faf7ad4effb94b67f" id="mac_printisbn_ch09_01"></itemref>
+    <itemref idref="g2b4c706e20a3efcbd338ba9a7746c30" id="mac_printisbn_ch09_02"></itemref>
+    <itemref idref="d2a0bd50c6323b76a878e41d41aac267" id="mac_printisbn_ch09_03"></itemref>
+    <itemref idref="d428acd0e4383affb537fd36ba06d636" id="mac_printisbn_ch09_04"></itemref>
+    <itemref idref="de3ac71f815f3e78b047f227deac940b" id="xeh_10_enhancements1313"></itemref>
+    <itemref idref="bc19609d507e39b9b42865aa095872f2" id="video51b9"></itemref>
+    <itemref idref="p3d3c7551e0e3156b048ef1b336ad843" id="audio6621"></itemref>
+    <itemref idref="of76d4472138343087235c8ece906b5e" id="flat_file_download_linkee2b"></itemref>
+    <itemref idref="bf320865507b3684aa7718ef632d0f01" id="slideline246d"></itemref>
+    <itemref idref="ce617c7819eb3f7db79b38df13e1f982" id="image_widgets0ca4"></itemref>
+    <itemref idref="p5fbc9f4107f377a8c52ca1d75dc0627" id="dataset36be"></itemref>
+    <itemref idref="n6f811970e49358b97c39d7ef42d85e6" id="make_image_linkable_to_outside_resourceb2f9"></itemref>
+    <itemref idref="ye1fe7b5d1bc34adb458a41279e07d06" id="show_hide_answer1d09"></itemref>
+    <itemref idref="x2b72b28e1f338859f6dcba7a7f6698a" id="simple_question_show_answerfadf"></itemref>
+    <itemref idref="d3a18ac753323dc8b858fa04353d8d56" id="question_with_image_show_answere508"></itemref>
+    <itemref idref="d2bd094759a0304fa70e91acad612b4f" id="question_with_image_show_answer_with_ima5bc6"></itemref>
+    <itemref idref="e1d612cbcd3830b3afdfc1cfba7ea1a8" id="question_with_math_or_formula_show_answed9bd"></itemref>
+    <itemref idref="x2f00e340ace3b19b609aa8d638bf5eb" id="question_with_link_show_answer3797"></itemref>
+    <itemref idref="nf0da1297c643855b32ea83ed96bf402" id="simple_question_show_answer_with_link8698"></itemref>
+    <itemref idref="q563040c601939d2aeaf38f6e5069b9f" id="show_answer_with_list5333"></itemref>
+    <itemref idref="a21b5f5930503680967b0e1caf143e5f" id="question_with_list_show_answer_with_listf564"></itemref>
+    <itemref idref="x1e2578af3ba3e0ba492a57393c17be0" id="show_answer_with_hinta61f"></itemref>
+    <itemref idref="l8599a0b82213c29b142746d020192ea" id="question_with_image_show_answer0cb7"></itemref>
+    <itemref idref="f77f13a1a5d7332297cfebfa31c4b8b0" id="assessment9181"></itemref>
+    <itemref idref="u290880a67843958abde3507f44b7941" id="part_iie76d"></itemref>
+    <itemref idref="e8f034462b7c3bc381654dfc1449ba2c" id="savi178c"></itemref>
+    <itemref idref="bbeeb7c1d7f238e199190a3a8145fd94" id="astronomy0e82"></itemref>
+    <itemref idref="z3d7c5c5136034008bf7d52acc8e7e26" id="concept79c4"></itemref>
+    <itemref idref="a2a5d458db783af0b09f30f95d4f2452" id="concept_practices_ii77ac"></itemref>
+    <itemref idref="cfed8388415239f1acdb3e4144b8c63f" id="concept_practicesb29f"></itemref>
+    <itemref idref="e0acf16c8c5e3bd7a579ffccf908081a" id="economics285f"></itemref>
+    <itemref idref="g24cf33765e93839846ed92fa2d2bee3" id="part_13f67"></itemref>
+    <itemref idref="d28d1a2de4403c7798f9f86d624f5fdb" id="part_2f634"></itemref>
+    <itemref idref="qacd02f5525f32f2a978b6a1b46644a4" id="part_3baab"></itemref>
+    <itemref idref="yd7ab2862196357cb983466c202dc6a6" id="part_4678a"></itemref>
+    <itemref idref="td3856f9460335569b61ba03c43b16d3" id="test9119"></itemref>
+    <itemref idref="ged672222bf73db2b4a3de78147fc391" id="revelle2d5"></itemref>
+    <itemref idref="d4e96343c1dd31a581889eacdcdccaa2" id="revell_ii1b15"></itemref>
+    <itemref idref="qe02b998717a3551aa192dc3d8d4d1a6" id="revell_iii1e86"></itemref>
+    <itemref idref="ia27f0ace4e73f99a6f3056de0a56701" id="revell_ivec54"></itemref>
+    <itemref idref="xea7f036e8493c86860f4edb4625b27a" id="revell_v7ef5"></itemref>
+    <itemref idref="d6a5ec810b343b6db19f731114f65c38" id="revell_vi8ceb"></itemref>
+    <itemref idref="j694134a95903f80aeabbbb5c0d6a97c" id="part_1fd36"></itemref>
+    <itemref idref="x34948c74f8e3bffbb52d7fe180f6285" id="part_35065"></itemref>
+    <itemref idref="fe4c055b3b383fdd8539503ec68b8660" id="part_3fc5c"></itemref>
+    <itemref idref="eca4180131c43d95a1d29bbc46cfd543" id="chem_iv40bd"></itemref>
+    <itemref idref="k1034040948e3fd6a5d36b6a5b03a6e6" id="chem_v7b15"></itemref>
+    <itemref idref="af98314ca91b3788af3df16c0d923419" id="chem_vi28dd"></itemref>
+    <itemref idref="wa3fce463a8e3062b160b50cddc33d42" id="revell_vii21d8"></itemref>
+    <itemref idref="dc1320091973308dbd89ac7ca86bf980" id="mol3d5489"></itemref>
+    <itemref idref="c3ea4e459fac3583bc13537f7471d5a1" id="statistical_appletsb274"></itemref>
+    <itemref idref="c682bbd2981f3a559be07a5024fc4533" id="periodic_table7050"></itemref>
+    <itemref idref="td35fdf9ecce3b449213656c6a9fd45f" id="mac_printisbn_ch10_01"></itemref>
+    <itemref idref="cccd7359531738f1aa7d6940297c4253" id="mac_printisbn_ch11_01"></itemref>
+    <itemref idref="e12748ebf6c03566be5c882f78a3cfe9" id="mac_printisbn_ch12_01"></itemref>
+    <itemref idref="o275ad6cbafb3910af551dd84d31d4a0" id="mac_printisbn_ch13_01"></itemref>
+    <itemref idref="df78d3475e9b3274a56a23bc0104bf98" id="mac_printisbn_ch13_01_ch0305extdesc_01"></itemref>
+    <itemref idref="ad883fc7dda13970b02d1528432e3248" id="mac_printisbn_ch13_01_ch0305extdesc_02"></itemref>
+    <itemref idref="ca510bcff786321a8ee1859c876008ef" id="sample_conclusion9c07"></itemref>
+  </spine>
+</package>

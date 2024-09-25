@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:epub="http://www.idpf.org/2007/ops" xmlns:svg="http://www.w3.org/2000/svg" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" id="ld4f4f5c5fbb3dcfa129495949a7a785">
+  <head>
+    <meta charset="utf-8"></meta>
+    <meta name="process" content="final"></meta>
+    <meta name="schema" content="3.3"></meta>
+    <link href="../css/flat_mac_printisbn.css" type="text/css" rel="stylesheet"></link>
+    <link href="../css/common/lm_ui.css" type="text/css" rel="stylesheet"></link>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"></meta>
+    <link href="../css/common/lm_ui.css" type="text/css" rel="stylesheet"></link>
+    <title>81 ShowHint Problem</title>
+  </head>
+  <body epub:type="bodymatter" class="bodymatter" data-lo-framework-id="">
+    <section class="sect1" data-cfititle="8.1. Show-Hint Problem" id="ch08_02">
+      <header id="vfgh5957276fb5699835d25d8e21906a">
+        <h2 class="a-head" id="ksye149c3491d8c0e42af8943076b847"><span epub:type="pagebreak" role="doc-pagebreak" id="page34" aria-label="page 34"></span><span class="ordinal" id="licl7ba762ff24f06f7c59581dfce0d1">8.1. </span>Show-Hint Problem</h2>
+      </header>
+      <p class="noindent" id="uhywc29636b4acaebc3e5addfc8649e2">For the facilitation of show-hint automation in the enhanced EPUB.</p>
+      <p class="noindent" id="hpyg619d4181ee7b74e8c9d893138e6d">In order to mark up content for future show-hint automation, include the data-hint attribute with the value of the location of the hint.</p>
+      <pre tabindex="0" id="dlgi4fbb8cda0c6734e06acb5026f98c">
+        <code class="language-html" id="zleob76dd69b9d31ded10f7cd1002e04">&lt;ol&gt; &lt;li data-answer="filename.xhtml#ID3236" data-hint="filename.xhtml#ID3237"&gt;This is a show answer question stem containing a data-hint&lt;/li&gt; &lt;li&gt;This is a question in the same ordered list without a corresponding answer&lt;/li&gt; &lt;/ol&gt;</code>
+      </pre>
+      <p class="noindent" id="nvtt3d16b2290f061ab0a4d499f2eff7">where filename.xhtml#ID3237 is the URI and IDREF containing the hint text.</p>
+      <p class="noindent" id="mawjed3e2799cadf80cfe664b443f3c1">data-hint can only be applied to element &lt;li&gt;, not any other type of element, or any of the &lt;li&gt;'s child elements.</p>
+      <section class="sect2" data-cfititle="Special Notes" id="oldg17e45b8b1b01a09970a7dbd9c0f1">
+        <header id="spwg7dd46af9b1087190dfbc5a1b1799">
+          <h3 class="b-head" id="hzmxd5de1046e32df338f566ea5318d1">Special Notes</h3>
+        </header>
+        <p class="noindent" id="ttavc4f94c262084952359cc5482464e">When an image is a part of a question or hint, ensure that the image is child of the &lt;li&gt; element.</p>
+      </section>
+      <section class="sect2" data-cfititle="What can be marked as a show-hint question?" id="dinn098c9c0ff15819540f6cccfa04fc">
+        <header id="ambgca3e7afb91cb01d9e52d2b02d651">
+          <h3 class="b-head" id="rgjo6fcec2bc2b3d62929a43135f8f9c">What can be marked as a show-hint question?</h3>
+        </header>
+        <p class="noindent" id="jmzb98a8c84d95f051226b19026e402b">If a question is a numbered list item, it can be tagged as a show-hint question in the flat EPUB for the purposes of automation.</p>
+        <p class="noindent" id="lgrp8a5c4eb96649d1f2e3dc8b1dbf32">However, the following types of questions should never be tagged as show-hint:</p>
+        <ul class="ul-bullet-list" id="fxye49d55f4935f68d7fbc888f5cd670">
+          <li id="cekp0eb6aa7722046ca6931cf52e5e1f">Matching (any question with matching)</li>
+          <li id="gcmfe5a6fa97922784031b114470e1c8">Multiple choice</li>
+          <li id="fdxjb0c0279302cd0ead26a2a0a7ab37">Multi-select</li>
+        </ul>
+      </section>
+      <section class="sect2" data-cfititle="How do I mark up the hints?" id="ivmgde2318f3ddfee147bc24febec744">
+        <header id="jesuc6fc1446de4cff08c37207ce5c0d">
+          <h3 class="b-head" id="mfys68cb568e8785ec0e0c4b290b3be0">How do I mark up the hints?</h3>
+        </header>
+        <p class="noindent" id="yjli4bd575eebeff4ce7534cf8f64f5e">Hints must be present in the flat EPUB for the automation feature to function.</p>
+        <p class="noindent" id="eqmv7d82d3afa13b021093fccb627b2b">The ID of the answer must be the entire answer of the question. If there are multiple elements within an answer, all of those must be wrapped in a single element. A list item containing a nested list would be best practice.</p>
+        <p class="noindent" id="cztrd1b8621dab6bde49a0412a2154b5">Incorrect markup</p>
+        <pre tabindex="0" id="tsph8a9c1ea76eed3eb96f50898ac8ca">
+          <code class="language-html" id="tqkpb3173bc545edb6db038c41f96122">&lt;p id="exe02_117" class="noindent"&gt; &lt;span epub:type="ordinal" class="ordinal"&gt; &lt;strong class="important"&gt; &lt;a href="kok_9781319049621_ch02_11.xhtml#ch02_exe_117"&gt;2.117&lt;/a&gt; &lt;/strong&gt; &lt;/span&gt; &lt;strong class="important"&gt;(a) &lt;/strong&gt; &lt;/p&gt; &lt;table class="table compact c3 main-flow" id="ans02_untab_39"&gt;...</code>
+        </pre>
+        <p class="noindent" id="wafq49c5b0489e3672977824bfa6080c">In this case, the only part of the hint that will be shown is the content in the p#exe02_117 element, meaning that the table and everything after the element will be excluded.</p>
+        <p class="noindent" id="mzjgcfcb1dd828a48d499da17408740a">Correct markup</p>
+        <pre tabindex="0" id="rddma7433afe8b5d289be5f7b1903fbc">
+          <code class="language-html" id="fdpk9eb96585aceb1086d2c76a2882da">&lt;li id="exe02_117" class="noindent"&gt; &lt;span epub:type="ordinal" class="ordinal"&gt; &lt;strong class="important"&gt; &lt;a href="kok_9781319049621_ch02_11.xhtml#ch02_exe_117"&gt;2.117&lt;/a&gt; &lt;/strong&gt; &lt;/span&gt; &lt;strong class="important"&gt;(a)&lt;/strong&gt; &lt;ul&gt; &lt;li&gt; &lt;table class="table compact c3 main-flow" id="ans02_untab_39"&gt; ... &lt;/li&gt; ... &lt;/ul&gt; &lt;/li&gt;</code>
+        </pre>
+        <p class="noindent" id="yraz6eaeb9a4ddd948bcf688016d8d0c">In this case, the li element is being linked to. Since the table and all of the other content is now nested within that li#exe02_117, and the li closing tag encompasses the table (and the figure, not shown in the code example), the entire answer will be available when the show-hide automation is performed.</p>
+      </section>
+      <section class="sect2" data-cfititle="Enhancements: Show-Hint Problem" id="xzzped55c104d39a3292941de1d40bde">
+        <header id="ioyq3be45d82570cf8f3aa944633bb60">
+          <h3 class="b-head" id="fogw40bbdb0765cd7462dc57726d0dff">Enhancements: Show-Hint Problem</h3>
+        </header>
+        <p class="noindent" id="lzvhb2132f9876283d3f13a8b75d1a0b">The following represents an example of a show-hint problem.</p>
+        <ol class="numbered-list" id="bdib35387757c058793623fa912550dd">
+          <li class="question" data-answer="mac_printisbn_ch11_01.xhtml#001" data-hint="mac_printisbn_ch11_01.xhtml#bupwcfdfcd1dd05a18ab033ac75d1361" epub:type="question" id="bprjb9c249c2ee947e5d8efae71b01f9">This is a show-hint question stem containing a data-hint</li>
+          <li class="question" epub:type="question" id="rwlh4d2d2f52e130a69893e7fa85ebcb">This is a question in the same ordered list without a corresponding hint</li>
+        </ol>
+      </section>
+    </section>
+  </body>
+</html>

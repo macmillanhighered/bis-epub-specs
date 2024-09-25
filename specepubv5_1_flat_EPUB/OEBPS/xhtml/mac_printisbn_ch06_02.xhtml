@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:svg="http://www.w3.org/2000/svg" xmlns:epub="http://www.idpf.org/2007/ops" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" id="e14ff7d70e893f48aebf731d66b29ef1">
+  <head>
+    <meta charset="utf-8"></meta>
+    <meta name="process" content="final"></meta>
+    <meta name="schema" content="3.3"></meta>
+    <link href="../css/flat_mac_printisbn.css" type="text/css" rel="stylesheet"></link>
+    <link href="../css/common/lm_ui.css" type="text/css" rel="stylesheet"></link>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"></meta>
+    <link href="../css/common/lm_ui.css" type="text/css" rel="stylesheet"></link>
+    <title>61 H1H6</title>
+  </head>
+  <body epub:type="bodymatter" class="bodymatter" data-lo-framework-id="">
+    <section class="sect1" data-cfititle="6.1. H1-H6" id="ch06_02">
+      <header id="khmx41949605586d1a9cf6c591f4bd83">
+        <h2 class="a-head v1" epub:type="title" id="cpvm4d7a1ef9f5831c8e2bd4e7c18914"><span epub:type="pagebreak" role="doc-pagebreak" id="page22" aria-label="page 22"></span><span class="ordinal" id="xelk8ca03688c56fbcbd608344d6fee7">6.1. </span>H1-H6</h2>
+      </header>
+      <p class="noindent" id="wckec5268db9cf6caa260f44d3e1bf79">Create meaningful structure wherever possible by using numbered headings in a logical structure. Each section should have a numbered heading (e.g., <code class="language-html" id="csbeeeff10052321955f9c616db02f44">h1</code>) reflecting its level in the document hierarchy. For other tagged structures, specify their content with the <code class="language-html" id="ejbabd1db65dd8d719260892cf8b210e">epub:type</code> and/or ARIA role attribute. For example, the tag that contains the preface of a book might look like <code class="language-html" id="kixd80f620eb7b771eca2f9435a413d9">&lt;section epub:type=“preface” role="doc-preface"&gt;</code>. Specific tags are for specific content only (i.e., the <code class="language-html" id="hrpufc252b4a1b1db4e36ad0485045dd">&lt;cite&gt;</code> tag is only for citations. See section <a class="crossref" href="mac_printisbn_ch06_02.xhtml#spec-32" id="spec-32">4.2 Bibliographies</a>) and should be used according to the standard. Use the most specific tag available and do not automatically wrap <code class="language-html" id="ufrg907d77974876b9ab8da5d854f2f2">&lt;div&gt;</code> or <code class="language-html" id="meegb2c13b7739448ceab385a4bc3083">&lt;span&gt;</code> tags around everything.</p>
+      <ul class="ul-bullet-list" id="mhnkbb4519d6a451843468be13f793d4">
+        <li id="argzca418ed1f8ab8f2bf2049bd5ab6a">Numbered headings accurately reflect the document hierarchy</li>
+        <li id="dinv694c98c10194c04a2e293896ad43">Each sectioning element has only a single heading</li>
+        <li id="posq7c2d274cce6bdabe5c8f6bb69ce7">Sections and asides without headings can include an aria-label attribute to identify its structure.</li>
+        <li id="posq7c2d274ccg6bdabe5c8f6bb69ce7"><code class="language-html" id="meegb2c13b7739448ceab385a4bc1083">&lt;br /&gt;</code> must not be used within headings. <code class="language-html" id="meegb2c13b7739448ceab385a4bc1084">span</code> elements should be used to create multiline headers.</li>
+        <li id="posq7c2d274cce6zeabe5c8f6bb69ce7">If an aside has a heading, it must have an aria-labelledby attribute equal to the ID of first descendant heading. Please refer to Tagging Guidelines for more information.</li>
+      </ul>
+      <p class="noindent" id="txecb787bf4241e5909dd77e42109132"> All asides without headings require aria-labels. These aria-labels should not be named generically but should contain meaningful information and describe the content. </p>
+      <p class="noindent" id="txecb787bf4241e5909dd77e42109232"> For <a href="mac_printisbn_ch05_05.xhtml#ch05_05_01_05_03" class="crossref" id="q2d2d0b6-d8a3-3ccf-b1ef-9b9c5ed6a0f2">keyword asides</a>, use the following format:  </p>
+      <p class="noindent" id="txecb787bf4241e5909dd77e42109332"> "Definition: " and then list the terms being defined. For example:  </p>
+      <ul class="ul-no-mark" id="diyq9eee517019c90032b3f88eda127f">
+        <li id="wupcaf48f958eb944f9fda515zf58964">
+          <pre tabindex="0" id="itfp37a85058b4d0eb3709d28acfe075">
+            <code class="language-html" id="dtzucdd5d8d79201d3b1a139b95398ad">&lt;aside class="glossary c3 main-flow v1" aria-label="Definition: geographic information systems (GIS), geospatial or spatial and geospatial technologies"&gt; &lt;dl class="glossary"&gt; &lt;dt epub:type="glossterm" role="term" class="glossterm"&gt; &lt;dfn epub:type="keyword" class="keyword"&gt;geographic information systems (GIS)&lt;/dfn&gt;&lt;/dt&gt; &lt;dd epub:type="glossdef" role="definition" class="glossdef"&gt;Hardware and software that allow for computer-based analysis, manipulation, visualization, and retrieval of location-related data.&lt;/dd&gt; &lt;dt epub:type="glossterm" role="term" class="glossterm"&gt; &lt;dfn epub:type="keyword" class="keyword"&gt;geospatial or spatial&lt;/dfn&gt;&lt;/dt&gt; &lt;dd epub:type="glossdef" role="definition" class="glossdef"&gt;Referring to items that are tied to a specific real-world location.&lt;/dd&gt; &lt;dt epub:type="glossterm" role="term" class="glossterm"&gt; &lt;dfn epub:type="keyword" class="keyword"&gt;geospatial technologies&lt;/dfn&gt;&lt;/dt&gt; &lt;dd epub:type="glossdef" role="definition" class="glossdef"&gt;A term that encompasses many types of methods and techniques for the collection, analysis, modeling, and visualization of geospatial data.&lt;/dd&gt;&lt;/dl&gt; &lt;/aside&gt; </code>
+          </pre>
+        </li>
+      </ul>
+      <p class="noindent" id="txecb787bf4241e5909dd77e42109832">
+        <a class="external" href="http://kb.daisy.org/publishing/docs/html/headings.html" id="mqhwd7b5ffee123c474da4ffcfb25197">http://kb.daisy.org/publishing/docs/html/headings.html</a>
+      </p>
+      <p class="noindent" id="txecb787bf4241e5909dd77e42108832">Any section that does not have an aria-label must contain an attribute aria-labelledby. This attribute must be equal to the ID of the first heading element in the section.</p>
+      <section class="sect2" id="nitc46a742fab3d4c05b4dcb09ca59a5" data-cfititle="Non-Hierarchical Head">
+        <header id="mzbg1a5c83fe57b850a006f8d8734e51">
+          <h3 class="b-head" id="eacl9a6a818b9fb9ed2f3954626c80cc">Non-Hierarchical Head</h3>
+        </header>
+        <section class="sect3" id="htgqc6bef02b8d69e55719f224b236ba" data-cfititle="Examples in EPUB">
+          <header id="hztq52eac3dec385f883a2f8cc8866c7">
+            <h4 class="c-head" id="yrface697aa19503029536573e359e96">Examples in EPUB</h4>
+          </header>
+          <p class="noindent" id="rsgp3f25d8bd42698f5dfd09dabc9a75">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450000">Print Sample</strong>
+          </p>
+          <figure class="figure lm_img_lightbox unnum c3 center" id="unfig03_6">
+            <img alt="image to come" class="figure" id="duayc502ef43f703614825d33225c7a5" src="../images/drwrc27dbafae22d8b37d7b188d4b9e0_Image2020-09-28_16-59_p-non-hier-print.png"></img>
+          </figure>
+          <p class="noindent" id="nplma4766dfa84ab187885f2539381c9">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450001">HTML Coding Sample</strong>
+          </p>
+          <ul class="ul-no-mark" id="dxyq9eee517019c90032b3f88eda127f">
+            <li id="wupcaf48f958eb944f9fda515cf58964">
+              <pre tabindex="0" id="itfp37a85058b4d0eb3706d28acfe075">
+                <code class="language-html" id="dtzucdd5d8d71201d3b1a139b95398ad"> &lt;p class="non-hierarchical-head" id="dia_9781319327569_uIw2NwMxvo"&gt; &lt;strong class="important" id="dia_9781319327569_klmeF0fKEQ"&gt;nonrestrictive clause (with commas)&lt;/strong&gt; &lt;/p&gt; &lt;p class="noindent" id="uokda8282dd454d75d56d85a0d92bb96"&gt; &lt;img alt="An example illustrates adjective clause as nonrestrictive clause with commas within a sentence." class="inline c3" id="dia_9781319327569_IZyGhvlHRb" src="../images/vlyg29518cee859697917eab4cadd1a1_hackerpocket9e_16954_pt03_pg_57a.png"&gt;&lt;/img&gt; &lt;/p&gt; &lt;p class="non-hierarchical-head" id="dia_9781319327569_VfbVgVngxJ"&gt; &lt;strong class="important" id="dia_9781319327569_f8s2f6SoLg"&gt;restrictive clause (no commas)&lt;/strong&gt; &lt;/p&gt; &lt;p class="noindent" id="yvevc7bab136a3e0ad93c4fd62598411"&gt; &lt;img alt="An example illustrates adjective clause as restrictive clause without commas within a sentence." class="inline c3" id="dia_9781319327569_QTfmQw9vyw" src="../images/dlgx91009a73f1eef0031f84faf72b42_hackerpocket9e_16954_pt03_pg_55b.png"&gt;&lt;/img&gt; &lt;/p&gt; </code>
+              </pre>
+            </li>
+          </ul>
+          <p class="noindent" id="rsgp3f25d8bd42698f5dfd09dabc9a77">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450002">HTML Coding Result</strong>
+          </p>
+          <p class="noindent" id="dia_9781319327569_uIw2NwMxvo">
+            <strong class="important" id="dia_9781319327569_klmeF0fKEQ">NONRESTRICTIVE CLAUSE (WITH COMMAS)</strong>
+          </p>
+          <p class="noindent" id="uokda8282dd454d75d56d85a0d92bb96">
+            <img alt="An example illustrates adjective clause as nonrestrictive clause with commas within a sentence." class="inline c3" id="dia_9781319327569_IZyGhvlHRb" src="../images/vlyg29518cee859697917eab4cadd1a1_hackerpocket9e_16954_pt03_pg_57a.png"></img>
+          </p>
+          <p class="noindent" id="dia_9781319327569_VfbVgVngxJ">
+            <strong class="important" id="dia_9781319327569_f8s2f6SoLg">RESTRICTIVE CLAUSE (NO COMMAS)</strong>
+          </p>
+          <p class="noindent" id="yvevc7bab136a3e0ad93c4fd62598411">
+            <img alt="An example illustrates adjective clause as restrictive clause without commas within a sentence." class="inline c3" id="dia_9781319327569_QTfmQw9vyw" src="../images/dlgx91009a73f1eef0031f84faf72b42_hackerpocket9e_16954_pt03_pg_55b.png"></img>
+          </p>
+        </section>
+      </section>
+    </section>
+  </body>
+</html>

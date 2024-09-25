@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:svg="http://www.w3.org/2000/svg" xmlns:epub="http://www.idpf.org/2007/ops" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" id="hacf087e3b1a32639ee460df11e4a6a8">
+  <head>
+    <meta charset="utf-8"></meta>
+    <meta name="process" content="final"></meta>
+    <meta name="schema" content="3.3"></meta>
+    <link href="../css/flat_mac_printisbn.css" type="text/css" rel="stylesheet"></link>
+    <link href="../css/common/lm_ui.css" type="text/css" rel="stylesheet"></link>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"></meta>
+    <link href="../css/common/lm_ui.css" type="text/css" rel="stylesheet"></link>
+    <title>41 Pagination</title>
+  </head>
+  <body epub:type="bodymatter" class="bodymatter" data-lo-framework-id="">
+    <section class="sect1" data-cfititle="4.1. Pagination" id="ch04_02">
+      <header id="grxefa3632a1a6131f024a8c821fdad8">
+        <h2 class="a-head v1" id="dvmp715c2ff294f0022a274a08cff1ea"><span aria-label="page 14" epub:type="pagebreak" id="page14" role="doc-pagebreak"></span><span class="ordinal" id="okpze53f279ba45332e07d4330ec2213">4.1. </span>Pagination</h2>
+      </header>
+      <table class="table c3 main-flow border" id="tab09_1">
+        <tbody id="kkje7ebce7d7b72e3020d54c4d4d5966">
+          <tr id="kbsa0c22786bb9c822d0613425af1f02">
+            <th class="left" id="kgfb8f3ca9589dfa430a88231f97fad3" scope="col">Label</th>
+            <th class="left" id="wins86b9a39128ac5b369ac5a297d25a" scope="col">epub:type</th>
+            <th class="left" id="okpze53f279ba45332e07d4330ec2212" scope="col">ARIA role</th>
+            <th class="left" id="yrwo9155dc61514c4684c4f98c410603" scope="col">Description</th>
+          </tr>
+          <tr id="iblt96502825acad39f3fdf943fb3acf">
+            <td class="left" id="ucjk9b9135faaf22c1579ccb48159bad">Pagebreak</td>
+            <td class="left" id="mjdz709b91d4e9a2a47296370eb769c3">
+              <strong class="important" id="dteff044a7f4c5826e39fbceccc71eef">pagebreak</strong>
+            </td>
+            <td class="left" id="jvntf9e0ce7cd6bc86f5809e10b91a8e">doc-pagebreak</td>
+            <td class="left" id="zqpvec743fe064eed0894a33ef9a8937">A (sometimes valued) separator denoting the position before which a break between two contiguous pages occurs in a statically paginated media.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="noindent" id="qykgcfd632b2112d9ad00430b47ca9c9">Page numbers are the way many people navigate within a book. For any book with a print equivalent, use the <code class="language-html" id="uoyk32a38d5be3a3e5684fa62c043c37">epub:type=“pagebreak” </code> attribute to designate page numbers. Include the ISBN of the source of the page numbers in the package metadata for the book. A tag for a page number should look like <code class="language-html" id="gnjs1d97c694ef56dd74191879e062c2">&lt;span epub:type="pagebreak" role="doc-pagebreak" id="page361" aria-label="page 361"/ &gt; </code>. The id must not contain spaces (e.g., page 361) or non-alphanumeric characters (e.g. page-361, page_361) separating the word page and the number.</p>
+      <ul class="ul-bullet-list" id="yiac57c5c7c3f017560cabac9b253d3a">
+        <li id="edexe2fa37c4804f6473718e5cfd394a">Include a page-list nav to facilitate navigation.</li>
+        <li id="wgddfaf430a1f5bfaf26faba37745d23">Make sure that the print source is identified in a <code class="language-html" id="uupoc955bcb210206b470a028c3e5aa0">dc:source </code> element in the package document metadata section. Additionally, include the meta refines property "source-of" with a value of "pagination".</li>
+        <li id="eqas8dee97138f2ec53fdaa30086652e"><strong class="important" id="rqyc38198a8e0f84046c9e6d9f1e7cf4">Virtual Page Numbers:</strong> In digital-first titles, when there is no immediate plan to create a print counterpart and page numbers are requested, set the pagination source to the EPUB ISBN and include page numbers per usual. Page numbers should be based on XHTML document (1 XHTML doc = 1 page) and should be added mainly to accommodate reading systems that require page numbers.</li>
+        <li id="eqas8dee97138f2ec53fdaa38486652e">Unless instructed otherwise by Macmillan content team, if a title has virtual page numbering, the numbering must start with roman numeral i in the frontmatter and an arabic numeral 1 in the bodymatter. The numbering should continue with arabic numerals into the backmatter.</li>
+        <li id="mkepc26ae223ea192a73e0517fb24158">Use the following standard abbreviations to number cover pages: FC (Front Cover), IFC (Inside Front Cover), IBC (Inside Back Cover), BC (Back Cover).</li>
+        <li id="foyre2b7f715eb9659573fb0f9c3b71c">Blank pages from the print version, including blank inside covers, should not be included in the EPUB or in the nav file page list. If the pagebreaks are numerically sequential, the pagebreak element should appear directly before another pagebreak element.</li>
+        <li id="emwj1569cf17ba45adbc548c50a7e4e8">Content that is moved from one or more pages to another is now part of the new page.</li>
+        <li id="iuoq071b586582b2e8bbdd2fb48c1bd6">If the content that is moved to a new page is 3 or more pages away from its original source page, please proceed with the following annotation. Under the heading of the moved content, the original text page number should be referenced in the following manner: "(This content appears on page # of the print book)." (# represents the source page number.) This annotation should be coded as follows:</li>
+      </ul>
+      <pre id="okpze53f279ba45332e07d4330ec2214" tabindex="0">
+        <code class="language-html" id="okpze53f279ba45332e07d4330ec2217">&lt;div class="notes" id="fri_9781319065669_BcN70qBOxO"&gt; &lt;p class="noindent" id="fri_9781319065669_Lr45o2GRL6"&gt;&lt;span class="epub-only" id="fri_9781319065669_vMjR3U332N"&gt;(This content appears on page # of the print book).&lt;/span&gt;&lt;/p&gt; &lt;/div&gt; </code>
+      </pre>
+      <ul class="ul-bullet-list" id="dplte2a18776144648187dd585b1fadc">
+        <li id="iztkf70ef83ca7fd24c23a7c9789b63a">Pagebreaks must always appear sequentially in the content. For example, page12 cannot appear before page11.</li>
+        <li id="iztkf70ef80ca7fd24c23a7c9789b63a">Pagebreak must be the first element in the element it appears in. It must appear before any text present in the element.</li>
+        <li id="eryob0c6d525824d2e06eeda86c4156f">If navigable headings are moved within the EPUB, this change should be reflected in the TOC, nav, and ncx files. Those headings should appear linearly in the new order.</li>
+        <li id="eryob0c6d525824d2e06eeda86c4157f">When updating pagebreaks, changes to glossary pagebreaks may be omitted.</li>
+      </ul>
+      <p class="noindent" id="riyh86b28767761aebb0e820cec0d2d4">
+        <a class="external" href="http://kb.daisy.org/publishing/docs/navigation/pagelist.html" id="zaqs1c683eb2776c2ab38fb90d40e9d8">http://kb.daisy.org/publishing/docs/navigation/pagelist.html</a>
+      </p>
+      <p class="noindent" id="rlmj83fd7a473e7152bfdf552aa7d42d">
+        <strong class="important" id="ivhzd9cfdf576a09ce2bb1fd82e65899">Coding Sample</strong>
+      </p>
+      <pre id="okpze53f279ba45332e07d4330ec2215" tabindex="0">
+        <code class="language-html" id="okpze53f279ba45332e07d4330ec2218">&lt;section epub:type="chapter" class="chapter" id="fri_9781319065669_UelT7W185e"&gt; &lt;header id="fri_9781319065669_0oUqL92qBr"&gt; &lt;h2 epub:type="title" class="title" id="fri_9781319065669_FqzFOjioEu"&gt; &lt;span epub:type="pagebreak" role="doc-pagebreak" id="page1" aria-label="page 1"/&gt; &lt;span epub:type="label" class="label" id="fri_9781319065669_rp2o7PxSxq"&gt;Chapter &lt;/span&gt;&lt;span epub:type="ordinal" class="ordinal" id="fri_9781319065669_7fWhbNd76i"&gt;1&lt;/span&gt;&lt;/h2&gt; &lt;/header&gt; </code>
+      </pre>
+      <p class="noindent" id="dlqmc797360b02cbf04d2a619cebd6b9">
+        <strong class="important" id="mtcob89cc71617967ef89f11bf0438c0">Sample coding for Continuous para:</strong>
+      </p>
+      <pre id="okpze53f279ba45332e07d4330ec2216" tabindex="0">
+        <code class="language-html" id="okpze53f279ba45332e07d4330ec2219">&lt;p class="noindent"&gt;&lt;span epub:type="pagebreak" role="doc-pagebreak" id="page10" aria-label="page 10"/&gt;Black women ... and idolatrous ... &lt;/p&gt; </code>
+      </pre>
+      <ul class="ul-bullet-list" id="kxfn467cb52189df205cba050fd73532">
+        <li id="puqn9aac56df00e8b355d5cfa1101a53">If a page break occurs within any floating element (including <code class="language-html" id="ytqh16a06f4a25a2dfe6c1f5971f0984">&lt;figure&gt; </code>, <code class="language-html" id="qfcg06a82393b07d7f75ff3b6719c136">&lt;table&gt; </code>, and <code class="language-html" id="rohk213527efb49bb499af51f4203de8">&lt;aside&gt; </code>), it should be moved outside of the element. For example, if a page break occurs within a <code class="language-html" id="twlva1b4e694cb071c7c6249a95e0dd3">&lt;figure&gt; </code> tag, it should be moved outside to follow the complete element.</li>
+        <li id="puqn9aac56df00e8b355d5cfa1101a54">Because of the show-hide answer conversion process, elements with the data-answer attribute and elements with the epub:type answer that are being referenced by the data-answer attribute should not contain pagebreaks. The pagebreaks must be moved to the next legal pagebreak entity.</li>
+        <li id="pkjc5129e8de4d800fad7b0b360e4f58">If a page break occurs within a <code class="language-html" id="uosp7aebf68e0d3d624e9fd07f9de2ed">&lt;dt&gt; </code> element, it should be moved into the <code class="language-html" id="corq5bcf588143b5c1a05c51ef08c433">&lt;dd&gt; </code> element associated with it (which should be the subsequent element).</li>
+      </ul>
+    </section>
+  </body>
+</html>

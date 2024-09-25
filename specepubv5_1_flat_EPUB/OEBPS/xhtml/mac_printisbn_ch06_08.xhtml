@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:svg="http://www.w3.org/2000/svg" xmlns:epub="http://www.idpf.org/2007/ops" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" id="vdf2f70c6f98362ba3795b5d6a52f405">
+  <head>
+    <meta charset="utf-8"></meta>
+    <meta name="process" content="final"></meta>
+    <meta name="schema" content="3.3"></meta>
+    <link href="../css/flat_mac_printisbn.css" type="text/css" rel="stylesheet"></link>
+    <link href="../css/common/lm_ui.css" type="text/css" rel="stylesheet"></link>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"></meta>
+    <link href="../css/common/lm_ui.css" type="text/css" rel="stylesheet"></link>
+    <title>66 Bold Italic Strong Emphasis</title>
+  </head>
+  <body epub:type="bodymatter" class="bodymatter" data-lo-framework-id="">
+    <section class="sect1" data-cfititle="6.6. Bold, Italic, Strong, Emphasis" data-pos="p1" id="ch06_08">
+      <header id="xwmva109b1cab5b482dd7c2ffe43ad72">
+        <h2 class="a-head v1" id="gbwa40bf0eb5a85c69f6dee9f3d61080"><span epub:type="pagebreak" role="doc-pagebreak" id="page27" aria-label="page 27"></span><span class="ordinal" id="somfc7ff1aa3bb34548dde8a7f8d1330">6.6. </span>Bold, Italic, Strong, Emphasis</h2>
+      </header>
+      <p class="noindent" id="euky1e35f92348e2c6fb020d5379ca3d">Bolding and italics are often taken for mere styling elements, but they carry various kinds of information pertinent to the text: emphasized points, changes in tone or location, special names, etc. Unless the correct semantic tagging is used to apply this formatting, however, the same information cannot be conveyed to non-visual readers.</p>
+      <p class="noindent" id="nrac2e0d549cff16259151b84450f2ea"><code class="language-html" id="cbwe85d6099c53d655ea63953afeee40">&lt;span class="strong"&gt;</code> and <code class="language-html" id="gvzr9fec7d7a0bd626632b285ccd204c">&lt;span class="em"&gt;</code> are poor markup</p>
+      <p class="noindent" id="uuze7cfca05398a1355dfbc887cf2e26"><code class="language-html" id="mxha610cfc8848e641c218d962df0e5f">&lt;i&gt;, &lt;b&gt;, &lt;strong&gt;, &lt;em&gt;</code> must be used appropriately. For instance, the title of the book <i class="semantic-i" id="dtkkc17a1ac99ef6fe69639d6722c7f7">Wuthering Heights</i> should be italicized, but not emphasized in a particular way. Therefore, &lt;em&gt; would be inappropriate to use, and &lt;i&gt; should be used instead.</p>
+      <p class="noindent" id="bfwf73df87904d394a1ac574c282e0cf">The following table outlines the contexts for when to apply the various HTML5 and CSS methods for bolding and italics:</p>
+      <table class="table c3 main-flow border" id="tab20_06">
+        <tbody id="wbrd0929a8f07fe453c777c68caa3bd8">
+          <tr id="yhmed7f62382dd34eb30ca478cd7be9e">
+            <th class="left" id="hcchf3e2253168d991fb31e660746445" scope="col">Element/Property</th>
+            <th class="left" id="irqz2ea1dca577851323c3accfaa8009" scope="col">Purpose</th>
+          </tr>
+          <tr id="opwz80dc0db053785ca529bde6a42466">
+            <td class="left" id="tmamddfc1386befecbc4d3671da559d1">
+              <code class="language-html" id="bvkge4d2035d6873d4a02b6a4aceec17">em</code>
+            </td>
+            <td class="left" id="kkhd52d1417ca87bca577e5f1b0884ac">The  <code class="language-html" id="vvggc078a861b4f5db06c89fc533dd6f">em</code> element indicates the text is to be vocally stressed.</td>
+          </tr>
+          <tr id="hzfb32a48f9f0154f05bd4da28e314a8">
+            <td class="left" id="gsyc9caa3ad249fd0d5ecfe912367e75">
+              <code class="language-html" id="tjed6f3c39751b5bf57a959c0fad75c9">strong</code>
+            </td>
+            <td class="left" id="lfhtd08f4fec3ff731723ac2e0ea5f8e">The  <code class="language-html" id="cmne30d57c191e18b290425eed787813">strong</code> element indicates importance, such as when making imperative statements or using signal words like 'warning' and 'alert'.</td>
+          </tr>
+          <tr id="acjb30bbd8322ea5d5348276c7a5e43e">
+            <td class="left" id="lkvs0824411cbef994beae90cd71fcf5">
+              <code class="language-html" id="pnrr10089ac843cfdc33e02a6011152e">i</code>
+            </td>
+            <td class="left" id="hfsv216bb528de20c8d9ce41ce278188">The <code class="language-html" id="nhpy7b055ecee2bb31ae2514a8a8b2d3">i</code> element is used when the use of italics indicate a change in tone or voice. An example provided in the HTML5 specification is for an extended dream sequence, but could be any similar divergence from the main narrative into thought or remembrance. The  <code class="language-html" id="hzty4cbd5ac7a9226118f5e94bdaaa77">i</code> element is also used whenever there is semantic significance behind the emphasis (e.g., the italicized words indicate a technical term, foreign words, etc.).</td>
+          </tr>
+          <tr id="wggf5568653a99b3e48b4f22746c2b3c">
+            <td class="left" id="pdsu6a193b43314e0703fee5aba5c353">
+              <code class="language-html" id="bmrb5809f2ef0bdddb8d5d518d7a6371">b</code>
+            </td>
+            <td class="left" id="pruh3682457a13a459e4aaa4332c5a74">The  <code class="language-html" id="ofllb85f97d0eff38a46b95c34922034">b</code> element is used whenever the bolding conveys semantic meaning, similar to the use of  <code class="language-html" id="xzjje22ff65144011a5e61612215ea6f">i</code> for semantic tagging (e.g., keywords in bodymatter).</td>
+          </tr>
+          <tr id="mpvea51337b065ac7d875f34bd372735">
+            <td class="left" id="ptqbc6e10d8da7a4fe3a0f8eca2ba4d7">
+              <code class="language-html" id="sgvd1e0def325dae93e594ff1dcda0a4">font-style: italic font-weight: bold</code>
+            </td>
+            <td class="left" id="btpv7ad5210822440a4e0f548327b73a">The CSS properties for bolding and italics should be used whenever the use of bolding and italics is presentational (for example, on headings and lead-in words). CSS formatting carries no semantics, so the emphasis will not be noted by assistive technologies.</td>
+          </tr>
+        </tbody>
+      </table>
+      <p class="noindent" id="puvjd3b44ceef292ccdeb37984570417">Words should not be broken up with bold, italic or any inline elements, such as in</p>
+      <p class="noindent" id="iamw28f108bf3c59f883115b936acf55">
+        <code class="language-html" id="wgdac54dd8e6bf4ab3d2ee8013590ca2">The most common way to assess bone strength is with a <b class="”semantic-b”" id="tshke13838e6794d58b9eaa18cd0b9a1">b</b>one <b class="”semantic-b”" id="xclr404c782e3c47531a5e5e0038adf8">m</b>ineral <b class="”semantic-b”" id="vcgnda23b8c777ef4dd5747ec238fc9d">d</b>ensity (<b class="”semantic-b”" id="wstxd80818787ef5ca764de1d47d95bb">BMD</b>) measurement.</code>
+      </p>
+      <p class="noindent" id="xtqq36c8ad23422a0fc5d507ced299a3">In this example, each full word should be bolded or not bolded, even when this does not match print. Words should not be broken up because this impedes the ability of the screen readers to read text.</p>
+      <p class="noindent" id="wvfk9e7025d4e491fc99e3c7c58c7cbf">For additional coding guidelines and examples, see the separate document ML_Bold and Italics Coding Guidelines. Click this link to access the live Google doc: <a class="external" href="https://docs.google.com/a/holtzbrinck.com/spreadsheets/d/1Hd7jyNvq1k5npymYhbte6OlGLdwA_W25r7XgB6NSDnw/edit?usp%3Dsharing" id="kkhi776b16627021e21ca1eca7b64d7d">https://docs.google.com/a/holtzbrinck.com/spreadsheets/d/1Hd7jyNvq1k5npymYhbte6OlGLdwA_W25r7XgB6NSDnw/edit?usp=sharing</a>.</p>
+      <section class="sect2" data-cfititle="span (underline)" id="euhweab54b878af0ef0640965524f346">
+        <header id="qqgw9ffc8846fbcad3ac34348c635695">
+          <h3 class="b-head" id="tjwf02dd7d7d4a30b518e023ce141da8">span (underline)</h3>
+        </header>
+        <p class="noindent" id="ncdd909f53fadb2ce8d0ea6a860f8825">We have a black underline and double underline, as well as the following options, underlines:</p>
+        <figure class="figure lm_img_lightbox unnum c1 main-flow" id="unfig03_6ba">
+          <img alt="image to come" class="figure" id="kgfh66bc2dedc48ca007e84968df4364" src="../images/gfeb31626cefd56ebadaf30eb89302fa_Image2018-05-14_09-46_span-underline-all.png"></img>
+        </figure>
+        <section class="sect3" data-cfititle="Examples in EPUB" id="wgeh26cca3f62f767be5195c295563e1">
+          <header id="nllra8ff00a8aeaedd6ccd62eae4026a">
+            <h4 class="c-head" id="ghbx53f26dd96d97a8a68cee1b1e9aa4">Examples in EPUB</h4>
+          </header>
+          <p class="noindent" id="kiovec695f67cfb63a93291c9c6d2d0b">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450000">Print Sample</strong>
+          </p>
+          <figure class="figure lm_img_lightbox unnum c3 main-flow" id="unfig03_6">
+            <img alt="image to come" class="figure" id="efvs535eaa6bfb6600cd53f9bd8d289a" src="../images/rrcv373a538429f366af050d41c51e9a_Image2020-09-28_16-59_span-underline-print.png"></img>
+          </figure>
+          <p class="noindent" id="ocbz5fc0a6f8a6cc8d20e7616d95d23d">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450001">HTML Coding Sample</strong>
+          </p>
+          <ul class="ul-no-mark" id="qbkb84135995280d92379af921febcf6">
+            <li id="mjjh346c8afe03f5a389cd6b10a74196">
+              <pre tabindex="0" id="vqxp9bed8fa93e1e81732949f47a1196">
+                <code class="language-html" id="hvqcac3e2a3c388a9bdf130383df097f">&lt;p class="noindent" id="ris_9781319306670_fe0z0Urgch"&gt;From &lt;span class="underline-red" id="ris_9781319306670_B5EplE3SC3" title="When"&gt;spring through fall of 2017&lt;/span&gt;, &lt;strong class="important" id="ris_9781319306670_wwc4G5WyaZ"&gt;&lt;span class="highlight-yellow" id="ris_9781319306670_34TC6qwzBM" title="Where"&gt;several universities&lt;/span&gt;&lt;/strong&gt; across the nation were rocked by &lt;span class="highlight-blue" id="ris_9781319306670_5vsYHxkoek" title="What"&gt;conflicts over who should and should not be allowed to speak on campus&lt;/span&gt;.… Some of the speakers who were banned from campus or whose visits were protested against were rabble-rousers — for example, the self-described white supremacist &lt;span class="underline" id="ris_9781319306670_iAskIiBvsv" title="Who"&gt;Richard Spencer&lt;/span&gt; (Reilly), Internet troll &lt;span class="underline" id="ris_9781319306670_ytFNN7LBTv" title="Who"&gt;Milo Yiannopoulos&lt;/span&gt; (Steinmetz), and conservative firebrand &lt;span class="underline" id="ris_9781319306670_H4QqyAEOXJ" title="Who"&gt;Ann Coulter&lt;/span&gt; (McLaughlin). (par. 1) &lt;/p&gt;</code>
+              </pre>
+            </li>
+          </ul>
+          <p class="noindent" id="uetw0e2f9d9ace89fd4802a15aa37ca2">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450002">HTML Coding Result</strong>
+          </p>
+          <p class="noindent" id="ris_9781319306670_fe0z0Urgch">From <span class="underline-red" id="ris_9781319306670_B5EplE3SC3" title="When">spring through fall of 2017</span>, <strong class="important" id="ris_9781319306670_wwc4G5WyaZ"><span class="highlight-yellow" id="ris_9781319306670_34TC6qwzBM" title="Where">several universities</span></strong> across the nation were rocked by <span class="highlight-blue" id="ris_9781319306670_5vsYHxkoek" title="What">conflicts over who should and should not be allowed to speak on campus</span>.… Some of the speakers who were banned from campus or whose visits were protested against were rabble-rousers — for example, the self-described white supremacist <span class="underline" id="ris_9781319306670_iAskIiBvsv" title="Who">Richard Spencer</span> (Reilly), Internet troll <span class="underline" id="ris_9781319306670_ytFNN7LBTv" title="Who">Milo Yiannopoulos</span> (Steinmetz), and conservative firebrand <span class="underline" id="ris_9781319306670_H4QqyAEOXJ" title="Who">Ann Coulter</span> (McLaughlin). (par. 1)</p>
+        </section>
+      </section>
+      <section class="sect2" data-cfititle="span (highlight)" id="njhhe418ee35ccca9133e2440a875fa0">
+        <header id="vhtka16afe7320542a96977e00852e2e">
+          <h3 class="b-head" id="hjxi27e52ba4a25001eb6a99a2fdbac5">span (highlight)</h3>
+        </header>
+        <p class="noindent" id="vbih0ba8c53412e251220b7fb5a2d118">We have two types on highlight styles, one, if a single highlight color is used per section, which just has the below highlight colors and the accessible combination to be used when multiple highlights are used in a section</p>
+        <figure class="figure lm_img_lightbox unnum c1 main-flow" id="unfig03_6ax">
+          <img alt="image to come" class="figure" id="kgfx66bc2dedc48ca007e84968df4364" src="../images/tzsbb5f52f8b1494cb35b0da6ceb0b63_Image2018-05-14_09-47_span-highlight-all.png"></img>
+        </figure>
+        <section class="sect3" data-cfititle="Examples in EPUB" id="aupc926c780f1a3ebfc61fd7cf14fb12">
+          <header id="zgdk05185df7ccb772c40ed1aa8797ac">
+            <h4 class="c-head" id="uutvbeb56ba816f80d222c9495ddfb87">Examples in EPUB</h4>
+          </header>
+          <p class="noindent" id="wvir086eef4d706e4754f99341f3df81">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450003">Print Sample</strong>
+          </p>
+          <figure class="figure lm_img_lightbox unnum c3 center" id="unfig03_6a">
+            <img alt="image to come" class="figure" id="oetd7468ab8851315c35525d202f6392" src="../images/pebgbcaca00c0f67b0ad364a56fb4dba_Image2020-09-28_16-59_span-highlight-print.png"></img>
+          </figure>
+          <p class="noindent" id="pgwleb65e6fa929c473256281474dfd3">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450004">HTML Coding Sample</strong>
+          </p>
+          <ul class="ul-no-mark" id="vgmv5c8e659589804ea721952c50a9f6">
+            <li id="josv0dbe812150c6ee1dc6239a9cbb6a">
+              <pre tabindex="0" id="uaoa9d7d7b0b302de8cb1a3fad88df05">
+                <code class="language-html" id="uyoo7b6925a48cab8e534a59b40b41e0">&lt;aside class="tip c2 main-flow v1" data-cfititle="Basic Features" epub:type="tip" id="ris_9781319306670_tvs8s4oc1W" role="doc-tip" aria-labelledby="ris_9781319306670_2nrNtNqIGJ"&gt; &lt;header id="ris_9781319306670_Zope6RqfPV"&gt; &lt;h5 class="title" epub:type="title" id="ris_9781319306670_2nrNtNqIGJ"&gt;Basic Features&lt;/h5&gt;&lt;/header&gt; &lt;ul class="ul-no-mark" id="ris_9781319306670_Z6hemQ1paA"&gt; &lt;li id="ris_9781319306670_SayWAFDfef"&gt; &lt;span class="highlight-blue" id="ris_9781319306670_dg5RUPOVAy"&gt;Specific Information &lt;/span&gt; &lt;/li&gt; &lt;li id="ris_9781319306670_a6CKwwGM1d"&gt; &lt;span class="highlight-green" id="ris_9781319306670_lB7Gq0KN38"&gt;A Clear, Logical Organization &lt;/span&gt; &lt;/li&gt; &lt;li id="ris_9781319306670_3Bgx1jAZT7"&gt; &lt;span class="highlight-red" id="ris_9781319306670_BGpbZm7o0E"&gt;Writer’s Role &lt;/span&gt; &lt;/li&gt; &lt;li id="ris_9781319306670_yrOAtcIZ1u"&gt; &lt;span class="highlight-purple" id="ris_9781319306670_EAs159pFiM"&gt;A Perspective on the Subject &lt;/span&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/aside&gt;</code>
+              </pre>
+            </li>
+          </ul>
+          <p class="noindent" id="rijo2bca858dd57790fc5a90d1e99ed6">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450005">HTML Coding Result</strong>
+          </p>
+          <aside class="tip c2 main-flow v1" data-cfititle="Basic Features" epub:type="tip" id="ris_9781319306670_tvs8s4oc1W" role="doc-tip" aria-labelledby="ris_9781319306670_2nrNtNqIGJ">
+            <header id="ris_9781319306670_Zope6RqfPV">
+              <h5 class="title" epub:type="title" id="ris_9781319306670_2nrNtNqIGJ">Basic Features</h5>
+            </header>
+            <ul class="ul-no-mark" id="ris_9781319306670_Z6hemQ1paA">
+              <li id="ris_9781319306670_SayWAFDfef">
+                <span class="highlight-blue" id="ris_9781319306670_dg5RUPOVAy">Specific Information </span>
+              </li>
+              <li id="ris_9781319306670_a6CKwwGM1d">
+                <span class="highlight-green" id="ris_9781319306670_lB7Gq0KN38">A Clear, Logical Organization </span>
+              </li>
+              <li id="ris_9781319306670_3Bgx1jAZT7">
+                <span class="highlight-red" id="ris_9781319306670_BGpbZm7o0E">Writer’s Role </span>
+              </li>
+              <li id="ris_9781319306670_yrOAtcIZ1u">
+                <span class="highlight-purple" id="ris_9781319306670_EAs159pFiM">A Perspective on the Subject </span>
+              </li>
+            </ul>
+          </aside>
+        </section>
+      </section>
+      <section class="sect2" data-cfititle="span (fill in lines)" id="yyci1b0921ea900000bec45e9c9d9aa2">
+        <header id="bcqe00c82a7f5021385245913a66cc8e">
+          <h3 class="b-head" id="cfync4a8d97b2be39a7ebabaef2bed23">span (fill in lines)</h3>
+        </header>
+        <p class="noindent" id="mnbo6fb7b0b9ababaf9227eb2eb8f5bd">We have the following types of fill-in</p>
+        <table class="table c3 main-flow" id="mlcqb6cfbc1ad991ca2912e7c7f6632c">
+          <tbody id="ofqpaddfa4662b82bc092944c32d3b04">
+            <tr id="ddle35fd3a70e181d1f517073364c0c1">
+              <th id="pfgs47991b428a690951d0a679be6ea2" scope="col">class</th>
+              <th id="wcxia8cad207ef672db58037170b7b7a" scope="col">design</th>
+            </tr>
+            <tr id="kgmu1e95188701a1717f3badda5fdc80">
+              <td id="ewzl2d250f62751e5dbf1ece25b12353">span.fill-in</td>
+              <td id="cuqsb62b931d2fd238e1ab16887f6e5f">
+                <span class="fill-in" role="img" aria-label="fill-in 1" id="qkqkbc2b887277f18fb157bf4181f2d0"></span>
+              </td>
+            </tr>
+            <tr id="jcxo7924cc5301ea5fa3865d33629bb8">
+              <td id="wqll0b6f4bb9056dd1e2c431e35011e1">span.fill-in character</td>
+              <td id="lmkjfff2ca1e7411ad1cc735538bf132">
+                <span class="fill-in character" id="zpsp198a031a8dded28f7c2bbdd4e850" role="img" aria-label="fill-in character"></span>
+              </td>
+            </tr>
+            <tr id="otuya4c75d4db64c7c6662a5ddb40fdb">
+              <td id="uwwb3536022d21f6db4a1716ed4b74d2">span.fill-in word</td>
+              <td id="futu00b8db73680fffb47ad9deb72496">
+                <span class="fill-in word" id="pdsf98b9900cce3e1095538d61a1d42b" role="img" aria-label="fill-in word"></span>
+              </td>
+            </tr>
+            <tr id="mmcccd9f4b2e1683d05b33a502a03c61">
+              <td id="xbsa0871e56390856c9cc1894f5f74ff">span.fill-in line</td>
+              <td id="zcoaccba4eca5492399b3cb5621bc2f7">
+                <span class="fill-in line" id="mwss1a67e23c475381b3436573c310f1" role="img" aria-label="fill-in line"></span>
+              </td>
+            </tr>
+            <tr id="fqhsd7eaa18e69f633738d012b013ad5">
+              <td id="hqomcf4948c795e3190ab00453b8fd20">span.fill-in multiline</td>
+              <td id="whssa2a6f63351b54a2b080491a2c109">
+                <span class="fill-in multiline" id="smpu69bdb948579efffe38669985c329" role="img" aria-label="fill-in multiline"></span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <section class="sect3" data-cfititle="Examples in EPUB" id="lbvu5048ff69bf250be08976e422ce1e">
+          <header id="gazl4f22bad2b5face44518460a58349">
+            <h4 class="c-head" id="ufsk8255600807bd8b034bbe8feef928">Examples in EPUB</h4>
+          </header>
+          <p class="noindent" id="mmje52d75f8e72abf73ac798fd18c87c">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450006">Print Sample</strong>
+          </p>
+          <figure class="figure lm_img_lightbox unnum c3 main-flow" id="unfig03_6bbb">
+            <img alt="image to come" class="figure" id="fjet9fbe80fbd6edc60c8a052379ea98" src="../images/xhul04eaacfde32d4b903990b2aabade_Image2020-09-28_16-59_span-fill-word-print.png"></img>
+          </figure>
+          <p class="noindent" id="xjanb3fff963ef39e5065b52f44af38e">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450007">HTML Coding Sample</strong>
+          </p>
+          <ul class="ul-no-mark" id="lbisa576ff5dc2cd4cad9440dc21d0e3">
+            <li id="wuae2abdde751c38ec9e17f2f3c9af12">
+              <pre tabindex="0" id="ltei527a178a167320772a4b27f4c77d">
+                <code class="language-html" id="bnhld8658cd6ab879c1de886fda01fea">&lt;ul class="ul-arrow" id="ris_9781319306670_90WaPBpRcw"&gt; &lt;li id="ris_9781319306670_2OL4SdIfq3"&gt;X was dressed in &lt;span  role="img" aria-label="fill-in word 1" class="fill-in word" id="ris_9781319306670_MDwzSBd0ec"&gt;&lt;/span&gt; with &lt;span role="img" aria-label="fill-in word 2" class="fill-in word" id="ris_9781319306670_XZXFsyPvch"&gt;&lt;/span&gt; and &lt;span role="img" aria-label="fill-in word 3" class="fill-in word" id="ris_9781319306670_WL2ZT0PEE0"&gt;&lt;/span&gt;, doing &lt;span role="img" aria-label="fill-in word 4" class="fill-in word" id="ris_9781319306670_Wla1D53XRO"&gt;&lt;/span&gt; as she/he &lt;span role="img" aria-label="fill-in word 5" class="fill-in word" id="ris_9781319306670_XYdz8DrFcU"&gt;&lt;/span&gt;-ed.&lt;/li&gt; &lt;li id="ris_9781319306670_XMDJGBb7fs"&gt;Inside, you could see &lt;span role="img" aria-label="fill-in word 6" class="fill-in word" id="ris_9781319306670_l9WOQbpvBW"&gt;&lt;/span&gt;. The room was &lt;span role="img" aria-label="fill-in word 7" class="fill-in word" id="ris_9781319306670_4sdYTx82qQ"&gt;&lt;/span&gt; and &lt;span  role="img" aria-label="fill-in word 8" class="fill-in word" id="ris_9781319306670_8J1jCJi0VC"&gt;&lt;/span&gt;.&lt;/li&gt; &lt;/ul&gt;</code>
+              </pre>
+            </li>
+          </ul>
+          <p class="noindent" id="qzpl23a3efa53a1ffde059b2894ef911">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450008">HTML Coding Result</strong>
+          </p>
+          <ul class="ul-arrow" id="ris_9781319306670_90WaPBpRcw">
+            <li id="ris_9781319306670_2OL4SdIfq3">X was dressed in <span role="img" aria-label="fill-in word 1" class="fill-in word" id="ris_9781319306670_MDwzSBd0ec"></span> with <span role="img" aria-label="fill-in word 2" class="fill-in word" id="ris_9781319306670_XZXFsyPvch"></span> and <span role="img" aria-label="fill-in word 3" class="fill-in word" id="ris_9781319306670_WL2ZT0PEE0"></span>, doing <span role="img" aria-label="fill-in word 4" class="fill-in word" id="ris_9781319306670_Wla1D53XRO"></span> as she/he <span role="img" aria-label="fill-in word 5" class="fill-in word" id="ris_9781319306670_XYdz8DrFcU"></span>-ed.</li>
+            <li id="ris_9781319306670_XMDJGBb7fs">Inside, you could see <span role="img" aria-label="fill-in word 6" class="fill-in word" id="ris_9781319306670_l9WOQbpvBW"></span>. The room was <span role="img" aria-label="fill-in word 7" class="fill-in word" id="ris_9781319306670_4sdYTx82qQ"></span> and <span role="img" aria-label="fill-in word 8" class="fill-in word" id="ris_9781319306670_8J1jCJi0VC"></span>.</li>
+          </ul>
+        </section>
+      </section>
+    </section>
+  </body>
+</html>

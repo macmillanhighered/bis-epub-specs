@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:svg="http://www.w3.org/2000/svg" xmlns:epub="http://www.idpf.org/2007/ops" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" id="c98af0c1fb6a33748669d0d1c9f1231e">
+  <head>
+    <meta charset="utf-8"></meta>
+    <meta name="process" content="final"></meta>
+    <meta name="schema" content="3.3"></meta>
+    <link href="../css/flat_mac_printisbn.css" type="text/css" rel="stylesheet"></link>
+    <link href="../css/common/lm_ui.css" type="text/css" rel="stylesheet"></link>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"></meta>
+    <link href="../css/common/lm_ui.css" type="text/css" rel="stylesheet"></link>
+    <title>337 Entities</title>
+  </head>
+  <body epub:type="bodymatter" class="bodymatter" data-lo-framework-id="">
+    <section class="sect1" id="ch03_04" data-cfititle="3.3. Best Practices">
+      <header id="wbzrb9fbaf7be5404xd3edxd97f52048">
+        <h2 class="a-head v1" id="hjeha168f85ea64323ecb65f4d660d07"><span epub:type="pagebreak" role="doc-pagebreak" id="page12" aria-label="page 12"></span><span class="ordinal" id="hjeha168f85ea64323ecb65f4d660d08">3.3. </span>Best Practices</h2>
+      </header>
+      <section class="sect2" id="ch03_04_01" data-cfititle="3.3.1. Separate Presentation and Content">
+        <header id="wbzrb9fbaf7be5404ed9edd997f52048">
+          <h3 class="b-head v2" id="hjeha168f85ea64328ecb65f4d660d07"><span class="ordinal" id="hjeha168f85ea64328ecb65f4d660d08">3.3.1. </span>Separate Presentation and Content</h3>
+        </header>
+        <ul class="ul-bullet-list" id="lilr27d9ab9d6f705f27b9edaba835dd">
+          <li id="ypzec5d9df98c8c30ba08fb303c1b47e">Visual reading is only one way of accessing content. Do not use visual-only cues such as colored text, font size or positioning as the only clue to the meaning or importance of a word or section.</li>
+          <li id="qhoob3f6ea035d5b01b6c30870aed3fd">Avoid using tables or pictures of text to control the appearance of the content. As a last resort, page layouts should only be captured as images in cases where elements such as marginal annotations or highlighted/marked up content cannot be rendered properly in HTML and still maintain pedagogical meaning, e.g. marked up student essays or bibliographies in a Composition title or complex infographics. In the example of essays, bibliographies, or other such content spanning more than one page, ensure images are sized and cropped with equal pixel width and spacing for visual consistency. Note: the entire essay, passage, bibliography, etc. must be taken as images, even sections without any mark-up, to ensure visual consistency with the marked up sections. All such images must use long alt text to capture the full text of the essay as well as to describe any markup. <ul class="ul-bullet-list" id="ncrh344daeeb281a35e18745090ff1dd"><li id="xtym774d2303dbc5d0d92a0214f45fac"><strong class="important" id="jydva6713ce47876bd73de1627501074">Incorrect Example:</strong> The first citation (“Heims, Marjorie…”) should be treated as an image so that it looks consistent in font and alignment with the marked up citation below it: <figure class="figure lm_img_lightbox unnum c5 center" id="unfig05_1"><img class="figure" src="../images/image21.png" alt="image to come" id="lyhg081da6d2a32fccb9863c123105a5"></img></figure></li><li id="nxyvd185c0ba1171279790bb32d4af67"><strong class="important" id="spmh492fc8f128936c89f32d521976a4">Correct Example: </strong>The “Works Cited” section of this essay is unannotated, but it has been captured as an image to appear consistent in font and alignment with the annotated portion above it: <figure class="figure lm_img_lightbox unnum c5 center" id="unfig05_2"><img class="figure" src="../images/image7.png" alt="image to come" id="wruxfa2245a119765a1dea2e767f618d"></img></figure></li></ul></li>
+          <li id="uruwfd1355abdfe9eee0afb1602e0daf">The meaning of the content should be the same both with and without any CSS styles or formatting applied. Use the <code class="language-html" id="bonr8bd00723e788a16f51b1e4e3acd1">epub:type</code> and/or the ARIA role attribute with the relevant structural tag to establish reading order, and meaningful styling, such as sidebars and alerts.</li>
+        </ul>
+        <p class="noindent" id="nhyj58acdb640eabb8222cb4cc20e449">Refer to: <a class="external" href="http://kb.daisy.org/publishing/docs/html/separation.html" id="kejlb9fab67b98b33177296b02ec13a7">http://kb.daisy.org/publishing/docs/html/separation.html</a></p>
+      </section>
+      <section class="sect2" id="ch03_04_02" data-cfititle="3.3.2. Use Images Only for Pictures, Not for Tables or Text">
+        <header id="vpsv4d94b86365edf815dbd808e88ee4">
+          <h3 class="b-head v2" id="npjo9e20c2d9858a0b4f31e1a491cecc"><span class="ordinal" id="hjeha168f85ea64323ecb65f4d660d09">3.3.2. </span>Use Images Only for Pictures, Not for Tables or Text</h3>
+        </header>
+        <p class="noindent" id="fwejb07aa2a0011b3ffe7a71b235658e">Any content embedded in an image is not available to visually impaired readers. If the textual contents of a table or image are required for comprehension of the document, use proper and complete markup for text and tabular data, including headers and scope attributes for tables. Include a caption to give context to the table. For complex tables, include a summary of the structure to guide the reader. (See <a class="crossref" href="mac_printisbn_ch03_04.xhtml#spec-13" id="spec-13">3.6 Tables</a>.) Footnotes should appear with the table--wrap the table and footnotes in a figure tag.</p>
+        <p class="noindent" id="fuqe23ef72495d82da7508e1cc723f3f">
+          <a class="external" href="http://kb.daisy.org/publishing/docs/html/tables.html" id="mtqt24058f772a60c5b61d840bbde894">http://kb.daisy.org/publishing/docs/html/tables.html</a>
+        </p>
+      </section>
+      <section class="sect2" id="ch03_04_03" data-cfititle="3.3.3. Use Image Descriptions and Alt Text">
+        <header id="vmmm489172cc0d83e983e7f211256933">
+          <h3 class="b-head v2" id="lxya8ec33ab9e323f19e5e49e74c93ba"><span class="ordinal" id="hjeha168f85ea64323ecb65f4d660d10">3.3.3. </span>Use Image Descriptions and Alt Text</h3>
+        </header>
+        <p class="noindent" id="crymbd2f1c5de759927688b3b3494222">Every image should have a description, caption, or alt text unless it is solely decorative (contains no content).</p>
+        <p class="noindent" id="crymbd2f1c5de759927688b3b3494223">All images must have an <code class="language-html" id="yahgf8335d726c4b6d4485e740d3e147">alt</code> attribute.</p>
+        <p class="noindent" id="crymbd2f1c5de759927688b3b3494224">The alt text should be meaningful and a reasonable substitution for the image itself. It must not merely indicate that the image is described by the surrounding text.</p>
+        <p class="noindent" id="crymbd2f1c5de759927688b3b3494225">When an image is marked as purely decorative and has an empty <code class="language-html" id="yahgf8335d726c4b6d4486e740d3e147">alt</code> attribute, it is removed from the accessibility tree and thus cannot be accessed by the AT user who will not know that there is an image present to be described by the surrounding text.</p>
+        <p class="noindent" id="crymbd2f1c5de759927688b3b3494226">If an image is purely decorative and has no meaningful impact on the surrounding content, it does not need alt-text and its <code class="language-html" id="yahgf8335d726c4b6d4487e740d3e147">alt</code> attribute must be  empty/null, e.g. <code class="language-html" id="yahgf8335d726c4b6d4488e740d3e147">alt=""</code> and have the attribute <code class="language-html" id="yahgf8335d726c4b6d4489e740d3e147">aria-hidden</code> with value <code class="language-html" id="yahgf8335d726c4b6d4490e740d3e147">true</code>.</p>
+        <p class="noindent" id="crymbd2f1c5de759927688b3b3494218">It must reference an id attribute of another element that contains the description. This means, the value of the <code class="language-html" id="efnre4360b12ea92d9580eaa85bcea39">aria-describedby</code> attribute must be the same as the value of the id attribute for the description of the image:</p>
+        <pre tabindex="0" id="crymbd2f1c5de759927688b3b3494219">
+          <code class="language-html" id="crymbd2f1c5de759927688b3b3494220">&lt;img class="infographic" id="fri_9781319065669_bP38cjLJYN" <strong class="important" id="axil62ac18d590c9f763c0de0e9f7556">src="imageofsomething.png" alt="short description" aria-describedby="</strong>fri_9781319065669_ch26_01_Ht2l1hX3Ky"/&gt; &lt;p class="noindent" <strong class="important" id="udldae8be4e294df0eb4d7760909fffd">id="fri_9781319065669_Ht2l1hX3Ky"</strong>&gt;Image Description for imageofsomething.png&lt;/p&gt;</code>
+        </pre>
+        <p class="noindent" id="dild90d6089041a1b59d352592aae814">If they don't match, the sighted reader will not know the relationship between the image and the paragraph that carries the description of that image.</p>
+        <ul class="ul-bullet-list" id="jino977c7fb33bfe9fb3121cf68eea12">
+          <li id="emgt081fc2106a0583bd529b1476de1f">Alternative text should not be redundant (e.g. be the same as caption or body text).</li>
+          <li id="depe25258c2e53ee744619b381805b2e">Alternative text should not use the phrases "image of…" or "graphic of…".</li>
+          <li id="dkpibe9f18799a7030f5689df138e69c">Alternative text should not exceed 100 characters; otherwise it must be shortened or move to longer descriptions. Long descriptions need to use the aria-describedby attribute.</li>
+        </ul>
+        <p class="noindent" id="huje075aa6f2e8854c112d4e886bff78">
+          <a class="external" href="http://kb.daisy.org/publishing/docs/html/images.html" id="dnnff44903dfd2000e14d106133f7ecb">http://kb.daisy.org/publishing/docs/html/images.html</a>
+        </p>
+        <p class="noindent" id="crymbd2f1c5de759927688b3b8344225">An icon may require alt-text if it is informative and not merely decorative. This is especially necessary if no other text in the same line of text next to the icon conveys the same meaning or if the icon recurs throughout the book.</p>
+        <p class="noindent" id="crymbd2f1c5de759927688b3b7934226">Best practices documentation for <a class="external" href="https://macmillanlearning.atlassian.net/wiki/spaces/EPUB3/pages/663421079/Icons+require+meaningful+alt-text" id="crymbd2f1c5de759927688b3b3494255">icon alt-text</a> presents scenarios where alt-text is and is not necessary.</p>
+        <p class="noindent" id="crymbd2f1c5de759927688b3b3494227">Icons that have their meanings described in the beginning of the book should have alt-text created for them. These are typically dataset, widget, video, and caution icons.</p>
+        <p class="noindent" id="crymbd2f1c5de759927688b3b3494228">For example, if the word "caution" is not used when a caution icon appears, then the non-sighted user would not be aware of the full semantic context of the paragraph.</p>
+        <p class="noindent" id="crymbd2f1c5de759927688b3b3494229">Publisher logo also requires alt-text. This will require internal ML definition for alt-text for each publisher logo that we use. Alt-text for Macmillan company logo is <code class="language-html" id="crymbd2f1c5de759927688b3b3494230">alt="Logo: Macmillan Learning"</code>.</p>
+      </section>
+      <section class="sect2" id="ch03_04_04" data-cfititle="3.3.4. Define the Language(s)">
+        <header id="ggjn4277923e958337446a8f261196c5">
+          <h3 class="b-head v2" id="vonqbb3fe31e4c8fbafa9149a084af91"><span class="ordinal" id="hjeha168f85ea64323ecb65f4d660d11">3.3.4. </span>Define the Language(s)</h3>
+        </header>
+        <p class="noindent" id="qjsi9d2c4cca52d67c57ee34564771eb">To make sure each word will be rendered correctly, specify the default language of the content in the root html tag. Indicate any words, phrases or passages in a different language by using the <code class="language-html" id="czuaea6597036679eeb65ebb7d5407f7">xml:lang</code> attribute: <code class="language-html" id="wacf255d36d6ed74547960927d9bdcaa">&lt;span xml:lang=“fr” lang=“fr” id="fri_9781319065669_eB73iWACec"&gt;rue Saint-Andre-des-Arts&lt;/span&gt;</code>.</p>
+        <ul class="ul-bullet-list" id="qmqe024f64f7f4407b45d7077212a870">
+          <li id="aeup4fa8615d17dbfcf84aaa412f7520">The <code class="language-html" id="wwuia1a178873836f7954b376684f293">lang</code> and <code class="language-html" id="ijspd2fe5514a8839c4dcaeeed6c6a36">xml:lang</code> attributes are set on all root html elements</li>
+          <li id="nqsd50170a43cc40484bd99dd43e84ca">The <code class="language-html" id="ruga229f787d29932dcd6a39b5b6b885">lang</code> and <code class="language-html" id="cquv6088cc64a28b1c40a4da893dfede">xml:lang</code> attributes are set on all instances of foreign language prose</li>
+        </ul>
+        <p class="noindent" id="opggbe85545026bc4856a429e5c8391c">
+          <a class="external" href="http://kb.daisy.org/publishing/docs/html/lang.html" id="tmql06a1a3b473c93df6977b3fbbf636">http://kb.daisy.org/publishing/docs/html/lang.html</a>
+        </p>
+      </section>
+      <section class="sect2" data-cfititle="3.3.5. Accessibility References" id="ch03_04_05">
+        <header id="aioe088e5cad33f058ff1faf55fd4923">
+          <h3 class="b-head v2" id="cvrm6f5e491d86248b5aef0f1186ee9a"><span class="ordinal" id="hquc21e378b1ac43ef4576a2027606ab">3.3.5. </span>Accessibility References</h3>
+        </header>
+        <p class="noindent" id="owasbefe9378a2e519be8d64f722cfab">The following is a summary of all accessibility items that should be accounted for within the EPUB.</p>
+        <ul class="ul-bullet-list" id="vtmf439ac3adb3376f80e79d70e43a57">
+          <li id="gjgab2cee94f6a23f105bab77aa98b5f">EPUB Accessibility 1.0: <a class="external" href="https://www.w3.org/Submission/epub-a11y/" id="uwdp296b06c513f633d9da982f7e219a">https://www.w3.org/Submission/epub-a11y/</a></li>
+          <li id="ntkkea5f7337c564f591498de98169d3">Discovery-Enabled EPUB Publications: <a class="external" href="https://www.w3.org/Submission/epub-a11y/%23sec-conf-discovery" id="empt78500dea54b9ad6569d9ece79037">https://www.w3.org/Submission/epub-a11y/#sec-conf-discovery</a></li>
+          <li id="uneqcdb2840ec4a938f07f74d64a610c">Conformance: <a class="external" href="https://www.w3.org/Submission/epub-a11y/%23sec-epub-conformance" id="fcfke3ec72ed43e6b9ade038a9d5153a">https://www.w3.org/Submission/epub-a11y/#sec-epub-conformance</a></li>
+          <li id="lmnq73d0e674f9737208070584819c25">Requirements: <a class="external" href="https://www.w3.org/Submission/epub-a11y/%23sec-epub-req" id="krys69cdb09d2dad4fec51f4f37cd684">https://www.w3.org/Submission/epub-a11y/#sec-epub-req</a></li>
+          <li id="mwiz8c038f09fddbc4c6998934358030">Conformance reporting: <a class="external" href="https://www.w3.org/Submission/epub-a11y/%23sec-conf-reporting" id="hkdk785cd2a463a1d3c86d108bd708fc">https://www.w3.org/Submission/epub-a11y/#sec-conf-reporting</a></li>
+          <li id="tmheb9faa312a4dbaa1dfd83d5df3758">All text in logical reading order: <a class="external" href="http://kb.daisy.org/publishing/docs/html/order.html" id="barac40317bf31448e90bef8e6ec3056">http://kb.daisy.org/publishing/docs/html/order.html</a></li>
+          <li id="vpon40aad5f7afd74dbfbe3370acfd01">Separate presentation and content: <a class="external" href="http://kb.daisy.org/publishing/docs/html/separation.html" id="esdv714ac711c759c55846b1b463e61e">http://kb.daisy.org/publishing/docs/html/separation.html</a></li>
+          <li id="votydb9ca25e0808997b081a4342fb08">Table of contents: <a class="external" href="http://kb.daisy.org/publishing/docs/navigation/toc.html" id="mqxw94c75b06cd01bf98a074f131931b">http://kb.daisy.org/publishing/docs/navigation/toc.html</a></li>
+          <li id="lydq25bbc557171c445199903cb3563a">Headings: <a class="external" href="http://kb.daisy.org/publishing/docs/html/headings.html" id="nfzm4b5574f19bbe49089c090143c3bf">http://kb.daisy.org/publishing/docs/html/headings.html</a></li>
+          <li id="nusq670c266cbe249afe6b21ee7e9834">Define the content of each tag: <a class="external" href="http://kb.daisy.org/publishing/docs/html/sections.html" id="uxlz0f6ff633380199ad674431715dbe">http://kb.daisy.org/publishing/docs/html/sections.html</a></li>
+          <li id="gdtx99e09769dc6c0ab64ec6602f0a84">Use images only for pictures, not for tables or text: <a class="external" href="http://kb.daisy.org/publishing/docs/html/tables.html" id="zora2fadff82df98f5a317a288ae659b">http://kb.daisy.org/publishing/docs/html/tables.html</a></li>
+          <li id="rckzcf073ad98275388fe04ad74919d9">Use image descriptions and alt text: <a class="external" href="http://kb.daisy.org/publishing/docs/html/images.html" id="ftaqbc02ba9a1768a0f52da8bbb1029d">http://kb.daisy.org/publishing/docs/html/images.html</a></li>
+          <li id="vnwq1c87ada82d1489110b5a6fae1c81">Include page numbers: <a class="external" href="http://kb.daisy.org/publishing/docs/navigation/pagelist.html" id="ahvfce772cc04947e712cfbba829642d">http://kb.daisy.org/publishing/docs/navigation/pagelist.html</a></li>
+          <li id="hyyidaa503c6c0f7d8d707dc16c79746">Define the language(s): <a class="external" href="http://kb.daisy.org/publishing/docs/html/lang.html" id="nglv7953e04e7159055db89c33294068">http://kb.daisy.org/publishing/docs/html/lang.html</a></li>
+          <li id="sbkx71a1d94162e9bae38a41b946943b">Use MathML: <a class="external" href="http://kb.daisy.org/publishing/docs/html/mathml.html" id="csig96e71971affb0dcca385cf5fecae">http://kb.daisy.org/publishing/docs/html/mathml.html</a></li>
+          <li id="qlnz69accb8fa73a3a77e46619a8c0eb">Provide alternative access to media content: <a class="external" href="http://kb.daisy.org/publishing/docs/html/video.html" id="fodt99399629dc080ec855a70dca23f5">http://kb.daisy.org/publishing/docs/html/video.html</a>; <a class="external" href="http://kb.daisy.org/publishing/docs/html/audio.html" id="ybombc8a532e105b13ef6e9e077920ac">http://kb.daisy.org/publishing/docs/html/audio.html</a>; <a class="external" href="https://www.w3.org/TR/WCAG20/#text-equiv" id="ybombc8a532e105b13ef6e9e077921ac">https://www.w3.org/TR/WCAG20/#text-equiv</a></li>
+          <li id="dopaa79dc92b6d5cc636ca7adf892a64">Use accessibility Metadata: <a class="external" href="http://www.a11ymetadata.org/" id="kmyx0e309dc0e6c34ce2e03a803d3999">http://www.a11ymetadata.org/</a>”,”<a class="external" href="http://www.a11ymetadata.org" id="kmyx0e309dc0e6c34ce2e03a804d3999">http://www.a11ymetadata.org</a></li>
+          <li id="rnkeab89fb3e420388c8a49e25e98bba">The epub:type attribute: <a class="external" href="http://kb.daisy.org/publishing/docs/html/epub-type.html" id="zqev95cd13fb8b25b59d70587130fbb2">http://kb.daisy.org/publishing/docs/html/epub-type.html</a></li>
+          <li id="eqjyf56731413a19472754f8409b7ba9">Links: <a class="external" href="http://kb.daisy.org/publishing/docs/html/links.html" id="wipk25f4d42e739f86536bf2e677f253">http://kb.daisy.org/publishing/docs/html/links.html</a></li>
+          <li id="acqp91ab90c9153d9a366b3bd0153c92">Lists: <a class="external" href="http://kb.daisy.org/publishing/docs/html/lists.html" id="cbana8c11422fde2ac85421f325ada01">http://kb.daisy.org/publishing/docs/html/lists.html</a></li>
+          <li id="bqms17083f1a39f014e33b702d00a09e">Tables: <a class="external" href="http://kb.daisy.org/publishing/docs/html/tables.html" id="cgkdb78cb1cf1e0b16e0b6a83edfe0dc">http://kb.daisy.org/publishing/docs/html/tables.html</a></li>
+          <li id="kjqk5ab7fe595338ae7816a5d8651fb5">Figures: <a class="external" href="http://kb.daisy.org/publishing/docs/html/images.html" id="luew8fa78ac2272372971ff860a1cfda">http://kb.daisy.org/publishing/docs/html/images.html</a></li>
+          <li id="orrpb525b8a689a6f9ca00dbed9698fa">Images: <a class="external" href="http://kb.daisy.org/publishing/docs/html/images.html" id="ebsvb98c77a5cfacb7bbb808597103ef">http://kb.daisy.org/publishing/docs/html/images.html</a></li>
+          <li id="lica5b895ac2e08b7ed4a81ba836a3e4">Notes: <a class="external" href="http://kb.daisy.org/publishing/docs/html/notes.html" id="xcdtb1a947ee87aaa25c782db616220e">http://kb.daisy.org/publishing/docs/html/notes.html</a></li>
+          <li id="iwzi2bf1e9752ccd909d90bce6783d15">Table of Contents: <a class="external" href="http://kb.daisy.org/publishing/docs/navigation/toc.html" id="bbcebcf60023c85f9c1888b66d73524d">http://kb.daisy.org/publishing/docs/navigation/toc.html</a></li>
+          <li id="pxun4009d52b1188acaf7386523d9ae8">Handling marginal elements: <a class="external" href="http://kb.daisy.org/publishing/docs/html/separation.html" id="vzsy7b15ae10589624f90db830032d6a">http://kb.daisy.org/publishing/docs/html/separation.html</a>; <a class="external" href="http://kb.daisy.org/publishing/docs/html/sections.html" id="dtsaf3e20a80f1b94cfd58337c712fe9">http://kb.daisy.org/publishing/docs/html/sections.html</a></li>
+          <li id="hvty1f608ece63bb5e80eeacc5c62721">Displaying assessment: 	<ul class="ul-bullet-list" id="lhzu3dfa219c2883bfae4a8d77e9b523"><li id="mpcva77a9d9f4ba3254ed25c5323dbeb"><a class="external" href="https://w3c.github.io/publ-cg/education/epub-education.html#structural-semantics" id="ccgjdf08fac7f7ddba50f9f474b39eda">https://w3c.github.io/publ-cg/education/epub-education.html#structural-semantics</a></li><li id="dayi2df6f6779ecd7f43e2cd1d8f254f"><a class="external" href="http://www.idpf.org/epub/profiles/edu/structure/#h.ipobyxqoqtux" id="zbvl5153a3f6cc1475c230b2a04c5207">http://www.idpf.org/epub/profiles/edu/structure/#h.ipobyxqoqtux</a></li></ul></li>
+          <li id="kwnbdd0e41769d664c6e307efe781171">Citation linking (to references): <a class="external" href="http://kb.daisy.org/publishing/docs/html/links.html" id="edhc5b9e6e31408c773d8b0184eef50f">http://kb.daisy.org/publishing/docs/html/links.html</a></li>
+          <li id="ggsc8f14808bc76a4228bead64d8ad07">Page linking (XRef): <a class="external" href="http://kb.daisy.org/publishing/docs/html/links.html" id="fozza72eacf9c23025c06df2393b5bdc">http://kb.daisy.org/publishing/docs/html/links.html</a></li>
+          <li id="gaek067761776dc8f3036a494461be93">Figure linking (XRef): <a class="external" href="http://kb.daisy.org/publishing/docs/html/images.html" id="kubi8278801caffd430886942c5d1c42">http://kb.daisy.org/publishing/docs/html/images.html</a></li>
+          <li id="gaek067761776dc8f3036a837461be93">When to use plain text or images instead of MathML: <a class="external" href="https://daisy.github.io/transitiontoepub/information-sharing/position-paper-plain-text-math/" id="kubi8273838caffd430886942c5d1c42">Position Statement: When to use plain text or images instead of MathML</a></li>
+        </ul>
+      </section>
+      <section class="sect2" id="ch03_04_06" data-cfititle="3.3.6. Semantics">
+        <header class="v1" id="ibnl28364640cc226904d4609f96ce98">
+          <h3 class="b-head v2" id="lybv97ee34ef7b79afc074c38e27e477"><span class="ordinal" id="hjeha168f85ea64323ecb65f4d660d12">3.3.6. </span>Semantics</h3>
+        </header>
+        <p class="noindent" id="epon0f1cef092b6b9d327e86bf00ca29">Include semantic information to describe the content of a tag (examples: <code class="language-html" id="jiywda246300d80f51b8a6cc04f842a8">foreword</code>, <code class="language-html" id="xuol25e4c9b83b9b0ff23da0ce66ca3a">chapter</code>, <code class="language-html" id="pdvr25d5b0b0dd5bdfe0d675e29b6f14">glossary</code>, <code class="language-html" id="pdbh6bd88142458a10a233c567aafe84">index</code>). A <code class="language-html" id="rubl0a534ababa61ce0ef239362c92fa">section</code> tag for the table of contents would look like <code class="language-html" id="voak025fc29919835aab62ba66cd895d">&lt;section epub:type=“toc” role="doc-toc"&gt;</code> or a list of definitions in a glossary would be tagged with <code class="language-html" id="kuup9c4f5a320d6ce0dee9b5ca1dd2c9">&lt;dl epub:type=“glossary”&gt;</code>. Refer to the Semantic Structure section of this document for a list of vocabulary to be used within Macmillan Learning titles.</p>
+        <ul class="ul-bullet-list" id="vlytb1ccb022ab97160ca1c91dac4454">
+          <li id="oavpccd25fdc333690dd06e5608b5ea2">epub:type: <a class="external" href="http://kb.daisy.org/publishing/docs/html/epub-type.html" id="kghe202bac85f3c5c6abc6732a87a18a">http://kb.daisy.org/publishing/docs/html/epub-type.html</a> Refer to the EPUB 3 Structural Semantics Vocabulary as defined at <a class="external" href="http://idpf.org/epub/vocab/structure/" id="zziha02e3bfea0967dd0100f6c72ce04">http://idpf.org/epub/vocab/structure/</a> for further details and guidance.</li>
+          <li id="tcbs2099ce71472a106defa2d1ef48e0">ARIA role: <a class="external" href="http://kb.daisy.org/publishing/docs/html/roles.html" id="hcdlf54621656f3ac8c8c632924ee2b9">http://kb.daisy.org/publishing/docs/html/roles.html</a> Refer to the ARIA mapping guide (<a class="external" href="https://idpf.github.io/epub-guides/aria-mapping/" id="yepvb65735b9b0a865afe951e1d7f7b6">https://idpf.github.io/epub-guides/aria-mapping/</a>) to include ARIA role counterparts to epub:types.</li>
+        </ul>
+        <p class="noindent" id="krefc3033de1c0af3a185ab7c125f337">
+          <a class="external" href="http://kb.daisy.org/publishing/docs/html/sections.html" id="pomy78d2971c946f1902e43ff3c5dd5b">http://kb.daisy.org/publishing/docs/html/sections.html</a>
+        </p>
+        <section class="sect3" id="ch03_04_06_01" data-cfititle="3.3.6.1. The epub:type Attribute">
+          <header id="idgeb7f15f7a3b5e5264d23869c23076">
+            <h4 class="c-head v3" id="yxqf88bf948c54d9ef4f42578040b44d"><span class="ordinal" id="hjeha168f85ea64323ecb65f4d660d13">3.3.6.1. </span>The epub:type Attribute</h4>
+          </header>
+          <p class="noindent" id="tbpe04519965729175ebdef981f18b38">Logical reading order is crucial for users of assistive technologies. Use the <code class="language-html" id="jdhk23f96e65aec081f56682f25bb54a">epub:type</code> attribute along with any of the terms defined in the EPUB Structural Semantics Vocabulary to identify structural sections and significant content structures, such as dedication pages, acknowledgements, epilogues, etc.</p>
+          <p class="noindent" id="uvxuc3b581b193df1064f995b54ef70c">
+            <a class="external" href="http://kb.daisy.org/publishing/docs/html/epub-type.html" id="ottj5f5a40b56d9aa72fd9da546ea6ea">http://kb.daisy.org/publishing/docs/html/epub-type.html</a>
+          </p>
+        </section>
+        <section class="sect3" id="ch03_04_06_02" data-cfititle="3.3.6.2. ARIA">
+          <header id="mvpo2cca666dff10002de084ea03d1ba">
+            <h4 class="c-head v3" id="ogoq72c37e8b9e8d9bbb397c9e8654d6"><span class="ordinal" id="hjeha168f85ea64323ecb65f4d660d14">3.3.6.2. </span>ARIA</h4>
+          </header>
+          <p class="noindent" id="cujs171bb681745a172d62660a7c0d73">epub:type attributes for content structures should be paired with ARIA role counterparts. This improves performance with assistive technologies.</p>
+          <p class="noindent" id="hdpn60682ccf58e3059192bbe94649a5">
+            <a class="external" href="https://www.w3.org/TR/html-aria/" id="czxg0ca5897d953f1de2bb4f0eacee36">https://www.w3.org/TR/html-aria/</a>
+          </p>
+        </section>
+      </section>
+      <section class="sect2" id="ch03_04_07" data-cfititle="3.3.7. Entities">
+        <header class="v1" id="qpsz4ea7b14b641ce66cc0b76eb421ca">
+          <h3 class="b-head v2" id="wfjn3ca40ad1a0b403b3e033ff3dd999"><span class="ordinal" id="hjeha168f85ea64323ecb65f4d660d15">3.3.7. </span>Entities</h3>
+        </header>
+        <p class="noindent" id="agrv1082ec232a039d217e2221548244">Use appropriate entities for characters. For instance, for ellipsis character <code class="language-html" id="crymbd2f1c5de759927688b3b3494241">&amp;#8230;</code> or the ellipsis character (…) should be used rather than … (three periods).</p>
+      </section>
+    </section>
+  </body>
+</html>

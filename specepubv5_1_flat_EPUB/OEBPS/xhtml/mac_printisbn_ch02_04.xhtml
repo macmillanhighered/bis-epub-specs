@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:svg="http://www.w3.org/2000/svg" xmlns:epub="http://www.idpf.org/2007/ops" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" id="d3064e44fc1e31b09dbac908a5b9b714">
+  <head>
+    <meta charset="utf-8"></meta>
+    <meta name="process" content="final"></meta>
+    <meta name="schema" content="3.3"></meta>
+    <link href="../css/flat_mac_printisbn.css" type="text/css" rel="stylesheet"></link>
+    <link href="../css/common/lm_ui.css" type="text/css" rel="stylesheet"></link>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"></meta>
+    <link href="../css/common/lm_ui.css" type="text/css" rel="stylesheet"></link>
+    <title>235 Cover</title>
+  </head>
+  <body epub:type="bodymatter" class="bodymatter" data-lo-framework-id="">
+    <section class="sect1" data-cfititle="2.3 Structuring Guidelines" id="ch02_04">
+      <header id="vpgk4e2e6829cff6afc6f140045b4abf">
+        <h2 class="a-head v1" id="mvon3f9d22e19ad6ac76812df6bfb640"><span epub:type="pagebreak" role="doc-pagebreak" id="page8" aria-label="page 8"></span><span class="ordinal" id="mvon3f9d22e19ad6ac76812df6bfb641">2.3. </span>Structuring Guidelines</h2>
+      </header>
+      <ul class="ul-bullet-list" id="psqf4a5b51c97275c3872407e1b481ad">
+        <li id="lduj613b6e0db383466ad1f816cde651">The EPUB package should never contain empty (0 kb) files within it.</li>
+        <li id="gkad9866410bf3a2983b18aa2c27a606">Do not include iBooks specific metadata <code class="language-html" id="cseja9e951bec076d884baad997e1eb8">&lt;meta property="ibooks:specified-fonts"&gt;true&lt;/meta&gt; </code> in OPF.</li>
+        <li id="goqv7001c71341d733e05392e0b4a696">Do not include “com.apple.ibooks.display-options.xml” in “META-INF” folder.</li>
+      </ul>
+      <ul class="ul-bullet-list" id="goqv7001c71341d733e05392e0b4a697">
+        <li id="goqv7001c71341d733e05392e0b4a698">9780000000000_EPUB 	<ul class="ul-bullet-list" id="goqv7001c71341d733e05392e0b4a699"><li id="goqv7001c71341d733e05392e0b4a700">META-INF 		<ul class="ul-bullet-list" id="goqv7001c71341d733e05392e0b4a701"><li id="goqv7001c71341d733e05392e0b4a702">container.xml</li></ul></li><li id="goqv7001c71341d733e05392e0b4a704">mimetype</li><li id="goqv7001c71341d733e05392e0b4a705">OEBPS 		<ul class="ul-bullet-list" id="goqv7001c71341d733e05392e0b4a706"><li id="goqv7001c71341d733e05392e0b4a707">images 			<ul class="ul-bullet-list" id="goqv7001c71341d733e05392e0b4a708"><li id="goqv7001c71341d733e05392e0b4a709"><i class="semantic-i" id="goqv7001c71341d733e05392e0b4a710">image files</i></li></ul></li><li id="goqv7001c71341d733e05392e0b4a711">package.opf</li><li id="goqv7001c71341d733e05392e0b4a712">styles 			<ul class="ul-bullet-list" id="goqv7001c71341d733e05392e0b4a713"><li id="goqv7001c71341d733e05392e0b4a714">fonts</li><li id="goqv7001c71341d733e05392e0b4a715">abc_printisbn.css</li></ul></li><li id="goqv7001c71341d733e05392e0b4a815">toc.ncx</li><li id="goqv7001c71341d733e05392e0b4a716">xhtml 			<ul class="ul-bullet-list" id="goqv7001c71341d733e05392e0b4a717"><li id="goqv7001c71341d733e05392e0b4a718"><i class="semantic-i" id="goqv7001c71341d733e05392e0b4a719">xhtml files</i></li></ul></li></ul></li></ul></li>
+      </ul>
+      <section class="sect2" data-cfititle="2.3.1 XHTML Content Documents" id="ch02_04_01">
+        <header id="wxbne19a53424b46ad6159858e659c7b">
+          <h3 class="b-head v2" id="shih8c6a4c52d04d3c15f09c2b56807a"><span class="ordinal" id="mvon3f9d22e19ad6ac76812df6bfb642">2.3.1. </span>XHTML Content Documents</h3>
+        </header>
+        <ul class="ul-bullet-list" id="abfe38f7a40c9b9c6ce8ee7d64103863">
+          <li id="prwqb56b9fb87727ae7e4b577a1aad0a">XHTML File encoding and extensions must be used. Files <strong class="important" id="trai1d5c5c96b83753008c83e31479d9">must</strong> be saved with UTF-8 encoding format (<strong class="important" id="dbhyd4bc4625dad2f93fe6b12c775124">not</strong> UTF-8-BOM).</li>
+          <li id="lupne7e4cee78d8176c222ddae81968a"><strong class="important" id="ywju15d3806f7cd2ac6ff1cd624dbcce">XHTML file size: </strong>Recommended maximum file size for separated XHTML is 300kb.</li>
+          <li id="dbmb765dd5dbd6a75b9f2a65b16b95b0"><strong class="important" id="ahvha126308169012276ccd925d7e935">XHTML file break levels (Granularity):</strong> Unless otherwise specified, XHTML files for bodymatter (chapter content) should be broken down into A-heads. Part Title, Chapter Title, and A-heads, should all be separate XHTML files.</li>
+          <li id="gutff6b1d96791f057ecb9a2e854aa7b"><strong class="important" id="yfme1e50597bd5d888912a5e8b0bcf9a">Naming conventions:</strong> Parts, Chapters, and A-heads may be called something different (unit, section, module, etc), but the smallest should be the A-head (refer to <a class="crossref" href="mac_printisbn_ch02_04.xhtml#spec-15" id="spec-15">3.10.2</a>). Therefore, if a title has units and modules, and the smallest XHTML file is a module, the module should be marked up as an A-head and the units should be marked up as chapters. If it is unclear what constitutes an A-head, B-head, etc. for a particular title, please ask for clarification from the ML project manager requesting the EPUB as soon as possible prior to beginning the conversion.</li>
+          <li id="gutff6b1d96791f057ecb9a2e854aa7c">In Part level books: If a chapter 0 or intro chapter is being used and that introductory chapter is not underneath another Part section, then the chapter must be at the topmost level. Chapter 0 should therefore be marked up at the part level, not at the chapter level. For example: 	<ul class="ul-bullet-list" id="goqv7001c71341d733e05392e0b4a800"><li id="goqv7001c71341d733e05392e0b4a801">Chapter 0</li><li id="goqv7001c71341d733e05392e0b4a802">Part 1 		<ul class="ul-bullet-list" id="goqv7001c71341d733e05392e0b4a803"><li id="goqv7001c71341d733e05392e0b4a804">Chapter 1</li></ul></li></ul></li>
+          <li id="ulgt3336fcc3c6ee944ae924f8b2851f">The A-head level file should contain all of the constituent B-heads, C-heads, etc. that belong to that section. If B-head level or below are requested to be broken into separate XHTML pages, please direct immediately to Content Standards. It is crucial that this A-head level chunking is maintained for enhancement purposes. Be sure to follow the Accessibility <a class="crossref" href="mac_printisbn_ch02_04.xhtml#spec-16" id="spec-16">6.10 Headings</a> guidelines and ML guidelines for <a class="crossref" href="mac_printisbn_ch02_04.xhtml#spec-17" id="spec-17">3.10 Hierarchy and Heading Structure</a> when tagging the head levels within the XHTML files.</li>
+          <li id="cswue475ea45c31c5fd412638bfb269b">Frontmatter and backmatter sections (e.g., copyright page, preface, index, appendix, references) should only have one XHTML per section.</li>
+        </ul>
+      </section>
+      <section class="sect2" data-cfititle="2.3.2 File Naming" id="ch02_04_02">
+        <header id="mlllfb8ae0e50681fae407d6223d5363">
+          <h3 class="b-head v2" id="rwotec2eb58670724cc757686a3ea014"><span class="ordinal" id="mvon3f9d22e19ad6ac76812df6bfb643">2.3.2. </span>File Naming</h3>
+        </header>
+        <p class="noindent" id="sdny0c83920a77001e87409e903a30ca">The EPUB file should be named: <strong class="important" id="emtief150091bc3f0e98057b300d2ea5">EPUB3ISBN13_EPUB.epub</strong></p>
+        <p class="noindent" id="tfijc9593575206316f7b7305cdef730">For example, if the book ISBN is 9781319011741 and the EPUB ISBN supplied is 9781319065478, then the EPUB file should be named 9781319065478_EPUB.epub and the accompanying front cover JPEG file should be named 9781319065478_FC.jpg.</p>
+        <p class="noindent" id="dfcpff31480aa115b60b578a0516ccbc">For sample chapter EPUBs, insert 'sample_' after the ISBN in the file name, e.g. 9781319065478_sample_EPUB.epub.</p>
+        <p class="noindent" id="aaunfd2237977c1fdd9000c0906f938b">The folder containing the EPUB content should be named OEBPS.</p>
+        <p class="noindent" id="sgdfd0ab87c0f8c62404bec3c057556a">Files referenced by CSS stylesheet should be in the same folder as the stylesheet. This would include font folders and any images used by the stylesheet.</p>
+        <p class="noindent" id="cfdu61329b13cf1bb8277840afba74f2">A folder may have the following structure:</p>
+        <div aria-label="Structuring Guidelines 1" class="group c3 main-flow v1 overflow" id="sg1" tabindex="0">
+          <ul class="ul-no-mark" id="hxny99d4535dc00b81f810ca730874b0">
+            <li id="lkwu732e1230faa05a0ba1d004d13531">
+              <span class="student-tt" id="zgbt7ff8d37fdece97a9bd63d1820d0e">
+                <strong class="important" id="xlkn1973fcb7116d028dd4e151cd6dfc">styles</strong>
+              </span>
+            </li>
+            <li id="stfo75c073a64b3a97c6b4705954338e">
+              <span class="student-tt" id="gtls5230c413eb1313e0df105c020816">
+                <strong class="important" id="kvega3e2709f8341d3efd9c3506a5b5c"> | -- fonts</strong>
+              </span>
+            </li>
+            <li id="wyas1ac6e6d9efcd300e5e15f4ea0ecb">
+              <span class="student-tt" id="tojv6f2bdb1682f7191ee3826e6b6bfa">
+                <strong class="important" id="hgao92f62b97a2c4ee8c981cdc77a117"> | -- *.ttf</strong>
+              </span>
+            </li>
+            <li id="uuiod56ed965321d39c8f39e185b4152">
+              <span class="student-tt" id="jkixf2081cdbdf594a205f22b460148c">
+                <strong class="important" id="znuff323eb38e0e30829cc75b8bd1657"> | -- *.otf</strong>
+              </span>
+            </li>
+            <li id="ooqu7748864dded4ec04e9b775ad8038">
+              <span class="student-tt" id="nmla7d696a7ed377ddafeecd7b43aab0">
+                <strong class="important" id="tvyjb6314bd9910eddacf99f5e23d060"> | -- images</strong>
+              </span>
+            </li>
+            <li id="nezl6ddc7502df16cd7ec966575a7172">
+              <span class="student-tt" id="cmqt6eb457751396b9a3537b66d40479">
+                <strong class="important" id="etpd2b6c73b31c0962d88ce13f6ea466"> | -- *.gif</strong>
+              </span>
+            </li>
+            <li id="assld15f347d918e318c04695a7c8f7e">
+              <span class="student-tt" id="mpqe06bbaaca62f386f830df0cfe244b">
+                <strong class="important" id="ndah3e1d09cf3d6056472fd0ccb32d56"> | -- *.jpg</strong>
+              </span>
+            </li>
+            <li id="ejaf8e730fa640c10b82aba0bed59d86">
+              <span class="student-tt" id="xfmtc1d9e9467c483e4f35924deac771">
+                <strong class="important" id="yqbgd36fd210244dd409d4f16807327f"> | -- *.css</strong>
+              </span>
+            </li>
+          </ul>
+        </div>
+        <p class="noindent" id="aizi115448f7cbbcdd0a5237731de6b2">The XHTML file naming should use the following naming convention:</p>
+        <ul class="ul-bullet-list" id="utyh4b379bddacb0dc0698a8659710fd">
+          <li id="iizw6f870fbb37befb8e57260644ac77">&lt;First 3 letters of author’s last name&gt;_&lt;Print book ISBN&gt;_&lt;chxx_xx&gt;.xhtml. Example: mor_9781319011741_ch01_01.xhtml</li>
+          <li id="ppmba603ff9abb63db7d0effdc607de5">Use the same naming convention for the NAV file, using "nav" in place of &lt;chxx_xx&gt;. Example: mor_9781319011741_nav.xhtml</li>
+          <li id="npzd1fe7d8c52be23b609c3ff62be3e8">For front and end matter, replace “FM” or “EM” respectively instead of “nav” / “chxx_xx”, followed by the section name. Example: mor_9781319011741_FM_dedication.xhtml.</li>
+          <li id="rhitf2e03674dae7cc4663a81914d8cf">Use the same naming convention for the CSS file. Example: mor_9781319011741.css</li>
+          <li id="abisc85b3d22cdf0e4585f4814422278">For EPUBs without a corresponding print book ISBN, the EPUB ISBN should be used instead in the above file naming conventions.</li>
+          <li id="ckzx75c14a917177dfafcca4ffb8177b">Use "toc.ncx" for the NCX file.</li>
+        </ul>
+        <p class="noindent" id="aizi115448f7cbbcdd0a3457731de6b2">Filenames must be consistently named throughout the production process to preserve cross reference integrity. Since EPUBs may be used at any part of the production process for demos or active work, the filenames must remain the same.</p>
+      </section>
+      <section class="sect2" data-cfititle="2.3.3 Content Organization in EPUB" id="ch02_04_03">
+        <header id="ftau8d64e98908d5e80a96b6985ef325">
+          <h3 class="b-head v2" id="beuo6832e9decdc5a411aaba6f5874aa"><span class="ordinal" id="mvon3f9d22e19ad6ac76812df6bfb645">2.3.3. </span>Content Organization in EPUB</h3>
+        </header>
+        <ul class="ul-bullet-list" id="guly0cb537ed026a08b8e2d0c75b5d9f">
+          <li id="cswl1d30eb0eeee749700e681c867a34">The EPUB should be concatenated and include all book content from beginning to end (including front cover, inside front cover, inside back cover, and back cover and any inserts) with the exception of blank pages, which should be removed.</li>
+          <li id="aslc566867d65f628388dd38d5f7e442">Multi-column text should be converted to single column text within the EPUB.</li>
+          <li id="inev1bdae0dbe4765ba157d28be317b6">Whenever possible, two-page spread designs should be converted and incorporated into the normal flow of the EPUB. There are exceptions, for example, infographics that are complex and span two pages. In this case, it is expected that the pages would be converted to a single image with long alt text added to describe the image in detail. Any questions or doubts, please contact Macmillan.</li>
+        </ul>
+      </section>
+      <section class="sect2" data-cfititle="2.3.4 Semantic Content Structuring in XHTML Documents" id="ch02_04_04">
+        <header id="lcij2b64dcb18ce5b345ca2ce24d068b">
+          <h3 class="b-head v2" id="ocet35374e7211f73ec95b809d6c4f6f"><span class="ordinal" id="ghme711a7d2d8e64c6c709b7b44b94bf">2.3.4. </span>Semantic Content Structuring in XHTML Documents</h3>
+        </header>
+        <ul class="ul-bullet-list" id="szhdfcaed1b2e424cd3a166920904a59">
+          <li id="svjwf168507a6ecba136b79150de9ddf">All XHTML documents must have a mandatory &lt;title&gt; element in the head section. It defines the purpose of the document in a simple phrase. Include the corresponding XHTML document title with its immediate parent title in the below format:</li>
+        </ul>
+        <pre id="czev96163b081adfe051d9ac5d9ad3bd" tabindex="0">
+          <code class="language-html" id="awtb19ca0a85cf23aeac8ca5170224c0">&lt;head&gt; 	&lt;title&gt;[document title] in [immediate parent title]&lt;/title&gt; 	&lt;meta charset="utf-8"/&gt; 	&lt;link rel="stylesheet" href="[URL to stylesheet]" type="text/css"/&gt; &lt;/head&gt;</code>
+        </pre>
+        <ul class="ul-bullet-list" id="akmb9bfdcc20bece4c74021117c704d6">
+          <li id="ynar6072844558a161542694d14889ab">Header elements should be used for headings and not <code class="language-html" id="qlde2584bf7f4853c5fa13ddb3c1c17a">&lt;div&gt; </code>. See <a class="crossref" href="mac_printisbn_ch02_04.xhtml#spec-18" id="spec-18">4.1 Document Section</a> for sample coding.</li>
+          <li id="dark2de636b131dc23c0d46a82d0354b">Heading Case: Headings should not be hard-coded as all capital letters. Styling should be used to effect all-cap and small-cap displays. With Macmillan EPUB CSS, for content to be rendered in all-caps, it should be marked up with <code class="language-html" id="mulea88e7efaaf2c3cc3a56aeb642ea9">class="cap" </code>. For content to be rendered in small-caps, it should be marked up with <code class="language-html" id="xjya092b3c43298d365fb2beb094c39f">class="smallcap" </code>. Please refer to Tagging Guidelines for more information.</li>
+          <li id="ajdd3ceccdbee36482ca32f394a650c1">All headings that are run-in within paragraphs should be tagged as heading and not <code class="language-html" id="dgqec8362558da36982c6dac9e12d66d">&lt;strong&gt; </code> element. e.g., the text present inside the red-outlined boxes below:</li>
+        </ul>
+        <figure class="figure lm_img_lightbox unnum c2 center" id="unfig1">
+          <img alt="image to come" class="figure" id="urop789f082016265b5e2645f20d11d2" src="../images/image19.png"></img>
+        </figure>
+        <ul class="ul-bullet-list" id="atok7cd452b122434b406801e949b6f5">
+          <li id="dees2c00f945694522063b7cf4731b1f">Hierarchy should be defined for Front Matter, Main Text, and Back Matter sections. See <a class="crossref" href="mac_printisbn_ch02_04.xhtml#spec-19" id="spec-19">4.1 Document Section</a> for details.</li>
+          <li id="fqgke567ea74081f8f5d4004db71db2f">In some books, the chapter content will be organized by Learning Objectives. These should not be tagged as ordinary chapter outlines in the EPUB. See <a class="crossref" href="mac_printisbn_ch02_04.xhtml#spec-20" id="spec-20">4.6 Learning Objectives</a> for sample coding.</li>
+          <li id="sfen653c1a5d5dbc0579882fdfce6f4a">Key terms and definitions should be tagged using proper html element tags. See <a class="crossref" href="mac_printisbn_ch02_04.xhtml#spec-21" id="spec-21">4.3 Glossaries</a>.</li>
+          <li id="ygyeb279eaee146ff7ad556e28b84a28">Learning Objectives should be tagged using the correct Semantic markup. See <a class="crossref" href="mac_printisbn_ch02_04.xhtml#spec-22" id="spec-22">4.6 Learning Objectives</a>.</li>
+          <li id="swepa462953d78fd8ed67bc75fa4719e">All citation references should be marked with correct semantic structure and tagging. See <a class="crossref" href="mac_printisbn_ch02_04.xhtml#spec-23" id="spec-23">6.29 Citation Linking (to references)</a>.</li>
+          <li id="jbxdeb8ba1f729fd1e4aa103f2e97687">Cross-references should be marked with correct semantic structure and tagging. See <a class="crossref" href="mac_printisbn_ch02_04.xhtml#spec-24" id="spec-24">6.30 Text References and Links</a>.</li>
+          <li id="fwez109b9983fa4093a9c0f0a50b93cb">Print page references must be included throughout the EPUB.</li>
+          <li id="uviqded314185dc007796716a6f32487">When colored backgrounds are present, the color contrast with all text elements should be a ratio of at least 4.5:1. See <a class="external" href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html" id="itsmf62202c8d610891c58cca173cec4">https://www.w3.org/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html</a> for reference. Contrast issues that are carried over from print book should be resolved in EPUB.</li>
+          <li id="hdgw85a71a0d67a20bd395f7ad8c1b04">Assessments (questions and answers) should be marked with correct semantic structure and tagging. See <a class="crossref" href="mac_printisbn_ch02_04.xhtml#spec-25" id="spec-25">4.7 Testing</a>. Answers from resources outside of the EPUB (e.g., Instructor Resource Manuals or student supplements) should never be inserted into the EPUB. When in-chapter questions have numbered answers in and end of chapter section or in a backmatter Answers or Appendix section, follow the below standards: 	<ul class="ul-bullet-list" id="ijzw3447fa4783c40702cfb5dbcadd99"><li id="tvwqd0d0a1da769c485434d058a7c7e0"><p class="noindent" id="wgah31f710b85e8d7664402e047b80fe">For College titles (where <code class="language-html" id="asrfb09283cb85d1dde4ae8e14705051">audienceType=higher-ed </code> in supplied metadata): The question number must have a cross-reference link to the corresponding numbered answer in its separate section.</p></li><li id="sldob75ccb57a7b08da15521d1f16fb2">For High School titles (where <code class="language-html" id="phqpbb762503db0dba02645787d4c3db">audienceType=schools </code> in supplied metadata): Do not link the question to its answer. (Exception: If answers are included in footnotes, follow standard Note linking instructions. See <a class="crossref" href="mac_printisbn_ch02_04.xhtml#spec-26" id="spec-26">4.8 Notes</a>.)</li></ul></li>
+          <li id="dfne0592965354093b799c9d6ab253cd">
+            <p class="noindent" id="ysih4c697a13c2b09b7eee2dabfcd69f">Cross referencing with page numbers: When a reference reads “see Figure 1.1 on page XXXX for more details” or “see Table 4.1 on page XXXX”, the full phrase “Figure 1.1 on page XXXX” / “Table 4.1 on page XXXX” needs to be linked to the referenced content. Please note that the referenced element itself should be linked back to, not the page number. (Note that this is only for converting print text to EPUB; page numbers should not be added to references if they are not already part of the narrative in print.)</p>
+          </li>
+          <li id="mgfle2ede481035ead5e1af7a8ce0dae">Image size is controlled in both the CSS and each image. The best practice is to use the CSS to control image size. To preserve relative size and placement of the figures from the print text, please use the credit image guidelines in applying class names to figures. Note: this does not apply to images that appear inline within paragraphs like Math fallback images or icons. (More details provided in Macmillan Tagging Guidelines documentation)</li>
+          <li id="egfjfeff6f4d1f36c48d637f8a5a6d7e">All figures require the class <code class="language-html" id="zrck4bc4e4919f08d6142dd417f12f76">lm_img_lightbox </code> in combination with one of the below secondary classes for sizing and alignment. e.g., <code class="language-html" id="ssij7258ee47b604b85d34c8e6292537">&lt;figure class=”figure lm_img_lightbox c5”&gt; </code></li>
+          <li id="clfvdc89200ea0cde122305f38533632">Image IDs need to be provided in the <code class="language-html" id="szhrdba23b7d90d7876c11c355981fb8">&lt;figure&gt; </code> element and not the <code class="language-html" id="egio554a3a597398f529569016aa3afe">&lt;a&gt; </code> element. The “Figure 1.1” in captions should be split into label and ordinal. See <a class="crossref" href="mac_printisbn_ch02_04.xhtml#spec-27" id="spec-27">4.9 Title</a> for coding sample showing label and ordinal structure.</li>
+        </ul>
+        <pre id="abfh6cbad808ce64b05b41a05ec196ae" tabindex="0">
+          <code class="language-html" id="nqfc7f80f885fbd8fc5e6a6ee8f1e2a0">&lt;figure class="figure lm_img_lightbox num c3 main-flow" id="fri_9781319065669_9fA1HWN3gE"&gt; &lt;img class="figure" id="fri_9781319065669_2eqmfTkq4Z" src="../images/ch01fig1.png" alt="The alternate text for the image"/&gt; &lt;figcaption id="fri_9781319065669_NluDkId2sr"&gt; &lt;p class="noindent" id="fri_9781319065669_syHQRg51JI"&gt;&lt;span epub:type="label" class="label" id="fri_9781319065669_ne7KXoyEA3"&gt;Figure &lt;/span&gt;&lt;span epub:type="ordinal" class="ordinal" id="fri_9781319065669_cqR1VDALex"&gt;1.1 &lt;/span&gt;From Individual Willingness-to-Pay to Market Demand &lt;/p&gt; &lt;p class="noindent" id="fri_9781319065669_BO08xTDXpL"&gt;In panel A, you would be willing to pay up to &amp;#36;10 for your first sandwich and &amp;#34;4 for the second. Jane, however, is only willing to pay up to &amp;#8230;&lt;/p&gt; &lt;/figcaption&gt; &lt;/figure&gt; &lt;aside class="hidden" id="fri_9781319065669_VnrwT5oDgY" title="hidden"&gt; &lt;p class="noindent" id="fri_9781319065669_LiP3nBLDbm"&gt;This is a sample content for Long ALTtext&lt;/p&gt; &lt;/aside&gt;</code>
+        </pre>
+        <ul class="ul-bullet-list" id="eurv35f8957d74031d123d8b3c0c2296">
+          <li id="xxisff2dc0730a36b882f1317092e6eb">Marginal annotations should be displayed below the relevant paragraphs, unless editorial requests otherwise.</li>
+          <li id="btgld13be042cc396e798aa01536dce7">Never use the marquee element.</li>
+          <li id="aaied2de5f9a5ecb2fa37588daaf8411">Never use an empty section element (i.e., <code class="language-html" id="ovtlcb967d1c5e33812d5212b8e36f5b">&lt;section&gt;&lt;/section&gt; </code>)</li>
+        </ul>
+        <section class="sect3" data-cfititle="2.3.4.1. Element IDs" id="ch02_04_04_01">
+          <header id="lcfj1bcb6dc655d2a66a73232010d4e2">
+            <h4 class="c-head v3" id="ehhica85bf71f6f76b7faefd56f66a8c"><span class="ordinal" id="ghme711a7d2d8e64c6c709b7b44b94bg">2.3.4.1. </span>Element IDs</h4>
+          </header>
+          <p class="noindent" id="oicf8a4004876ec3b616fcf33b15289c">Every element in the HTML document within the body element should have an ID. This ID must be unique across all publications and cannot start with a number or special character.</p>
+          <p class="noindent" id="oicf8a4004893ec3b616fcf33b15289c">ID’s must not change between iterative batches.</p>
+        </section>
+        <section class="sect3" data-cfititle="2.3.4.2. All Text Must be Available in a Logical Reading Order" id="ch02_04_04_02">
+          <header id="cesfc37d714c51467c67be5fb0097893">
+            <h4 class="c-head v3" id="gchx5f28303818116c5aad39799ac8fa"><span class="ordinal" id="ghme711a7d2d8e64c6c709b7b44b94bh">2.3.4.2. </span>All Text Must be Available in a Logical Reading Order</h4>
+          </header>
+          <p class="noindent" id="ljdmd5fdde43c4f2b2a284a316291caf">All content must be presented in a logical reading order. Use semantic and structural markup to define the natural reading order of the primary narrative. Semantically distinguish secondary material such as footnotes, references, figures, tables, lists, and other auxiliary content from the primary narrative and identify their structure. Use HTML tags, not CSS, to position elements and determine reading order.</p>
+          <ul class="ul-bullet-list" id="xiza034beb6f5fab44bcd65789601144">
+            <li id="qibm9cf8a9472a07cdd9cc43a4f17648">Secondary content is identifiable from logical reading order by inclusion in aside and figure tags</li>
+            <li id="qibm9cf8a9472a07cdd9cc43a4f18648">Keywords, equations, and figures should appear after the paragraphs in which they are mentioned. They should appear in the following precedence order: 	<ol class="numbered-list" id="xiza034beb6f5fab44bcd65789631144"><li id="qibm9cf8a9472a07cdd9cc43a4f46648">Keyword definitions</li><li id="qibm9cf8a9472a07cdd9cc43a4f47648">Equations</li><li id="qibm9cf8a9472a07cdd9cc43a4f48648">Figures</li></ol></li>
+            <li id="hblkb2cc69ac6cdb72f82c8243b6c994">The order of the markup in content files matches the primary narrative (See <a class="crossref" href="mac_printisbn_ch02_04.xhtml#spec-28" id="spec-28">3.3 Content Order of Chapter Openers</a>)</li>
+            <li id="xvyz1a8042104cabe9959fe6c393a932">The publication is readable from beginning to end without scripting or styles applied.</li>
+          </ul>
+          <p class="noindent" id="iwwmcdbaf2aa62477a39a9c7f536fc27">
+            <a class="external" href="http://kb.daisy.org/publishing/docs/html/order.html" id="gmvv17bdd4970bfa32a4ea6491c0dd1d">http://kb.daisy.org/publishing/docs/html/order.html</a>
+          </p>
+        </section>
+        <section class="sect3" data-cfititle="2.3.4.3. Content Order of Chapter Openers" id="ch02_04_04_03">
+          <header id="sqly0e3670cff37aac8403c61c18fdfc">
+            <h4 class="c-head v3" id="wietde56b7d2bd16ead39b154754c430"><span class="ordinal" id="ghme711a7d2d8e64c6c709b7b44b94bi">2.3.4.3. </span>Content Order of Chapter Openers</h4>
+          </header>
+          <ul class="ul-bullet-list" id="qssnaab7748ac8e4b7ff3711b535ca35">
+            <li id="olmi4d7e94d624472f8187bcd9b29bbc">The content order of Chapter Opening pages that are designed across a spread should always be placed in the EPUB in the following order: 	<ul class="ul-bullet-list" id="zhjyd87743fa1c1540e02c3a3c9f9690"><li id="irxme68918fc67895b525c8a468704db">--Chapter Opener Number (including the word “Chapter”)</li><li id="oviqe44f1ce4c81aa006ba29cd114417">--Chapter Title</li><li id="qskede44e1707dcb64edee49e2102eed">--Chapter graphic of whatever sort: it needs to be provided per the specs of graphics, as one piece with credit and alt text (contact Macmillan if you have any questions about the graphic treatment)</li><li id="cwym951e6aa7ff350558c1ca8dfc7e88">--Chapter Opener Outline</li><li id="agxq07e4018cdbd76589f2d6decd27b4">--Learning Objectives</li><li id="baxie506aeb3b39c1532fbf4b90dfd73">--Opener text and/or first heading</li></ul></li>
+            <li id="ybyca19ef1084f7d6b59fa1037c94676">Note: not all books will include all of the above features, such as chapter outline or learning objectives.</li>
+          </ul>
+        </section>
+      </section>
+      <section class="sect2" data-cfititle="2.3.5 Cover" id="ch02_04_05">
+        <header id="fpxf786022d021b15ee5833597088ab6">
+          <h3 class="b-head v2" id="hgzaf81f457deaee3a147d48507b81a3"><span class="ordinal" id="mvon3f9d22e19ad6ac76812df6bfb644">2.3.5. </span>Cover</h3>
+        </header>
+        <ul class="ul-bullet-list" id="bktv4cc1f91150b2404b7eaf910fdd4f">
+          <li id="mlwn02ee192f7bc824657a68b2cb4421">The EPUB requires a cover image linked in the manifest, e.g., <code class="language-html" id="cbex501a16ce1434d349ad1b94a2afb0">&lt;item id=“cover-image” href=“9781319123456_FC.jpg” media-type=“image/jpeg” properties=“cover-image”/&gt; </code>.</li>
+          <li id="mrpy02228563961fa526a7d2f5693c7b">Front Cover (FC), Inside Front Cover (IFC), Inside Back Cover (IBC), and Back Cover (BC) pages should be separate XHTML files within the EPUB package, each tagged with the attribute <code class="language-html" id="fdtp7d712cc5b06bff76bec289c75163">epub:type=”cover” </code>, and each having their abbreviation (FC, IFC, IBC, and BC) used as the page number in the navigation TOC. 	<p class="noindent" id="sjxkc761bbd727aef15c2b9199a1dd5e"><strong class="important" id="iljw85c68f897bc387876d46d4c393e0">Note:</strong></p>  	<ul class="ul-bullet-list" id="upqy933e6b530d724bdb7dfb51855297"><li id="ncdb2da18fa991ff530f5d6c1622eaaa">Alt-text is required for covers. The front cover must follow one of the below templates, where applicable: 		<ul class="ul-bullet-list" id="upqy933e6b530d725bdb7dfb51855297"><li id="ncdb2da18fa992ff530f5d6c1622eaaa">Cover: [title] by [authors]</li><li id="ncdb2da18fa993ff530f5d6c1622eaaa">Cover: [title], [edition of title] by [authors]</li><li id="ncdb2da18fa994ff530f5d6c1622eaaa">Cover: [title], edited by [name/s of editors]</li><li id="ncdb2da18fa995ff530f5d6c1622eaaa">Cover: [title], [edition of title], edited by [name/s of editors]</li></ul></li><li id="ncdb2da18fa996ff530f5d6c1622eaaa">Only if the image on the cover serves a purpose, follow with a brief description of the imagery. In most to all cases, there is no need for description, as the imagery on the cover is usually decorative.</li><li id="lmyxbba600f2ad492e23eded7b93a41d">If covers are not available at the time of EPUB conversion (e.g., with sample chapter EPUBs) a placeholder front cover page that reads "cover image to come" must be included.</li></ul></li>
+        </ul>
+        <ul class="ul-bullet-list" id="nxhg7137b214a6ebf984916c73ad554e">
+          <li id="qcisb8fa3749aa82608cb69456082829">Remove any barcodes and price listings from the front cover, inside front cover, inside back cover and back cover.</li>
+          <li id="nbzfe95d8d44d278e49fb214216c30d1">Front cover (FC) is the only cover that is mandatory. Inside front, inside back, and outside back covers are not required to be present. They may also be omitted upon request. Additionally, content in the covers (aside from the front cover) may be rendered in text, if it is requested and possible to do so. If so, the page can still be numbered appropriately, as above: IFC, IBC, BC. For instance, a brief TOC may appear on an inside front cover. If requested, the TOC may be rendered as text and the page number becomes IFC.</li>
+        </ul>
+      </section>
+    </section>
+  </body>
+</html>

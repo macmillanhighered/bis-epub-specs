@@ -1,0 +1,541 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:svg="http://www.w3.org/2000/svg" xmlns:epub="http://www.idpf.org/2007/ops" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" id="z6ec4c13e42e34c4b1e3cf239bcee199">
+  <head>
+    <meta charset="utf-8"></meta>
+    <meta name="process" content="final"></meta>
+    <meta name="schema" content="3.3"></meta>
+    <link href="../css/flat_mac_printisbn.css" type="text/css" rel="stylesheet"></link>
+    <link href="../css/common/lm_ui.css" type="text/css" rel="stylesheet"></link>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"></meta>
+    <link href="../css/common/lm_ui.css" type="text/css" rel="stylesheet"></link>
+    <title>83 Showhide Answer Problem</title>
+  </head>
+  <body epub:type="bodymatter" class="bodymatter" data-lo-framework-id="">
+    <section class="sect1" data-cfititle="8.3. Show-hide Answer Problem" id="ch08_04">
+      <header id="aydk76bdd7e21d75909b8aa34b1c14ad">
+        <h2 class="a-head v1" id="huyp546477f13d1d6b9c3eb704e5c249"><span epub:type="pagebreak" role="doc-pagebreak" id="page36" aria-label="page 36"></span><span class="ordinal" id="gejx64a62de53a14ac38f4a33893582b">8.3. </span>Show-hide Answer Problem</h2>
+      </header>
+      <p class="noindent" id="chgy296452bd28995a16e53d7e8b46c5">A problem with an associated answer that is revealed in the enhanced EPUB. These questions present as list items within an ordered list. If there is an answer associated with the question, the list item must have a data-answer attribute with the value of a file path to the question's answer. Otherwise do not use the data-answer attribute. There may be other list items in the ordered list that do not have the data-answer attribute applied.</p>
+      <section class="sect2" data-cfititle="Instructions" id="ch21_2a">
+        <header id="ityu874da79ded697c54792f2e783f57">
+          <h3 class="b-head v2" id="uiyd4848cb34efa61356b87f014753b6">Instructions</h3>
+        </header>
+        <p class="noindent" id="dayu4b5a47f96e231c57d5f68c2e3036">
+          <i class="semantic-i" id="aewua666d9029d3e28788787713b02ec">For the facilitation of show-hide answer automation in the enhanced EPUB</i>
+        </p>
+        <p class="noindent" id="orufde69626be463516cd35bb3612cae">In order to mark up content for future show-answer automation, include the <strong class="important" id="dayu4b5a47f96e231c57d5f68c2e3037">data-answer</strong> attribute with the value of the location of the answer.</p>
+        <p class="noindent" id="sluv85ea94f0c1b547dcada2f7d942ad">Sample mark-up:</p>
+        <pre tabindex="0" id="xjuo93bf4724fd4c11dbc149039596ec">
+          <code class="language-html" id="wzsp1110842e2d78593adc81073151f8">&lt;ol&gt; &lt;li data-answer="filename.xhtml#ID3236"&gt;This is a show answer question stem&lt;/li&gt; &lt;li&gt;This is a question in the same ordered list without a corresponding answer&lt;/li&gt; &lt;/ol&gt;</code>
+        </pre>
+        <p class="noindent" id="fdsdc4a126edce565ab851ba557340c8">where filename.xhtml#ID3236 is the URI and IDREF containing the answer text.</p>
+        <p class="noindent" id="pkau94b53d67a1baaa09d4c6d4ba71da">data-answer can <strong class="important" id="dayu4b5a47f96e231c57d5f68c2e3038">only</strong> be applied to element &lt;li&gt;, not any other type of element, or any of the &lt;li&gt;'s child elements.</p>
+        <section class="sect3" data-cfititle="Special Notes" id="ch21_2b">
+          <header id="mtrpc258848917265f7455ac19368c8b">
+            <h4 class="c-head v3" id="ibqga42a5c60992fbef8aa71b4368cc7">Special Notes</h4>
+          </header>
+          <p class="noindent" id="igtqaf69a499e34a0938172e0a8909f9">When an image is a part of a question or answer, ensure that the image is in the &lt;li&gt; element.</p>
+          <p class="noindent" id="ieed7589727e67f8582ba3fa624e80d2">An XHTML page must not have more than 10 show-hide answer problems.</p>
+        </section>
+      </section>
+      <section class="sect2" data-cfititle="What can be marked as a show-hide answer question?" id="ch21_2c">
+        <header id="fdrrb45cf37167f33b5a5e1d52ae28ff">
+          <h3 class="b-head v2" id="wsrz481375ddc6903a3ae1b969ecb83a">What can be marked as a show-hide answer question?</h3>
+        </header>
+        <p class="noindent" id="jkos54403452af60b946c206f5b26202">If a question is a numbered list item, it can be tagged as a show-hide answer question in the flat EPUB for the purposes of automation.</p>
+        <p class="noindent" id="xskn73815d38972995ef44974a796768">However, the following types of questions should never be tagged as show-hide answer:</p>
+        <ul class="ul-bullet-list" id="lupsbea1caf878a1c34931674d0cea37">
+          <li id="hayi8593ec25df7e22da9f8c8233e961">Matching (any question with matching)</li>
+          <li id="tqtn178bc40b6a499d4a548c671d90b0">Multiple choice</li>
+          <li id="rotr27023e8e0e47b9094e9485880e39">Multi-select</li>
+        </ul>
+      </section>
+      <section class="sect2" data-cfititle="How do I mark up the answers?" id="ch21_2d">
+        <header id="ymmg7becf221296ffcca1c905c85f4a8">
+          <h3 class="b-head v2" id="daljf4836043123ac16da245e96c49a9">How do I mark up the answers?</h3>
+        </header>
+        <p class="noindent" id="awiw0d3250289653029421c2ee120e43">Answers must be present in the flat EPUB for the automation feature to function.</p>
+        <p class="noindent" id="dijl9e0ef5c380ca7fa6c4c80095489c">The ID of the answer must be the entire answer of the question. If there are multiple elements within an answer, all of those must be wrapped in a single element. A list item containing a nested list would be best practice.</p>
+        <p class="noindent" id="bsuh9e8b10487a89da84247e67b06687">For instance, the question 2.117 that appears earlier in the book links to the content in the screenshot below. The ID that the question refers to must encompass all of the elements in the screenshot, not just the first element, a &lt;p&gt; containing “2.117 (a}“.</p>
+        <p class="noindent" id="arex131f951ecdcdca21c4ed121879ad">Incorrect markup</p>
+        <pre tabindex="0" id="qcnrb1e6b047b4a13adbfeb3c207c62a">
+          <code class="language-html" id="wctfd3e95bf428cb233cf239bab7a8b2">&lt;p id="exe02_117" class="noindent"&gt; &lt;span epub:type="ordinal" class="ordinal"&gt; &lt;strong class="important"&gt; &lt;a href="kok_9781319049621_ch02_11.xhtml#ch02_exe_117"&gt;2.117&lt;/a&gt; &lt;/strong&gt; &lt;/span&gt; &lt;strong class="important"&gt;(a) &lt;/strong&gt; &lt;/p&gt; &lt;table class="table compact c3 main-flow" id="ans02_untab_39"&gt;...</code>
+        </pre>
+        <p class="noindent" id="grqc1231b17f06a7766ac635042bbdfe">In this case, the only part of the answer that will be shown is the content in the p#exe02_117 element, meaning that the table and everything after the element will be excluded.</p>
+        <p class="noindent" id="wmah9e6c3ef3fcf42191ea3009b1592b">Correct markup</p>
+        <pre tabindex="0" id="tyvzf586ce43a0b726e4a453d997a687">
+          <code class="language-html" id="pjnk719c39f29fa9d8fe5d13c626ae05">&lt;li id="exe02_117" class="noindent"&gt; &lt;span epub:type="ordinal" class="ordinal"&gt; &lt;strong class="important"&gt; &lt;a href="kok_9781319049621_ch02_11.xhtml#ch02_exe_117"&gt;2.117&lt;/a&gt; &lt;/strong&gt; &lt;/span&gt; &lt;strong class="important"&gt;(a)&lt;/strong&gt; &lt;ul&gt; &lt;li&gt; &lt;table class="table compact c3 main-flow" id="ans02_untab_39"&gt; ... &lt;/li&gt; ...  &lt;/ul&gt; &lt;/li&gt;</code>
+        </pre>
+        <p class="noindent" id="hhby3f12b3322f1711b8328dc6a87253">In this case, the li element is being linked to. Since the table and all of the other content is now nested within that li#exe02_117, and the li closing tag encompasses the table (and the figure, not shown in the code example), the entire answer will be available when the show-hide automation is performed.</p>
+      </section>
+      <section class="sect2" data-cfititle="Enhancements: Show-hide Answer Problem" id="qxobef07d0985980f43c4b9577c27ed2">
+        <header id="adjueea0ac4d913cc048019a9e4c0ae0">
+          <h3 class="b-head v2" id="dndndf4ecb76621b392972015530277a">Enhancements: Show-hide Answer Problem</h3>
+        </header>
+        <p class="noindent" id="txcb08d2a62439ccea81b8a4b89563b8">The following is an example of a show-hide answer problem.</p>
+        <ol class="numbered-list" epub:type="question" id="ypjr2f7fa39cc74d6de2670e98110177">
+          <li class="question" epub:type="question" data-answer="mac_printisbn_ch11_01.xhtml#002" id="dayu4b5a47f96e231c57d5f68c2e3039">This is a show answer question stem containing a data-answer</li>
+          <li class="question" data-answer="mac_printisbn_ch11_01.xhtml#002" data-converted="1" epub:type="question" id="rdhs2b2769762a158da393c00503190b">This is a show answer question stem containing a data-answer</li>
+          <li class="question" epub:type="question" id="urcu8aee688566d806f5bff2f8be3f30">This is a question in the same ordered list without a corresponding answer</li>
+        </ol>
+        <p class="noindent" id="txcb08d2a62439ccea81b8a4b89563b9">The following are different types of show-hide answer problem.</p>
+        <section class="sect3" data-cfititle="Simple question / show answer" id="iabe4933552c2a7b4be510470cf5d962">
+          <header id="ktyi4ca1a55af5ccdf37ff2add6ae3e4">
+            <h4 class="c-head" id="ooiwda9bade4b5bad8a9a16a0dd737de">Simple question / show answer</h4>
+          </header>
+          <p class="noindent" id="xeyi5ec24f020fa325e0fb395f4fdcec">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450000">HTML Coding Sample</strong>
+          </p>
+          <ul class="ul-no-mark" id="vydm4a84c4b5f69cf62fa1dda0228f6f">
+            <li id="objqfc9497c42ad47b2101bf49004374">
+              <pre tabindex="0" id="wlei8e8a1fc23f50104cbf4a6b585549">
+                <code class="language-html" id="ptdx507674554f87312905bd5143425e">&lt;ol class="numbered-list" id="dav_9781319347970_jqQOf1V7RU"&gt; &lt;li data-answer="mac_printisbn_ch11_01.xhtml#003" id="dav_9781319347970_mGvKMSI3JR"&gt; &lt;p class="question noindent" epub:type="question" id="dav_9781319347970_b2EIL5ZmxH"&gt;For your survey, you need to establish a group of people who represent your country’s entire adult population. To do this, you will need to question a &lt;span role="img" aria-label="fill-in word 10" class="fill-in word" id="dav_9781319347970_fdVlkn4BBT"&gt;&lt;/span&gt; sample of the population.&lt;/p&gt; &lt;/li&gt; &lt;/ol&gt;</code>
+              </pre>
+            </li>
+          </ul>
+          <p class="noindent" id="kloteb9eb89054405052ad193bdcfdc9">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450001">HTML Coding Result</strong>
+          </p>
+          <ol class="numbered-list" id="dav_9781319347970_jqQOf1V7RU">
+            <li class="question" epub:type="question" data-answer="mac_printisbn_ch11_01.xhtml#003" id="dayu4b5a47f96e231c57d5f68c2e3040">
+              <p class="question noindent" epub:type="question" id="dav_9781319347970_b2EIL5ZmxH">For your survey, you need to establish a group of people who represent your country’s entire adult population. To do this, you will need to question a <span role="img" aria-label="fill-in word 10" class="fill-in word" id="dav_9781319347970_fdVlkn4BBT"></span> sample of the population.</p>
+            </li>
+          </ol>
+        </section>
+        <section class="sect3" data-cfititle="Question with image / show answer" id="knmad3fafee7360fa37993b6969fd95e">
+          <header id="blwq593d8feaf72f48085c37116ed298">
+            <h4 class="c-head" id="wqikee890d7d7537b6afde748f0bffd0">Question with image / show answer</h4>
+          </header>
+          <p class="noindent" id="mcfh3633df0df850397d68c50118e207">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450002">HTML Coding Sample</strong>
+          </p>
+          <ul class="ul-no-mark" id="ejzdf90f85f21e0ef6d085823dbe7d12">
+            <li id="bjfb09bb6513e45dcc03ca487c250457">
+              <pre tabindex="0" id="lsnb5e8dbdcd0649700a82f18cfccbb6">
+                <code class="language-html" id="oqsw9844222675370d29bd9f54a82809">&lt;ol class="numbered-list" id="rog_9781319339182_AtGWPxa8vA"&gt; &lt;li data-answer="mac_printisbn_ch11_01.xhtml#004" id="rog_9781319339180_Rm5JBxtyAJ"&gt; &lt;p class="question noindent" epub:type="question" id="rog_9781319339180_WrvhsVEKkk"&gt;Figure 2-28 shows an &lt;span class="math" id="mac_printisbn_ch21_03EQ_0001.png" tabindex="0"&gt;&lt;math alttext="x en-dash t" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo  lspace="0" rspace="0"&gt;–&lt;/mo&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation-xml name="alternate-representation" encoding="application/xhtml+xml"&gt;&lt;img src="../images/MATH/mac_printisbn_ch21_03EQ_0001.png" alt="x en-dash t" xmlns="http://www.w3.org/1999/xhtml" /&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt; graph for some object. (a) At &lt;span class="math" id="mac_printisbn_ch21_03EQ_0002.png" tabindex="0"&gt;&lt;math alttext="t equals 4 s" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;mtext&gt; &lt;/mtext&gt;&lt;mtext&gt;s&lt;/mtext&gt;&lt;/mrow&gt;&lt;annotation-xml name="alternate-representation" encoding="application/xhtml+xml"&gt;&lt;img src="../images/MATH/mac_printisbn_ch21_03EQ_0002.png" alt="t equals 4 s" xmlns="http://www.w3.org/1999/xhtml" /&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt; how far is the object from its position at &lt;span class="math" id="mac_printisbn_ch21_03EQ_0003.png" tabindex="0"&gt;&lt;math alttext="t equals 0" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;/mrow&gt;&lt;annotation-xml name="alternate-representation" encoding="application/xhtml+xml"&gt;&lt;img src="../images/MATH/mac_printisbn_ch21_03EQ_0003.png" alt="t equals 0" xmlns="http://www.w3.org/1999/xhtml" /&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;&lt;/math&gt;?&lt;/span&gt; (b) At about what time is the object’s &lt;i class="semantic-i" id="rog_9781319339180_MGSQdvCwXQ"&gt;speed&lt;/i&gt; greatest? (c) What is the velocity of the object between &lt;span class="math" id="mac_printisbn_ch21_03EQ_0004.png" tabindex="0"&gt;&lt;math alttext="t equals 2 s" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mtext&gt; &lt;/mtext&gt;&lt;mtext&gt;s&lt;/mtext&gt;&lt;/mrow&gt;&lt;annotation-xml name="alternate-representation" encoding="application/xhtml+xml"&gt;&lt;img src="../images/MATH/mac_printisbn_ch21_03EQ_0004.png" alt="t equals 2 s" xmlns="http://www.w3.org/1999/xhtml" /&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt; and &lt;span class="math" id="mac_printisbn_ch21_03EQ_0005.png" tabindex="0"&gt;&lt;math alttext="t equals 4 s" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;t&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;mtext&gt; &lt;/mtext&gt;&lt;mtext&gt;s&lt;/mtext&gt;&lt;/mrow&gt;&lt;annotation-xml name="alternate-representation" encoding="application/xhtml+xml"&gt;&lt;img src="../images/MATH/mac_printisbn_ch21_03EQ_0005.png" alt="t equals 4 s" xmlns="http://www.w3.org/1999/xhtml" /&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;&lt;/math&gt;? &lt;/span&gt;Example 2-3&lt;/p&gt; &lt;figure class="figure lm_img_lightbox num c5 center" id="rog_9781319339180_6CZM9wGnQ0"&gt; &lt;img alt="An x-versus-t graph represents an object’s position versus time." class="figure" id="rog_9781319339180_Hs5XHqJFgn" src="https://content.macmillan-learning.com/frost/assets/images/gqdr3cfa6a5175a7d7300ba69f94439e/gqdr3cfa6a5175a7d7300ba69f94439e_FreedmanCP3e_02_28_290479.png"&gt;&lt;/img&gt; &lt;figcaption id="rog_9781319339180_rfUt1t3LPV"&gt; &lt;p class="noindent" id="rog_9781319339180_0L6tWYwkde"&gt;&lt;span class="label" epub:type="label" id="rog_9781319339180_jPGLXwoaF3"&gt;Figure &lt;/span&gt;&lt;span class="ordinal" epub:type="ordinal" id="rog_9781319339180_9YyVbrh6kg"&gt;2-28 &lt;/span&gt;Problems 31–32&lt;/p&gt; &lt;/figcaption&gt; &lt;/figure&gt; &lt;/li&gt; &lt;/ol&gt;</code>
+              </pre>
+            </li>
+          </ul>
+          <p class="noindent" id="pjhpc099360e96f134f002e2bab2a9b5">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450003">HTML Coding Result</strong>
+          </p>
+          <ol class="numbered-list" id="rog_9781319339182_AtGWPxa8vA">
+            <li class="question" epub:type="question" data-answer="mac_printisbn_ch11_01.xhtml#004" id="dayu4b5a47f96e231c57d5f68c2e3041">
+              <p class="question noindent" epub:type="question" id="rog_9781319339180_WrvhsVEKkk">Figure 2-28 shows an <span class="math" id="mac_printisbn_ch21_03EQ_0001.png" tabindex="0"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style x – t" display="inline" id="bde7940c-5ae5-33d6-ad57-6734b81081c0"><semantics id="ppoy40b2fcbb33424234d7ab12a0a6cb"><mrow id="pvgxc11e2d6692225cdb7dcf01055b50"><mi id="stvyd690c333d8a30e50879482175f1e">x </mi><mo id="uhbdcae2d76bbed9ec8dd8f17567019f" lspace="0" rspace="0">– </mo><mi id="hzvl8b57684c5b8ccd96a03bb90c0d72">t </mi></mrow><annotation-xml encoding="application/xhtml+xml" id="sbwz1f919facd3300a8625b4b8718131" name="alternate-representation"><img xmlns="http://www.w3.org/1999/xhtml" alt="inline style x – t" id="gimr7480a3131a2d3342063dcf015396" src="../images/bde7940c-5ae5-33d6-ad57-6734b81081c0.png"></img></annotation-xml></semantics></math></span> graph for some object. (a) At <span class="math" id="mac_printisbn_ch21_03EQ_0002.png" tabindex="0"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style t equals 4 text end text text s  end text" display="inline" id="aacc9a41-f3a3-32b5-97a6-ac4d82390300"><semantics id="uxqz2284560120ded093a14bdddb3d45"><mrow id="nsznd93d05e158a5c087bed29c0dddf5"><mi id="oakz49bbf9b115fe0c711c288a34bf3e">t </mi><mo id="amqza8ddc075860a2c30e6675c506856">= </mo><mn id="kpkw464d962c2bfa84cda4303f7b0802">4 </mn><mtext id="djudab107d2b5ee13fde4f54e0c93b5c">  </mtext><mtext id="yhjc91bb7a5a57f64b8e2ed5b2ebe431">s </mtext></mrow><annotation-xml encoding="application/xhtml+xml" id="qxsvbc41f719fb6eb8ab9f039a6dd1b5" name="alternate-representation"><img xmlns="http://www.w3.org/1999/xhtml" alt="inline style t equals 4 text end text text s  end text" id="gbvcfc8b8b0dc4bf9dee81efec476569" src="../images/aacc9a41-f3a3-32b5-97a6-ac4d82390300.png"></img></annotation-xml></semantics></math></span> how far is the object from its position at <span class="math" id="mac_printisbn_ch21_03EQ_0003.png" tabindex="0"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style t equals 0" display="inline" id="b9e48fb6-782e-3676-9a04-4ebaa7c017e3"><semantics id="gqyoab6ad8dde354a0aabc1b688b3c44"><mrow id="euie7ebc7430929c2a8cfaa75093f514"><mi id="tqng4ed4524916ec7067a17307b46008">t </mi><mo id="efee4776a5ef8fc28124b1e58f2c0c47">= </mo><mn id="nzxu58034b0e541b02e443716ae49527">0 </mn></mrow><annotation-xml encoding="application/xhtml+xml" id="fzry02e6bbf8c01c0c661da9cd0ca98d" name="alternate-representation"><img xmlns="http://www.w3.org/1999/xhtml" alt="inline style t equals 0" id="zxmldb08eeeb7d01503f215bc42140d2" src="../images/b9e48fb6-782e-3676-9a04-4ebaa7c017e3.png"></img></annotation-xml></semantics></math>?</span> (b) At about what time is the object’s <i class="semantic-i" id="rog_9781319339180_MGSQdvCwXQ">speed</i> greatest? (c) What is the velocity of the object between <span class="math" id="mac_printisbn_ch21_03EQ_0004.png" tabindex="0"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style t equals 2 text end text text s  end text" display="inline" id="jc652c23-1649-3c4b-8895-bca5503b371b"><semantics id="nzozdc775c13377febb7b8749951a416"><mrow id="opto6990f2edac426dc78eac6ec3bea0"><mi id="xfxbd48f8f35ec8da11303cadcb085f8">t </mi><mo id="rhyc09f287e0c203d90620c5aa0dc8be">= </mo><mn id="whxac0d2d2ecf832f4d1da135fd9e192">2 </mn><mtext id="oqmy37c96a335154f775316498b34281">  </mtext><mtext id="codrac4a4cf465153e3ec5a0f8ea0802">s </mtext></mrow><annotation-xml encoding="application/xhtml+xml" id="xltn2de258fa30046c7c01189be5a21b" name="alternate-representation"><img xmlns="http://www.w3.org/1999/xhtml" alt="inline style t equals 2 text end text text s  end text" id="pxac7ea9cf333a9a4662a63acd38b80c" src="../images/jc652c23-1649-3c4b-8895-bca5503b371b.png"></img></annotation-xml></semantics></math></span> and <span class="math" id="mac_printisbn_ch21_03EQ_0005.png" tabindex="0"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style t equals 4 text end text text s  end text" display="inline" id="f9dc4ceb-60c4-335c-ade9-6c2f8b4ff7ba"><semantics id="nhkh59448af10c94228f23198532f7d8"><mrow id="tevfabff550ababc7413f1d1d3c9e778"><mi id="yfix631b462ddd90a15015095536095a">t </mi><mo id="qpps2cc48c73785ac4e449b515a9b717">= </mo><mn id="tjjz3cfeb47fc0bd6a68ba1d957f9edd">4 </mn><mtext id="otdp6c7f5a4c2128445083c9fbb5100e">  </mtext><mtext id="jner25ddebb4b0b67fc62bd61e521df7">s </mtext></mrow><annotation-xml encoding="application/xhtml+xml" id="hkbs90264df569d3e8974edf303b6432" name="alternate-representation"><img xmlns="http://www.w3.org/1999/xhtml" alt="inline style t equals 4 text end text text s  end text" id="midxde189db291b9790d5e6b41068c76" src="../images/f9dc4ceb-60c4-335c-ade9-6c2f8b4ff7ba.png"></img></annotation-xml></semantics></math>? </span>Example 2-3</p>
+              <figure class="figure lm_img_lightbox num c5 center" id="rog_9781319339180_6CZM9wGnQ0">
+                <img alt="An x-versus-t graph represents an object’s position versus time." class="figure" id="rog_9781319339180_Hs5XHqJFgn" src="../images/gqdr3cfa6a5175a7d7300ba69f94439e_FreedmanCP3e_02_28_290479.png"></img>
+                <figcaption id="rog_9781319339180_rfUt1t3LPV">
+                  <p class="noindent" id="rog_9781319339180_0L6tWYwkde"><span class="label" epub:type="label" id="rog_9781319339180_jPGLXwoaF3">Figure </span><span class="ordinal" epub:type="ordinal" id="rog_9781319339180_9YyVbrh6kg">2-28 </span>Problems 31–32</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ol>
+        </section>
+        <section class="sect3" data-cfititle="Simple question / show answer with image" id="mcvyb4173b32ba507ddc90c38c535616">
+          <header id="dpeqdc47ba72b0bb20ad2b7bad97ce50">
+            <h4 class="c-head" id="gzvrbb3caa873dbace42743e713cce87">Simple question / show answer with image</h4>
+          </header>
+          <p class="noindent" id="byexea4e0c3f1c56eeb32f75e4e0597d">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450004">HTML Coding Sample</strong>
+          </p>
+          <ul class="ul-no-mark" id="mbhn7dbec174351d5769818b44f2549e">
+            <li id="kldz6bfa1c890e3d0461d54db5b84259">
+              <pre tabindex="0" id="neqaa8ac3e4d7bd8b97d3d16776226f4">
+                <code class="language-html" id="exhc68d48d8ef810b7eeb46cb495b6e3">&lt;ol class="numbered-list" id="rog_9781319339181_AtGWPxa8vA"&gt; &lt;li data-answer="mac_printisbn_ch11_01.xhtml#005" id="rog_9781319339180_xBu9WqDohr"&gt; &lt;p class="question noindent" epub:type="question" id="rog_9781319339180_pb34QT9CbV"&gt;A driver is traveling along a straight road at the speed limit &lt;span class="math" id="mac_printisbn_ch21_03EQ_0006.png" tabindex="0"&gt;&lt;math alttext="v" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;v&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation-xml name="alternate-representation" encoding="application/xhtml+xml"&gt;&lt;img src="../images/MATH/mac_printisbn_ch21_03EQ_0006.png" alt="v" xmlns="http://www.w3.org/1999/xhtml" /&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;&lt;/math&gt;.&lt;/span&gt; After &lt;span class="math" id="mac_printisbn_ch21_03EQ_0007.png" tabindex="0"&gt;&lt;math alttext="2 min" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;mtext&gt; &lt;/mtext&gt;&lt;mtext&gt;min&lt;/mtext&gt;&lt;/mrow&gt;&lt;annotation-xml name="alternate-representation" encoding="application/xhtml+xml"&gt;&lt;img src="../images/MATH/mac_printisbn_ch21_03EQ_0007.png" alt="2 min" xmlns="http://www.w3.org/1999/xhtml" /&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;&lt;/math&gt;,&lt;/span&gt; she slows at a constant rate to a stop at a traffic light. Two minutes later the light turns green, and she accelerates at a constant rate back up to the speed limit. Five minutes later she again slows at a constant rate to a stop. After &lt;span class="math" id="mac_printisbn_ch21_03EQ_0008.png" tabindex="0"&gt;&lt;math alttext="3 min" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;mtext&gt; &lt;/mtext&gt;&lt;mtext&gt;min&lt;/mtext&gt;&lt;/mrow&gt;&lt;annotation-xml name="alternate-representation" encoding="application/xhtml+xml"&gt;&lt;img src="../images/MATH/mac_printisbn_ch21_03EQ_0008.png" alt="3 min" xmlns="http://www.w3.org/1999/xhtml" /&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt; she performs a u-turn then accelerates at a constant rate back up to speed &lt;span class="math" id="mac_printisbn_ch21_03EQ_0009.png" tabindex="0"&gt;&lt;math alttext="v" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;v&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation-xml name="alternate-representation" encoding="application/xhtml+xml"&gt;&lt;img src="../images/MATH/mac_printisbn_ch21_03EQ_0009.png" alt="v" xmlns="http://www.w3.org/1999/xhtml" /&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;&lt;/math&gt;.&lt;/span&gt; Two minutes later she reaches her destination and slows at a constant rate to a stop. Sketch a graph of velocity versus time that represents her trip. (Since you are not given values for acceleration, your graph need only be qualitatively correct.) Example 2-5&lt;/p&gt; &lt;/li&gt; &lt;/ol&gt;</code>
+              </pre>
+            </li>
+          </ul>
+          <p class="noindent" id="oewcc40f7d6300ebd24862f041719f0c">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450005">HTML Coding Result</strong>
+          </p>
+          <ol class="numbered-list" id="rog_9781319339181_AtGWPxa8vA">
+            <li class="question" epub:type="question" data-answer="mac_printisbn_ch11_01.xhtml#005" id="dayu4b5a47f96e231c57d5f68c2e3042">
+              <p class="question noindent" epub:type="question" id="rog_9781319339180_pb34QT9CbV">A driver is traveling along a straight road at the speed limit <span class="math" id="mac_printisbn_ch21_03EQ_0006.png" tabindex="0"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style v" display="inline" id="fdc4e552-c77c-346f-9780-80d22b889c9a"><semantics id="pkys47487cc50adbc1f4cfb3d0cf2d8d"><mrow id="icxuee64b51d26b309f4663a176b8afe"><mi id="dqtm09f6af16ccb91b74335e14f517ea">v </mi></mrow><annotation-xml encoding="application/xhtml+xml" id="xqck498e433ee53024783cb98cf2ba71" name="alternate-representation"><img xmlns="http://www.w3.org/1999/xhtml" alt="inline style v" id="nlbwa63a1b3a84e63896105640c9b125" src="../images/fdc4e552-c77c-346f-9780-80d22b889c9a.png"></img></annotation-xml></semantics></math>.</span> After <span class="math" id="mac_printisbn_ch21_03EQ_0007.png" tabindex="0"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style 2 text end text text min  end text" display="inline" id="b381421e-bff9-3422-b511-6217193a129d"><semantics id="wwty5c6d154a924208471225b7a5ad10"><mrow id="nqii0b7f41da223ce0871a3f7d0d765c"><mn id="qjaaa84ca9d1fed98598ff46ff648224">2 </mn><mtext id="wpbda36d2028f4f771ee8900ff0e7fa9">  </mtext><mtext id="agmw13b87291234a425df6f7c31ffe5b">min </mtext></mrow><annotation-xml encoding="application/xhtml+xml" id="wudj4d400dfeaf8ac2c2743f156c6fa2" name="alternate-representation"><img xmlns="http://www.w3.org/1999/xhtml" alt="inline style 2 text end text text min  end text" id="azic7a3da27a8d61e5aaf291fc63cdec" src="../images/b381421e-bff9-3422-b511-6217193a129d.png"></img></annotation-xml></semantics></math>,</span> she slows at a constant rate to a stop at a traffic light. Two minutes later the light turns green, and she accelerates at a constant rate back up to the speed limit. Five minutes later she again slows at a constant rate to a stop. After <span class="math" id="mac_printisbn_ch21_03EQ_0008.png" tabindex="0"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style 3 text end text text min  end text" display="inline" id="x418982b-c7bd-3d4e-9229-1ee313c783cd"><semantics id="hyjd2455c95a71bd8b53911bf843f650"><mrow id="fule4205ef73c1655a362499b2259a87"><mn id="dlcu509f3425d5cc8292b05a7c472d3c">3 </mn><mtext id="qeatbdaf67236749af4070f913f47431">  </mtext><mtext id="bciiffa815db722649345567dacc7234">min </mtext></mrow><annotation-xml encoding="application/xhtml+xml" id="toeu90b8dde35677d46149a323570467" name="alternate-representation"><img xmlns="http://www.w3.org/1999/xhtml" alt="inline style 3 text end text text min  end text" id="whvu6a7bf4f0c960f2771e0e384bcee6" src="../images/x418982b-c7bd-3d4e-9229-1ee313c783cd.png"></img></annotation-xml></semantics></math></span> she performs a u-turn then accelerates at a constant rate back up to speed <span class="math" id="mac_printisbn_ch21_03EQ_0009.png" tabindex="0"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style v" display="inline" id="g0334da1-0367-3d50-98d9-ffb06feb1885"><semantics id="enbg5f77e8262bfea91ad9ee78e2c86c"><mrow id="jdgqca66c260128bc8cf6934cac07458"><mi id="bbik7a5ea2a8b572e4f2824ad1d258e2">v </mi></mrow><annotation-xml encoding="application/xhtml+xml" id="wqrv16ab95ec6cfd5d0db21a350284fc" name="alternate-representation"><img xmlns="http://www.w3.org/1999/xhtml" alt="inline style v" id="kdzj3f3e86b2a719aa2ce6cf68c136b6" src="../images/g0334da1-0367-3d50-98d9-ffb06feb1885.png"></img></annotation-xml></semantics></math>.</span> Two minutes later she reaches her destination and slows at a constant rate to a stop. Sketch a graph of velocity versus time that represents her trip. (Since you are not given values for acceleration, your graph need only be qualitatively correct.) Example 2-5</p>
+            </li>
+          </ol>
+        </section>
+        <section class="sect3" data-cfititle="Questions with image / show answer with image" id="wiag9b18fb159195dbe09520c1ede84c">
+          <header id="nnmwd3ef6f0668ea410ed7fa94eddcee">
+            <h4 class="c-head" id="megp36ffa7d4a4d1162cb9769ca5a881">Questions with image / show answer with image</h4>
+          </header>
+          <p class="noindent" id="qpxp87d5882cc1e6f7587b0c3ee8baf1">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450006">HTML Coding Sample</strong>
+          </p>
+          <ul class="ul-no-mark" id="hygi318f52efa4ee2a55dc5c0bc96843">
+            <li id="uslp70273dda002ed3dd4a51106d4b5c">
+              <pre tabindex="0" id="wqpvf2136c32161f21bd41f7f075e5e6">
+                <code class="language-html" id="dcamc2a846754c2c23f4ca3cc90c0e4d">&lt;ol class="numbered-list" id="rog_9781319339183_AtGWPxa8vA"&gt; &lt;li data-answer="mac_printisbn_ch11_01.xhtml#006" id="rog_9781319339180_AHt5HXzSD7"&gt; &lt;p class="question noindent" epub:type="question" id="rog_9781319339180_OBovDLopWR"&gt;37. An object travels with a constant acceleration for &lt;span class="math" id="mac_printisbn_ch21_03EQ_0010.png" tabindex="0"&gt;&lt;math alttext="10 s" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;mtext&gt; &lt;/mtext&gt;&lt;mtext&gt;s&lt;/mtext&gt;&lt;/mrow&gt;&lt;annotation-xml name="alternate-representation" encoding="application/xhtml+xml"&gt;&lt;img src="../images/MATH/mac_printisbn_ch21_03EQ_0010.png" alt="10 s" xmlns="http://www.w3.org/1999/xhtml" /&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;&lt;/math&gt;.&lt;/span&gt; The vectors in &lt;strong class="important" id="rog_9781319339180_xCntF1B63j"&gt;Figure 3-44&lt;/strong&gt; represent the final and initial velocities. Carefully graph the &lt;span class="math" id="mac_printisbn_ch21_03EQ_0011.png" tabindex="0"&gt;&lt;math alttext="x" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation-xml name="alternate-representation" encoding="application/xhtml+xml"&gt;&lt;img src="../images/MATH/mac_printisbn_ch21_03EQ_0011.png" alt="x" xmlns="http://www.w3.org/1999/xhtml" /&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt; component of the velocity versus time, the &lt;span class="math" id="mac_printisbn_ch21_03EQ_0012.png" tabindex="0"&gt;&lt;math alttext="y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation-xml name="alternate-representation" encoding="application/xhtml+xml"&gt;&lt;img src="../images/MATH/mac_printisbn_ch21_03EQ_0012.png" alt="y" xmlns="http://www.w3.org/1999/xhtml" /&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt; component of the velocity versus time, and the &lt;span class="math" id="mac_printisbn_ch21_03EQ_0013.png" tabindex="0"&gt;&lt;math alttext="y" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;y&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation-xml name="alternate-representation" encoding="application/xhtml+xml"&gt;&lt;img src="../images/MATH/mac_printisbn_ch21_03EQ_0013.png" alt="y" xmlns="http://www.w3.org/1999/xhtml" /&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt; component of the acceleration versus time. Example 3-3&lt;/p&gt; &lt;figure class="figure lm_img_lightbox num c4 center" id="rog_9781319339180_CCXu6LV1YG"&gt; &lt;img alt="A vector diagram is shown." class="figure" id="rog_9781319339180_nDGSB1LhZo" src="https://content.macmillan-learning.com/frost/assets/images/vmwme961d3bb15aeffa65ec13fedd676/vmwme961d3bb15aeffa65ec13fedd676_FreedmanCP3e_03_44_291968.png"&gt;&lt;/img&gt; &lt;figcaption id="rog_9781319339180_o4d7KypILe"&gt; &lt;p class="noindent" id="rog_9781319339180_DINn7yOfK6"&gt;&lt;span class="label" epub:type="label" id="rog_9781319339180_vq6NoUIPZC"&gt;Figure &lt;/span&gt;&lt;span class="ordinal" epub:type="ordinal" id="rog_9781319339180_zwRAL8Yqj7"&gt;3-44 &lt;/span&gt;Problem 37&lt;/p&gt; &lt;/figcaption&gt; &lt;/figure&gt; &lt;aside class="hidden" id="rog_9781319339183_WMPjDfqSlD"&gt; &lt;p class="noindent" id="rog_9781319339180_N56ttyxZjp"&gt;The diagram is plotted on the x y coordinate plane. Vector v subscript f begins at the origin and points up and to the right with a magnitude of 20 meters per second and an angle of 30 degrees with the positive x axis. Vector v subscript i begins at the origin and points down and to the right with a magnitude of 20 meters per second and an angle of 30 degrees with the negative y axis.&lt;/p&gt; &lt;/aside&gt; &lt;/li&gt; &lt;/ol&gt;</code>
+              </pre>
+            </li>
+          </ul>
+          <p class="noindent" id="vzdn37ee5d3b81d4171d89a9fec932f6">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450007">HTML Coding Result</strong>
+          </p>
+          <ol class="numbered-list" id="rog_9781319339183_AtGWPxa8vA">
+            <li class="question" epub:type="question" data-answer="mac_printisbn_ch11_01.xhtml#006" id="dayu4b5a47f96e231c57d5f68c2e3043">
+              <p class="question noindent" epub:type="question" id="rog_9781319339180_OBovDLopWR">37. An object travels with a constant acceleration for <span class="math" id="mac_printisbn_ch21_03EQ_0010.png" tabindex="0"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style 10 text end text text s  end text" display="inline" id="a06685cf-b1e4-3423-b581-ee0fdcf0cea0"><semantics id="efii967cc5321a3e1b033a00c6d67caf"><mrow id="xawlf64ea28a95d8f0ac2469fdbbfb14"><mn id="ytad1135cd583573cfd94917720fb077">10 </mn><mtext id="eqja2f7ff9e56f9b253c5cc3a3bfe7d9">  </mtext><mtext id="ichq3196f61ddfc897da90df6a66125c">s </mtext></mrow><annotation-xml encoding="application/xhtml+xml" id="wqlqcc43f1ed467442bd7555361f1dea" name="alternate-representation"><img xmlns="http://www.w3.org/1999/xhtml" alt="inline style 10 text end text text s  end text" id="nwiae29e01755544ffc7224219f59643" src="../images/a06685cf-b1e4-3423-b581-ee0fdcf0cea0.png"></img></annotation-xml></semantics></math>.</span> The vectors in <strong class="important" id="rog_9781319339180_xCntF1B63j">Figure 3-44</strong> represent the final and initial velocities. Carefully graph the <span class="math" id="mac_printisbn_ch21_03EQ_0011.png" tabindex="0"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style x" display="inline" id="xe4d077a-1b03-3723-ba87-cf72c5adf199"><semantics id="sedy4e3d4f6052dd42fd0e2ed3d19c1b"><mrow id="uxvbc68f83cbf9458c9d964b53b65e5f"><mi id="lcim4b04382c6597a63dd5461a1e9a11">x </mi></mrow><annotation-xml encoding="application/xhtml+xml" id="zpyeb773934a9d6279b71b118d6f135d" name="alternate-representation"><img xmlns="http://www.w3.org/1999/xhtml" alt="inline style x" id="waqrd5c96cbb10d2fea19819de425440" src="../images/xe4d077a-1b03-3723-ba87-cf72c5adf199.png"></img></annotation-xml></semantics></math></span> component of the velocity versus time, the <span class="math" id="mac_printisbn_ch21_03EQ_0012.png" tabindex="0"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style y" display="inline" id="d8d632fe-917e-3398-90e0-eede32fd80c5"><semantics id="zstf1d8e1b9e72ebfdeae38177d99e1d"><mrow id="ybrb66f7fcde26e2b35b2bf191d11bda"><mi id="excv5e56cc5ed6df7e81a9d9c535f20d">y </mi></mrow><annotation-xml encoding="application/xhtml+xml" id="jiui293e1ce0fb91842bafd82dbfe18b" name="alternate-representation"><img xmlns="http://www.w3.org/1999/xhtml" alt="inline style y" id="hwyl7b4edcd42c874d8a319360a368a2" src="../images/d8d632fe-917e-3398-90e0-eede32fd80c5.png"></img></annotation-xml></semantics></math></span> component of the velocity versus time, and the <span class="math" id="mac_printisbn_ch21_03EQ_0013.png" tabindex="0"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style y" display="inline" id="odcdd99e-5111-394f-8a04-03033845d17a"><semantics id="mbdyd0319f709bf3b6124ae7c125361f"><mrow id="qhvd7560b8968a3728102caf7c702605"><mi id="sxlf70b558eac65219e99ed18e70996a">y </mi></mrow><annotation-xml encoding="application/xhtml+xml" id="mwcwb1f7cd8d411a49c2887240dba3d5" name="alternate-representation"><img xmlns="http://www.w3.org/1999/xhtml" alt="inline style y" id="tgln51cd0298d1ba8fb05e531cbda952" src="../images/odcdd99e-5111-394f-8a04-03033845d17a.png"></img></annotation-xml></semantics></math></span> component of the acceleration versus time. Example 3-3</p>
+              <figure class="figure lm_img_lightbox num c4 center" id="rog_9781319339180_CCXu6LV1YG">
+                <img alt="A vector diagram is shown." aria-describedby="rog_9781319339183_WMPjDfqSlD" class="figure" id="rog_9781319339180_nDGSB1LhZo" src="../images/vmwme961d3bb15aeffa65ec13fedd676_FreedmanCP3e_03_44_291968.png"></img>
+                <figcaption id="rog_9781319339180_o4d7KypILe">
+                  <p class="noindent" id="rog_9781319339180_DINn7yOfK6"><span class="label" epub:type="label" id="rog_9781319339180_vq6NoUIPZC">Figure </span><span class="ordinal" epub:type="ordinal" id="rog_9781319339180_zwRAL8Yqj7">3-44 </span>Problem 37</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ol>
+          <aside class="hidden" id="rog_9781319339183_WMPjDfqSlD">
+            <p class="noindent" id="rog_9781319339180_N56ttyxZjp">The diagram is plotted on the x y coordinate plane. Vector v subscript f begins at the origin and points up and to the right with a magnitude of 20 meters per second and an angle of 30 degrees with the positive x axis. Vector v subscript i begins at the origin and points down and to the right with a magnitude of 20 meters per second and an angle of 30 degrees with the negative y axis.</p>
+          </aside>
+        </section>
+        <section class="sect3" data-cfititle="Question with math/formula / Show answer with math/formula" id="hzdz8f9ff84a11a958e3f838a2a54031">
+          <header id="fgen95f91fdcc092b4efdddbe6e214c3">
+            <h4 class="c-head" id="rxtr826d05d74b99745bbce42e0a8514">Question with math/formula / Show answer with math/formula</h4>
+          </header>
+          <p class="noindent" id="bnzcafd35fc768a6af0d9f62e32b1b17">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450008">HTML Coding Sample</strong>
+          </p>
+          <ul class="ul-no-mark" id="rvej67c6a14dd90c14d7bdeb9770aef0">
+            <li id="inrjd53cf684a1b47b70ee9f02f60213">
+              <pre tabindex="0" id="jlmlf67d549a416aacc06b85d5a64f24">
+                <code class="language-html" id="arwn67d3be50dee0f48a3895ba6c3869">&lt;ol class="numbered-list" id="oqlp4661ecd750627cdea962095ab8fe"&gt; &lt;li data-answer="mac_printisbn_ch11_01.xhtml#007" id="btuh7c98e808f7caca669e8088d670ee"&gt;If we have an aggregate demand curve with &lt;span class="math" id="mac_printisbn_ch21_03EQ_0014.png" tabindex="0"&gt;&lt;math alttext="ModifyingAbove upper M With right-arrow equals 7 percent-sign" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mover accent="true"&gt;&lt;mi&gt;M&lt;/mi&gt;&lt;mo  stretchy="true"&gt;→&lt;/mo&gt;&lt;/mover&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;7&lt;/mn&gt;&lt;mi&gt;%&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation-xml name="alternate-representation" encoding="application/xhtml+xml"&gt;&lt;img src="../images/MATH/mac_printisbn_ch21_03EQ_0014.png" alt="ModifyingAbove upper M With right-arrow equals 7 percent-sign" xmlns="http://www.w3.org/1999/xhtml" /&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt; and &lt;span class="math" id="mac_printisbn_ch21_03EQ_0015.png" tabindex="0"&gt;&lt;math alttext="ModifyingAbove v With right-arrow equals 0 percent-sign" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mover accent="true"&gt;&lt;mi&gt;v&lt;/mi&gt;&lt;mo&gt;→&lt;/mo&gt;&lt;/mover&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;mn&gt;0&lt;/mn&gt;&lt;mi&gt;%&lt;/mi&gt;&lt;/mrow&gt;&lt;annotation-xml name="alternate-representation" encoding="application/xhtml+xml"&gt;&lt;img src="../images/MATH/mac_printisbn_ch21_03EQ_0015.png" alt="ModifyingAbove v With right-arrow equals 0 percent-sign" xmlns="http://www.w3.org/1999/xhtml" /&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;&lt;/math&gt;,&lt;/span&gt; what will inflation plus real growth equal? If we find out that real growth is 0%, what is inflation?&lt;/li&gt; &lt;/ol&gt;</code>
+              </pre>
+            </li>
+          </ul>
+          <p class="noindent" id="yhtl3453ddf8ab940702c800532d30fc">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450009">HTML Coding Result</strong>
+          </p>
+          <ol class="numbered-list" id="oqlp4661ecd750627cdea962095ab8fe">
+            <li class="question" epub:type="question" data-answer="mac_printisbn_ch11_01.xhtml#007" id="dayu4b5a47f96e231c57d5f68c2e3045">If we have an aggregate demand curve with <span class="math" id="mac_printisbn_ch21_03EQ_0014.png" tabindex="0"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style M with stretchy rightwards arrow on top equals 7 percent sign" display="inline" id="vbd87700-ab9c-3a7b-b0cd-19f8b6442005"><semantics id="pccg3c545ef95a557933b0db5871cc1b"><mrow id="cntfc6fcee590f0d5ee664de97576f38"><mover accent="true" id="knox5e6fd7e10a485fb9423c942cafa6"><mi id="excq32b3e098703abea07f02c200b7c1">M </mi><mo id="ctujbeb8dca2b4317e1f0f09076f6426" stretchy="true">→ </mo></mover><mo id="wgvm7b12f8903c18c8131925a196d4d5">= </mo><mn id="oxafe71d97ce533d75dcea5a1536b1e4">7 </mn><mi id="mdxr2b4e64d03669396b780d2ead8f6f">% </mi></mrow><annotation-xml encoding="application/xhtml+xml" id="ytsw8168ecc327a6e72f2392b96ebaee" name="alternate-representation"><img xmlns="http://www.w3.org/1999/xhtml" alt="inline style M with stretchy rightwards arrow on top equals 7 percent sign" id="qnao63c94accef19e6add7ded9929adc" src="../images/vbd87700-ab9c-3a7b-b0cd-19f8b6442005.png"></img></annotation-xml></semantics></math></span> and <span class="math" id="mac_printisbn_ch21_03EQ_0015.png" tabindex="0"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style v with rightwards arrow on top equals 0 percent sign" display="inline" id="x4d3a979-4ab6-3251-b40f-782b9420c20b"><semantics id="zygj7b7eb6eecd25169f5abbcb1387b8"><mrow id="uszr3ba6eec3c61b3e3caec046a909f1"><mover accent="true" id="ezgrb3d37b5aad1346cdf4a3e29d7b8f"><mi id="khkraa1e6609445d8c99689dcaeca091">v </mi><mo id="ipeo80ed0a43cb6b975cb1f5d2e9d4a3">→ </mo></mover><mo id="ktwq30ff376ad2344cbb713c87b3ee06">= </mo><mn id="gbur2f6b5f448979f497ed150e2bf19c">0 </mn><mi id="gtlfe2ea09a5ee54a456dd78af2b081a">% </mi></mrow><annotation-xml encoding="application/xhtml+xml" id="yeew5af10e16f962890fa1ee2a1c2b01" name="alternate-representation"><img xmlns="http://www.w3.org/1999/xhtml" alt="inline style v with rightwards arrow on top equals 0 percent sign" id="bcuj401603289fb894dd4ff1e8b55b1c" src="../images/x4d3a979-4ab6-3251-b40f-782b9420c20b.png"></img></annotation-xml></semantics></math>,</span> what will inflation plus real growth equal? If we find out that real growth is 0%, what is inflation?</li>
+          </ol>
+        </section>
+        <section class="sect3" data-cfititle="Question with link / show answer" id="zpzi07fe54f1fa7cd6f26e58d0a76525">
+          <header id="eazt74fefbd6bf686557c12b3a03ceb2">
+            <h4 class="c-head" id="hntae90901a7854e30a16992b4422a8f">Question with link / show answer</h4>
+          </header>
+          <p class="noindent" id="tirweb2aeb1d8735b10ae1261efa16e7">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450010">HTML Coding Sample</strong>
+          </p>
+          <ul class="ul-no-mark" id="yata0a30408a3afaaf5a3f3f8453c896">
+            <li id="jkhke15e7fd3077020d898c9af823de8">
+              <pre tabindex="0" id="eeosd95b0ed83172c9fd4b7cb626b66d">
+                <code class="language-html" id="bmvfefab4726826e4673d2233547b715">&lt;ol class="numbered-list" id="dav_9781319337970_jqQOf1V7RU"&gt; &lt;li data-answer="mac_printisbn_ch11_01.xhtml#008" id="dav_9781319337970_mGvKMSI3JR"&gt; &lt;p class="question noindent" epub:type="question" id="dav_9781319337970_b2EIL5ZmxH"&gt;In &lt;a class="crossref" href="cow_9781319245405_ch04_07.xhtml#ch04_fig_9" id="ch04_DUMM_27"&gt;Figure 4.9&lt;/a&gt;, you will notice a jump in oil prices around 1991. What happened in this year to increase price? Was it a supply shock or a demand shock?&lt;/p&gt; &lt;/li&gt; &lt;/ol&gt;</code>
+              </pre>
+            </li>
+          </ul>
+          <p class="noindent" id="wmsya5a35291ce0e88935e9fee8e7049">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450011">HTML Coding Result</strong>
+          </p>
+          <ol class="numbered-list" id="dav_9781319337970_jqQOf1V7RU">
+            <li class="question" epub:type="question" data-answer="mac_printisbn_ch11_01.xhtml#008" id="dayu4b5a47f96e231c57d5f68c2e3046">
+              <p class="question noindent" epub:type="question" id="dav_9781319337970_b2EIL5ZmxH">In <a class="crossref" href="mac_printisbn_ch08_04.xhtml#dav_9781319337970_jqQOf1V7RU" id="ch04_DUMM_27">Figure 4.9</a>, you will notice a jump in oil prices around 1991. What happened in this year to increase price? Was it a supply shock or a demand shock?</p>
+            </li>
+          </ol>
+        </section>
+        <section class="sect3" data-cfititle="Simple question / Show answer with link" id="uhux27ec813f7eaf272f16f6c5f3bbc6">
+          <header id="ttmcc0f0e1d18cdb649da5108a6d6c66">
+            <h4 class="c-head" id="mrcnc3b2e77cdfd893a4182dd6c0e124">Simple question / Show answer with link</h4>
+          </header>
+          <p class="noindent" id="axzufdbe8396ff828e542c12ed28da05">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450012">HTML Coding Sample</strong>
+          </p>
+          <ul class="ul-no-mark" id="hyvy075cc6e1ee0477fa33da9935bf10">
+            <li id="ufjn3f04e30b9c9f3a1d4592ffe1b713">
+              <pre tabindex="0" id="zrds1c6ddd3d44f2bbcf507ce90369ec">
+                <code class="language-html" id="yxsr7dc688dcd2da6905c9074e4859ca">&lt;ol class="numbered-list" id="iemnd35b9a6ef23c70fea7beae6627fb"&gt; &lt;li id="nctd1c7f61875d8e0d8cd6f91d594806"&gt; &lt;ol id="ypjr2f7fa39cc74d6de2670e98110185" class="numbered-list"&gt; &lt;li class="question" epub:type="question" data-answer="mac_printisbn_ch11_01.xhtml#009" id="dayu4b5a47f96e231c57d5f68c2e3050"&gt; &lt;p class="question noindent" epub:type="question" id="mprud13531e4c648957b10d613fb2a69"&gt;What type of graphic aid is &lt;a class="crossref" href="mac_printisbn_ch08_04.xhtml#mprud13531e4c648957b10d613fb2a69" id="dumm-16"&gt;Figure 8-3&lt;/a&gt;?&lt;/p&gt; &lt;/li&gt; &lt;/ol&gt; &lt;/li&gt; &lt;/ol&gt;</code>
+              </pre>
+            </li>
+          </ul>
+          <p class="noindent" id="yugjeb931ee318fd1c15fd89dba2595d">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450013">HTML Coding Result</strong>
+          </p>
+          <ol class="numbered-list" id="iemnd35b9a6ef23c70fea7beae6627fb">
+            <li class="question" epub:type="question" data-answer="mac_printisbn_ch11_01.xhtml#009" id="dayu4b5a47f96e231c57d5f68c2e3050">
+              <p class="question noindent" epub:type="question" id="mprud13531e4c648957b10d613fb2a69">What type of graphic aid is <a class="crossref" href="mac_printisbn_ch08_04.xhtml#mprud13531e4c648957b10d613fb2a69" id="dumm-16">Figure 8-3</a>?</p>
+            </li>
+          </ol>
+        </section>
+        <section class="sect3" data-cfititle="Question with link / Show answer with link" id="vfrz30e8a67cea298bd7c38f7b468e57">
+          <header id="gtzg44404862a5e002ecd3a5609e72f0">
+            <h4 class="c-head" id="mfee4ce915de92661b4cd1db75762211">Question with link / Show answer with link</h4>
+          </header>
+          <p class="noindent" id="mxue228d423caacc9f03e977d1a5eb15">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450014">HTML Coding Sample</strong>
+          </p>
+          <ul class="ul-no-mark" id="zfkhf56399535986efa28434e0e95f29">
+            <li id="tzoo5bf032c92486afada1beeed98acf">
+              <pre tabindex="0" id="mydke4488afe9ffd6b857a9dfbc52c8f">
+                <code class="language-html" id="bxtn72542eaea5f348928855a2cfc109">&lt;ol class="numbered-list" id="dav_9781319337970_jqQOf1V8RU"&gt; &lt;li id="jihh2fa94d090f5a6dcced0c7871ab1b"&gt; &lt;ol id="ypjr2f7fa39cc74d6de2670e98110187" class="numbered-list"&gt; &lt;li class="question" epub:type="question" data-answer="mac_printisbn_ch11_01.xhtml#010" id="dayu4b5a47f96e231c57d5f68c2e3051"&gt;According to &lt;a class="crossref" href="mac_printisbn_ch08_04.xhtml#dav_9781319337970_jqQOf1V8RU" id="ch27_DUMMfig_2a"&gt;Figure 7.2&lt;/a&gt;, approximately what percentage of the world's population lived in China in 2014?&lt;/li&gt; &lt;/ol&gt; &lt;/li&gt; &lt;/ol&gt;</code>
+              </pre>
+            </li>
+          </ul>
+          <p class="noindent" id="bfybc36afa1a256e233b7fe2ad523eb7">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450015">HTML Coding Result</strong>
+          </p>
+          <ol class="numbered-list" id="dav_9781319337970_jqQOf1V8RU">
+            <li class="question" epub:type="question" data-answer="mac_printisbn_ch11_01.xhtml#010" id="dayu4b5a47f96e231c57d5f68c2e3051">According to <a class="crossref" href="mac_printisbn_ch08_04.xhtml#dav_9781319337970_jqQOf1V8RU" id="ch27_DUMMfig_2a">Figure 7.2</a>, approximately what percentage of the world's population lived in China in 2014?</li>
+          </ol>
+        </section>
+        <section class="sect3" data-cfititle="Question with list / Show answer with list" id="mhmr861ad2e7e5b159f776c3c6a3fea4">
+          <header id="ffuodfdc024308645c3f220e93acef40">
+            <h4 class="c-head" id="tdha0c61b7d0c25765a414aa4e123112">Question with list / Show answer with list</h4>
+          </header>
+          <p class="noindent" id="uqzb5d1042a73552d60817b201a28a9e">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450016">HTML Coding Sample</strong>
+          </p>
+          <ul class="ul-no-mark" id="zjde311aa29bc979466a81603ea9259c">
+            <li id="cyza659108b51ce259ae07e88282cf52">
+              <pre tabindex="0" id="lvgl5a8dc147f7ab90e3f69ac881ff56">
+                <code class="language-html" id="lgji201168108b5f93a214d44d487036">&lt;ol class="numbered-list" id="rog_9781319339180_AtGWPxa8vA"&gt; &lt;li data-answer="mac_printisbn_ch11_01.xhtml#011" id="rog_9781319339180_nqbaoz04D6"&gt;&lt;p class="question noindent" epub:type="question" id="rog_9781319339180_uqP9wDvwhr"&gt;19. Write the following numbers using decimals:&lt;/p&gt; &lt;ol class="ol-alpha-uc" id="rog_9781319339180_S9iYYGLjgJ"&gt; &lt;li id="rog_9781319339180_TQMQl6zxZE"&gt;&lt;p class="answer noindent" epub:type="answer" id="rog_9781319339180_jHkfypkBsw"&gt;&lt;span class="math" id="mac_printisbn_ch21_03EQ_0016.png" tabindex="0"&gt;&lt;math alttext="4.42 times 10 Superscript negative 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mn&gt;4.42&lt;/mn&gt;&lt;mo&gt;×&lt;/mo&gt;&lt;msup&gt;&lt;mrow&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mo  lspace="0" rspace="0"&gt;−&lt;/mo&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;annotation-xml name="alternate-representation" encoding="application/xhtml+xml"&gt;&lt;img src="../images/MATH/mac_printisbn_ch21_03EQ_0016.png" alt="4.42 times 10 Superscript negative 3" xmlns="http://www.w3.org/1999/xhtml" /&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;/p&gt;&lt;/li&gt; &lt;li id="rog_9781319339180_76daDRsp2K"&gt;&lt;p class="answer noindent" epub:type="answer" id="rog_9781319339180_z7Fs6LpCZ9"&gt;&lt;span class="math" id="mac_printisbn_ch21_03EQ_0017.png" tabindex="0"&gt;&lt;math alttext="7.09 times 10 Superscript negative 6" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mn&gt;7.09&lt;/mn&gt;&lt;mo&gt;×&lt;/mo&gt;&lt;msup&gt;&lt;mrow&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mo  lspace="0" rspace="0"&gt;−&lt;/mo&gt;&lt;mn&gt;6&lt;/mn&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;annotation-xml name="alternate-representation" encoding="application/xhtml+xml"&gt;&lt;img src="../images/MATH/mac_printisbn_ch21_03EQ_0017.png" alt="7.09 times 10 Superscript negative 6" xmlns="http://www.w3.org/1999/xhtml" /&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;/p&gt;&lt;/li&gt; &lt;li id="rog_9781319339180_x6iU7M3Kbh"&gt;&lt;p class="answer noindent" epub:type="answer" id="rog_9781319339180_xu9ixBUFuX"&gt;&lt;span class="math" id="mac_printisbn_ch21_03EQ_0018.png" tabindex="0"&gt;&lt;math alttext="8.28 times 10 squared" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mn&gt;8.28&lt;/mn&gt;&lt;mo&gt;×&lt;/mo&gt;&lt;msup&gt;&lt;mrow&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;/mrow&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;annotation-xml name="alternate-representation" encoding="application/xhtml+xml"&gt;&lt;img src="../images/MATH/mac_printisbn_ch21_03EQ_0018.png" alt="8.28 times 10 squared" xmlns="http://www.w3.org/1999/xhtml" /&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;/p&gt;&lt;/li&gt; &lt;li id="rog_9781319339180_yHI9M3okVT"&gt;&lt;p class="answer noindent" epub:type="answer" id="rog_9781319339180_hf0ib2aJm9"&gt;&lt;span class="math" id="mac_printisbn_ch21_03EQ_0019.png" tabindex="0"&gt;&lt;math alttext="6.02 times 10 Superscript 6" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mn&gt;6.02&lt;/mn&gt;&lt;mo&gt;×&lt;/mo&gt;&lt;msup&gt;&lt;mrow&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;/mrow&gt;&lt;mn&gt;6&lt;/mn&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;annotation-xml name="alternate-representation" encoding="application/xhtml+xml"&gt;&lt;img src="../images/MATH/mac_printisbn_ch21_03EQ_0019.png" alt="6.02 times 10 Superscript 6" xmlns="http://www.w3.org/1999/xhtml" /&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;/p&gt;&lt;/li&gt; &lt;li id="rog_9781319339180_79K1iqmz54"&gt;&lt;p class="answer noindent" epub:type="answer" id="rog_9781319339180_M9jafYFUEP"&gt;&lt;span class="math" id="mac_printisbn_ch21_03EQ_0020.png" tabindex="0"&gt;&lt;math alttext="456 times 10 cubed" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mn&gt;456&lt;/mn&gt;&lt;mo&gt;×&lt;/mo&gt;&lt;msup&gt;&lt;mrow&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;/mrow&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;annotation-xml name="alternate-representation" encoding="application/xhtml+xml"&gt;&lt;img src="../images/MATH/mac_printisbn_ch21_03EQ_0020.png" alt="456 times 10 cubed" xmlns="http://www.w3.org/1999/xhtml" /&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;/p&gt;&lt;/li&gt; &lt;li id="rog_9781319339180_zlHMmI4zAl"&gt;&lt;p class="answer noindent" epub:type="answer" id="rog_9781319339180_gadSXz3PeZ"&gt;&lt;span class="math" id="mac_printisbn_ch21_03EQ_0021.png" tabindex="0"&gt;&lt;math alttext="22.4 times 10 Superscript negative 3" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mn&gt;22.4&lt;/mn&gt;&lt;mo&gt;×&lt;/mo&gt;&lt;msup&gt;&lt;mrow&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mo  lspace="0" rspace="0"&gt;−&lt;/mo&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;/mrow&gt; &lt;annotation-xml name="alternate-representation" encoding="application/xhtml+xml"&gt;&lt;img src="../images/MATH/mac_printisbn_ch21_03EQ_0021.png" alt="22.4 times 10 Superscript negative 3" xmlns="http://www.w3.org/1999/xhtml" /&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;/p&gt;&lt;/li&gt; &lt;li id="rog_9781319339180_8xOk4117o7"&gt;&lt;p class="answer noindent" epub:type="answer" id="rog_9781319339180_uGTS9MspCb"&gt;&lt;span class="math" id="mac_printisbn_ch21_03EQ_0022.png" tabindex="0"&gt;&lt;math alttext="0.375 times 10 Superscript negative 4" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mn&gt;0.375&lt;/mn&gt;&lt;mo&gt;×&lt;/mo&gt;&lt;msup&gt;&lt;mrow&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mo  lspace="0" rspace="0"&gt;−&lt;/mo&gt;&lt;mn&gt;4&lt;/mn&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;annotation-xml name="alternate-representation" encoding="application/xhtml+xml"&gt;&lt;img src="../images/MATH/mac_printisbn_ch21_03EQ_0022.png" alt="0.375 times 10 Superscript negative 4" xmlns="http://www.w3.org/1999/xhtml" /&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;&lt;/p&gt;&lt;/li&gt; &lt;li id="rog_9781319339180_giJCMiWsnw"&gt;&lt;p class="answer noindent" epub:type="answer" id="rog_9781319339180_8v0H5PqfoI"&gt;&lt;span class="math" id="mac_printisbn_ch21_03EQ_0023.png" tabindex="0"&gt;&lt;math alttext="138 times 10 Superscript negative 6" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mn&gt;138&lt;/mn&gt;&lt;mo&gt;×&lt;/mo&gt;&lt;msup&gt;&lt;mrow&gt;&lt;mn&gt;10&lt;/mn&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mo  lspace="0" rspace="0"&gt;−&lt;/mo&gt;&lt;mn&gt;6&lt;/mn&gt;&lt;/mrow&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;annotation-xml name="alternate-representation" encoding="application/xhtml+xml"&gt;&lt;img src="../images/MATH/mac_printisbn_ch21_03EQ_0023.png" alt="138 times 10 Superscript negative 6" xmlns="http://www.w3.org/1999/xhtml" /&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt;Example 1-3&lt;/p&gt;&lt;/li&gt; &lt;/ol&gt; &lt;/li&gt; &lt;/ol&gt;</code>
+              </pre>
+            </li>
+          </ul>
+          <p class="noindent" id="olbd311c338d9b8f659382338c943721">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450017">HTML Coding Result</strong>
+          </p>
+          <ol class="numbered-list" id="rog_9781319339180_AtGWPxa8vA">
+            <li class="question" epub:type="question" data-answer="mac_printisbn_ch11_01.xhtml#011" id="dayu4b5a47f96e231c57d5f68c2e3052">
+              <p class="question noindent" epub:type="question" id="rog_9781319339180_uqP9wDvwhr">19. Write the following numbers using decimals:</p>
+              <ol class="ol-alpha-uc" id="rog_9781319339180_S9iYYGLjgJ">
+                <li id="rog_9781319339180_TQMQl6zxZE">
+                  <p class="answer noindent" epub:type="answer" id="rog_9781319339180_jHkfypkBsw">
+                    <span class="math" id="mac_printisbn_ch21_03EQ_0016.png" tabindex="0">
+                      <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style 4.42 cross times 10 to the power of negative 3 end exponent" display="inline" id="ze6bc492-129f-3586-96c7-6ec9f73fa3e3">
+                        <semantics id="asicc6ff488c1caa9061cf5358930a39">
+                          <mrow id="txzr9b7ec6d6fe76c31d17b0107b5876">
+                            <mn id="xtrc0ba8c57d9ec195d9aa04f0c9481a">4.42 </mn>
+                            <mo id="dcre4bad020e61ef085ae2315e5c9b14">× </mo>
+                            <msup id="nutr93656d9e779652886947b9fc6ec8">
+                              <mrow id="ndel8a724f79fed4355aca48702f3856">
+                                <mn id="gccx49f2f388ec23dee3a598f1fdee00">10 </mn>
+                              </mrow>
+                              <mrow id="skwc6576e0886fdd3330f58dd57faa58">
+                                <mo id="pbptbcf8c11111b60267a003569cbaff" lspace="0" rspace="0">− </mo>
+                                <mn id="rynkdd6624c335fe7bda21062c4d3032">3 </mn>
+                              </mrow>
+                            </msup>
+                          </mrow>
+                          <annotation-xml encoding="application/xhtml+xml" id="bjpj6c00423d7bc78606a33d80b903eb" name="alternate-representation">
+                            <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style 4.42 cross times 10 to the power of negative 3 end exponent" id="xvnpae1ae236ba4c366b8575011c68de" src="../images/ze6bc492-129f-3586-96c7-6ec9f73fa3e3.png"></img>
+                          </annotation-xml>
+                        </semantics>
+                      </math>
+                    </span>
+                  </p>
+                </li>
+                <li id="rog_9781319339180_76daDRsp2K">
+                  <p class="answer noindent" epub:type="answer" id="rog_9781319339180_z7Fs6LpCZ9">
+                    <span class="math" id="mac_printisbn_ch21_03EQ_0017.png" tabindex="0">
+                      <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style 7.09 cross times 10 to the power of negative 6 end exponent" display="inline" id="fa10bab1-e9ab-3764-8b73-ec18e03ad8e6">
+                        <semantics id="tncscc184f3b2cbc68a446d6876e5899">
+                          <mrow id="amir4a7be2a4926bfcf255311902b1e0">
+                            <mn id="cqvo8535d6abb9f6c9513a6800451c0e">7.09 </mn>
+                            <mo id="ykpnc4d19358edab0c5676c48d6f4e86">× </mo>
+                            <msup id="nwhh5c9121784c408e9479866ce65a05">
+                              <mrow id="ypis808d329b8f5d35869b938db54b5e">
+                                <mn id="bbmof09610a71cae3f1661d5f6c33b4f">10 </mn>
+                              </mrow>
+                              <mrow id="knne51d885aead4c3ce4d42e068fe1d8">
+                                <mo id="lngped6ca26c880347f49bd8b0cab450" lspace="0" rspace="0">− </mo>
+                                <mn id="kvve29955f6ad6e9ffd794348f885b96">6 </mn>
+                              </mrow>
+                            </msup>
+                          </mrow>
+                          <annotation-xml encoding="application/xhtml+xml" id="dquof9a5565dd84d8d0ff47912530d8e" name="alternate-representation">
+                            <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style 7.09 cross times 10 to the power of negative 6 end exponent" id="rmxcfb59a3b66ac9eccc61231214004a" src="../images/fa10bab1-e9ab-3764-8b73-ec18e03ad8e6.png"></img>
+                          </annotation-xml>
+                        </semantics>
+                      </math>
+                    </span>
+                  </p>
+                </li>
+                <li id="rog_9781319339180_x6iU7M3Kbh">
+                  <p class="answer noindent" epub:type="answer" id="rog_9781319339180_xu9ixBUFuX">
+                    <span class="math" id="mac_printisbn_ch21_03EQ_0018.png" tabindex="0">
+                      <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style 8.28 cross times 10 squared" display="inline" id="p85c5c03-6c59-38d4-a39b-68c222fe4146">
+                        <semantics id="drlu9261abc0e102aa9c216479a84ecf">
+                          <mrow id="yswh5a29ac51504b87d4f469a32a51b8">
+                            <mn id="vdgra23278fed4573e60ec8ed5443965">8.28 </mn>
+                            <mo id="kzdr97f0da7a677362186fa3e0fa1382">× </mo>
+                            <msup id="vjjg2c8a3bfb3fba57088acc475b84c0">
+                              <mrow id="pkyp91379afbca04b28f505c8f8a04f1">
+                                <mn id="djiz1668f07f3f8467e7f58e749f0aa0">10 </mn>
+                              </mrow>
+                              <mn id="meam81f8c7f202d9b9d2ff27cfb66e83">2 </mn>
+                            </msup>
+                          </mrow>
+                          <annotation-xml encoding="application/xhtml+xml" id="rlfk354ac6890b00a1d2f72f6f5ad826" name="alternate-representation">
+                            <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style 8.28 cross times 10 squared" id="ydsp4b7e823579781cb5e00b0cb4c9bc" src="../images/p85c5c03-6c59-38d4-a39b-68c222fe4146.png"></img>
+                          </annotation-xml>
+                        </semantics>
+                      </math>
+                    </span>
+                  </p>
+                </li>
+                <li id="rog_9781319339180_yHI9M3okVT">
+                  <p class="answer noindent" epub:type="answer" id="rog_9781319339180_hf0ib2aJm9">
+                    <span class="math" id="mac_printisbn_ch21_03EQ_0019.png" tabindex="0">
+                      <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style 6.02 cross times 10 to the power of 6" display="inline" id="vd6d12e4-3791-3e21-b533-a0790a48313f">
+                        <semantics id="ihbbd6ab8f6b01de9a6941ea6932eb03">
+                          <mrow id="umfg9fdc47c9ec5a85b318d116dd573a">
+                            <mn id="rrdf74d51e0322624da26bd2d222c2a5">6.02 </mn>
+                            <mo id="izpv50a5064b633e5e1b9f1745a66b84">× </mo>
+                            <msup id="vavfe0051ce55b0fdb220cbec1a9b284">
+                              <mrow id="zeauc8b4b24e34203b95851029aea745">
+                                <mn id="uykyc122afab1545aa8a48383c80118b">10 </mn>
+                              </mrow>
+                              <mn id="puva9f4034d44ce2d272ffc7c7cba007">6 </mn>
+                            </msup>
+                          </mrow>
+                          <annotation-xml encoding="application/xhtml+xml" id="rqzp242d952bd08e8f74448e4924324d" name="alternate-representation">
+                            <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style 6.02 cross times 10 to the power of 6" id="jktl07269e40f6404015a133faee5f17" src="../images/vd6d12e4-3791-3e21-b533-a0790a48313f.png"></img>
+                          </annotation-xml>
+                        </semantics>
+                      </math>
+                    </span>
+                  </p>
+                </li>
+                <li id="rog_9781319339180_79K1iqmz54">
+                  <p class="answer noindent" epub:type="answer" id="rog_9781319339180_M9jafYFUEP">
+                    <span class="math" id="mac_printisbn_ch21_03EQ_0020.png" tabindex="0">
+                      <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style 456 cross times 10 cubed" display="inline" id="ic355903-2fc2-30da-a0e3-3f7cb0498212">
+                        <semantics id="nmvk924f07598862292e3c8938294389">
+                          <mrow id="uodq6cde9292f531c7188109caca93fd">
+                            <mn id="vhhe267a123e52d53c761594463a3a68">456 </mn>
+                            <mo id="ienm4b5a3e8dfed94f59582bf6d51b92">× </mo>
+                            <msup id="aivl778570ff6cc9b19ecde702b2f0ee">
+                              <mrow id="dvbid32066ac5d1f1c48a057b5862660">
+                                <mn id="rypi14da710fabfe9aa7cf34ae106527">10 </mn>
+                              </mrow>
+                              <mn id="rtgo56fcd3d66603403d43c28257a6d3">3 </mn>
+                            </msup>
+                          </mrow>
+                          <annotation-xml encoding="application/xhtml+xml" id="qtmz09b155c041fae0e0d3bcb4248d99" name="alternate-representation">
+                            <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style 456 cross times 10 cubed" id="deny7b97d70d5984bb510c19e1ba0ec2" src="../images/ic355903-2fc2-30da-a0e3-3f7cb0498212.png"></img>
+                          </annotation-xml>
+                        </semantics>
+                      </math>
+                    </span>
+                  </p>
+                </li>
+                <li id="rog_9781319339180_zlHMmI4zAl">
+                  <p class="answer noindent" epub:type="answer" id="rog_9781319339180_gadSXz3PeZ">
+                    <span class="math" id="mac_printisbn_ch21_03EQ_0021.png" tabindex="0">
+                      <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style 22.4 cross times 10 to the power of negative 3 end exponent" display="inline" id="ea87ccee-8ab1-321c-9787-421836e25eaa">
+                        <semantics id="tewz48aa10a0dca64a57d6fab094897d">
+                          <mrow id="tbfxe2d969ebf8cb1211721805ee5815">
+                            <mn id="tdrlfad0af30afd2a5109b6d596e9cd9">22.4 </mn>
+                            <mo id="ctex8edc83708614538ead12c134ddd6">× </mo>
+                            <msup id="dgzs3ef93ec78ca6f61c3649bcade3c0">
+                              <mrow id="hovm81b716018ba41fa71609b11b37db">
+                                <mn id="hgxr0acc486b758e607206c0447442d9">10 </mn>
+                              </mrow>
+                              <mrow id="joka73c1e6963e856aae6481d408d5db">
+                                <mo id="trki22ab743d5d2a0a154d974a5efc55" lspace="0" rspace="0">− </mo>
+                                <mn id="exie8edcadad5f8179b05576e05ed2a6">3 </mn>
+                              </mrow>
+                            </msup>
+                          </mrow>
+                          <annotation-xml encoding="application/xhtml+xml" id="woime16cf32d579546096f00a3b0445f" name="alternate-representation">
+                            <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style 22.4 cross times 10 to the power of negative 3 end exponent" id="pade75d222e48c31efda67d2a3e08331" src="../images/ea87ccee-8ab1-321c-9787-421836e25eaa.png"></img>
+                          </annotation-xml>
+                        </semantics>
+                      </math>
+                    </span>
+                  </p>
+                </li>
+                <li id="rog_9781319339180_8xOk4117o7">
+                  <p class="answer noindent" epub:type="answer" id="rog_9781319339180_uGTS9MspCb">
+                    <span class="math" id="mac_printisbn_ch21_03EQ_0022.png" tabindex="0">
+                      <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style 0.375 cross times 10 to the power of negative 4 end exponent" display="inline" id="df60c9be-ffc0-3e7c-87ce-14e5087708d1">
+                        <semantics id="uutm12714daf553d8a421fd00bc50105">
+                          <mrow id="sppj9c1be891f614a055b5cf662d86cd">
+                            <mn id="bolf0539ebc26f82e27c982e426896a1">0.375 </mn>
+                            <mo id="umlv355607b8e9504e5630e2a75c6687">× </mo>
+                            <msup id="gpkt4786ce32459f439ba95f3702fc91">
+                              <mrow id="bbpf53271d88ae933c970dc07e454398">
+                                <mn id="ijwcef4a9f747d7683502ef653e186df">10 </mn>
+                              </mrow>
+                              <mrow id="axck40b6d6f776040797e4564774848d">
+                                <mo id="pdedaf7807a98a3a499c3c7153e3a61d" lspace="0" rspace="0">− </mo>
+                                <mn id="xlld04dfd31b1fbb4497410c6d50766c">4 </mn>
+                              </mrow>
+                            </msup>
+                          </mrow>
+                          <annotation-xml encoding="application/xhtml+xml" id="rjrg59f531f4677de03f8a8e66087368" name="alternate-representation">
+                            <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style 0.375 cross times 10 to the power of negative 4 end exponent" id="zhye1e07f31040ad464dac5c6b90d328" src="../images/df60c9be-ffc0-3e7c-87ce-14e5087708d1.png"></img>
+                          </annotation-xml>
+                        </semantics>
+                      </math>
+                    </span>
+                  </p>
+                </li>
+                <li id="rog_9781319339180_giJCMiWsnw">
+                  <p class="answer noindent" epub:type="answer" id="rog_9781319339180_8v0H5PqfoI"><span class="math" id="mac_printisbn_ch21_03EQ_0023.png" tabindex="0"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style 138 cross times 10 to the power of negative 6 end exponent" display="inline" id="wa36243d-c56b-331b-87af-fc3b8cd7190e"><semantics id="qiscfa3fea191919d6e9be54830f78f6"><mrow id="dhne734560665ce99857fc29783ea8ec"><mn id="hxdt1a5a0ecc98e53caddeb3a086d556">138 </mn><mo id="vvboc0630785edd075278552e1fede02">× </mo><msup id="rnzbbe9295851ebb2d1023aea58acf2d"><mrow id="rhqf3211090f71cc101dd9be12206209"><mn id="uybc54f18a0d157e4c99a1d795bbe9b4">10 </mn></mrow><mrow id="gbis72573e69abc1e6cc5fb28d92a93d"><mo id="fjeof7144e3196b9561095703a19987e" lspace="0" rspace="0">− </mo><mn id="hdrt2e92a2a21a33a4771d8b13303f07">6 </mn></mrow></msup></mrow><annotation-xml encoding="application/xhtml+xml" id="medi683675c8fd34df0fd39b28087b61" name="alternate-representation"><img xmlns="http://www.w3.org/1999/xhtml" alt="inline style 138 cross times 10 to the power of negative 6 end exponent" id="rlanc24092fb7baafd6934fcf71a8d0f" src="../images/wa36243d-c56b-331b-87af-fc3b8cd7190e.png"></img></annotation-xml></semantics></math></span>Example 1-3</p>
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </section>
+        <section class="sect3" data-cfititle="Question with a list / show answer" id="gomc386e1f7971ec60372ba7ea6814f3">
+          <header id="ynek7253e855e5c5b4bcca5b54eb7a1c">
+            <h4 class="c-head" id="wwea430ca67f1c67796244a38363e719">Question with a list / show answer</h4>
+          </header>
+          <p class="noindent" id="oynleaf71b8e36e65bb5369a3711d6fc">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450018">HTML Coding Sample</strong>
+          </p>
+          <ul class="ul-no-mark" id="xjuz8f19118e86b443eb81cd5c450c58">
+            <li id="unhs06b1441ddb1fe501b293cd16383c">
+              <pre tabindex="0" id="cmtn5da728b0b976250b46b51d956fc1">
+                <code class="language-html" id="dmjy35119a0561ed264ee03fb06f9e1e">&lt;ol class="numbered-list" id="dav_9781319347970_jqQaf1V9RU"&gt; &lt;li data-answer="mac_printisbn_ch11_01.xhtml#012" id="dav_9781319347970_0gRNbVhKiw"&gt; &lt;p class="question noindent" epub:type="question" id="dav_9781319347970_hO41qTpRO7"&gt;As scientists, psychologists&lt;/p&gt; &lt;ol class="ol-alpha-lc" id="dav_9781319347970_x2ANAA8pVf"&gt; &lt;li id="dav_9781319347970_KQjIilnEFv"&gt; &lt;p class="answer noindent" epub:type="answer" id="dav_9781319347970_oHphVpNYLl"&gt;keep their methods private so others will not repeat their research.&lt;/p&gt; &lt;/li&gt; &lt;li id="dav_9781319347970_la7e1xgDNb"&gt; &lt;p class="answer noindent" epub:type="answer" id="dav_9781319347970_nrpCm04VjF"&gt;assume the truth of articles published in leading scientific journals.&lt;/p&gt; &lt;/li&gt; &lt;li id="dav_9781319347970_6kLSiqcSsK"&gt; &lt;p class="answer noindent" epub:type="answer" id="dav_9781319347970_mJd9uajEhk"&gt;reject evidence that competes with traditional findings.&lt;/p&gt; &lt;/li&gt; &lt;li id="dav_9781319347970_Ejr4IxSmuv"&gt; &lt;p class="answer noindent" epub:type="answer" id="dav_9781319347970_UrfGOAYPwb"&gt;are willing to ask questions and to reject claims that cannot be verified by research.&lt;/p&gt; &lt;/li&gt; &lt;/ol&gt; &lt;/li&gt; &lt;/ol&gt;</code>
+              </pre>
+            </li>
+          </ul>
+          <p class="noindent" id="yjlx0f7fca53e5eb56682b3ba3094afe">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450019">HTML Coding Result</strong>
+          </p>
+          <ol class="numbered-list" id="dav_9781319347970_jqQaf1V9RU">
+            <li class="question" epub:type="question" data-answer="mac_printisbn_ch11_01.xhtml#012" id="dayu4b5a47f96e231c57d5f68c2e3053">
+              <p class="question noindent" epub:type="question" id="dav_9781319347970_hO41qTpRO7">As scientists, psychologists</p>
+              <ol class="ol-alpha-lc" id="dav_9781319347970_x2ANAA8pVf">
+                <li id="dav_9781319347970_KQjIilnEFv">
+                  <p class="answer noindent" epub:type="answer" id="dav_9781319347970_oHphVpNYLl">keep their methods private so others will not repeat their research.</p>
+                </li>
+                <li id="dav_9781319347970_la7e1xgDNb">
+                  <p class="answer noindent" epub:type="answer" id="dav_9781319347970_nrpCm04VjF">assume the truth of articles published in leading scientific journals.</p>
+                </li>
+                <li id="dav_9781319347970_6kLSiqcSsK">
+                  <p class="answer noindent" epub:type="answer" id="dav_9781319347970_mJd9uajEhk">reject evidence that competes with traditional findings.</p>
+                </li>
+                <li id="dav_9781319347970_Ejr4IxSmuv">
+                  <p class="answer noindent" epub:type="answer" id="dav_9781319347970_UrfGOAYPwb">are willing to ask questions and to reject claims that cannot be verified by research.</p>
+                </li>
+              </ol>
+            </li>
+          </ol>
+        </section>
+        <section class="sect3" data-cfititle="Simple question / answer with a list" id="edqv264e3d439c1db46b12738424d286">
+          <header id="ywmy80eb392459d845e8e8112b14d6bc">
+            <h4 class="c-head" id="auyq8c7287ea5bb0d1f9566791e58013">Simple question / answer with a list</h4>
+          </header>
+          <p class="noindent" id="huot6650cfe5d029998c565aa65e6ba6">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450020">HTML Coding Sample</strong>
+          </p>
+          <ul class="ul-no-mark" id="pssx47e063f349e34a42d91a38d13d5e">
+            <li id="udvyaeeb39b58871996e582916f18aa2">
+              <pre tabindex="0" id="yvydf0ad36664d7ef2493e56002527f1">
+                <code class="language-html" id="gwfra6d40a7fc33ff3151f6c70eccaf2">&lt;ol class="numbered-list" id="rog_9781319339180_AtGWPQa8vA"&gt; &lt;li data-answer="mac_printisbn_ch11_01.xhtml#013" id="rog_9781319339180_pstnCPqksA"&gt; &lt;p class="question noindent" epub:type="question" id="rog_9781319339180_ra1uaFLs12"&gt;47. &lt;strong class="important" id="rog_9781319339180_51a12cfQX7"&gt; Medical&lt;/strong&gt; A typical prostate gland has a mass of about &lt;span class="math" id="mac_printisbn_ch21_03EQ_0024.png" tabindex="0"&gt;&lt;math alttext="20 g" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mn&gt;20&lt;/mn&gt;&lt;mtext&gt; &lt;/mtext&gt;&lt;mtext&gt;g&lt;/mtext&gt;&lt;/mrow&gt;&lt;annotation-xml name="alternate-representation" encoding="application/xhtml+xml"&gt;&lt;img src="../images/MATH/mac_printisbn_ch21_03EQ_0024.png" alt="20 g" xmlns="http://www.w3.org/1999/xhtml" /&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt; and is about the size of a walnut. The gland can be modeled as a sphere &lt;span class="math" id="mac_printisbn_ch21_03EQ_0025.png" tabindex="0"&gt;&lt;math alttext="4.50 cm" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mn&gt;4.50&lt;/mn&gt;&lt;mtext&gt; &lt;/mtext&gt;&lt;mtext&gt;cm&lt;/mtext&gt;&lt;/mrow&gt;&lt;annotation-xml name="alternate-representation" encoding="application/xhtml+xml"&gt;&lt;img src="../images/MATH/mac_printisbn_ch21_03EQ_0025.png" alt="4.50 cm" xmlns="http://www.w3.org/1999/xhtml" /&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt; in diameter and of uniform density. (a) What is the density (mass per volume) of the prostate? Express your answer in &lt;span class="math" id="mac_printisbn_ch21_03EQ_0026.png" tabindex="0"&gt;&lt;math alttext="g slash cm cubed" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mtext&gt;g&lt;/mtext&gt;&lt;mo  lspace="0" rspace="0"&gt;/&lt;/mo&gt;&lt;msup&gt;&lt;mrow&gt;&lt;mtext&gt;cm&lt;/mtext&gt;&lt;/mrow&gt;&lt;mn&gt;3&lt;/mn&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;annotation-xml name="alternate-representation" encoding="application/xhtml+xml"&gt;&lt;img src="../images/MATH/mac_printisbn_ch21_03EQ_0026.png" alt="g slash cm cubed" xmlns="http://www.w3.org/1999/xhtml" /&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt; and in standard SI units. (b) How does the density compare to that of water? (c) During a biopsy of the prostate, a thin needle is used to remove a series of cylindrical tissue samples. If the cylinders have a total length of &lt;span class="math" id="mac_printisbn_ch21_03EQ_0027.png" tabindex="0"&gt;&lt;math alttext="28.0 mm" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mn&gt;28.0&lt;/mn&gt;&lt;mtext&gt; &lt;/mtext&gt;&lt;mtext&gt;mm&lt;/mtext&gt;&lt;/mrow&gt;&lt;annotation-xml name="alternate-representation" encoding="application/xhtml+xml"&gt;&lt;img src="../images/MATH/mac_printisbn_ch21_03EQ_0027.png" alt="28.0 mm" xmlns="http://www.w3.org/1999/xhtml" /&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;&lt;/math&gt;&lt;/span&gt; and a diameter of &lt;span class="math" id="mac_printisbn_ch21_03EQ_0028.png" tabindex="0"&gt;&lt;math alttext="0.100 mm" display="inline" xmlns="http://www.w3.org/1998/Math/MathML"&gt;&lt;semantics&gt;&lt;mrow&gt;&lt;mn&gt;0.100&lt;/mn&gt;&lt;mtext&gt; &lt;/mtext&gt;&lt;mtext&gt;mm&lt;/mtext&gt;&lt;/mrow&gt;&lt;annotation-xml name="alternate-representation" encoding="application/xhtml+xml"&gt;&lt;img src="../images/MATH/mac_printisbn_ch21_03EQ_0028.png" alt="0.100 mm" xmlns="http://www.w3.org/1999/xhtml" /&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;&lt;/math&gt;,&lt;/span&gt; what is the total mass (in g) of tissue taken? (d) What percentage of the mass of the prostate is removed during the biopsy? Example 1-2&lt;/p&gt; &lt;/li&gt; &lt;/ol&gt;</code>
+              </pre>
+            </li>
+          </ul>
+          <p class="noindent" id="bnptab65e8d1f66f177345ca5f01a2af">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450021">HTML Coding Result</strong>
+          </p>
+          <ol class="numbered-list" id="rog_9781319339180_AtGWPQa8vA">
+            <li class="question" epub:type="question" data-answer="mac_printisbn_ch11_01.xhtml#013" id="dayu4b5a47f96e231c57d5f68c2e3054">
+              <p class="question noindent" epub:type="question" id="rog_9781319339180_ra1uaFLs12">47. <strong class="important" id="rog_9781319339180_51a12cfQX7"> Medical</strong> A typical prostate gland has a mass of about <span class="math" id="mac_printisbn_ch21_03EQ_0024.png" tabindex="0"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style 20 text end text text g  end text" display="inline" id="f9537ca8-eee8-3888-8d3b-e72099abbd56"><semantics id="qher915b976d953d4fd8d10a5bf959a6"><mrow id="vgfx7dcea3ceee88f709c48866c0b0dc"><mn id="jyla1575869e1a2a88f70ecbff075a6e">20 </mn><mtext id="rjrgf10f6fae4c667a38432c2b8e5a05">  </mtext><mtext id="ofva411977410fdd9e9d2911a062df59">g </mtext></mrow><annotation-xml encoding="application/xhtml+xml" id="npbgd5502c9e3d78c50daea5f4a0fe64" name="alternate-representation"><img xmlns="http://www.w3.org/1999/xhtml" alt="inline style 20 text end text text g  end text" id="phsn757821de51f34e3ab242c2637618" src="../images/f9537ca8-eee8-3888-8d3b-e72099abbd56.png"></img></annotation-xml></semantics></math></span> and is about the size of a walnut. The gland can be modeled as a sphere <span class="math" id="mac_printisbn_ch21_03EQ_0025.png" tabindex="0"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style 4.50 text end text text cm  end text" display="inline" id="hec42665-8af5-3b3a-b23e-862490a9c408"><semantics id="jvbm1fff9fa62e62dda42f377c38f87c"><mrow id="pywv8cd4214f4bbf9a2327732ff7209c"><mn id="marh2236463a883518bc44ac813e5ccf">4.50 </mn><mtext id="rewh79148507b35dbecf2f7ac23ed12c">  </mtext><mtext id="uovie4df729bbaf17077ce06081264ad">cm </mtext></mrow><annotation-xml encoding="application/xhtml+xml" id="trrf33ab8fad79a74558a02091ac28c3" name="alternate-representation"><img xmlns="http://www.w3.org/1999/xhtml" alt="inline style 4.50 text end text text cm  end text" id="uzbsb2eafd761498b13ced5ce011a4dc" src="../images/hec42665-8af5-3b3a-b23e-862490a9c408.png"></img></annotation-xml></semantics></math></span> in diameter and of uniform density. (a) What is the density (mass per volume) of the prostate? Express your answer in <span class="math" id="mac_printisbn_ch21_03EQ_0026.png" tabindex="0"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style text g  end text divided by text cm  end text cubed" display="inline" id="l62e63ea-d9ed-3e2b-9eb8-6730837f2ad7"><semantics id="lntla51e5e37885dc96e393ee1ceb908"><mrow id="bmuq9778ae70bbfc6286b2d79b7b31a3"><mtext id="orwra735733dde3a0b82d5ed9352e97f">g </mtext><mo id="xhup104cda40b4b51ab7c424a5b5ab05" lspace="0" rspace="0">/ </mo><msup id="siymb3ae7b84b0eb2ca6598f73c3a178"><mrow id="uhgz1d3afd5c9c1f5fa96d0190716a46"><mtext id="xhoj2bd5880d179815f739e730f96a72">cm </mtext></mrow><mn id="wtss90fc88e5dcacb3f1196da3d2ca01">3 </mn></msup></mrow><annotation-xml encoding="application/xhtml+xml" id="tsmt487d420820b6ac73dd8708fdc086" name="alternate-representation"><img xmlns="http://www.w3.org/1999/xhtml" alt="inline style text g  end text divided by text cm  end text cubed" id="arue2d7b4b6827c2991f4b588f18c4fb" src="../images/l62e63ea-d9ed-3e2b-9eb8-6730837f2ad7.png"></img></annotation-xml></semantics></math></span> and in standard SI units. (b) How does the density compare to that of water? (c) During a biopsy of the prostate, a thin needle is used to remove a series of cylindrical tissue samples. If the cylinders have a total length of <span class="math" id="mac_printisbn_ch21_03EQ_0027.png" tabindex="0"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style 28.0 text end text text mm  end text" display="inline" id="f08792ab-712d-3def-9a8e-9f0a83845c0c"><semantics id="ymnqc4b5c77fbca47c4f4832efeb75f1"><mrow id="hesy404abaab939a434f6c075f268c58"><mn id="xcelf0c38163a9e7e19a07a49a48d16f">28.0 </mn><mtext id="xaky875f7fe74a0e4c878e65dd956b44">  </mtext><mtext id="cuau638f7f0aa39706cbe9b8714aea5b">mm </mtext></mrow><annotation-xml encoding="application/xhtml+xml" id="fyyybe5f2bd97e4af7b28dc1059cb1d6" name="alternate-representation"><img xmlns="http://www.w3.org/1999/xhtml" alt="inline style 28.0 text end text text mm  end text" id="gzgs8bffce013ef7f8318a16cd6ed3da" src="../images/f08792ab-712d-3def-9a8e-9f0a83845c0c.png"></img></annotation-xml></semantics></math></span> and a diameter of <span class="math" id="mac_printisbn_ch21_03EQ_0028.png" tabindex="0"><math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style 0.100 text end text text mm  end text" display="inline" id="dea4f2d4-bbf2-3670-9710-ccf508afab56"><semantics id="vppc7a156900474e64537406878b310a"><mrow id="cwfh4eee82778aa4047c92942dc15172"><mn id="lvqu105105d293a7bab2fb451c140af1">0.100 </mn><mtext id="nvpe58eccf27f73b91da756a3a06060e">  </mtext><mtext id="waxn970c6f3bb87b026a4a1b0b33a9c7">mm </mtext></mrow><annotation-xml encoding="application/xhtml+xml" id="ixel08f5dee3f09e46ca25241dbdf16a" name="alternate-representation"><img xmlns="http://www.w3.org/1999/xhtml" alt="inline style 0.100 text end text text mm  end text" id="rxld7abe10504ad385c143a2fccf4c83" src="../images/dea4f2d4-bbf2-3670-9710-ccf508afab56.png"></img></annotation-xml></semantics></math>,</span> what is the total mass (in g) of tissue taken? (d) What percentage of the mass of the prostate is removed during the biopsy? Example 1-2</p>
+            </li>
+          </ol>
+        </section>
+      </section>
+    </section>
+  </body>
+</html>

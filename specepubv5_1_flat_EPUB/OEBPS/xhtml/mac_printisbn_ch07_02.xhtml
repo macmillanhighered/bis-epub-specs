@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:svg="http://www.w3.org/2000/svg" xmlns:epub="http://www.idpf.org/2007/ops" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" id="d4c4afbf10413093a3d87cd94119cb8c">
+  <head>
+    <meta charset="utf-8"></meta>
+    <meta name="process" content="final"></meta>
+    <meta name="schema" content="3.3"></meta>
+    <link href="../css/flat_mac_printisbn.css" type="text/css" rel="stylesheet"></link>
+    <link href="../css/common/lm_ui.css" type="text/css" rel="stylesheet"></link>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"></meta>
+    <link href="../css/common/lm_ui.css" type="text/css" rel="stylesheet"></link>
+    <title>71 Lists</title>
+  </head>
+  <body epub:type="bodymatter" class="bodymatter" data-lo-framework-id="">
+    <section class="sect1" id="ch07_02" data-cfititle="7.1. Lists">
+      <header class="v1" id="ohsxfd207a0d0e32df6e0c3fd976280e">
+        <h2 class="a-head v1" id="pxqf745ad2d6b21c4330287ce58fccf5"><span epub:type="pagebreak" role="doc-pagebreak" id="page30" aria-label="page 30"></span><span class="ordinal" id="whtze0d239ee0f6c41750ffd6e53a4cf">7.1. </span>Lists</h2>
+      </header>
+      <ul class="ul-bullet-list" id="bmnje490d70d8eeec9ad570db9d70453">
+        <li id="gjafe96c6962251fbd01c2e72dee4fdc">Do not use lists for presentational purposes. Use them only when a list is really needed.</li>
+        <li id="zwina97563a76efead4a35c4cb699b1a">Sets of related items marked up using ordered lists ( <code class="language-html" id="tkqp1abe2430a55d2cccec26a44b19d9">ol</code>) or unordered lists ( <code class="language-html" id="nddg2ad83dfafc9ae020cc87029f8ebb">ul</code>) elements, as appropriate. An unordered list will convey the same information regardless of the order of the items in it.</li>
+        <li id="jvls90cdd98fb0cd59822d223561a67b">Glossaries, dictionaries, FAQs and similar name/value association lists should be marked up using <code class="language-html" id="knbgbf25037d6dd05a79735209a3ac85">&lt;dl&gt;</code> elements.</li>
+        <li id="jqpdef6ff3641724239d846270390b05">Standard definition for each type of list - one tag for LOs, headings, etc. for ease of customizations.</li>
+        <li id="jjer319d844c92884084541b8982dd6d">When rendering as HTML list, list numbers and bullets cannot be colored, bolded, italicized, or otherwise directly styled. But custom bullets (arrows, checkmarks, etc) can be colored using Macmillan EPUB CSS with title specific color palette. For example:</li>
+        <li id="txqf13fb3dd20ee8a6d964654fabf212">If a list item is multiple paragraphs long, it should be tagged with “li-complex” and all of the content inside of the list must be wrapped in individual paragraph tags, not just after the first paragraph break.</li>
+        <li id="gjfv35403d54ebb1d6f38587f8cde806">If a list item is multiple lines long but inside one element, it should be tagged with “li-complex”.</li>
+      </ul>
+      <p class="noindent" id="wrmm2c4f5ae2fb94813ee7650992d3fc">
+        <strong class="important" id="btak6033ec33b8f82ba7711517dbbc13">XHTML:</strong>
+      </p>
+      <pre tabindex="0" id="hatjdbbe156522c10b0e13f4fcd52170">
+        <code class="language-html" id="zvzedf7c39cc9c56d1473c61798d1add">&lt;ul class="ul-arrow v1"&gt;</code>
+      </pre>
+      <p class="noindent" id="tucfe1d62e8a75c5da2152d295176ff9">
+        <strong class="important" id="jxzb9d594a5e51e1b380c1b02ad82f14">CSS:</strong>
+      </p>
+      <pre tabindex="0" id="yjebfdea4f4b6d621f5dfc952ecb3dec">
+        <code class="language-css" id="fbto562d5686c9d471d649614edcbd69">.ul-arrow &gt; li:before { content: '►'; ... } ... ul.v1 &gt; li:before { color: $colorD1; /*scss*/ }</code>
+      </pre>
+      <p class="noindent" id="tlzee01621e7e6318290b9f15abf81f8">
+        <a class="external" href="http://kb.daisy.org/publishing/docs/html/lists.html" id="dyind8ae4b5704bf1282254f3d056bf9">http://kb.daisy.org/publishing/docs/html/lists.html</a>
+      </p>
+      <section class="sect2" data-cfititle="7.1.1. List (&lt;ol&gt;, &lt;ul&gt;)" id="ch07_02_01">
+        <header id="chcu94cd5be40d380f79a25709cc9711">
+          <h3 class="b-head" id="jbsvc6b070f201f186ab2df4ca0b1aa6"><span class="ordinal" id="whtze0d239ee0f6c41751ffd6e53a4cf">7.1.1. </span>List (&lt;ol&gt;, &lt;ul&gt;)</h3>
+        </header>
+        <p class="noindent" id="qewoacdd298e5ca4c032161545c6fa07">
+          <strong class="important" id="qewoacdd398e5ca4c032161545c6fa07">SEMANTIC DEFINITION</strong>
+        </p>
+        <ul class="ul-no-mark" id="lowi441f9062a7e15aeaca5939b664c6">
+          <li id="vans4bf9c478b6cfff12c1d20a95f7d9">A series of items, either ordered or unordered. Lists must be declared to be ordered or unordered and can only contain list items &lt;li&gt;.</li>
+          <li id="snuq39fb14b50b7a246795d63169c2b0">List items can contain any other element, including math, images, paragraphs, tables, and nested lists.</li>
+          <li id="dhgt125ffa6a976b3149970838957cf8">CSS is very limited in what it can do with the list bullets and numbers because the lists and bullets are dynamically generated.</li>
+        </ul>
+        <p class="noindent" id="vhtydee91f099cf9ef041821ee820d91">
+          <strong class="important" id="qewoacdd498e5ca4c032161545c6fa07">ORDERED LISTS</strong>
+        </p>
+        <ul class="ul-no-mark" id="alho211c1549ab49e335967a2975e704">
+          <li id="rwpu10fbd490dbdf21bd0dbf4f191da9">In schema, for ordered lists, we allow only modifications based on the type of ordering, whether Arabic, Roman, or alphabetical.</li>
+          <li id="irvtc9601bb1818fb8c041246531dfd3">Numbering can start at any number value. Numbering does not skip values.</li>
+          <li id="oxli003523b2f27ef00fec111f7cad5e">Numbers cannot have colors or style (bold/italic) applied to them or any other content placed before them (parentheses, asterisks, etc).</li>
+        </ul>
+        <ul class="ul-no-mark" id="wqckc4dd30c8a356d09f6bb7fcfdfc1b">
+          <li id="gusv9bd751c875af462dcf290dfe721a">
+            <pre tabindex="0" id="wjhs4d70f44ec85560da72376590aa7f">
+              <code class="language-html" id="bihuaed39cb1657911a9605cbd27c8ba">&lt;ol&gt; &lt;li&gt;Numbered list item &lt;ol class="ol-alpha-uc"&gt; &lt;li&gt;Numbered list item &lt;ol&gt; &lt;li class="ol-alpha-lc"&gt;Numbered list item &lt;ol class="ol-roman-uc"&gt; &lt;li&gt;Numbered list item &lt;ol class="ol-roman-lc"&gt; &lt;li&gt;Numbered list item&lt;/li&gt; &lt;/ol&gt; &lt;/li&gt; &lt;/ol&gt; &lt;/li&gt; &lt;/ol&gt; &lt;/li&gt; &lt;/ol&gt;&lt;/li&gt; &lt;/ol&gt; </code>
+            </pre>
+          </li>
+        </ul>
+        <p class="noindent" id="xhex7494a4d5b06e970fbe4de6ed5d69">
+          <strong class="important" id="btak6033ec33b8f82ba7711517dbb300">UNORDERED LISTS</strong>
+        </p>
+        <p class="noindent" id="cvtn19b9c499067df997046812caa222">In schema, for unordered lists, we offer the default bullet, arrow, and checkmark. Due to limitations in CSS, the default bulleted list is determined by the level of list nesting: Black circle &gt; outlined circle &gt; black square &gt; black square.... There is an option to start with square bullets, but the sequence will then follow as black square &gt; outlined circle &gt; black square &gt; black square....</p>
+        <p class="noindent" id="mkmc2257c085c5b1f581dba0e25336b2">Bullets cannot have colors applied to them or any other content placed before them (parentheses, asterisks, etc).</p>
+        <ul class="ul-no-mark" id="hxsg36b5df7527f8c1348251de7bc187">
+          <li id="mqjd6d05a27878e377b957eff73e40ee">
+            <pre tabindex="0" id="djoj11f37edd2526365e249a6f84ea88">
+              <code class="language-html" id="amxpd1fdcaae9d7ae97635849c54f10e">&lt;ul&gt; &lt;li&gt;Bulleted list item&lt;/li&gt; &lt;li&gt;Bulleted list item&lt;/li&gt; &lt;li&gt;Bulleted list item with sublist &lt;ul&gt; &lt;li&gt;Bulleted list item with sublist &lt;ul&gt; &lt;li&gt;Bulleted list item&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;/ul&gt; &lt;ul class="ul-square"&gt; &lt;li&gt;Bulleted list item&lt;/li&gt; &lt;li&gt;Bulleted list item&lt;/li&gt; &lt;li&gt;Bulleted list item with sublist &lt;ul&gt; &lt;li&gt;Bulleted list item with sublist &lt;ul&gt; &lt;li&gt;Bulleted list item&lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;/ul&gt; &lt;/li&gt; &lt;/ul&gt; &lt;ul class="ul-arrow"&gt; &lt;li&gt;Arrow list&lt;/li&gt; &lt;li&gt;Arrow list&lt;/li&gt; &lt;li&gt;Arrow list&lt;/li&gt; &lt;/ul&gt; &lt;ul class="ul-checklist"&gt; &lt;li&gt;Checklist&lt;/li&gt; &lt;li&gt;Checklist&lt;/li&gt; &lt;li&gt;Checklist&lt;/li&gt; &lt;/ul&gt; &lt;ul class="ul-no-mark"&gt; &lt;li&gt;No mark&lt;/li&gt; &lt;li&gt;No mark&lt;/li&gt; &lt;li&gt;No mark&lt;/li&gt; &lt;/ul&gt; </code>
+            </pre>
+          </li>
+        </ul>
+        <p class="noindent" id="fdru729074748955659b1bd79f305f78">
+          <strong class="important" id="btak6033ec33b8f82ba7711517dbb301">NESTED ELEMENTS WITHIN LIST ITEM</strong>
+        </p>
+        <p class="noindent" id="kffi59b9bc30bfce17b86c833d023491">All other block-level elements may nested within list item (&lt;li&gt;), including paragraphs, tables, and images.</p>
+        <p class="noindent" id="awkd78bd5bda9dae8c00b00329ab23d9">Paragraphs within list items have a space above whereas standard list items alone will not.</p>
+        <section class="sect3" data-cfititle="7.1.1.1. Multi-column lists" id="ch07_02_01_01">
+          <header id="xerlce8f279b6230786d4bdc4fb884c5">
+            <h4 class="c-head" id="latlf8c2e59e7132c0cdff304d39f7dd"><span class="ordinal" id="whtze0d239ee0f6c41752ffd6e53a4cf">7.1.1.1. </span>Multi-column lists</h4>
+          </header>
+          <p class="noindent" id="lljuacb9b467c601534a1f11dc702405">
+            <strong class="important" id="btak6033ec33b8f82ba7711517dbb302">SINGLE LIST, MULTIPLE COLUMNS</strong>
+          </p>
+          <p class="noindent" id="vlvd79787d8255e682581b94cb1ef743">ul/ol element must be tagged with new class list-col2, list-col3, or list-col4 (two columns, three columns, and four columns respectively). This can be used on all lists.</p>
+          <p class="noindent" id="ayxda859442f34cde93f210fd2c5e27b">
+            <strong class="important" id="btak6033ec33b8f82ba7711517dbb303">MULTIPLE LISTS, ONE PER COLUMN</strong>
+          </p>
+          <p class="noindent" id="rdztac9752893164598a8ca845f77863">div.group may take an additional class from col2, col3, or col4 (two columns, three columns, and four columns respectively). Group also requires, as usual, alignment classes. Please refer to 30.1 in Tagging Guidelines 3.2. div.group.col# must have a number of direct child elements equal to the # in the class. There cannot be 3 lists in a col2 div, for example.</p>
+          <p class="noindent" id="gkkc521ce8984593ea89c2c1b385f91a">
+            <strong class="important" id="btak6033ec33b8f82ba7711517dbb304">CAUTION:</strong>
+          </p>
+          <ul class="ul-bullet-list" id="ofnge1a8d79c6caa17dab18a1cff4fbf">
+            <li id="crok25d33f131ae8d05f71205ce4faff">Aside from checkmark, arrow bullets, and bullet-less bullets, all bullets and list numbers will be positioned inside, not on a hanging indent. This is due to limitation in Vitalsource which causes list numbers and bullets to be cut off when on the outside in multi-column lists.</li>
+            <li id="eksm5c8ffa6ac4693bd2281d18d3af80">At narrower widths, lists and list items will appear one after another due to limitations in screen size. Due to the assumed pedagogical nature of the multi-column list, the content will not be moved to one fewer column, but to one single column. For example, if a reading system is narrowed to the next breakpoint width, a four column list would go to one column, not three.</li>
+            <li id="tjgd7f737e09749934b4e6696d133fee">The lists are set to break along columns so there are not widows at the top of the next column. Due to this, there may be situations where one column only has one item in it, while others have more. Therefore list items in multi-column lists are recommended to be very short, no more than a few words.</li>
+            <li id="crvq591c86b96f02444ccc851021ed12">You must not nest lists in multi-column lists or side-by-side lists.</li>
+          </ul>
+        </section>
+        <section class="sect3" data-cfititle="7.1.1.2. Complex list items" id="ch07_02_01_02">
+          <header id="lbmlba9ab93df4995eca30ddce47a93e">
+            <h4 class="c-head" id="qhlm67bc04bc34d6bdcb9411d174b927"><span class="ordinal" id="whtze0d239ee0f6c41753ffd6e53a4cf">7.1.1.2. </span>Complex list items</h4>
+          </header>
+          <p class="noindent" id="khbj7735a32a24b053e5bdf921154d11">
+            <strong class="important" id="btak6033ec33b8f82ba7711517dbb305">INSTRUCTIONS</strong>
+          </p>
+          <p class="noindent" id="lbqp83361f124a898009efa6de7f4d35">For list items that require spacing around the list item due to the item’s length, please use class of li-complex as a class on the li element.</p>
+          <p class="noindent" id="ctazc7016de45101e3f1650902af3d5a">Previously this was accomplished by nesting p elements inside of li elements. p is still allowed in li but it is not necessary to achieve spacing. It is only necessary when an li has multiple paragraphs inside of it.</p>
+        </section>
+      </section>
+    </section>
+  </body>
+</html>

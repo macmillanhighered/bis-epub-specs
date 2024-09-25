@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:svg="http://www.w3.org/2000/svg" xmlns:epub="http://www.idpf.org/2007/ops" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" id="b3d6d98b413a34e28c5dbc1628e87da3">
+  <head>
+    <meta charset="utf-8"></meta>
+    <meta name="process" content="final"></meta>
+    <meta name="schema" content="3.3"></meta>
+    <link href="../css/flat_mac_printisbn.css" type="text/css" rel="stylesheet"></link>
+    <link href="../css/common/lm_ui.css" type="text/css" rel="stylesheet"></link>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"></meta>
+    <link href="../css/common/lm_ui.css" type="text/css" rel="stylesheet"></link>
+    <title>654 Table Linking (XRef)</title>
+  </head>
+  <body epub:type="bodymatter" class="bodymatter" data-lo-framework-id="">
+    <section class="sect1" data-cfititle="6.5. Anchor (Hyperlinks and Cross References)" id="ch06_07">
+      <header id="svxv5025ac477f0da7a229e2f57cd9d4">
+        <h2 class="a-head v1" id="ldqx099df2822eaaab3475af70cc3ed0"><span epub:type="pagebreak" role="doc-pagebreak" id="page26" aria-label="page 26"></span><span class="ordinal" id="eraz6465566444e5d73327c921a12581">6.5. </span>Anchor (Hyperlinks and Cross References)</h2>
+      </header>
+      <p class="noindent" id="ibpc0897d9a7662966bc19cf0f2dc225">Link titles should include meaningful information. E.g., “More about Jane Eyre” is useful to the user of assistive technology; “More” is not.</p>
+      <ul class="ul-bullet-list" id="ujoxbf2929c4b165ddad97c5c9f7191a">
+        <li id="gyij6feec2e5609eb66e6c3e797ea2ba">Link text clearly indicates destination, or meaningful alternative is provided in a title attribute</li>
+        <li id="syayf327c69b5e7c798649eb1dd24893">Avoid redundant links.</li>
+        <li id="tdkm2455fc5c4b2865589d470b2430bb">Do not rely on color as the only indicator of the existence of a link: also use underlining or bold (strong).</li>
+        <li id="srxje30d67fe354ebe1021f772d8ea45">A secondary means of identifying linked text has been provided</li>
+        <li id="wycp06fe2f2f6460f8b4bdb26d207cfb">All cross references (“Chapter 9”, “see Chapter 1”, “in Module 2”, etc) should be hyperlinked. Schematron will look for these cases with the following terms: 	<ul class="ul-bullet-list" id="prvib59023755fee5e3b2d149078f8e4"><li id="nsro5893e65287ab28cd3b2f002f1a97">Chapter</li><li id="ftmib1dd7caf15dbf6bf7a5fd80eb6af">Part</li><li id="xwgtf2e6557a1672a169d8c83b8d11d7">Module</li><li id="njre0223e119bdbe7f17395fc586b5ea">Figure</li><li id="gpzv74136ca5034d6223766583ecbcfc">Table</li><li id="xgnjc47fa2c864f45f621881b0c4b13d">Equation number (eq-number)</li><li id="phqx0941722c4831b980533b55168499">Example</li></ul></li>
+        <li id="jdij1efe5e78a45626f958dee1477857">All links must be hyperlinked.</li>
+        <li id="jdij1efe5e78a34567f958dee1477857">Backlinks require the <code class="language-html" id="mfke7debd07a74fd537cba1f23f2b456">role="doc-backlink"</code>. These should be added to hyperlinks in Glossaries, Indexes, back of book Extended Descriptions, and Answer sections which point back to the main content.</li>
+      </ul>
+      <p class="noindent" id="ngdw8a8b1aac3bb860a991b5b63c60ed">
+        <a class="external" href="http://kb.daisy.org/publishing/docs/html/links.html" id="qpah54ae039ec341572479f11ef34964">http://kb.daisy.org/publishing/docs/html/links.html</a>
+      </p>
+      <section class="sect2" data-cfititle="6.5.1. Text References and Links" id="ch06_07_01">
+        <header id="nbjl025ef575308647331afda11c3a31">
+          <h3 class="b-head v2" id="rscb440851104db4909dcd5ec236d42f"><span class="ordinal" id="eraz6465566444e5d73327c921a12582">6.5.1. </span>Text References and Links</h3>
+        </header>
+        <ul class="ul-bullet-list" id="ptsy8fbf200b687759c342cd9f43fc45">
+          <li id="orlic099540a2010a2de99628a17e562">Web addresses should be hyperlinked to their destination. (Always include the full web address, including http://.)</li>
+          <li id="qegp2660540a77d46bd3c007bb376f52">For web addresses that appear within sources (e.g., citations to actual works used by the author in writing the book and thus cited in the text or in a Notes/References section), add the title attribute <code class="language-html" id="mfke7debd07a74fd537cba1f23f2b325">"source link"</code> to indicate that the link is for reference only. This is to signal to the end user that the link is not pedagogically significant to the reading experience. Example: <code class="language-html" id="ogjvd76ae2c994d5bc48b8305e83dea2"><a class="external" href="http://www.macmillanlearning.com/Catalog/page/accessibility" title="source link" id="qegp2660540a77d46bd3c007bb376x52"> </a></code></li>
+          <li id="pvbd3f5bf6fc6348dc8ff676e704c363">Anchors with links to web addresses should have the class "external" applied to them. This is to facilitate automation in enhancement process. For example:</li>
+        </ul>
+        <pre tabindex="0" id="hxjhd585fa8ba3d2a02ff869a821a203">
+          <code class="language-html" id="fwlqd60cf9e6ee06f4db64022047843a">&lt;a class="external" id="fri_9781319065669_kRbbXTgyVA" href="https://www.macmillanlearning.com"&gt;Text Here&lt;/a&gt;</code>
+        </pre>
+        <ul class="ul-bullet-list" id="zcgi151b1ed41c0e44a5c3a028ba1ec6">
+          <li id="wmvr94ea620b7cc6791bc6ae128fa6e5"><strong class="important" id="wkag5a3edefaf26e22f973f94d7595b4">Exception:</strong> When a book is providing an example  of how to format a citation that contains URLs, the URL is not meant to be visited by the reader and should not be hyperlinked.</li>
+          <li id="ttnq4384149d180d23c3d911c523d1cd"><strong class="important" id="gmtna02e01961dae1b7be85f3a4131af">Incorrect Example 1:</strong> The URLs below should not be hyperlinked because they are part of example Works Cited page citations:</li>
+        </ul>
+        <figure class="figure lm_img_lightbox unnum c2 center" id="unfig03_18">
+          <img alt="image to come" class="figure" id="yowk8d6b33dcbc7c9bfb88214d9b6570" src="../images/image27.png"></img>
+        </figure>
+        <ul class="ul-bullet-list" id="corpfbc6a0964f3964621f1e89e69e10">
+          <li id="wgyo5594711e7db457fd9e4e556f3599"><strong class="important" id="scxlf1a94df4013a33cdb563c1bb929e">Incorrect Example 2:</strong> The URLs below should not be hyperlinked because they are part of a Works Cited page for a model student essay.</li>
+        </ul>
+        <figure class="figure lm_img_lightbox unnum c2 center" id="unfig03_19">
+          <img alt="image to come" class="figure" id="nbqxbad3f651b1ba4234d4eade3ebbc8" src="../images/image16.png"></img>
+        </figure>
+        <ul class="ul-bullet-list" id="mbqn60038916c631dccfdd7f98594a45">
+          <li id="fidta0066cea230adeec7fc8bf712bd9"><strong class="important" id="utjfd767535d9b2e869ffdbd2dfce1d1">Correct Example:</strong> The URLs below are not hyperlinked because they are part of example Works Cited page citations:</li>
+        </ul>
+        <figure class="figure lm_img_lightbox unnum c2 center" id="unfig03_20">
+          <img alt="image to come" class="figure" id="wnwt26c3a5347c1c0029a0a6353451d6" src="../images/image10.png"></img>
+        </figure>
+        <ul class="ul-bullet-list" id="ixjt19fd8b113f47da2cffa00bf8fd28">
+          <li id="wgkf5d739edc18a4a934254474c56406">Do not deactivate hyperlinks for broken URLs. Instead, add the following title attribute, as a warning to the end user. Example:</li>
+          <li id="sxzy0a7ac1a07f6bcb98a72bbe7724f2">For broken URLs within the context of sources, combine the above two title attributes as follows: <code class="language-html" id="spbkd34b47bc007604f604d50c226636">title="Note: this source link is no longer active."</code></li>
+          <li id="tugn9c999fd57f9645364af9489953b3">Print cross-references: standard functionality will be to load the cross-referenced page in place of the original page.</li>
+          <li id="jmfhd7b52a6586a438c7d6515dafd744">Convert all references to figures, other book sections, see page references, etc. to navigation links.</li>
+          <li id="sgyzdbbef85bf20d7cf21fb7b20042fe">Page cross references should be tagged following semantic structure. The page reference should navigate to the print page tag.</li>
+          <li id="jwvsef18280e5ad0a9e4dadfb3ccecd7">Every link and cross-reference should include the file name and extension of the source XHTML file.</li>
+        </ul>
+      </section>
+      <section class="sect2" data-cfititle="6.5.2. Page Linking (XRef)" id="ch06_07_02">
+        <header id="scjea490bc1996f894059f4ff2d481db">
+          <h3 class="b-head v2" id="rsjac7f5a1781bf8190d3e4dc280ebe6"><span class="ordinal" id="eraz6465566444e5d73327c921a12583">6.5.2. </span>Page Linking (XRef)</h3>
+        </header>
+        <pre tabindex="0" id="tepnbcaf11e96cfb0e9c440d6741b44c">
+          <code class="language-html" id="fene5ec4d7238d020d5f27d5215740d7">Refer &lt;a class="crossref" id="fri_9781319065669_b8jSMUya7o" href="fri_9781319065669_ch10_25#page150"&gt;page 150&lt;/a&gt; …&lt;a class="crossref" id="fri_9781319065669_qGhiP1EDhH" href="fri_9781319065669_ch10_25.xhtml#page150"&gt;page 150&lt;/a&gt;–&lt;a class="crossref" id="fri_9781319065669_O4GQIXh6Dc" href="fri_9781319065669_ch10_25.xhtml#page155"&gt;page 155&lt;/a&gt; … (&lt;a class="crossref" id="fri_9781319065669_5E3wFsiKt1" href="fri_9781319065669_ch10_25.xhtml#page150"&gt;p. 150&lt;/a&gt;)</code>
+        </pre>
+        <p class="noindent" id="yckw8f54004891b4df887ebcd0c76485">
+          <a class="external" href="http://kb.daisy.org/publishing/docs/html/links.html" id="goxme91cef5c5f2801e83d2b1b81af64">http://kb.daisy.org/publishing/docs/html/links.html</a>
+        </p>
+        <p class="noindent" id="foqx46d063ea6ca2c1088e929c89fb4a">
+          <a class="external" href="http://kb.daisy.org/publishing/docs/navigation/landmarks.html" id="qnkk2664950041ad94e1e3f2383761be">http://kb.daisy.org/publishing/docs/navigation/landmarks.html</a>
+        </p>
+      </section>
+      <section class="sect2" data-cfititle="6.5.3. Figure Linking (XRef)" id="ch06_07_03">
+        <header id="ojuhfdaee966d34bfb87bb25c28d231d">
+          <h3 class="b-head v2" id="vfsz4bdc14d6ec6bc9820e89d5854093"><span class="ordinal" id="eraz6465566444e5d73327c921a12585">6.5.3. </span>Figure Linking (XRef)</h3>
+        </header>
+        <pre tabindex="0" id="nwcu1ee3fa4646a2a7f019afd15aa116">
+          <code class="language-html" id="hsahcc031d46f63af877b6edbdb0c755">See &lt;a class="crossref" id="fri_9781319065669_yAX3EYV5K7" href="fri_9781319065669_ch01_03.xhtml#fri_9781319065669_uaArED4hUf"&gt;Fig. 1.1&lt;/a&gt; See &lt;a class="crossref" id="fri_9781319065669_Bzt3gnEhZ1" href="fri_9781319065669_ch01_01.xhtml#fri_9781319065669_S5ePs9rbM6"&gt;Figure 1.1&lt;/a&gt; See &lt;a class="crossref" id="fri_9781319065669_w8WXK3LD3I" href="fri_9781319065669_ch02_08.xhtml#fri_9781319065669_IUXEA8Is8a"&gt;Figure 2.1(a)&lt;/a&gt; See &lt;a class="crossref" id="fri_9781319065669_vMH1uUDbnu" href="fri_9781319065669_ch03_11.xhtml#fri_9781319065669_ZEsM7nsI3I"&gt;Figure 3.1&lt;/a&gt;–&lt;a class="crossref" id="fri_9781319065669_o6bwD5IATB" href="fri_9781319065669_ch03_12.xhtml#fri_9781319065669_v68xBzVgzK"&gt;Figure 3.5&lt;/a&gt;</code>
+        </pre>
+        <p class="noindent" id="jnhj36f633e1301b9d6971989ed19696">
+          <a class="external" href="http://kb.daisy.org/publishing/docs/html/images.html" id="eppn914b574652945a8ec39c58629b0e">http://kb.daisy.org/publishing/docs/html/images.html</a>
+        </p>
+      </section>
+      <section class="sect2" data-cfititle="6.5.4. Table Linking (XRef)" id="ch06_07_04">
+        <header id="ffwt247d409be90ed477eddb9a24e386">
+          <h3 class="b-head v2" id="xtrhb77b96edd6373f8917f01ca843e8"><span class="ordinal" id="eraz6465566444e5d73327c921a12587">6.5.4. </span>Table Linking (XRef)</h3>
+        </header>
+        <pre tabindex="0" id="uopp53df1848ac39256d371adb1885d3">
+          <code class="language-html" id="zhald1b49813bb4336a0ac0e21dc1234">See &lt;a class="crossref" id="fri_9781319065669_1WXmcykxe7" href="fri_9781319065669_ch01_01.xhtml#fri_9781319065669_lOMUThieNW"&gt;Tab. 1.1&lt;/a&gt; See &lt;a class="crossref" id="fri_9781319065669_2e1KH0o5KK" href="fri_9781319065669_ch01_01.xhtml#fri_9781319065669_rKUmkkfg3p"&gt;Table 1.1&lt;/a&gt; See &lt;a class="crossref" id="fri_9781319065669_prfT9YzOnU" href="fri_9781319065669_ch02_08.xhtml#fri_9781319065669_2biX0Iw9cE"&gt;Table 2.1&lt;/a&gt;</code>
+        </pre>
+      </section>
+      <section class="sect2" data-cfititle="6.5.5. Other text Linking (XRef)" id="ch06_07_05">
+        <header id="dqdg232ef4e08fb8b9f9eb6f2e305ace">
+          <h3 class="b-head v2" id="hhute8f9969bd9adbd80fd2eb1b346a5"><span class="ordinal" id="eraz6465566444e5d73327c921a12881">6.5.5. </span>Other text Linking (XRef)</h3>
+        </header>
+        <pre tabindex="0" id="rnlla940aa5d7719007a85ab1fd419d9">
+          <code class="language-html" id="sqpj9b9b4f587c851c8574f457e4ad38">… &lt;a class="crossref" id="fri_9781319065669_aXDbYxmD38" href="fri_9781319065669_ch09_29.xhtml#fri_9781319065669_rUVLPZuRsN"&gt;Chapters 9&lt;/a&gt;–&lt;a class="crossref" id="fri_9781319065669_OEjvWnoPcq" href="fri_9781319065669_ch11_35.xhtml#fri_9781319065669_ED7HLnXJfj"&gt;11&lt;/a&gt; … &lt;a class="crossref" id="fri_9781319065669_6G1wCUtx7B" href="fri_9781319065669_11_89.xhtml#fri_9781319065669_AvAmb885ac"&gt;Chapters 11&lt;/a&gt; through &lt;a class="crossref" id="fri_9781319065669_xIfaX2l69m" href="fri_9781319065669_ch15_102.xhtml#fri_9781319065669_FmTHXU8ptx"&gt;15&lt;/a&gt; … &lt;a class="crossref" id="fri_9781319065669_Q6dwZf6wAb" href="fri_9781319065669_appendix.xhtml#fri_9781319065669_ArwFutcABR"&gt;Appendix A&lt;/a&gt; See &lt;a class="crossref" id="fri_9781319065669_XS29ZNuhoB" href="fri_9781319065669_ch02_08.xhtml#fri_9781319065669_6RFrKz0XiR"&gt;INFOGRAPHIC 2.1&lt;/a&gt; …  See &lt;a class="crossref" id="fri_9781319065669_1lvvoqrFtR" href="fri_9781319065669_ch01_02.xhtml#fri_9781319065669_99Y2kxWXlM"&gt;Exercises 1.1&lt;/a&gt; to &lt;a  class="crossref" id="fri_9781319065669_xzPC5StfNB" href="fri_9781319065669_ch01_02.xhtml#fri_9781319065669_0LtVA64jSp"&gt;1.5&lt;/a&gt; See &lt;a class="crossref" id="fri_9781319065669_z944zs02Po" href="fri_9781319065669_ch01_02.xhtml#fri_9781319065669_2XBQMmEchy"&gt;Example 1.1&lt;/a&gt; to &lt;a class="crossref" id="fri_9781319065669_WXE6UQHkNn" href="fri_9781319065669_ch01_02.xhtml#fri_9781319065669_O5IjlLxXhv"&gt;1.5&lt;/a&gt;</code>
+        </pre>
+      </section>
+      <section class="sect2" data-cfititle="Examples in EPUB (Hyperlinks)" id="sxol94b7d44f94cff69242faba68dfb9">
+        <header id="gxhh32d72f95c0bbb004ab64ec2b7207">
+          <h3 class="b-head" id="amikca05cb5fe4bdc77b6d2e900968dd">Examples in EPUB (Hyperlinks)</h3>
+        </header>
+        <p class="noindent" id="rsgp3f25d8bd42698f5dfd09dabc9a85">
+          <strong class="important" id="xeyi5ec24f020fa325e0fb395f450000">Print Sample</strong>
+        </p>
+        <figure class="figure lm_img_lightbox unnum c3 center" id="unfig03_6">
+          <img alt="image to come" class="figure" id="veeu2537a525115d849530e612cce69a" src="../images/cddx69be5542491754e10b0444a3e189_Image2020-09-28_16-59_a-external-print.png"></img>
+        </figure>
+        <p class="noindent" id="gwiob287f2ff1c81f9369bcade858158">
+          <strong class="important" id="xeyi5ec24f020fa325e0fb395f450001">HTML Coding Sample</strong>
+        </p>
+        <ul class="ul-no-mark" id="gonrf37f4f9077cce4f4a175132b97c5">
+          <li id="frhtdfe77488b91dd9f01a6c6d2ed228">
+            <pre tabindex="0" id="hsege60efcd12646b240a7182abebb68">
+              <code class="language-html" id="lyov24d264a2661e5a4148591c003dd3">&lt;p class="noindent" id="dav_9781319347970_q3b9QHNJQR"&gt;As of our press date, the American Psychological Association (APA) was scheduled to release the results of its &lt;strong class="important" id="dav_9781319347970_PzQnVvSCbh"&gt;Introductory Psychology Initiative (IPI)&lt;/strong&gt; in August, 2020 in hopes of improving “the quality of the introductory psychology experience” (&lt;a class="external" href="http://APA.org/Ed/Precollege/Undergrad/Introductory-Psychology-Initiative" id="dav_9781319347970_QAb9QfN7QR"&gt;APA.org/Ed/Precollege/Undergrad/Introductory-Psychology-Initiative&lt;/a&gt;). The APA IPI, with its five “Integrative Themes” and six “Student Learning Outcomes,” encourages instructors to integrate these themes throughout the course, with regular opportunities for practicing, thinking, and communicating about them, and regular assessment of student understanding.&lt;/p&gt;</code>
+            </pre>
+          </li>
+        </ul>
+        <p class="noindent" id="dvvi919f8a6dfcf61336664cac0a6f7f">
+          <strong class="important" id="xeyi5ec24f020fa325e0fb395f450002">HTML Coding Result</strong>
+        </p>
+        <p class="noindent" id="dav_9781319347970_q3b9QHNJQR">As of our press date, the American Psychological Association (APA) was scheduled to release the results of its <strong class="important" id="dav_9781319347970_PzQnVvSCbh">Introductory Psychology Initiative (IPI)</strong> in August, 2020 in hopes of improving “the quality of the introductory psychology experience” (<a class="external" href="http://APA.org/Ed/Precollege/Undergrad/Introductory-Psychology-Initiative" id="dav_9781319347970_QAb9QfN7QR">APA.org/Ed/Precollege/Undergrad/Introductory-Psychology-Initiative</a>). The APA IPI, with its five “Integrative Themes” and six “Student Learning Outcomes,” encourages instructors to integrate these themes throughout the course, with regular opportunities for practicing, thinking, and communicating about them, and regular assessment of student understanding.</p>
+      </section>
+      <section class="sect2" data-cfititle="Examples in EPUB (cross references)" id="sypsb3f4be6074bb45a0c6ae49a6042c">
+        <header id="uyeo6f474b6e5929f5fe6cbb06801ea2">
+          <h3 class="b-head" id="faqr8faa641283be577920e8a8d6f590">Examples in EPUB (cross references)</h3>
+        </header>
+        <p class="noindent" id="rsgp3f25d8bd42698f5dfd09dabc9105">
+          <strong class="important" id="xeyi5ec24f020fa325e0fb395f450003">Print Sample</strong>
+        </p>
+        <figure class="figure lm_img_lightbox unnum c3 center" id="unfig03_6x">
+          <img alt="image to come" class="figure" id="dpzq86ad356f459afa2889e4049ae2d0" src="../images/eshdbdf16906ed0452918789d8fab9a5_Image2020-09-28_16-59_a-crossref-print.png"></img>
+        </figure>
+        <p class="noindent" id="brezfbc3f727efe89a24eecfabc23fda">
+          <strong class="important" id="xeyi5ec24f020fa325e0fb395f450004">HTML Coding Sample</strong>
+        </p>
+        <ul class="ul-no-mark" id="lctdb4ac7f44cfc00c1ae9b67a1a0642">
+          <li id="tkgm1b9f3a7a4add72c4b2c8e693d857">
+            <pre tabindex="0" id="gpyic8d7ba0955a70486d1a1e460e9c5">
+              <code class="language-html" id="eumy4c7a6784b85db9bcd1c2e03adb48">&lt;p class="indent" id="dav_9781319347970_tcNJdl4oTD"&gt;Statistics can help us understand what we might miss with casual observation. To demonstrate, consider the responses of 2291 Czech and Slovakian volunteers who were asked by &lt;a epub:type="biblioref" role="doc-biblioref" class="biblioref" href="mye_9781319132101_EM_reference.xhtml#dav_9781319347970_C2pKklQZdM" id="dav_9781319347970_zJfkO94pTE"&gt;Jakub Polák and his colleagues (2019)&lt;/a&gt; to rate, on a 1 to 7 scale, their &lt;i class="semantic-i" id="dav_9781319347970_RkKMr0v9zL"&gt;fear&lt;/i&gt; and &lt;i class="semantic-i" id="dav_9781319347970_PbtShkp7TX"&gt;disgust&lt;/i&gt; related to each of 24 animals. With all the relevant data right in front of you (&lt;strong class="important" id="dav_9781319347970_KPB7ETHLYH"&gt;&lt;a class="crossref" href="mye_9781319132101_ch01_02.xhtml#dav_9781319347970_pvpIoYPWC4" id="dav_9781319347970_kM2OJI2BRM"&gt;TABLE 1.2&lt;/a&gt;&lt;/strong&gt;), can you tell whether the correlation between participants’ fear and their disgust is positive, negative, or close to zero?&lt;/p&gt; ... &lt;table class="table compact c3 center" id="dav_9781319347970_pvpIoYPWC4"&gt; &lt;caption id="dav_9781319347970_jx6wtBjcH8"&gt; &lt;p class="noindent" id="dav_9781319347970_TkKr1CIfI8"&gt;&lt;span epub:type="label" class="label" id="dav_9781319347970_SoPH8P0tif"&gt;TABLE&lt;/span&gt;&lt;span epub:type="ordinal" class="ordinal" id="dav_9781319347970_DkIuXmg6UI"&gt;1.2&lt;/span&gt;&lt;span class="title" id="dav_9781319347970_ZptjsFkxgm"&gt;People’s Fear and Disgust Responses to Various Animals&lt;/span&gt;&lt;/p&gt; &lt;/caption&gt; ... &lt;p class="indent" id="dav_9781319347970_u15Qs6M4Sy"&gt;When comparing the columns in &lt;a class="crossref" href="mye_9781319132101_ch01_02.xhtml#dav_9781319347970_pvpIoYPWC4" id="dav_9781319347970_pKFwSMukYS"&gt;Table 1.2&lt;/a&gt;, most people don’t detect a relationship between fear and disgust. In fact, the correlation in this imaginary example is positive (&lt;i class="semantic-i" id="dav_9781319347970_QFF7PoMF58"&gt;r&lt;/i&gt; = +.72), as we can see if we display the data as a scatterplot (&lt;strong class="important" id="dav_9781319347970_YESQfa69wd"&gt;&lt;a class="crossref" href="mye_9781319132101_ch01_02.xhtml#dav_9781319347970_lZ1lCpWyBE" id="dav_9781319347970_jBxlByBb9k"&gt;FIGURE 1.5&lt;/a&gt;&lt;/strong&gt;).&lt;/p&gt; ... &lt;figure class="figure lm_img_lightbox num c3 main-flow" id="dav_9781319347970_lZ1lCpWyBE"&gt; &lt;img class="figure" src="../images/myerspsy13e_01_05_01009.png" alt="A graph plots average disgust rating on the vertical axis against average fear rating on the horizontal axis. " id="dav_9781319347970_UGzk9krpRi"/&gt; &lt;figcaption id="dav_9781319347970_gVnk8PHT5Q"&gt; &lt;p class="noindent" id="dav_9781319347970_na5kmzd6Oq"&gt;&lt;span epub:type="label" class="label" id="dav_9781319347970_O77sScCNLQ"&gt;FIGURE &lt;/span&gt;&lt;span epub:type="ordinal" class="ordinal" id="dav_9781319347970_HMUrD0cgNn"&gt;1.5 &lt;/span&gt;&lt;span class="title" id="dav_9781319347970_hC2kQjbOxa"&gt;Scatterplot for fear and disgust felt toward 24 animals&lt;/span&gt; This display of average self-reported fear and disgust (each represented by a data point) reveals an upward slope, indicating a positive correlation. The considerable scatter of the data indicates the correlation is much lower than +1.00.&lt;/p&gt; &lt;/figcaption&gt;</code>
+            </pre>
+          </li>
+        </ul>
+        <p class="noindent" id="chow5d226b0a3d157bc79decbc107704">
+          <strong class="important" id="xeyi5ec24f020fa325e0fb395f450005">HTML Coding Result</strong>
+        </p>
+        <figure class="figure lm_img_lightbox unnum c3 center" id="unfig03_6bx">
+          <img alt="image to come" class="figure" id="kgfh66bc2dedc48ca007e84968a54364" src="../images/txbj40903633b23c25e7cd86d065836b_Image2020-09-28_16-59_a-crossref-epub.png"></img>
+        </figure>
+      </section>
+    </section>
+  </body>
+</html>

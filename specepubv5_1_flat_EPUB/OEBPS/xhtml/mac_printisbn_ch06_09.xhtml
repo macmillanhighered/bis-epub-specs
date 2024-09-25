@@ -1,0 +1,1555 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:svg="http://www.w3.org/2000/svg" xmlns:epub="http://www.idpf.org/2007/ops" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" id="k0c98fdef41d3f0488034cd81555bc0c">
+  <head>
+    <meta charset="utf-8"></meta>
+    <meta name="process" content="final"></meta>
+    <meta name="schema" content="3.3"></meta>
+    <link href="../css/flat_mac_printisbn.css" type="text/css" rel="stylesheet"></link>
+    <link href="../css/common/lm_ui.css" type="text/css" rel="stylesheet"></link>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"></meta>
+    <link href="../css/common/lm_ui.css" type="text/css" rel="stylesheet"></link>
+    <title>672 MathML Torture Test</title>
+  </head>
+  <body epub:type="bodymatter" class="bodymatter" data-lo-framework-id="">
+    <section class="sect1" data-cfititle="6.7. Math" id="ch06_09">
+      <header id="tvmo254a14b9505fd87e449c6b7fdae5">
+        <h2 class="a-head v1" id="amgd6c6f7c0d33cd6ae3c2cdccf12868"><span epub:type="pagebreak" role="doc-pagebreak" id="page28" aria-label="page 28"></span><span class="ordinal" id="zrkz36d745a3ddbb594b8f494eef5a0d">6.7. </span>Math</h2>
+      </header>
+      <p class="noindent" id="kuteb6e4ba1746792f412dd896242598">MathML makes mathematical equations accessible to everyone by eliminating the ambiguity of a verbal description of a picture. There are many tools available to support MathML creation.</p>
+      <ul class="ul-bullet-list" id="okowb7755fc5df2785b6681e90632f8b">
+        <li id="tecj5698ef2fa6f082411b1bd31dbd81">MathML markup must be included as the primary display for all math content.</li>
+        <li id="zsvhb796de8e2e7fd89f7526b9da4984">role="math" must never be used on the container of any MathML element (such as span.math or div.informalequation).</li>
+        <li id="ndhr620431a060e57af697f3e5332d97">aria-labels must never be used to present alt-text for the math container element. The alttext attribute on element &lt;math&gt; must be used to represent the alt-text for the math content.</li>
+        <li id="rngp86d3a90ce929853070713a878d90">The math element itself requires the MathML XML namespace, without a prefix. So: &lt;math xmlns="http://www.w3.org/1998/Math/MathML" alttext="alttext"&gt; This namespace must never be applied to the HTML element.</li>
+        <li id="eokv6d5a14bac14170a4e42f84741410">The fallback image which is inside the annotation-xml element must have the XHTML namespace applied to it. So: 	<ul class="ul-no-mark" id="tbxj55285860e843dcad0a95ae0af300"><li id="kriu16307b6e19259843d62817081003"><code class="language-html" id="ihwy7162d614d6e4e1bf7ecfcd610d2e">&lt;annotation-xml name="alternate-representation" </code></li><li id="kdxhaa09c02f2e16edd3182c8d6bddcc"><code class="language-html" id="pbyz1eb58d8e27506ca28224d6d70305">encoding="application/xhtml+xml"&gt; </code></li><li id="lbyya6fe7133d0e63c84bd1b9fa07413"><code class="language-html" id="wzxd38001f616b89a0aad445f5769148">&lt;img xmlns="http://www.w3.org/1999/xhtml" </code></li><li id="yudse2d3dd7480c2c0ef16bb34ba5f02"><code class="language-html" id="xsst506d340bb3e917ca08ff0e841ace">src="../images/MATH/fee_9781319218508_ch01_02EQ_0001.png" </code></li><li id="qzho49b3fffefaa67af6c467dbb69601"><code class="language-html" id="jnthf2ffe97ee39ac2e74ddd182abda5">alt="cap y equals cap c plus cap i plus cap g plus EX minus IM" /&gt; </code></li><li id="xzlkb3aedef8ddce01e9b2e27e315308"><code class="language-html" id="quto9cf8c791e4d07705cdf5f6aef8e9">&lt;/annotation-xml&gt; </code></li></ul></li>
+        <li id="zuxh2e2be7aef6b32018d3c06e58ad2a">Punctuation that is not part of math content should be set within the div or span wrapper that the math is in ( <code class="language-html" id="wapka2fe801463d2298652fc55bb5d87">span.math </code>, <code class="language-html" id="bjgy2b360a84a4e511e41055a1f48194">div.informalequation </code>) rather than as MathML itself. This is to prevent the punctuation breaking to the next line and also to have consistent rendering for punctuation in math content.</li>
+      </ul>
+      <pre id="vmfa59826457d52be3281f86219e13bd" tabindex="0">
+        <code class="language-html" id="beer2fdfafdc3cae9e7c09a6f503b886">&lt;p class="indent" id="fra_9781319188016_9hogbobyfG"&gt;The statistic is &lt;span class="math" id="fra_9781319188016_tlWNyBtZy0" tabindex="0"&gt; &lt;math display="inline" id="fra_9781319188016_xFFYjxGktH" xmlns="http://www.w3.org/1998/Math/MathML" alttext="ModifyingAbove p With caret"&gt;&lt;semantics id="fra_9781319188016_RQgWWvs3Ba"&gt;&lt;mover id="fra_9781319188016_b3H71L0Mh1" accent='true'&gt;&lt;mi id="fra_9781319188016_oGoY2xKdMP"&gt;p&lt;/mi&gt;&lt;mo id="fra_9781319188016_HtSdHnpqYV"&gt;&amp;#x005E;&lt;/mo&gt;&lt;/mover&gt;&lt;annotation-xml id="fra_9781319188016_CBVX2VdJDR" name="alternate-representation" encoding="application/xhtml+xml" &gt;&lt;img id="fra_9781319188016_7SvPhbPiWh" src="../images/EQp1-006.png" alt="ModifyingAbove p With caret"/&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;&lt;/math&gt;,&lt;/span&gt; the proportion of the sample who say they believe in ghosts.&lt;/p&gt; </code>
+      </pre>
+      <ul class="ul-bullet-list" id="tugd88c3c3042b343bfd30a7a3f5f9b5">
+        <li id="xklwda1a9b6f71de935745a29d10e6a1">Math content cannot depend on a specific font. If a specific character is required and it is not available in a standard font, it must be replaced by an image. Users have the ability to override publisher fonts, so it must always be assumed that they will. For math, please refer to this <a class="crossref" href="mac_printisbn_ch06_09.xhtml#spec-38" id="spec-38">appendix</a> to view math characters that cannot be rendered in MathML.</li>
+        <li id="qwpx214747c238399806dd38922411ec">Additionally, please use MathJax 2.7, which has a11y features that automatically generate language for math formulas. Comp should create fallback images for any math displayed with MathML and use the MathJax autogenerated language as aria-label and alt text for the fallback images, which should be in PNG format only. MathSpeak rules should be used when autogenerating the text via MathJax.</li>
+        <li id="htbh260244d2fbba9a77187352ec6326">For MathML content that does not use MathJax 2.7 and therefore cannot have descriptive language autogenerated, the comp should query Macmillan Learning to ask if we want fallback images with alt text/aria-labels specially written in that case.</li>
+        <li id="zvfy165bad0c8f841eb84ac0eb6092a3">
+          <code class="language-html" id="bsrv6628322948263d057954a81fbeda">&lt;div class="informalequation" id="fri_9781319065669_mJazrQKqrk" tabindex="0"&gt; &lt;math xmlns="http://www.w3.org/1998/Math/MathML" id="fri_9781319065669_dKexQUZpIm" alttext="[spoken equivalent]"&gt; ... &lt;math&gt; &lt;/div&gt; </code>
+        </li>
+        <li id="edrk8479abde0ea702c148a08a392fa6">Important: Do not include the attribute tabindex on MathML that is inside of an <code class="language-html" id="nqmo7540a2642d7bc5891fb8d57b2d29">&lt;a&gt; </code> element. This confuses accessibility technology.</li>
+        <li id="fgaz6e6a40e5f66a221123c246d20199">If MathML element <code class="language-html" id="tkas422a6f22d1aed2df16226b17f1a2">&lt;annotation-xml&gt; </code> contains HTML content, it must have the following attribute and value: 	<ul class="ul-bullet-list" id="posrd13852093c5b3a57e49269a539e0"><li id="jolp082fadf0eea71abf742082e28ccc"><code class="language-html" id="xidbaf5f32cf92589f8cc97108d11b77">encoding="application/xhtml+xml" </code></li></ul></li>
+        <li id="usbhfd325e98ffddac08cab29f70f46a">Unless the content falls under other criteria for MathML rendering, do not render a number followed by a unit of measurement as MathML. For example, “10,000 km” does not need to be rendered as MathML on its own. However, if it were part of a larger mathematical or other scientific expression that did need to be captured as MathML, then the unit of measurement should be captured as MathML as well.</li>
+        <li id="usbhfd325e75ffddac08cab29f70f46a">Standalone equations should appear after glossary keyterms and before figures called out in paragraphs.</li>
+      </ul>
+      <p class="noindent" id="bqxu7490f3bf7de8fb133d3fc4806ea0">
+        <a class="external" href="http://kb.daisy.org/publishing/docs/html/mathml.html" id="hubxc63edf50194d994ffd22025c3c66">http://kb.daisy.org/publishing/docs/html/mathml.html</a>
+      </p>
+      <p class="noindent" id="fblg954e30c423ff1666d20cd721a8e9">
+        <a class="external" href="https://www.w3.org/TR/epub-overview-33/" id="tcbl3f7db97ac52e0e38a3874f617835">http://www.w3.org/TR/wai-aria/roles#math</a>
+      </p>
+      <p class="noindent" id="fxgc30ca0be8be06488c28a3787031fd">
+        <a class="external" href="http://lists.w3.org/Archives/Public/public-pfwg-comments/2008JanMar/0008.html" id="siet186b55bf23f0f182ac21744e87f1">http://lists.w3.org/Archives/Public/public-pfwg-comments/2008JanMar/0008.html</a>
+      </p>
+      <p class="noindent" id="ucoh65049968e4e11ad92a67b565145d">
+        <a class="external" href="http://www.w3.org/TR/wai-aria-practices/%23math" id="zacw3af6d6ea0c59a50270a74a3efce0">http://www.w3.org/TR/wai-aria-practices/#math</a>
+      </p>
+      <section class="sect2" data-cfititle="6.7.1. In-Line vs. Display/Offset Fractions" id="ch06_09_01">
+        <header id="jmtm4fc0910b6b07c6dac4255252f98c">
+          <h3 class="b-head v2" id="uoge461caa90e7d59d50abd8a45c23d1"><span class="ordinal" id="hglu140ca729325a538eeb18bef35cb7">6.7.1. </span>In-Line vs. Display/Offset Fractions</h3>
+        </header>
+        <p class="noindent" id="vgvf736eff281935b84df29fa0b6a43f">In print, math that occurs "inline" (within a paragraph of text) varies in styling vs. equations that are on their own line or surrounded by minimal text, referred to as “display” equations. For example, in a display equation the fractions are sized so that the font size of numerator and denominator match the base font; in an inline equation the font size of numerator and denominator is smaller. An example of this in print is shown in below screenshot:</p>
+        <figure class="figure lm_img_lightbox unnum c3 main-flow" id="unfig03_13">
+          <img alt="image to come" class="figure" id="vpqvbf82d9e49f2498af1d13fb3ea772" src="../images/image1.png"></img>
+        </figure>
+        <p class="noindent" id="cobnf646babf988628d99183dd25730e">This differentiation needs to be preserved in the EPUB by using <code class="language-html" id="czcqa2de624e20f9ce5dc2bbc485a970">&lt;mstyle displaystyle=”true”&gt; </code> as the first child of the <code class="language-html" id="hxus1bc59e49142b1bbae4fe6c5868b0">&lt;math&gt; </code> element for display equations.</p>
+        <p class="noindent" id="sglm1eefbb1f5ccfbf68c30b0ce5ba2f">
+          <strong class="important" id="cbzcafc77eec6e05fa0013cefa23569d">Example:</strong>
+        </p>
+        <pre id="kkosc53ac7a6cdd2e284a50deef2ab4b" tabindex="0">
+          <code class="language-html" id="rmhh3105670031bcb575c7a60d273100">&lt;mstyle displaystyle="true" id="fri_9781319065669_LcUDkhO4hb"&gt;&lt;mi id="fri_9781319065669_rQ1eN5LVI9"&gt;S&lt;/mi&gt;&lt;mo id="fri_9781319065669_NNFDAk4Zwu"&gt;=&lt;/mo&gt;&lt;mn id="fri_9781319065669_88cdHT8O4l"&gt;2&lt;/mn&gt;&lt;mi id="fri_9781319065669_WDM4iqUfJC"&gt;&amp;#x3C0;&lt;/mi&gt;&lt;mfenced id="fri_9781319065669_RCXv04huVy"&gt;&lt;mfrac id="fri_9781319065669_Ej0rWISfrN"&gt;&lt;mrow id="fri_9781319065669_72ZiVnpc74"&gt;&lt;msub id="fri_9781319065669_GRwBqT3kN6"&gt;&lt;mi id="fri_9781319065669_bW0sojb3tb"&gt;r&lt;/mi&gt;&lt;mn id="fri_9781319065669_yACIiXtcHY"&gt;1&lt;/mn&gt;&lt;/msub&gt;&lt;mo id="fri_9781319065669_M1A9UfoDkS"&gt;+&lt;/mo&gt;&lt;msub id="fri_9781319065669_t6KhdvhAAC"&gt;&lt;mi id="fri_9781319065669_v5PrS7jrq3"&gt;r&lt;/mi&gt;&lt;mn id="fri_9781319065669_QcNUYHMGI8"&gt;2&lt;/mn&gt;&lt;/msub&gt;&lt;/mrow&gt;&lt;mn id="fri_9781319065669_h1NrvK9lYA"&gt;2&lt;/mn&gt;&lt;/mfrac&gt;&lt;/mfenced&gt;&lt;mi id="fri_9781319065669_4mC28L84Fv"&gt;L&lt;/mi&gt;&lt;/mstyle&gt;&lt;/math&gt; </code>
+        </pre>
+        <p class="noindent" id="gzwn1cc701159322710a8d91d42b3eac">Here is example mark up for this display equation in text:</p>
+        <figure class="figure lm_img_lightbox unnum c1 center" id="unfig03_14">
+          <img alt="image to come" class="figure" id="vhbd2d955830602b69af311025d874ed" src="../images/image9.png"></img>
+        </figure>
+        <pre id="woeu743ff0440f8a3f5f067365b6af1d" tabindex="0">
+          <code class="language-html" id="jnsc953760cf4895a0334276ed8c7c7b">&lt;div class="informalequation" tabindex="0" id="fri_9781319065669_fo08kI6maZ"&gt; &lt;math xmlns="http://www.w3.org/1998/Math/MathML" alttext="m Subscript tangent Baseline equals limit Underscript x right-arrow c Endscripts StartFraction f left-parenthesis x right-parenthesis minus f left-parenthesis c right-parenthesis Over x minus c EndFraction" display="block"&gt; &lt;semantics id="fri_9781319065669_Y1jjxx5Ggp"&gt; &lt;mstyle displaystyle="true" id="fri_9781319065669_n2fNwed3MP"&gt; &lt;mrow id="fri_9781319065669_0J5w551vOw"&gt;&lt;msub id="fri_9781319065669_0ftGKNck6D"&gt;&lt;mi id="fri_9781319065669_APFSnhGNKB"&gt;m&lt;/mi&gt;&lt;mrow id="fri_9781319065669_kVXFogFIQh"&gt;&lt;mi id="fri_9781319065669_DRFgqRW5eB"&gt;t&lt;/mi&gt;&lt;mi id="fri_9781319065669_gC2f55gdeG"&gt;a&lt;/mi&gt;&lt;mi id="fri_9781319065669_7awqGRYVsl"&gt;n&lt;/mi&gt;&lt;/mrow&gt;&lt;/msub&gt;&lt;mo id="fri_9781319065669_qFkvwfwNE4"&gt;=&lt;/mo&gt;&lt;munder id="fri_9781319065669_9nX7AnvWDp"&gt;&lt;mo movablelimits="true" form="prefix" id="fri_9781319065669_h0ZT0cyw0J"&gt;lim&lt;/mo&gt;&lt;mrow id="fri_9781319065669_Dm6uCFu6yQ"&gt;&lt;mi id="fri_9781319065669_Tjgy0lHtOz"&gt;x&lt;/mi&gt;&lt;mo stretchy="false" id="fri_9781319065669_5KImWHXqUK"&gt;&amp;#x2192;&lt;/mo&gt;&lt;mi id="fri_9781319065669_6lMB1y1E9f"&gt;c&lt;/mi&gt;&lt;/mrow&gt;&lt;/munder&gt;&lt;mfrac id="fri_9781319065669_W8FdU1gZxz"&gt;&lt;mrow id="fri_9781319065669_m0bJwxqzrC"&gt;&lt;mi id="fri_9781319065669_0rvVgmAt2Y"&gt;f&lt;/mi&gt;&lt;mo stretchy="false" id="fri_9781319065669_xc844KOBtQ"&gt;(&lt;/mo&gt;&lt;mi id="fri_9781319065669_3da8QeNpLH"&gt;x&lt;/mi&gt;&lt;mo stretchy="false" id="fri_9781319065669_fGAKvwneLo"&gt;)&lt;/mo&gt;&lt;mo id="fri_9781319065669_aaVqk4UAp1"&gt;&amp;#x2212;&lt;/mo&gt;&lt;mi id="fri_9781319065669_eQ1WcjGnm3"&gt;f&lt;/mi&gt;&lt;mo stretchy="false" id="fri_9781319065669_jIaUnsLtkG"&gt;(&lt;/mo&gt;&lt;mi id="fri_9781319065669_QmnOwLk88I"&gt;c&lt;/mi&gt;&lt;mo stretchy="false" id="fri_9781319065669_l78zUr7ccN"&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;mrow id="fri_9781319065669_Rx7MIYx9VS"&gt;&lt;mi id="fri_9781319065669_DzSUwcCt8N"&gt;x&lt;/mi&gt;&lt;mo id="fri_9781319065669_vTcrR0ZARx"&gt;&amp;#x2212;&lt;/mo&gt;&lt;mi id="fri_9781319065669_d74KsTcY7N"&gt;c&lt;/mi&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;/mrow&gt;&lt;/mstyle&gt;&lt;annotation-xml name="alternate-representation" encoding="application/xhtml+xml" id="fri_9781319065669_KdfrkDafZT"&gt;&lt;img xmlns="http://www.w3.org/1999/xhtml" id="fri_9781319065669_U1WeE3fGhO" src="../images/MATH/fee_9781319218508_ch01_02EQ_0001.png" alt="m Subscript tangent Baseline equals limit Underscript x right-arrow c Endscripts StartFraction f left-parenthesis x right-parenthesis minus f left-parenthesis c right-parenthesis Over x minus c EndFraction" /&gt;&lt;/annotation-xml&gt;&lt;/semantics&gt;&lt;/math&gt; &lt;/div&gt; </code>
+        </pre>
+        <p class="noindent" id="grhga7b3fa0230c4f8110c81918b89a9">When linking to a math equation, link to the parent element of the <code class="language-html" id="zxfr5b2a1cdebe743ca11dc40fd61d25">math </code> element, not to any equation number identifier. For example:</p>
+        <pre id="lqqs2bf4931d186121a0361df68c0b47" tabindex="0">
+          <code class="language-html" id="pmey0d33d31520b313ea8a8d02d462af">&lt;p class="indent" id="har_9781319164300_x3WZKeMvvZ"&gt;Link to &lt;a class="crossref" href="har_9781319164300_ch04_02.xhtml#har_9781319164300_HyzUBbYwLi" id="har_9781319164300_8r9ROheLVJ"&gt;Equation 4-2&lt;/a&gt;&lt;/p&gt; &lt;p class="noindent" id="har_9781319164300_JPZfQTJeJc"&gt;&lt;i class="semantic-i" id="har_9781319164300_3MF0vApRdo"&gt;Standard deviation:&lt;/i&gt;&lt;/p&gt; &lt;div class="informalequation" tabindex="0" id="har_9781319164300_HyzUBbYwLi"&gt; &lt;math xmlns="http://www.w3.org/1998/Math/MathML"  alttext="s equals Square root of n ary summation over i over left parenthesis x sub i minus x macron right parenthesis squared divided by n minus one" display="block" &gt; &lt;semantics&gt;&lt;mrow&gt;&lt;mi&gt;s&lt;/mi&gt;&lt;mo&gt;=&lt;/mo&gt;&lt;msqrt&gt;&lt;mrow&gt;&lt;mstyle displaystyle="true"&gt;&lt;mfrac&gt;&lt;mrow&gt;&lt;mstyle displaystyle="true"&gt;&lt;munder&gt;&lt;mo&gt;&amp;#x2211;&lt;/mo&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/munder&gt;&lt;mrow&gt;&lt;msup&gt;&lt;mrow&gt;&lt;mo stretchy="false"&gt;(&lt;/mo&gt;&lt;msub&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mi&gt;i&lt;/mi&gt;&lt;/msub&gt;&lt;mo&gt;&amp;#x2212;&lt;/mo&gt;&lt;mover accent="true"&gt;&lt;mi&gt;x&lt;/mi&gt;&lt;mo&gt;&amp;#x00AF;&lt;/mo&gt;&lt;/mover&gt;&lt;mo stretchy="false"&gt;)&lt;/mo&gt;&lt;/mrow&gt;&lt;mn&gt;2&lt;/mn&gt;&lt;/msup&gt;&lt;/mrow&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;mrow&gt;&lt;mi&gt;n&lt;/mi&gt;&lt;mo&gt;&amp;#x2212;&lt;/mo&gt;&lt;mn&gt;1&lt;/mn&gt;&lt;/mrow&gt;&lt;/mfrac&gt;&lt;/mstyle&gt;&lt;/mrow&gt;&lt;/msqrt&gt;&lt;/mrow&gt; &lt;annotation-xml name="alternate-representation" encoding="application/xhtml+xml"&gt; &lt;img xmlns="http://www.w3.org/1999/xhtml" src="../images/MATH/har_9781319164300_ch04_02EQ_0007.png" alt="s equals Square root of n ary summation over i over left parenthesis x sub i minus x macron right parenthesis squared divided by n minus one" /&gt;&lt;/annotation-xml&gt; &lt;/semantics&gt; &lt;/math&gt; &lt;/div&gt; &lt;p class="text-right" id="har_9781319164300_DGjp7EoHhN"&gt;&lt;strong class="important" id="har_9781319164300_hDYPZG9bcx"&gt;(4-2)&lt;/strong&gt;&lt;/p&gt; </code>
+        </pre>
+        <p class="noindent" id="ssao360438e2ddd505dddf6eb6875901">Compositor may be instructed to link to a different location rather than the parent element of the <code class="language-html" id="muksdd7bd6cd9a87d69e666061254ccd">math </code> element. The instruction for doing so must be explicit.</p>
+      </section>
+      <section class="sect2" data-cfititle="6.7.2. MathML Torture Test" id="ch06_09_02">
+        <header id="nmeq2eb028b386f6162d72d567176432">
+          <h3 class="b-head v2" id="acnz0b3d933a1d04858b54184a59b720"><span class="ordinal" id="afgsaa8580ca3539258696c686a76d86">6.7.2. </span>MathML Torture Test</h3>
+        </header>
+        <table class="table c3 main-flow" id="bepc5ae68d7667e25a4e0b5cf6f59507">
+          <tbody id="pzgw2cfd6d5b7e47c6a04fec79ce362d">
+            <tr id="gwsp6612bcb588441b6cd94a6dc8462e">
+              <td id="oxpf67b0b24b7430c7649e026c8fb3dd"> </td>
+              <th id="nopo75cec7cd8065d9499b474a06aeb0" scope="col">As rendered by image</th>
+              <th id="rzvwd237266ebdb040041548d76cdc32" scope="col">As rendered by your browser</th>
+              <th id="ltsj81b79d5a3486551b1bd6fbb95544" scope="col">LaTeX input</th>
+            </tr>
+            <tr id="yykg2dfbb975b85c7c09794cd354ae59">
+              <td id="fuooca7d863aa1f2b20bbb6d35d6f8bf">1</td>
+              <td id="ituh2b0253821ee6225b757bada0f766">
+                <img alt="TeXbook, 16.2-16.3" height="22" id="sqjba984cb3aa88ab111f7a36c128ebb" src="../images/cdbee5a7d55a8b74a49a8ac02f2a97ba_ygfdafe1c94b012b91c5186d4ca1b887_ex1.png" width="38"></img>
+              </td>
+              <td id="deebaa5decd025edb8f4655f1f8577a9">
+                <span class="math" id="3_7_2_mathml_torture_testc2f2EQ_0001.png" tabindex="0">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style x squared y squared" display="inline" id="bhtq5c48ebf58544744223e4ac5d5464">
+                    <semantics id="jzvfac2d8ca5229af9993c4efe290320">
+                      <mrow id="quru51d28ba40d56f23cc379197bf703">
+                        <msup id="upicb18a2473f11a7c636ebd6d690cd3">
+                          <mi id="slltf563489ce46ff62f13b465f495de">x </mi>
+                          <mn id="vdbkeb0a3cf46e0427c6f27c26edd12a">2 </mn>
+                        </msup>
+                        <msup id="hers909b9769552fee6f55130a842f62">
+                          <mi id="lyfaec8e076c243205db857b23a262cb">y </mi>
+                          <mn id="yfgf8a47c76c8c14c798b89a4eb07777">2 </mn>
+                        </msup>
+                      </mrow>
+                      <annotation-xml encoding="application/xhtml+xml" id="uzsue953e747498a15c28442ad863ff7" name="alternate-representation">
+                        <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style x squared y squared" id="mqgke63d999f96f2b3d04c5f7de97adf" src="../images/bhtq5c48ebf58544744223e4ac5d5464.png"></img>
+                      </annotation-xml>
+                    </semantics>
+                  </math>
+                </span>
+              </td>
+              <td id="jvfxf2166bb7db6275c84fb5e21be406"> </td>
+            </tr>
+            <tr id="xjup8ba490aa296cc55999f561a35c78">
+              <td id="oncxb3e25f30c6bba945495f98b3b3e7">2</td>
+              <td id="lnol12bdc163f764e8051ec70031bd2e">
+                <img alt="TeXbook, 16.2-16.3" height="17" id="lxeuddc4044bb0ebcdcd0a0dfba4c23b" src="../images/milx7a20ed5a2856b78a54db71bf0972_cflpabecfaadfa847a7742941b2e44d1_ex2.png" width="30"></img>
+              </td>
+              <td id="dudbefa809e1ec4450aca9d3ab36b67c">
+                <span class="math" id="3_7_2_mathml_torture_testc2f2EQ_0002.png" tabindex="0">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style F presubscript 2 subscript 3" display="inline" id="kdzme06f45bff261b44e8c048bf3b762">
+                    <semantics id="aaee0ccec22a3f7bdf38dc7fdb733e73">
+                      <mrow id="gzvt9fdd6f6d00cb531ac199aea028a8">
+                        <mmultiscripts id="ucqrcc144fc0004b312850eb6df4cf2b">
+                          <mi id="kpfscf82a996c64dcd16903f1efef3f1">F </mi>
+                          <mn id="kwxubca5104a95ecd9f15e8892012def">3 </mn>
+                          <none id="lyxv8be94a9156db6cb28cd37dc26a4e"></none>
+                          <mprescripts id="kelpd478b99ae94c7318045b3ef91967"></mprescripts>
+                          <mn id="qplsa839ba91cf85c907205d78b7c65d">2 </mn>
+                          <none id="ledv6094c782ee5ff731aaef8e19a679"></none>
+                        </mmultiscripts>
+                      </mrow>
+                      <annotation-xml encoding="application/xhtml+xml" id="zcwbeaca7a293e542bd406d6c7c84050" name="alternate-representation">
+                        <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style F presubscript 2 subscript 3" id="nmpp373bbc026416127385c9a487b3c2" src="../images/kdzme06f45bff261b44e8c048bf3b762.png"></img>
+                      </annotation-xml>
+                    </semantics>
+                  </math>
+                </span>
+              </td>
+              <td id="ftdm27c3af065da3f49c5a8bd129afe2"> </td>
+            </tr>
+            <tr id="jauh7a9b7ae7ba53b425ecb8ca0f65c0">
+              <td id="hvoy123f4cd862b3b404fab2bdce7610">3</td>
+              <td id="fsbvc35eab1d8da28b6b2ad7d88fb27d">
+                <img alt="TeXbook, 17-17.1" height="47" id="rxwp449fbb077259baf88acfade92684" src="../images/psxm7b9e270b3eefff5bbf878c21aefc_vfxa72888f7a39bab5b64d54f4cd1c85_ex21.png" width="58"></img>
+              </td>
+              <td id="gpjp32addceac17fbc6718306012f539">
+                <span class="math" id="3_7_2_mathml_torture_testc2f2EQ_0003.png" tabindex="0">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style fraction numerator x plus y squared over denominator k plus 1 end fraction" display="inline" id="qskz7eb5f36f0f52ca4ebc0f0d0c16a4">
+                    <semantics id="otgrec825540e24f0a3c488d391f4a24">
+                      <mrow id="qyyr96efa8612b0e4947de55b1db0ea8">
+                        <mfrac id="ymmw65307f40f9169f345e413aa4f9b5">
+                          <mrow id="tqcs293a76c346460b893a5957484a98">
+                            <mi id="ftjebdb0777126999c48c67e8273ac90">x </mi>
+                            <mo id="zqfs91ba4cb0e0522939ba7d68ebdaf8">+ </mo>
+                            <msup id="nzkif9854b6db3d5a09156228aabd1b4">
+                              <mi id="npye3800e048126ab910c889192460cf">y </mi>
+                              <mn id="oybe764a1055ced1d744b438c2cbb614">2 </mn>
+                            </msup>
+                          </mrow>
+                          <mrow id="meih4f955ce4f66bce5d7451a24e5736">
+                            <mi id="tglj5cf3de6b2a9eaa05e3e43917da7a">k </mi>
+                            <mo id="ftcf23c8e25bfc82ee3a7c801e39d31b">+ </mo>
+                            <mn id="yotmc0dc66e3bc293fe0a6b2d02dbfca">1 </mn>
+                          </mrow>
+                        </mfrac>
+                      </mrow>
+                      <annotation-xml encoding="application/xhtml+xml" id="qrpu83ebcc245f329dc73f8bfea00d2d" name="alternate-representation">
+                        <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style fraction numerator x plus y squared over denominator k plus 1 end fraction" id="msqfdc8a20ceb3eec3fe4f093aa51ea1" src="../images/qskz7eb5f36f0f52ca4ebc0f0d0c16a4.png"></img>
+                      </annotation-xml>
+                    </semantics>
+                  </math>
+                </span>
+              </td>
+              <td id="mkxv7f6e5a03b8a83d2b67b96df2a86b"> </td>
+            </tr>
+            <tr id="vspze1c16666551582c4ecdfd1968658">
+              <td id="aluhf743ef4d099351613d1833a0495d">4</td>
+              <td id="huci1cd89318d066186b9b1c0d59a023">
+                <img alt="TeXbook, 17-17.1" height="25" id="fodm597347de0276f9f98f4f35a42b76" src="../images/xniw0b9b6f1ec5d2e8dcb9e84b045f2b_ldcebbaac58fced3828c5d956ffd7f51_ex22.png" width="76"></img>
+              </td>
+              <td id="cwuo5711a9ed194277211f04391f8c09">
+                <span class="math" id="3_7_2_mathml_torture_testc2f2EQ_0004.png" tabindex="0">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style x plus y to the power of fraction numerator 2 over denominator k plus 1 end fraction end exponent" display="inline" id="vnhp58da650a9b85ce6ef9b2653fc1f7">
+                    <semantics id="qtete1634bf255d0aa40ec4e10d1ceb6">
+                      <mrow id="pqsldde542b62450ebc0b18dc18eea3b">
+                        <mi id="vbcfc8dae94b9fd40e88576f9385cea8">x </mi>
+                        <mo id="ascwd695fef32c5865b612e3de9a507f">+ </mo>
+                        <msup id="dizo37e05e9239d46a514f3a2fff4a4f">
+                          <mi id="duls3ac1dac10543c68764405639d98b">y </mi>
+                          <mfrac id="llmue10fee807e4b30567d78a74b57da">
+                            <mn id="ciqb676ff7df62e521bd51aa86a88fdc">2 </mn>
+                            <mrow id="wmtn562e454557e90689dedb4dc35d91">
+                              <mi id="cvue5aa31643c59fe70fe8b6296247f6">k </mi>
+                              <mo id="qeov96a793c63a68a1be8c0355639dbf">+ </mo>
+                              <mn id="lgtmba9c3658c9e6f33f7523f9d14f14">1 </mn>
+                            </mrow>
+                          </mfrac>
+                        </msup>
+                      </mrow>
+                      <annotation-xml encoding="application/xhtml+xml" id="xnwhce611b077ed6b4183ca197b2f1aa" name="alternate-representation">
+                        <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style x plus y to the power of fraction numerator 2 over denominator k plus 1 end fraction end exponent" id="qpwua9f7d8ebc42c7e28074cb893695f" src="../images/vnhp58da650a9b85ce6ef9b2653fc1f7.png"></img>
+                      </annotation-xml>
+                    </semantics>
+                  </math>
+                </span>
+              </td>
+              <td id="hczsed475ca4ee29051f8449b0254113"> </td>
+            </tr>
+            <tr id="kwfd0f9fb11ea2868d4ee3952320d387">
+              <td id="hzbi4df5f3540cc9b1b9dd8269899a81">5</td>
+              <td id="bmbkf18984ff76caf74339cb48a14a97">
+                <img alt="TeXbook, 17-17.1" height="42" id="uirv3b621ae8bd901ada70fdae25e150" src="../images/wath6613a64574b4238b42c13c141820_sejl4b76b3960da83ebbbbe6969141a7_ex23.png" width="30"></img>
+              </td>
+              <td id="tjrl58363fe5db81bbd89493be02cac3">
+                <span class="math" id="3_7_2_mathml_torture_testc2f2EQ_0005.png" tabindex="0">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style fraction numerator a over denominator b divided by 2 end fraction" display="inline" id="xwme4a11b2cd96c39b976b8833ae1f0b">
+                    <semantics id="srxgc7f4aa242ec6589f220919667d45">
+                      <mrow id="edzmab7b5c7ba69543352ca5584122ea">
+                        <mfrac id="qhba39ffe902269341419fe774b94d06">
+                          <mi id="luwvdc7065976f8c4082889dd251d553">a </mi>
+                          <mrow id="pbiwe1e217194e0e8b25727f33abf546">
+                            <mi id="ycbfbe98b6ea69cfd0a5bb6e174e5396">b </mi>
+                            <mo id="krzh7a28ea20567e83888d65dcf09703">/ </mo>
+                            <mn id="elwxc09b06f57f520a660d994a9d7e29">2 </mn>
+                          </mrow>
+                        </mfrac>
+                      </mrow>
+                      <annotation-xml encoding="application/xhtml+xml" id="bddn84740a3110d841c1bcbc03730685" name="alternate-representation">
+                        <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style fraction numerator a over denominator b divided by 2 end fraction" id="cxgw4dd2f0cd234064a88f6f19a3c58f" src="../images/xwme4a11b2cd96c39b976b8833ae1f0b.png"></img>
+                      </annotation-xml>
+                    </semantics>
+                  </math>
+                </span>
+              </td>
+              <td id="zxtdb6347d24d1c3eea69e6a1ecbd4e8"> </td>
+            </tr>
+            <tr id="xjqw59dda64edd19f6c0a7ee4796bf5d">
+              <td id="qvzqa39e6246465d83a94afac874edd0">6</td>
+              <td id="ypoded946c03aee86ad015323ab201ca">
+                <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style a subscript 0 plus fraction numerator 1 over denominator begin display style a subscript 1 plus fraction numerator 1 over denominator begin display style a subscript 2 plus fraction numerator 1 over denominator begin display style a subscript 3 plus fraction numerator 1 over denominator begin display style a subscript 4 end style end fraction end style end fraction end style end fraction end style end fraction" id="shkz0c793ca3d576c79cba34689e93f5" src="../images/ugvf472ad650aa46180d79ebc18d6ece.png"></img>
+              </td>
+              <td id="plqwfcd09ef3d157d7cea4a0502c8bef">
+                <span class="math" id="3_7_2_mathml_torture_testc2f2EQ_0006.png" tabindex="0">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style a subscript 0 plus fraction numerator 1 over denominator begin display style a subscript 1 plus fraction numerator 1 over denominator begin display style a subscript 2 plus fraction numerator 1 over denominator begin display style a subscript 3 plus fraction numerator 1 over denominator begin display style a subscript 4 end style end fraction end style end fraction end style end fraction end style end fraction" display="inline" id="ugvf472ad650aa46180d79ebc18d6ece">
+                    <semantics id="dnjqe1c803c562d18a5e35e859fa7631">
+                      <mrow id="oneq1e790798741b1a8a2f684e8d4a6a">
+                        <msub id="mmziac3280d1693b2887040f1df331ee">
+                          <mi id="dvkjd74f29faf4e8fde61cc198853ed1">a </mi>
+                          <mn id="xepaa6a662a1ca2d0e2dad4a9c26b73f">0 </mn>
+                        </msub>
+                        <mo id="lmdk4605b4171ea1ac5fe7eda0677372">+ </mo>
+                        <mfrac id="jjqea22e639900c231eff58f55fdee13">
+                          <mn id="nwgl1a08ac5e652313064ae796025fa1">1 </mn>
+                          <mstyle displaystyle="true" id="mwbcbc5fd21ea9ebd4d77348b18e6e46" scriptlevel="0">
+                            <msub id="lbxf7f55e9bd0646cf72587195389d0f">
+                              <mi id="cpck84c980c94cc65658b22441485850">a </mi>
+                              <mn id="boxi8bdaef429bb155877b27744f0fac">1 </mn>
+                            </msub>
+                            <mo id="bsve7becdcce4e1604806e5f73274151">+ </mo>
+                            <mfrac id="zwbq83856ec2993dc8b0f3cefe78228c">
+                              <mn id="emuv186257469ba3f9cb583d4f52554e">1 </mn>
+                              <mstyle displaystyle="true" id="tzqy3ecb52fadc7fae35f22b76694a80" scriptlevel="0">
+                                <msub id="bwfk2aac55ddb5e5e0429b4edf312769">
+                                  <mi id="gmno071be0755674c6c6178d26b73d66">a </mi>
+                                  <mn id="ddjo9eca2d3a21b311f3808376bd8335">2 </mn>
+                                </msub>
+                                <mo id="vjqm792c4d717bd52f78ef72c0a4b948">+ </mo>
+                                <mfrac id="jsbx2b68078045a1fe9dfbfdef4948c3">
+                                  <mn id="ikakc93e1ed5510842b66e71b83c91b5">1 </mn>
+                                  <mstyle displaystyle="true" id="njgwb5dc318710d953320170bc124f07" scriptlevel="0">
+                                    <msub id="utni1c667dd30de0cd6abe638ca168f6">
+                                      <mi id="yfvi787c12349f52322cfc43f294ab68">a </mi>
+                                      <mn id="gwxj1852d3a0695fd302535b9839ea3d">3 </mn>
+                                    </msub>
+                                    <mo id="ggga97205703b6af4b4af62802703ce2">+ </mo>
+                                    <mfrac id="yywzf09fd060754af269af4f8871fa09">
+                                      <mn id="vtge380aa227b951e977bf9459ebd09d">1 </mn>
+                                      <mstyle displaystyle="true" id="iyila76cb3506db06350fbdd98efa292" scriptlevel="0">
+                                        <msub id="diwfe77e61fa646b1b66d6ea1e77a37f">
+                                          <mi id="uksq600b74b4853d01458dacb94bfd2d">a </mi>
+                                          <mn id="hufw68b93c01c906418f55f4b7478126">4 </mn>
+                                        </msub>
+                                      </mstyle>
+                                    </mfrac>
+                                  </mstyle>
+                                </mfrac>
+                              </mstyle>
+                            </mfrac>
+                          </mstyle>
+                        </mfrac>
+                      </mrow>
+                      <annotation-xml encoding="application/xhtml+xml" id="yqqf912423d7287f6d1b25a49c095da1" name="alternate-representation">
+                        <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style a subscript 0 plus fraction numerator 1 over denominator begin display style a subscript 1 plus fraction numerator 1 over denominator begin display style a subscript 2 plus fraction numerator 1 over denominator begin display style a subscript 3 plus fraction numerator 1 over denominator begin display style a subscript 4 end style end fraction end style end fraction end style end fraction end style end fraction" id="shkz0c793ca3d984c79cba34689e93f5" src="../images/ugvf472ad650aa46180d79ebc18d6ece.png"></img>
+                      </annotation-xml>
+                    </semantics>
+                  </math>
+                </span>
+              </td>
+              <td id="krquc966087db9e37e32b9ae4c5786a8">
+                <code id="zrfzdd66737d59886e87ba59964f6350">\textstyle a_0+\frac1{\displaystyle a_1+\frac1{\displaystyle a_2+\frac1{\displaystyle a_3+\frac1{\displaystyle a_4}}}}</code>
+              </td>
+            </tr>
+            <tr id="tuvved3e1edd6f2752ef91409f106c71">
+              <td id="zwrsd240b9f1c78fe009a160f33c01bb">7</td>
+              <td id="kber8c60d705a5c6645569643e6745ca"> </td>
+              <td id="njwubdd97e0debcb9f23e944a96dead0">
+                <span class="math" id="3_7_2_mathml_torture_testc2f2EQ_0007.png" tabindex="0">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style a subscript 0 plus fraction numerator 1 over denominator a subscript 1 plus fraction numerator 1 over denominator a subscript 2 plus fraction numerator 1 over denominator a subscript 3 plus fraction numerator 1 over denominator a subscript 4 end fraction end fraction end fraction end fraction" display="inline" id="hxai7b0992a378af80cdc9a88b8651d4">
+                    <semantics id="cwvy858fb38c0a8245d131efd5fabfd9">
+                      <mrow id="vncm24f59cc73471068b498217bfc9e3">
+                        <msub id="rnqjac9e7296c4edeb8b02befaac0b31">
+                          <mi id="ghule7ae46a2568a87289cc1de3cb577">a </mi>
+                          <mn id="xrhdfef68ba696c4b1ea1475a2b9394e">0 </mn>
+                        </msub>
+                        <mo id="wayj6cd389eaabc574facfddba76aea7">+ </mo>
+                        <mfrac id="nygadbf659d0e4720bc40cebc5670029">
+                          <mn id="zxsh70eb69ff1766bfc2b5647487c5d4">1 </mn>
+                          <mrow id="yecx38477a5667f45bc2bfa7a5b3bbb7">
+                            <msub id="ryjle5bf40b2bd50b155233db451458f">
+                              <mi id="rdstcc8c5e810e270af395955b580ec6">a </mi>
+                              <mn id="zxum912bd9f5b18da972d6856242a733">1 </mn>
+                            </msub>
+                            <mo id="vrxxc2aabe15e74530bd8238a22af2f5">+ </mo>
+                            <mfrac id="xdfea4b7e42c0836068373f5024bd1ed">
+                              <mn id="odjb040fff1cbc91b8bff910218d5c23">1 </mn>
+                              <mrow id="hkxyb065543327118ef9f3f983bbb4b3">
+                                <msub id="idwe1324b3f4dc2a456b2f0393292ee5">
+                                  <mi id="lxguaee35773b30a4bced4726cae9bac">a </mi>
+                                  <mn id="wxie477be4e60da85ba56609765cec0a">2 </mn>
+                                </msub>
+                                <mo id="bkdufe0e8530a11be7e971e582730cf9">+ </mo>
+                                <mfrac id="chuh60251f44894a46aeaf8f23a03a8f">
+                                  <mn id="xekx086fabe065ae49c2233ed629558b">1 </mn>
+                                  <mrow id="wcyx748cb11eb4011ed4d92c92d9c567">
+                                    <msub id="wrch20415cbc1b83a7571e3bf8c76381">
+                                      <mi id="tjvw2efe1d61a3650083cf9fc6cbc66a">a </mi>
+                                      <mn id="bgbk29981e25944f064c31b0c6c41d0d">3 </mn>
+                                    </msub>
+                                    <mo id="pavv7abf15dffcdf31252476a7bc8e38">+ </mo>
+                                    <mfrac id="phya143266942a3d3177b00858f0f7f6">
+                                      <mn id="grlidd01e70d565c785fef7f829350a2">1 </mn>
+                                      <mrow id="seza5147d0fd8bd9b68761477c19049e">
+                                        <msub id="ujox890957aeb9f40b73ee514ad9078a">
+                                          <mi id="veqv8be3206ce2ecdabbdde2407ee000">a </mi>
+                                          <mn id="teug0ec3e04a70c21e0d5ebd9e2221f2">4 </mn>
+                                        </msub>
+                                      </mrow>
+                                    </mfrac>
+                                  </mrow>
+                                </mfrac>
+                              </mrow>
+                            </mfrac>
+                          </mrow>
+                        </mfrac>
+                      </mrow>
+                      <annotation-xml encoding="application/xhtml+xml" id="ewjdba97e045d835f0e9579da30e8913" name="alternate-representation">
+                        <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style a subscript 0 plus fraction numerator 1 over denominator a subscript 1 plus fraction numerator 1 over denominator a subscript 2 plus fraction numerator 1 over denominator a subscript 3 plus fraction numerator 1 over denominator a subscript 4 end fraction end fraction end fraction end fraction" id="fdfl369c6d0e427ed7e40d604f4f067c" src="../images/hxai7b0992a378af80cdc9a88b8651d4.png"></img>
+                      </annotation-xml>
+                    </semantics>
+                  </math>
+                </span>
+              </td>
+              <td id="toqx3bf3071f7713e0a9bb8f9c618f74"> </td>
+            </tr>
+            <tr id="lelx6815d6e584307c7f56cfc1b9c8db">
+              <td id="xify6869e70e7768b9c0f53c12b276eb">8</td>
+              <td id="vmvp8fbe0e66465d4ec2a9629ee7ff47"> </td>
+              <td id="wsms9032f7c77c774465b3a2683f7550">
+                <span class="math" id="3_7_2_mathml_torture_testc2f2EQ_0008.png" tabindex="0">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style left parenthesis fraction numerator n over denominator k divided by 2 end fraction right parenthesis" display="inline" id="jgql23a54dda7dc754471117a61f004d">
+                    <semantics id="item5d73f99fe87235ce792814b0488c">
+                      <mrow id="exzzefe9aa41a8d8a1a9452e8a225ec9">
+                        <mo id="ckia000870b1b6a0002d7528f1ace804">( </mo>
+                        <mfrac id="lbjzc33ad01a35ac05f07bd91c323200" linethickness="0px">
+                          <mi id="plmk3f4fbe688c875db8c1be55f461a0">n </mi>
+                          <mrow id="chdwcb7e75bc358dced2e94f7edd7d03">
+                            <mi id="mqar0f8b4b3e11230584d50194b6eac5">k </mi>
+                            <mo id="kidt2abb783c149f8bb23547cc8b504e">/ </mo>
+                            <mn id="vmrpffc0e34d995c246cd9ee00649aa3">2 </mn>
+                          </mrow>
+                        </mfrac>
+                        <mo id="sdvqdad0d91c869ec2ce4423b72a197c">) </mo>
+                      </mrow>
+                      <annotation-xml encoding="application/xhtml+xml" id="arms10003d00c2a1cfa0b2148c66288f" name="alternate-representation">
+                        <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style left parenthesis fraction numerator n over denominator k divided by 2 end fraction right parenthesis" id="gzqm6b675629dcd1e6db9f92de41ae5d" src="../images/jgql23a54dda7dc754471117a61f004d.png"></img>
+                      </annotation-xml>
+                    </semantics>
+                  </math>
+                </span>
+              </td>
+              <td id="mfdh44bf50660a36e4bbec0be7d1ec79"> </td>
+            </tr>
+            <tr id="mzrca407266a3d5a812f03ef7242db9f">
+              <td id="nvxqeeaa1e6b6e6531a41aed6ba8b8f0">9</td>
+              <td id="ohys55bc6a00976e4ead0db28d9face5"> </td>
+              <td id="xkun0f10a78baa7b14173c06ee71bf14">
+                <span class="math" id="3_7_2_mathml_torture_testc2f2EQ_0009.png" tabindex="0">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style left parenthesis p over 2 right parenthesis x squared y to the power of p minus 2 end exponent minus fraction numerator 1 over denominator 1 minus x end fraction fraction numerator 1 over denominator 1 minus x squared end fraction" display="inline" id="jacc79934389833a8e4344f430e8ce8b">
+                    <semantics id="ruao1f9bc4b4ca3a08b81570beba307b">
+                      <mrow id="pvlnf4f5d73f86bf22af9894d361fc70">
+                        <mrow id="arbc091b84d88235953bd38f186f20dd">
+                          <mo id="gicvc62f7de1a90418393f39dd995ec7">( </mo>
+                          <mfrac id="tvpuf586e3fa415309b5365c43ff536a" linethickness="0px">
+                            <mi id="xyyd88cf38cba9ea90b416ed91bf5000">p </mi>
+                            <mn id="sqos50f2773112c41cf93265d20dd53a">2 </mn>
+                          </mfrac>
+                          <mo id="zjzkcc02e1877c5b5e1d51245ba03c2d">) </mo>
+                        </mrow>
+                        <msup id="gjwuf478fdf1b3b5e7fa987e3febd6f9">
+                          <mi id="yqlse12e1ea10de8f0d973e5fc10e697">x </mi>
+                          <mn id="vmqh42fcb29de9a75ee59f4504dfc516">2 </mn>
+                        </msup>
+                        <msup id="flak213cf9e9ca1beed77f19b037269c">
+                          <mi id="oeot72c6266618dbbe0e631c4597f5bb">y </mi>
+                          <mrow id="dbmz493be6a83bbb680965b70e8b581c">
+                            <mi id="lzlu8b8a78b47279f9bbd3d9d9a9f141">p </mi>
+                            <mo id="dcjb7f07da4c94911737d32996e66c4d">- </mo>
+                            <mn id="xurz602c87fb343c00b295a8d2b4c21c">2 </mn>
+                          </mrow>
+                        </msup>
+                        <mo id="bntk333a59c3c920efefbe8aa0c58a24">- </mo>
+                        <mfrac id="bpbcc97a19133b2229d15adcbc844d42">
+                          <mn id="czceee51b05e0f86b8f45655ddbbd7cc">1 </mn>
+                          <mrow id="ozote60fab07a84ca2ba6f99f156a05e">
+                            <mn id="rxdob30e9458e4db608902a5f27cff7d">1 </mn>
+                            <mo id="yuix9be4d924d6564c013c9ccf278bbd">- </mo>
+                            <mi id="nexlefd7e7bf7e3c6e0c60480163f253">x </mi>
+                          </mrow>
+                        </mfrac>
+                        <mfrac id="ilsm2c60eea7725652a001a794d92e75">
+                          <mn id="ugeb4b0083b69e88239b04acc0a4a7de">1 </mn>
+                          <mrow id="yjhn929a54f434e6e9c1c4d389cbc18e">
+                            <mn id="pzvea5fc270eb554b1bbd70f968c6965">1 </mn>
+                            <mo id="wzovf6743245e597672e20afd0c8a20f">- </mo>
+                            <msup id="fgse12024ca2fd295f080a54f8d9a5d1">
+                              <mi id="vbmq24ec3a60c19fb393822bbbdb8678">x </mi>
+                              <mn id="vhid39f5fd6965731a22cc1070cdba2f">2 </mn>
+                            </msup>
+                          </mrow>
+                        </mfrac>
+                      </mrow>
+                      <annotation-xml encoding="application/xhtml+xml" id="dyng1b5ff484471e9945ff9a083d0945" name="alternate-representation">
+                        <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style left parenthesis p over 2 right parenthesis x squared y to the power of p minus 2 end exponent minus fraction numerator 1 over denominator 1 minus x end fraction fraction numerator 1 over denominator 1 minus x squared end fraction" id="bcdm879837c318f8fa2b118c4404cedd" src="../images/jacc79934389833a8e4344f430e8ce8b.png"></img>
+                      </annotation-xml>
+                    </semantics>
+                  </math>
+                </span>
+              </td>
+              <td id="mmdt9195e075a612cf80b6018584c2b8"> </td>
+            </tr>
+            <tr id="mskn63124a72b892cb109c23842c7e57">
+              <td id="sljz14b6d54b5aac06b0ecc9ad12b7d4">10</td>
+              <td id="ojqua4cd4cb9419184b7a4c2323605ab"> </td>
+              <td id="meyc75672a4c4a030cd89921c8edde02">
+                <span class="math" id="3_7_2_mathml_torture_testc2f2EQ_0010.png" tabindex="0">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style sum for fraction numerator 0 less or equal than i less or equal than m over denominator 0 less than j less than n end fraction of P not stretchy left parenthesis i comma j not stretchy right parenthesis" display="inline" id="addm0147f19b348b61f2b9958215069b">
+                    <semantics id="putd3d535608cc3433ee95c84c201474">
+                      <mrow id="vdwn1dde6785b41b76622f785b95b6d4">
+                        <munder id="uqhz568e9aa1694847cf02e53caae5e3">
+                          <mo id="qpfi98abc89951450a45ebdac4230300">∑ </mo>
+                          <mrow id="qaxgcc3ab337532c9bd0c2bb08689f76">
+                            <mfrac id="xxaqdb6d49f803e4a4223637516a595c" linethickness="0px">
+                              <mrow id="iole3d7128d76dacc77da91bd8190c5b">
+                                <mn id="kkld323265ad2c1ed3be061702e3fd7c">0 </mn>
+                                <mo id="gpwe30a18a4bab29fad21474406ac4b0">≤ </mo>
+                                <mi id="mrez7175108e8f879080e66efcd910f5">i </mi>
+                                <mo id="lpju579e928b42ac3c4b281aea9e0669">≤ </mo>
+                                <mi id="ihdi82dc0d63b64c11dd173c2a63e1fa">m </mi>
+                              </mrow>
+                              <mrow id="mfjzd43bbede459b8ce6674f85647cf1">
+                                <mn id="vyeqd296f20fe2a990b629cc7b79ccb1">0 </mn>
+                                <mo id="pfrpd9e372a6e1dddb305faec8febeb1">&lt; </mo>
+                                <mi id="wmeq15c3701133a1878b694b29292e33">j </mi>
+                                <mo id="difv25ba610c378591ca6b2f297a65c9">&lt; </mo>
+                                <mi id="asum09ac0594cc47f875735bf95b03a4">n </mi>
+                              </mrow>
+                            </mfrac>
+                          </mrow>
+                        </munder>
+                        <mi id="llhx788a4c3d48fcef9f030a1982acc0">P </mi>
+                        <mo id="djkk0523b809a29b404d3f8c7b1830ce" stretchy="false">( </mo>
+                        <mi id="ydcnb0698ca805e642275b6bdf624c9e">i </mi>
+                        <mo id="zgjkdaef04e63d993ba1bff4198a9a90">, </mo>
+                        <mi id="useq39e4f702fc2528d5116fbaec9a3f">j </mi>
+                        <mo id="avns9a66ccbc16cc6d9922149831386f" stretchy="false">) </mo>
+                      </mrow>
+                      <annotation-xml encoding="application/xhtml+xml" id="tfmc11c6ab7945b8a7fb625fb331dbb7" name="alternate-representation">
+                        <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style sum for fraction numerator 0 less or equal than i less or equal than m over denominator 0 less than j less than n end fraction of P not stretchy left parenthesis i comma j not stretchy right parenthesis" id="bpfjac323181697362d07b61ae2ab612" src="../images/addm0147f19b348b61f2b9958215069b.png"></img>
+                      </annotation-xml>
+                    </semantics>
+                  </math>
+                </span>
+              </td>
+              <td id="pmzp106dfef1af12b8f61f3352d55d0e"> </td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table c3 main-flow" id="bepc5ae68d7865e25a4e0b5cf6f59507">
+          <tbody id="pzgw2cfd6d5b7e47c6a04fec29ce362d">
+            <tr id="gwsp6612bcb588441b6cd14a6dc8462e">
+              <td id="oxpf67b0b24b7430c7549e026c8fb3dd"> </td>
+              <th id="nopo75cec7cd8065d9499b414a06aeb0" scope="col">As rendered by TeX</th>
+              <th id="rzvwd237266ebdb040034548d76cdc32" scope="col">As rendered by your browser</th>
+            </tr>
+            <tr id="exufc4cebc95f4853487b70b626d5bdf">
+              <td id="wgpfbb3bddd8e65e7bbcfa820bafccf3">11</td>
+              <td id="mycn10b98ede4347b1fb8e745349b16a"> </td>
+              <td id="akyc99cf401ae2d33b04caf1cd125b2d">
+                <span class="math" id="3_7_2_mathml_torture_testc2f2EQ_0011.png" tabindex="0">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style x to the power of 2 y end exponent" display="inline" id="uaoxcc55212952c125cc821cd27e6d13">
+                    <semantics id="vaaxb74165344eeb1d4a0bb282a983b9">
+                      <mrow id="ixfy76fa15325b39732dd1747cff75bd">
+                        <msup id="hoch6fcca5d8a3f287abd409514bfe4a">
+                          <mi id="bphzb457a1ac3da65ad270388f5e5a57">x </mi>
+                          <mrow id="mppe308513fab2f4f7902a8410357910">
+                            <mn id="nrbe1683e62a747a0e99f2b4f57ea631">2 </mn>
+                            <mi id="nmqz5561e4412134ac0aaed8140f9bbb">y </mi>
+                          </mrow>
+                        </msup>
+                      </mrow>
+                      <annotation-xml encoding="application/xhtml+xml" id="nwia0d3ac074f196960cf57e2eb544a0" name="alternate-representation">
+                        <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style x to the power of 2 y end exponent" id="urjn1a1f4fb172c721e39dac823a4864" src="../images/uaoxcc55212952c125cc821cd27e6d13.png"></img>
+                      </annotation-xml>
+                    </semantics>
+                  </math>
+                </span>
+              </td>
+            </tr>
+            <tr id="pieoa40b24d40e4e246e7d82819a82d6">
+              <td id="elpa2034ddd9693ce1c66e77405355d6">12</td>
+              <td id="putfe3f66a33bb5d148cb85dac7fb90b"> </td>
+              <td id="gtzof2073f0bb506a7eb92ff3fb87df5">
+                <span class="math" id="3_7_2_mathml_torture_testc2f2EQ_0012.png" tabindex="0">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style sum from i equals 1 to p of sum from j equals 1 to q of sum from k equals 1 to r of a subscript i j end subscript b subscript j k end subscript c subscript k i end subscript" display="inline" id="kipia7cea1f7df5e5266c01204af07ab">
+                    <semantics id="vfyk644caa7abf1e607dea7ebf1a8e87">
+                      <mrow id="tjjn5204c51fbbc020307f4ea274474d">
+                        <munderover id="edaxe77403f96ac0acd353e254f03555">
+                          <mo id="yfzs9331e36e5930050089edb4e4cdd7">∑ </mo>
+                          <mrow id="ylklb233a13536315ca5930f463e49b7">
+                            <mi id="cttl441d3b833a275740b34783f4e3bd">i </mi>
+                            <mo id="mzmy1ec8d4e701e91065f460994bf989">= </mo>
+                            <mn id="symf80ed2c93b461742d767562fa9624">1 </mn>
+                          </mrow>
+                          <mi id="dxey6d4e11fb74926018699f7e21941d">p </mi>
+                        </munderover>
+                        <munderover id="falk9be2d9fab14ac1ad31b2bf898e7f">
+                          <mo id="nzoh8e3aad7780dc2ad290638e75b355">∑ </mo>
+                          <mrow id="zswob81e4454e7dd593add3aea6fce5a">
+                            <mi id="zzeh545d1029ffda5f41cd8c37c3689e">j </mi>
+                            <mo id="ccdjaf7cf41fdba498bb9528e90c2998">= </mo>
+                            <mn id="somic154067ace487edacef0a73d7e08">1 </mn>
+                          </mrow>
+                          <mi id="sice530dd993446340a5246821bee135">q </mi>
+                        </munderover>
+                        <munderover id="kofya20c9353847c831b9fb1b243bbd3">
+                          <mo id="gjqyc8c94914f2febe03a9f744311501">∑ </mo>
+                          <mrow id="ndgo2e403690a4d6b2ebb36062b9e582">
+                            <mi id="cjrm7a49aefabaf0fce5ca2d67a42cb4">k </mi>
+                            <mo id="zbpd3fd1a3fe5106ba0fa974505566cd">= </mo>
+                            <mn id="lrza2bbd88ba42f1710ef7da2ab6e531">1 </mn>
+                          </mrow>
+                          <mi id="bnqde655e7620d728c6935bb11d1b840">r </mi>
+                        </munderover>
+                        <msub id="wjtd45fd063b35e5e530f5c28575bfd0">
+                          <mi id="wbfs34604f7d891f26a06a5fc2261df3">a </mi>
+                          <mrow id="wcju2998ae5ca0575329ff38d2e986a9">
+                            <mi id="jwcd752f029e2f22306424e0dd19ed2c">i </mi>
+                            <mi id="aitz3d1088131de9d8c4bb24da11d1c2">j </mi>
+                          </mrow>
+                        </msub>
+                        <msub id="ajkpda64d6452eaaba2b1c548c2b40fe">
+                          <mi id="tddw11febe4ee142c3915940cd25355a">b </mi>
+                          <mrow id="ohpldf30a9bfb814e8ad4ea6ee148b4a">
+                            <mi id="qrli1dd1b80ad3aac64b5bc2a414caad">j </mi>
+                            <mi id="mtyx89e8e78aeb211fd8a9dd666089bd">k </mi>
+                          </mrow>
+                        </msub>
+                        <msub id="jadzac681808be1f95a6a20dc12fe18a">
+                          <mi id="pizl7e4022bc3dd0efe1d9b829a4fb64">c </mi>
+                          <mrow id="dyty2adc9f14635d836ab461b5325ef3">
+                            <mi id="clqhf45af2eb75dd5ceb0aa33c529505">k </mi>
+                            <mi id="owkm43cec165941d8b04b6fe210b5346">i </mi>
+                          </mrow>
+                        </msub>
+                      </mrow>
+                      <annotation-xml encoding="application/xhtml+xml" id="tdgncf789d5344b2f58dc83a82310455" name="alternate-representation">
+                        <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style sum from i equals 1 to p of sum from j equals 1 to q of sum from k equals 1 to r of a subscript i j end subscript b subscript j k end subscript c subscript k i end subscript" id="styuaa865c863399d03d3f708dc0e189" src="../images/kipia7cea1f7df5e5266c01204af07ab.png"></img>
+                      </annotation-xml>
+                    </semantics>
+                  </math>
+                </span>
+              </td>
+            </tr>
+            <tr id="adymb4a932e5ed961f480638ba484f86">
+              <td id="wqrk8336c3295ae7484c923383ca20bf">13</td>
+              <td id="wdsu3967daece5d334b426a3d3db92a9"> </td>
+              <td id="teeyf4d1d0cd92bfd594303cfab1c471">
+                <span class="math" id="3_7_2_mathml_torture_testc2f2EQ_0013.png" tabindex="0">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style square root of 1 plus square root of 1 plus square root of 1 plus square root of 1 plus square root of 1 plus square root of 1 plus square root of 1 plus x end root end root end root end root end root end root end root" display="inline" id="yliv868c602874b13dd088d6a37d3963">
+                    <semantics id="yqkn4c9f61d43e3a9b8117488f0669bb">
+                      <mrow id="ihcbdd38654ff37d2620833404b45474">
+                        <msqrt id="rvoff3123b0eaf4c9f8bfc4d3c594ea9">
+                          <mn id="vrbm53f6c07a847ecb7cc1ed5185880a">1 </mn>
+                          <mo id="ppqs483e487e3fd4df136aecc02d6cea">+ </mo>
+                          <msqrt id="uanbb54fd4f516a370e9264bf004b383">
+                            <mn id="vksce0e089e1b7ebdda2411080eed88c">1 </mn>
+                            <mo id="hlda004f4599bd6b0c66d969fb6f4259">+ </mo>
+                            <msqrt id="fcdu7c0a0ebc3c29b0fb4e9dfe285b48">
+                              <mn id="lnwzf2634a9808212d4fea22ce8c6360">1 </mn>
+                              <mo id="srlqb496162a6a62cd08e1c025b2e602">+ </mo>
+                              <msqrt id="elrz60d998bd16633fe7a00ab7ff1cec">
+                                <mn id="ytke873abb529d2715f2b86bb12f14a6">1 </mn>
+                                <mo id="jxbec7dac652cba263415421b51a40fc">+ </mo>
+                                <msqrt id="vqdm2a6cf7831f8a511cf37649239e81">
+                                  <mn id="ghcd36d697fd38653f15454a9cd577c1">1 </mn>
+                                  <mo id="ayoq499f48e82f731aa8d4669fb07a0b">+ </mo>
+                                  <msqrt id="gsbu9aa7a01d35084bfe18ed67f83c26">
+                                    <mn id="crcr474d01e3fc16530b00a080bcd947">1 </mn>
+                                    <mo id="zstsea098b678ea95e698daf7a6534d4">+ </mo>
+                                    <msqrt id="dzeefc82c8a52443051e18913ff39bb1">
+                                      <mn id="bhtk7980ac4666fb6428a7fcc8ee3753">1 </mn>
+                                      <mo id="zccm506ec458d9346be4ddbc23cffaf6">+ </mo>
+                                      <mi id="gbky996168a5eb230b7f4acffe844fca">x </mi>
+                                    </msqrt>
+                                  </msqrt>
+                                </msqrt>
+                              </msqrt>
+                            </msqrt>
+                          </msqrt>
+                        </msqrt>
+                      </mrow>
+                      <annotation-xml encoding="application/xhtml+xml" id="fggh09d95a5821820d3217b79ac59691" name="alternate-representation">
+                        <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style square root of 1 plus square root of 1 plus square root of 1 plus square root of 1 plus square root of 1 plus square root of 1 plus square root of 1 plus x end root end root end root end root end root end root end root" id="xzvbb6385f45f7ac8a64655f0be2cc0c" src="../images/yliv868c602874b13dd088d6a37d3963.png"></img>
+                      </annotation-xml>
+                    </semantics>
+                  </math>
+                </span>
+              </td>
+            </tr>
+            <tr id="inyz617aff9f6d6734963f8a3b3fb1f8">
+              <td id="askmd698f51cb92d47cd194728c3efe9">14</td>
+              <td id="oyeg3ed2e3ed1d8b9485361361ef8416"> </td>
+              <td id="owsf3346642cf29008a8b0045317dd54">
+                <span class="math" id="3_7_2_mathml_torture_testc2f2EQ_0014.png" tabindex="0">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style left parenthesis fraction numerator partial differential squared over denominator partial differential x squared end fraction plus fraction numerator partial differential squared over denominator partial differential y squared end fraction right parenthesis vertical line phi not stretchy left parenthesis x plus i y not stretchy right parenthesis vertical line squared equals 0" display="inline" id="dcfnc1d462b86c913829c15edf1a598f">
+                    <semantics id="yifj7ed708d3aa2c5e20be303f76a20e">
+                      <mrow id="biqn9d545033520cc43c67f10bb73ef1">
+                        <mrow id="jlpfbdedd9a97d3a7387213ea54de86f">
+                          <mo id="ubzsfe8b880c0e4b0dd387a77eee41f2">(</mo>
+                          <mfrac id="bcwfd2b27d9141dc0cdcd4812c9ebec6">
+                            <msup id="xyhu37e6905de2086bf5835b23974cf9">
+                              <mo id="galh0a8b661b5d723a6bcb3744bb5c50">∂</mo>
+                              <mn id="caxi537af01619f1d6e6547487393a8f">2</mn>
+                            </msup>
+                            <mrow id="ztyz06d86867ce7aa0c88075623c61f5">
+                              <mo id="rndje20ad88cdb797f821ec172523adc">∂</mo>
+                              <msup id="bzku6aaf2038f1f772994b5fe439f336">
+                                <mi id="klmce1abe2409a386f97f10c4a79625d">x</mi>
+                                <mn id="vcqr537490a8cc0d9ed6f66e0c4a3663">2</mn>
+                              </msup>
+                            </mrow>
+                          </mfrac>
+                          <mo id="vawb78dfa6695c68c99f13f226fbf08d">+</mo>
+                          <mfrac id="zsmg3a6c7740aa34e6eef63901583e8c">
+                            <msup id="rwvh3cc61dafd592decd523f681e0e69">
+                              <mo id="fpvhd32ef719bdbb9f1405468dd16cce">∂</mo>
+                              <mn id="skbdfe0a442ced0115bc2993c7ed3c93">2</mn>
+                            </msup>
+                            <mrow id="tebmc0e4e9af57503a009923a778191f">
+                              <mo id="dkfo29c3225420683e8d28be7d846dd4">∂</mo>
+                              <msup id="yoej928f73a20617df7d6159a896c793">
+                                <mi id="cqnr6e9065778b4ec6f16abe66edcc68">y</mi>
+                                <mn id="okosb1096c945fd168408764cda6f0a6">2</mn>
+                              </msup>
+                            </mrow>
+                          </mfrac>
+                          <mo id="zfzn7b288ad0fc9aedd23ffd3ef2e59a">)</mo>
+                        </mrow>
+                        <msup id="hnqz8ceea06725f1621bef9433c7bcf3">
+                          <mrow id="ctese65da874799f097a497b7afa1443">
+                            <mo id="vvmt2cef64725f39d78d12a3ff6717cb" minsize="150%">|</mo>
+                            <mi id="hegqa4ecf8d28dfb3c3712920088a846">φ <!-- \varphi --></mi>
+                            <mo id="nyema5c1bcf7797e78d8dddfd3d1f074" stretchy="false">( </mo>
+                            <mi id="bthv35ea6f2c30feb9aec8c85171ac23">x </mi>
+                            <mo id="pewv8d859e4fa5a5f1481e2412ddfe04">+ </mo>
+                            <mi id="wwqp2ac4553ec13fbc8b2b45a9c142d5" mathvariant="normal">i </mi>
+                            <mi id="xaqd5168b25d5b9085c6d07f283636c2">y </mi>
+                            <mo id="sniub94033ce3366e3dbe4989ede4bb7" stretchy="false">) </mo>
+                            <mo id="kfla2a4a129bec883a428eeb977c90ec" minsize="150%">| </mo>
+                          </mrow>
+                          <mn id="pauge6873e6f20b18cd1c5f4e9e8740e">2 </mn>
+                        </msup>
+                        <mo id="kvgg3fa7491bb2bd4d32dc7baf2f634b">= </mo>
+                        <mn id="odhzf3379cec060954ef948e81ef435f">0 </mn>
+                      </mrow>
+                      <annotation-xml encoding="application/xhtml+xml" id="vxzqefafc149141fe90dd8d1cb83d110" name="alternate-representation">
+                        <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style left parenthesis fraction numerator partial differential squared over denominator partial differential x squared end fraction plus fraction numerator partial differential squared over denominator partial differential y squared end fraction right parenthesis vertical line phi not stretchy left parenthesis x plus i y not stretchy right parenthesis vertical line squared equals 0" id="nfjtd23a173774fa9e2ef05593db33ef" src="../images/dcfnc1d462b86c913829c15edf1a598f.png"></img>
+                      </annotation-xml>
+                    </semantics>
+                  </math>
+                </span>
+              </td>
+            </tr>
+            <tr id="uahq764613608b52cb8873ac69dcad76">
+              <td id="xtboae5a8f7eb0c2c09183be95265676">15</td>
+              <td id="sxpsb66db5c13aded98d7923e1c5d702"> </td>
+              <td id="zlvl19f73a398b5fa7393433bbe981a7">
+                <span class="math" id="3_7_2_mathml_torture_testc2f2EQ_0015.png" tabindex="0">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style 2 to the power of 2 to the power of 2 to the power of x end exponent end exponent" display="inline" id="jtby31a151caa74a49d6331bd0fc8eee">
+                    <semantics id="nizic8314bb1bf2a7a897760b63455ab">
+                      <mrow id="kzire98e6ddc71681539f0109258fb54">
+                        <msup id="kbsa18067c21e3be2f4b4df645b22d1d">
+                          <mn id="dapu63232f2596b7dab069d010942930">2 </mn>
+                          <msup id="rwflb0fc06baf8371b9842794515e28c">
+                            <mn id="mnoq3bbe758abf72789b8edd5b531768">2 </mn>
+                            <msup id="wjwj5b1bb91da9d679085e2e1d9115d1">
+                              <mn id="ilgv8548255ba4357c76ba1707481406">2 </mn>
+                              <mi id="hwcz8eb6aadd5989698b420cab4b63be">x </mi>
+                            </msup>
+                          </msup>
+                        </msup>
+                      </mrow>
+                      <annotation-xml encoding="application/xhtml+xml" id="mkui0037e00cd25a246bcbc79e7b443b" name="alternate-representation">
+                        <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style 2 to the power of 2 to the power of 2 to the power of x end exponent end exponent" id="sqhjeecdb1ffbbaf5ef48b3c61451218" src="../images/jtby31a151caa74a49d6331bd0fc8eee.png"></img>
+                      </annotation-xml>
+                    </semantics>
+                  </math>
+                </span>
+              </td>
+            </tr>
+            <tr id="rdwne33afa3a162afa2e30db53572bda">
+              <td id="gzwee24020768b754f08160e8af7eda7">16</td>
+              <td id="fbrx3c0ed2ca7b7f2e1e5f0b15f31b41"> </td>
+              <td id="sckeaf1ebf1269acda6670712ecc6355">
+                <span class="math" id="3_7_2_mathml_torture_testc2f2EQ_0016.png" tabindex="0">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style not stretchy integral subscript 1 superscript x fraction numerator d t over denominator t end fraction" display="inline" id="ydaoa63358d1406b478f0004dcf62247">
+                    <semantics id="yejf355f29c62bb96ac1f85db538b036">
+                      <mrow id="xojw63df8d04c6228dc2a666071784d2">
+                        <msubsup id="caktadb354475b8d2c68781de62a3816">
+                          <mo id="xnfl1496bc01758196822c3abc27d480" stretchy="false">∫ </mo>
+                          <mn id="dbuu614ded8d06efdc43382d7403f6b7">1 </mn>
+                          <mi id="hcvi0eb1791fd011445f443d8d1c66b1">x </mi>
+                        </msubsup>
+                        <mfrac id="okqe1f5df00df05e8dcca20a7bc57190">
+                          <mrow id="qpkr5e2855dcaf94fbf10d8bfa65bc05">
+                            <mi id="qfuw79d6fabb7970c577b47a9f9b55fa">d </mi>
+                            <mi id="sbzie3d7cb550ae1fb3ba6e676d9481d">t </mi>
+                          </mrow>
+                          <mi id="gtvb4016b5599b9c9936407df9cbec61">t </mi>
+                        </mfrac>
+                      </mrow>
+                      <annotation-xml encoding="application/xhtml+xml" id="ounr8940fc720d20a0b7ad81697eef3b" name="alternate-representation">
+                        <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style not stretchy integral subscript 1 superscript x fraction numerator d t over denominator t end fraction" id="jorvaaa6f1e99fbe2e4a7af557fcaf28" src="../images/ydaoa63358d1406b478f0004dcf62247.png"></img>
+                      </annotation-xml>
+                    </semantics>
+                  </math>
+                </span>
+              </td>
+            </tr>
+            <tr id="kvwe6e64f3972a279c5b59500d2e099f">
+              <td id="zdbha37259636e88b68c33ba87fbdc1b">17</td>
+              <td id="tdwg834518c28287ddcf0ab6d6ea0cc7"> </td>
+              <td id="rtagfc87c581c6a642680c6847086923">
+                <span class="math" id="3_7_2_mathml_torture_testc2f2EQ_0017.png" tabindex="0">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="double-integral Underscript upper D Endscripts d x d y" display="inline" id="fpny9c77ac96f18fd52fd6db07b9bed7">
+                    <semantics id="cfcv3be4a844176298967f9562e5fcba">
+                      <mrow id="jscy4744e242d630eac053b4611eac09">
+                        <msub id="iuax736c9bb250ee5de8516ab88b0f27">
+                          <mo id="ywrwfa7a27ecccf7b272d3f898eba70f">∬ <!-- \iint --></mo>
+                          <mi id="rmoff34c369c4fa78dfbc16ed2c7777f">D </mi>
+                        </msub>
+                        <mi id="qobtcb65212964eb8d679ad73b74350f">d </mi>
+                        <mi id="vpdpfc438e9416541d9b87169f1ec5b0">x </mi>
+                        <mspace id="mnxh98f92505d6e8884448fae3c42116" width="thinmathspace"></mspace>
+                        <mi id="ewdpc838b945f2c51474b0c2986d20c6">d </mi>
+                        <mi id="gtie6335d9ec679c83743b686b15fedd">y </mi>
+                      </mrow>
+                      <annotation-xml encoding="application/xhtml+xml" id="ydep0fb4bc94c08286f10ce3b6baa5d4" name="alternate-representation">
+                        <img xmlns="http://www.w3.org/1999/xhtml" alt="double-integral Underscript upper D Endscripts d x d y" id="flmlbd08029fefd0b205c345a5f1065e" src="../images/fpny9c77ac96f18fd52fd6db07b9bed7.png"></img>
+                      </annotation-xml>
+                    </semantics>
+                  </math>
+                </span>
+              </td>
+            </tr>
+            <tr id="fdyfcea9d4f3de40a226ac4a42779309">
+              <td id="oxyaf3a0158ab0bdd065010bc2214a0e">18</td>
+              <td id="utlg599354e05b7ef63a420831708c61"> </td>
+              <td id="uuax6469d5aff2485ef5c66d49a49d6d">
+                <span class="math" id="3_7_2_mathml_torture_testc2f2EQ_0018.png" tabindex="0">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style f not stretchy left parenthesis x not stretchy right parenthesis equals left curly bracket table row cell attributes columnalign center end attributes 1 divided by 3 cell attributes columnalign left end attributes text if                              end text 0 less or equal than x less or equal than 1 semicolon row cell attributes columnalign center end attributes 2 divided by 3 cell attributes columnalign center end attributes text if                              end text 3 less or equal than x less or equal than 4 semicolon row cell attributes columnalign center end attributes 0 cell attributes columnalign left end attributes text elsewhere.                            end text end table" display="inline" id="dytebad7b578fc4f8210b7060046af5b">
+                    <semantics id="rgznfdbc22dfda762ed247e12ffa9988">
+                      <mrow id="nmkg82912d0489516d99c9bbeb197de7">
+                        <mi id="snefa3a0b7efb3e7e40cda8dbe0179e1">f </mi>
+                        <mo id="abfhcc41285643b5ad1e823ad8cf8c31" stretchy="false">( </mo>
+                        <mi id="xjqebb33cf9cc5d8b2ff98fe46f6bc28">x </mi>
+                        <mo id="ggha6f1e7fce9bf07badc6ced931e6b7" stretchy="false">) </mo>
+                        <mo id="ssba3db76411c67f07c34d0b3eb19112">= </mo>
+                        <mrow id="lpme7a5a1cc5106b2ec24c84c2cbeff6">
+                          <mo id="xuhs5fe15e17bdad69752b57e4a8f645">{ </mo>
+                          <mtable id="vhkbca270eeddebd6a8c9dd7a417c3ab">
+                            <mtr id="fqfy2c2d28b8df80d6c55f018ab6fc0b">
+                              <mtd columnalign="center" id="nfpi478899403b47fa38cf84b8bcd4ed">
+                                <mrow id="njih2010fdce2494852739c23900e28c">
+                                  <mn id="fvkn0c59e3cb1bc97b0654119e1e8327">1 </mn>
+                                  <mo id="eoic060e9135dd5bb873952ffbf05222">/ </mo>
+                                  <mn id="tykv6249055f12d646a4e601803f4fff">3 </mn>
+                                </mrow>
+                              </mtd>
+                              <mtd columnalign="left" id="uqqa4ed73f9e1625b16966001ddc79cc">
+                                <mrow id="dxsfec207da61aacdfb34e6aa81d55b9">
+                                  <mtext id="sjpa6393b6cc64bbf8c963a2cb70fc5e">if </mtext>
+                                  <mn id="vpzx5931cf91f14438a400cfb235cfb6">0 </mn>
+                                  <mo id="pfml14b37e187cb6242b5a1f673d1f3b">≤ </mo>
+                                  <mi id="zzskad8f5a5101dcd0ddad28b0514003">x </mi>
+                                  <mo id="oenqb29c0be2bd311543ef62904f0f1c">≤ </mo>
+                                  <mn id="zlkk293326cd9c0296bb317a3a645ccb">1 </mn>
+                                  <mo id="kmdl834ff66227d2bcea21b9f61d477c">; </mo>
+                                </mrow>
+                              </mtd>
+                            </mtr>
+                            <mtr id="zpeu06b450d106ca00f53633278d6938">
+                              <mtd columnalign="center" id="vdgpf17409335688e324c9c9ce0f035a">
+                                <mrow id="fwog22ed5edaad1378f38e10f9a1e493">
+                                  <mn id="vryg5a3adb10090f9e6933c144933b90">2 </mn>
+                                  <mo id="vgyob0b552f75e7ba60c4ac7bb9677c0">/ </mo>
+                                  <mn id="nsrrd9acb7a4e7ba04043d36c8d1b164">3 </mn>
+                                </mrow>
+                              </mtd>
+                              <mtd columnalign="center" id="raipd260ad33037e2d68e9468701b6fc">
+                                <mrow id="qrtj92ddf37e9b0c093b23b549181962">
+                                  <mtext id="idih695b8de1d7b5501de74f49d9bce6">if </mtext>
+                                  <mn id="scpcdb505b8d6760d388f76fdfee259d">3 </mn>
+                                  <mo id="peux5ff3e656113d3eedad13065626a0">≤ </mo>
+                                  <mi id="kdgx902e5de72ba1a373a329063ca8bf">x </mi>
+                                  <mo id="bony9c91be1569ee9c1ef160554bd358">≤ </mo>
+                                  <mn id="pfqn774ad2f6c019fd7386116c5acbfc">4 </mn>
+                                  <mo id="xypkdbdce0df6d7130b83a5036684c38">; </mo>
+                                </mrow>
+                              </mtd>
+                            </mtr>
+                            <mtr id="cbrr39f0ccbc504e6333e32c82846a62">
+                              <mtd columnalign="center" id="rfvheddc8791308ce37c48b32e1456aa">
+                                <mn id="grjzaebf22d1c3378e222dd56817c2d0">0 </mn>
+                              </mtd>
+                              <mtd columnalign="left" id="ljkv2d6ba2ec8f4ccd6c747284a8475d">
+                                <mtext id="zkqm547e4ad0dc5f4b91180eb53a08c6">elsewhere. </mtext>
+                              </mtd>
+                            </mtr>
+                          </mtable>
+                        </mrow>
+                      </mrow>
+                      <annotation-xml encoding="application/xhtml+xml" id="rfnj1d7c7c093e4cb4fc4c2bf96f275d" name="alternate-representation">
+                        <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style f not stretchy left parenthesis x not stretchy right parenthesis equals left curly bracket table row cell attributes columnalign center end attributes 1 divided by 3 cell attributes columnalign left end attributes text if                              end text 0 less or equal than x less or equal than 1 semicolon row cell attributes columnalign center end attributes 2 divided by 3 cell attributes columnalign center end attributes text if                              end text 3 less or equal than x less or equal than 4 semicolon row cell attributes columnalign center end attributes 0 cell attributes columnalign left end attributes text elsewhere.                            end text end table" id="gkjba0746760c2ec2ae80ddc62ca1ac2" src="../images/dytebad7b578fc4f8210b7060046af5b.png"></img>
+                      </annotation-xml>
+                    </semantics>
+                  </math>
+                </span>
+              </td>
+            </tr>
+            <tr id="ivdj04dee94e758e25bd8ca65dae9a24">
+              <td id="yinzf4162c001f25d74517119e381660">19</td>
+              <td id="rzklf08220b06f658092216f3b74929c"> </td>
+              <td id="dusc579616cc15010cea5c454765c5cf">
+                <span class="math" id="3_7_2_mathml_torture_testc2f2EQ_0019.png" tabindex="0">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="x plus period period period plus x OverOverscript top-brace Overscript k times Endscripts Endscripts" display="inline" id="mjitf7a193102ff24fedfc6cc8feed2e">
+                    <semantics id="xqcl8ecd4a651985c534c757b2f72be7">
+                      <mrow id="eldy1b05200b71559650da3750f5fc47">
+                        <mover id="nmfwc157f9cc844bdd2c50119fc7ab6b">
+                          <mrow id="vysv1c15ee689a6580fe7fe3a79d27a9">
+                            <mi id="lpncf6202fae8bdf431f6f968987aa82">x </mi>
+                            <mo id="gqos7cef8afc5f0456c8fa30b92560bc">+ </mo>
+                            <mo id="vrinbc1f838cda3729331260f3359ffd">... </mo>
+                            <mo id="xvxi196311b1ffd49d3120b4a0d744b4">+ </mo>
+                            <mi id="zjxp55aca7b86793044997007dbf50f2">x </mi>
+                          </mrow>
+                          <mover id="plam535465ad2846d8404ad8bb10850c">
+                            <mo id="bvik422250060ebe96053140a3bc7b0a">⏞ </mo>
+                            <mrow id="gshf1e5a68517fe6569543e415c69aff">
+                              <mi id="tefpff399802febcfa271c895c294e00">k </mi>
+                              <mspace id="ybhle492f5b7ac1bc4f073a944e33bac" width="thinmathspace"></mspace>
+                              <mtext id="fchu14667bc33d8bb52291e54d3159ec">times </mtext>
+                            </mrow>
+                          </mover>
+                        </mover>
+                      </mrow>
+                      <annotation-xml encoding="application/xhtml+xml" id="chuzcaed07746dc7dab1bb097ad53fc1" name="alternate-representation">
+                        <img xmlns="http://www.w3.org/1999/xhtml" alt="x plus period period period plus x OverOverscript top-brace Overscript k times Endscripts Endscripts" id="spmw92f5b3728c105cac218845c67b8e" src="../images/mjitf7a193102ff24fedfc6cc8feed2e.png"></img>
+                      </annotation-xml>
+                    </semantics>
+                  </math>
+                </span>
+              </td>
+            </tr>
+            <tr id="vudq6e0ff7f8fe6eb610fdbd61281dcf">
+              <td id="tiwfb69e66aa91961bdca6702db3d09e">20</td>
+              <td id="olak728d595ab12b9dd41080be8075a2"> </td>
+              <td id="stdobb6a500e799d83921ef6e2221be9">
+                <span class="math" id="3_7_2_mathml_torture_testc2f2EQ_0020.png" tabindex="0">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style y subscript x squared end subscript" display="inline" id="drpvdd88d97d910590fdcc26cb806ffb">
+                    <semantics id="enoaf418306c9bc68fc5904199e640ab">
+                      <mrow id="xksbe509bd7e0e3a6f32523c48fab2d5">
+                        <msub id="pmvof5aa6f77ac44394e5184ebf36c73">
+                          <mi id="mlgv128c7f6400f0e8154ade252424c8">y </mi>
+                          <msup id="mokm13306d7964f4d713ceb5bcd15c07">
+                            <mi id="pmgsb00f527e4bc4624b77c8f6804cf7">x </mi>
+                            <mn id="qrld9f20ec50b45d452645ac08ecd5ca">2 </mn>
+                          </msup>
+                        </msub>
+                      </mrow>
+                      <annotation-xml encoding="application/xhtml+xml" id="qoij570a7e091b0151656e41a0acc4f0" name="alternate-representation">
+                        <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style y subscript x squared end subscript" id="jngdf7c7d8937bb1a3f86e63c453a535" src="../images/drpvdd88d97d910590fdcc26cb806ffb.png"></img>
+                      </annotation-xml>
+                    </semantics>
+                  </math>
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="table c3 main-flow" id="bepc5ae68d0065e25a4e0b5cf6f59507">
+          <tbody id="pzgw2cdf6d5b7e47c6a04fec29ce362d">
+            <tr id="gwsp6612xdb588441b6cd14a6dc8462e">
+              <td id="oxpf67b0b24b7430c2345e026c8fb3dd"> </td>
+              <th id="nopo75cec7cd8065d2346b414a06aeb0" scope="col">As rendered by TeX</th>
+              <th id="rzvwd237266ebdb023474548d76cdc32" scope="col">As rendered by your browser</th>
+            </tr>
+            <tr id="cnpo75cd919c2a4fc9a5d652d84b092f">
+              <td id="lrube68c803acd5fb9466b45c0dae655">21</td>
+              <td id="teqsaef9b256465458d92feda18338b6"> </td>
+              <td id="njdm4ce342312a07f8747ecb07621834">
+                <span class="math" id="3_7_2_mathml_torture_testc2f2EQ_0021.png" tabindex="0">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="sigma-summation Underscript p prime Endscripts f left-parenthesis p right-parenthesis equals integral Underscript t greater-than 1 Endscripts f left-parenthesis t right-parenthesis d pi left-parenthesis t right-parenthesis" display="inline" id="qptc272d82c007a806af5284817446a4">
+                    <semantics id="rectbaa0199499f792cc8d52b4bea91c">
+                      <mrow id="rdbr5e494f8fda95bcddb14463249d0a">
+                        <munder id="baora308ecbb0ef6a6becf32026525f2">
+                          <mo id="siebce84c2ae8f4ea70f716f6b808a4e">∑ </mo>
+                          <mrow id="amck703abacada3416fca29e764f8733">
+                            <mi id="pqwf229ea65a992b17d3c15321517547">p </mi>
+                            <mtext id="nyyxcd545a17332d3fb9078895756837"> prime </mtext>
+                          </mrow>
+                        </munder>
+                        <mi id="nqnh3f63e02fcd8fe714eba570131013">f </mi>
+                        <mo id="xwoi4005cb8358936d002e832bc08747" stretchy="false">( </mo>
+                        <mi id="momu884403b407ae04c9220b14e3dd51">p </mi>
+                        <mo id="lkec7861551467f82283414a5dbb86d5" stretchy="false">) </mo>
+                        <mo id="elnu7ce0f11c47a21c4db38c2382627c">= </mo>
+                        <msub id="ejop5d4fae8253dbce8b95ded4ef3385">
+                          <mo id="kbdde18b3c21a487b7ead4ec5849af98" stretchy="false">∫ </mo>
+                          <mrow id="oborc201c28a6e7142f065f9d87d7567">
+                            <mi id="cofz47e8bbe2c20d126d3b8403918c82">t </mi>
+                            <mo id="ptxh035def0cad3b6e784f75eaf7b711">&gt; </mo>
+                            <mn id="ugryaf0419e756582d3bc0164269d659">1 </mn>
+                          </mrow>
+                        </msub>
+                        <mi id="dgnc382927f4936f6f7c903fd1e34bb6">f </mi>
+                        <mo id="ajlvcc769e7f6b99de350963783bde1b" stretchy="false">( </mo>
+                        <mi id="sxbz5955c5a5cd17d7adbf87ef1aa9db">t </mi>
+                        <mo id="jyyg3cc6f13a48d96c616cb62163d2ec" stretchy="false">) </mo>
+                        <mspace id="uunca3f09246b9ae5276e75452a91c40" width="thinmathspace"></mspace>
+                        <mi id="xdmj99b3f0b358c466b76fd733de31fc">d </mi>
+                        <mi id="jfts3ad0e4807f9c303b20c95353adb0">π </mi>
+                        <mo id="xagg307bf130c4e15b1c036dc8a93293" stretchy="false">( </mo>
+                        <mi id="yngod21f9f6bdce603c12ab8047e86b0">t </mi>
+                        <mo id="sdvu72fe9c056720371bd4aeb064cd52" stretchy="false">) </mo>
+                      </mrow>
+                      <annotation-xml encoding="application/xhtml+xml" id="auzwd077b652c295eea6f654a5593669" name="alternate-representation">
+                        <img xmlns="http://www.w3.org/1999/xhtml" alt="sigma-summation Underscript p prime Endscripts f left-parenthesis p right-parenthesis equals integral Underscript t greater-than 1 Endscripts f left-parenthesis t right-parenthesis d pi left-parenthesis t right-parenthesis" id="vtaw4d51ce07dc0d6b4741b580c098ce" src="../images/qptc272d82c007a806af5284817446a4.png"></img>
+                      </annotation-xml>
+                    </semantics>
+                  </math>
+                </span>
+              </td>
+            </tr>
+            <tr id="gxogf824ddeb257061725394315d4532">
+              <td id="jzylbfb0df3b89129d90f8b058e31b88">22</td>
+              <td id="gsstc4b144bdb8995c78eddf544876fd"> </td>
+              <td id="hvpg5981b3a1bf87e71f07170d4040c7">
+                <span class="math" id="3_7_2_mathml_torture_testc2f2EQ_0022.png" tabindex="0">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style not stretchy left curly bracket stack stack a comma ... comma a with overbrace with k text end text a text 's                              end text on top on top comma stack b comma ... comma b with overbrace with ell text end text b text 's                              end text on top on top with underbrace for k plus ell text  elements                          end text of below not stretchy right curly bracket" display="inline" id="rthgb7e5a7a29358c70148fd8214b7fb">
+                    <semantics id="gyoy335deb1c854b9e609f558955c0ce">
+                      <mrow id="diphe5a1fad5fae726146f04234db172">
+                        <mo id="rzkh99fca8e387cdb5526bd8c3b5ca4d" stretchy="false">{ </mo>
+                        <munder id="tasd25f43605f19cd9935a5c102921c5">
+                          <mrow id="pnxl7c1f80c0dc5c06371f937fd428a3">
+                            <mover id="lqzsa6c6f89b616f5d67353ae449caae">
+                              <mrow id="fvsmdf133704852a5c21df83a832c325">
+                                <mpadded id="goshc8efe23eeacb12bae1fbf91b6468" width="0em">
+                                  <mphantom id="obnvaa73ed31aeeee75bfa8ea2709443">
+                                    <mo id="ifswd3ac4e49386bca5d980cdcffb3c8">( </mo>
+                                  </mphantom>
+                                </mpadded>
+                                <mi id="spkwf95d780d792dbd223040ffeda4c0">a </mi>
+                                <mo id="tdgo7c164a82e098ceac62ba0c79edbd">, </mo>
+                                <mo id="helk12d1ffddaed328cc227205b2e8ce">... </mo>
+                                <mo id="erxy007752d3b1fdfd9a53e984afefee">, </mo>
+                                <mi id="qanq71e0f71f6f59474c13dc5888164b">a </mi>
+                              </mrow>
+                              <mover id="jqfo725cf7bb2b59e369a21d5dc60d94">
+                                <mo id="jlrb8e9eb7ed092543a03948b4e5f670">⏞ </mo>
+                                <mrow id="caat6e3a516a07ae6c836f6d318b241d">
+                                  <mi id="bvxu1a5c299e64dce82660f90223ee6f">k </mi>
+                                  <mtext id="zfiqa4899a9d705ab0ae17d5107845f6"> </mtext>
+                                  <mi id="ykyy2f77bec40a0bf5abf9191befc043">a </mi>
+                                  <mtext id="yrnj77915114a94dcb7ad4c6c03e6a9e">'s </mtext>
+                                </mrow>
+                              </mover>
+                            </mover>
+                            <mo id="grqba4f7d80212d49c483a6a7ef825c6">, </mo>
+                            <mover id="mtnib4892ef1d833c9b9f87f07a36025">
+                              <mrow id="hzaudcf3002040b0240aee66ca63bcd2">
+                                <mpadded id="aplvbdae47a546d6dbbea77be35d9d1d" width="0em">
+                                  <mphantom id="jdfm1a826ed3ca34e4dddcf3d74b3123">
+                                    <mo id="jvgtdfb4a0d7b8091590df1433b1d866">( </mo>
+                                  </mphantom>
+                                </mpadded>
+                                <mi id="yhpee8e179506147ac5cfc2fa8aaece0">b </mi>
+                                <mo id="qdsz9ff1bc4ac1d1871d2dc7c3cee6f3">, </mo>
+                                <mo id="otzfa693ed7c1b9e9f2a0dcac7f5fecd">... </mo>
+                                <mo id="mqmm37fb23ac873ba3940d78292415b2">, </mo>
+                                <mi id="ofto4379d18ca9cfa94f56f1642a8f0f">b </mi>
+                              </mrow>
+                              <mover id="hrxo04d86f9ef5c7ce1d7c16d71d5341">
+                                <mo id="riptde84793308d15b4001303fa10835">⏞ </mo>
+                                <mrow id="ufbh205ed526a4b85a8d0f2e8d188f8a">
+                                  <mi id="adgwc7c15186725d348ee903d856ca51">ℓ </mi>
+                                  <mtext id="hyyzc346fcc04af9eb0595dde14376e2"> </mtext>
+                                  <mi id="cwgpb06a071ce6bc441ca94d1a92859a">b </mi>
+                                  <mtext id="hldd12e55a6c5eb7135efb75f2140e19">'s </mtext>
+                                </mrow>
+                              </mover>
+                            </mover>
+                          </mrow>
+                          <munder id="spsd900e821a43480d6a3e5e41e13146">
+                            <mo id="narba254f559e54897a0d90e91dc7272">⏟ </mo>
+                            <mrow id="ruxeedadade2b0d9a79db0f30bbca113">
+                              <mi id="vzua2cf9049c1ea3e119267c13cc2a7c">k </mi>
+                              <mo id="euhv61f0cfc77ddf1dc8191f8b485fc9">+ </mo>
+                              <mi id="tjbh2768e9adb260e5f998af44349688">ℓ </mi>
+                              <mtext id="opmoa3add813e4397a3bb760d83ab531"> elements </mtext>
+                            </mrow>
+                          </munder>
+                        </munder>
+                        <mo id="bvbx2986d08b64a2db67aee51663a7cd" stretchy="false">} </mo>
+                      </mrow>
+                      <annotation-xml encoding="application/xhtml+xml" id="nlcn23e4d7ad3f50216fd6106bbdf622" name="alternate-representation">
+                        <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style not stretchy left curly bracket stack stack a comma ... comma a with overbrace with k text end text a text 's                              end text on top on top comma stack b comma ... comma b with overbrace with ell text end text b text 's                              end text on top on top with underbrace for k plus ell text  elements                          end text of below not stretchy right curly bracket" id="rnixbba1563121f5209dc7d2f027a470" src="../images/rthgb7e5a7a29358c70148fd8214b7fb.png"></img>
+                      </annotation-xml>
+                    </semantics>
+                  </math>
+                </span>
+              </td>
+            </tr>
+            <tr id="naoge5c8548e37f134f9e124d33bf473">
+              <td id="fube4c7699e4e0a732f26112cf5c133a">23</td>
+              <td id="cqqe851068541a0947696dda4be98b74"> </td>
+              <td id="hjfb561efe45e7e0fef62619dfa9bcda">
+                <span class="math" id="3_7_2_mathml_torture_testc2f2EQ_0023.png" tabindex="0">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style left parenthesis table row cell attributes columnalign center end attributes left parenthesis table row cell attributes columnalign center end attributes a cell attributes columnalign center end attributes b row cell attributes columnalign center end attributes c cell attributes columnalign center end attributes d end table right parenthesis cell attributes columnalign center end attributes left parenthesis table row cell attributes columnalign center end attributes e cell attributes columnalign center end attributes f row cell attributes columnalign center end attributes g cell attributes columnalign center end attributes h end table right parenthesis row cell attributes columnalign center end attributes 0 cell attributes columnalign center end attributes left parenthesis table row cell attributes columnalign center end attributes i cell attributes columnalign center end attributes j row cell attributes columnalign center end attributes k cell attributes columnalign center end attributes l end table right parenthesis end table right parenthesis" display="inline" id="dywl0c2648f1afcac9f2b756ca3857d6">
+                    <semantics id="gjlz495ad022ae48934b285665d5b630">
+                      <mrow id="wulvc3fb9a1b860def43ccba88a307f3">
+                        <mo id="othi7112d816d05e0a6f302284eb7684">( </mo>
+                        <mtable id="donu0cd7d662bdb015d5dd8a9a7c8e89">
+                          <mtr id="fuxfa78908eb44d581b1755cb2db32ce">
+                            <mtd columnalign="center" id="emss99b070d4f852c087289f19b809ad">
+                              <mrow id="irhj39e9acd555363a39f59c02ab019b">
+                                <mo id="gdwb5323c4fc4fd1483173df71658ad6">( </mo>
+                                <mtable id="vznn7a222b6a52568945bb97ee8cb714">
+                                  <mtr id="trxtab682c4536a1a27f9c834a60aa91">
+                                    <mtd columnalign="center" id="ufht2fabdacb9ca4799ca11a93a19a44">
+                                      <mi id="wgcw839ed480ae1da8520b097f4aed27">a </mi>
+                                    </mtd>
+                                    <mtd columnalign="center" id="epyde71522ba3acbfce382e0995773a7">
+                                      <mi id="gmfy631c0169588c6079eaebcc9ba0ed">b </mi>
+                                    </mtd>
+                                  </mtr>
+                                  <mtr id="iije02af3b4016c33f2cfb2d45f81970">
+                                    <mtd columnalign="center" id="yjdt4ffeb47f8745c9d876fa97d07ade">
+                                      <mi id="ohslc8c72e4d1819431034484c88e115">c </mi>
+                                    </mtd>
+                                    <mtd columnalign="center" id="tgin41fe71dd5e99ff70559bd9f8c12c">
+                                      <mi id="dmvg28e347193079fb68bfb0771481df">d </mi>
+                                    </mtd>
+                                  </mtr>
+                                </mtable>
+                                <mo id="dykh0984b34de1412effa52fef42537b">) </mo>
+                              </mrow>
+                            </mtd>
+                            <mtd columnalign="center" id="elhrab8b3c0966496d9a0ea166dde421">
+                              <mrow id="mdxc83e8555d295b0537eabaf3f85a8c">
+                                <mo id="tjnpce6b0b06fb5109ff728fe53074aa">( </mo>
+                                <mtable id="iqmc8a689e02ee5359ae925e3c529ef8">
+                                  <mtr id="oxdz6f7a882cb5d67b94d871a61a84d1">
+                                    <mtd columnalign="center" id="jsvs85eeeea6017d12ff212b536a2e99">
+                                      <mi id="ywmf18ab302717dbb16e92fcd7610353">e </mi>
+                                    </mtd>
+                                    <mtd columnalign="center" id="dajbb292a29a8541c0c5ff1c312dded1">
+                                      <mi id="fmdedabbdb9e5a50af251644585673ba">f </mi>
+                                    </mtd>
+                                  </mtr>
+                                  <mtr id="zchgc7ccde921431951c88f40d9ac652">
+                                    <mtd columnalign="center" id="mrmv18388e14aabf8a8823ac46c645cd">
+                                      <mi id="fbya48e6243c559c3dab21c004b1ae28">g </mi>
+                                    </mtd>
+                                    <mtd columnalign="center" id="idol07b594bbea6d399f43406760f382">
+                                      <mi id="ybyj1bfb4089d8bcee20e9b200c2540c">h </mi>
+                                    </mtd>
+                                  </mtr>
+                                </mtable>
+                                <mo id="nhsi8bf2942ffd66dfd032db3f01ce10">) </mo>
+                              </mrow>
+                            </mtd>
+                          </mtr>
+                          <mtr id="syjoe6823185f5771d081d3cb10d83f6">
+                            <mtd columnalign="center" id="fxfiad32d40fef1e81976fc8f8fcee7c">
+                              <mn id="arty43d050e55470d277effbdf5dab27">0 </mn>
+                            </mtd>
+                            <mtd columnalign="center" id="garh54cf618a88227745deea20c4a45a">
+                              <mrow id="zyvl79a18ab6bfb9a83e5370f9a8c0cd">
+                                <mo id="tukl2a7cb7cdcef4e6eacad7e9ac6daa">( </mo>
+                                <mtable id="zmzx47b398928828af0cbd7124c0ad65">
+                                  <mtr id="ellu36b1ff7c877979b1fc834c3005e0">
+                                    <mtd columnalign="center" id="xbdz355454cace2106c144ffecfe37a3">
+                                      <mi id="axuoff1ae717a3c8d8572a8a3e4f985f">i </mi>
+                                    </mtd>
+                                    <mtd columnalign="center" id="zvjfc35c04b92833af0b1525648c3fed">
+                                      <mi id="drss0576dbfc14bfd17b6d86fe16e1a0">j </mi>
+                                    </mtd>
+                                  </mtr>
+                                  <mtr id="xlmq911f57ed10650a03d2f2c18c1742">
+                                    <mtd columnalign="center" id="hbet7f8d32340c0a26ce00e3667fd4e5">
+                                      <mi id="dqeg2ffc05a59e4fb682c2ca321619f0">k </mi>
+                                    </mtd>
+                                    <mtd columnalign="center" id="kmei50ff9057b1660e74f85687a363f6">
+                                      <mi id="wmyr69a86d35fea3d5bb136cc9c1e446">l </mi>
+                                    </mtd>
+                                  </mtr>
+                                </mtable>
+                                <mo id="jbuk0b5cb6d87995c942e578b5322ed4">) </mo>
+                              </mrow>
+                            </mtd>
+                          </mtr>
+                        </mtable>
+                        <mo id="mrkee16474479906b7da21e3c025234a">) </mo>
+                      </mrow>
+                      <annotation-xml encoding="application/xhtml+xml" id="auyx0e14a0fa8cb415f3dfa654f9be3c" name="alternate-representation">
+                        <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style left parenthesis table row cell attributes columnalign center end attributes left parenthesis table row cell attributes columnalign center end attributes a cell attributes columnalign center end attributes b row cell attributes columnalign center end attributes c cell attributes columnalign center end attributes d end table right parenthesis cell attributes columnalign center end attributes left parenthesis table row cell attributes columnalign center end attributes e cell attributes columnalign center end attributes f row cell attributes columnalign center end attributes g cell attributes columnalign center end attributes h end table right parenthesis row cell attributes columnalign center end attributes 0 cell attributes columnalign center end attributes left parenthesis table row cell attributes columnalign center end attributes i cell attributes columnalign center end attributes j row cell attributes columnalign center end attributes k cell attributes columnalign center end attributes l end table right parenthesis end table right parenthesis" id="bexz060f23065ed48ff3d70c3003aa8f" src="../images/dywl0c2648f1afcac9f2b756ca3857d6.png"></img>
+                      </annotation-xml>
+                    </semantics>
+                  </math>
+                </span>
+              </td>
+            </tr>
+            <tr id="cjfu4234ac0554df646060361409a984">
+              <td id="edlr9e5728617c693da4e2ea33e71356">24</td>
+              <td id="nhssdc1a187fd4a84f17711cddce9f9b"> </td>
+              <td id="tfvr3e26442600828f8cbf856e55052e">
+                <span class="math" id="3_7_2_mathml_torture_testc2f2EQ_0024.png" tabindex="0">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style det vertical line table row cell attributes columnalign center end attributes c subscript 0 cell attributes columnalign center end attributes c subscript 1 cell attributes columnalign center end attributes c subscript 2 cell attributes columnalign center end attributes horizontal ellipsis cell attributes columnalign center end attributes c subscript n row cell attributes columnalign center end attributes c subscript 1 cell attributes columnalign center end attributes c subscript 2 cell attributes columnalign center end attributes c subscript 3 cell attributes columnalign center end attributes horizontal ellipsis cell attributes columnalign center end attributes c subscript n plus 1 end subscript row cell attributes columnalign center end attributes c subscript 2 cell attributes columnalign center end attributes c subscript 3 cell attributes columnalign center end attributes c subscript 4 cell attributes columnalign center end attributes horizontal ellipsis cell attributes columnalign center end attributes c subscript n plus 2 end subscript row cell attributes columnalign center end attributes vertical ellipsis cell attributes columnalign center end attributes vertical ellipsis cell attributes columnalign center end attributes vertical ellipsis cell attributes columnalign center end attributes blank cell attributes columnalign center end attributes vertical ellipsis row cell attributes columnalign center end attributes c subscript n cell attributes columnalign center end attributes c subscript n plus 1 end subscript cell attributes columnalign center end attributes c subscript n plus 2 end subscript cell attributes columnalign center end attributes horizontal ellipsis cell attributes columnalign center end attributes c subscript 2 n end subscript end table vertical line greater than 0" display="inline" id="trogd0028452c5e85810ea0e18f1cd2d">
+                    <semantics id="hsbp087aa88a27d9dc447b99414a09f6">
+                      <mrow id="mowxfee585d2422b36aeb7fa9a97fe62">
+                        <mi id="hazo3f3d9c067d232335c1daa70413a9">det </mi>
+                        <mo id="iucjfb6d02d7debed82679d75e2d0c50">| </mo>
+                        <mtable id="sunn3a102db3e8b3d0c375287c741c2f">
+                          <mtr id="suua8dac9d873c83112c3f2b067b5d09">
+                            <mtd columnalign="center" id="kesdebbdc4c69739a9120d68deb571ba">
+                              <msub id="makteb1b9a197d620450d6d85243419a">
+                                <mi id="afvt4633e5e1dee51e820a6dacd8e881">c </mi>
+                                <mn id="rcxhdb0be6a6d0fa7d970c43ea813fff">0 </mn>
+                              </msub>
+                            </mtd>
+                            <mtd columnalign="center" id="qfrf7a479edf76516d61e30928e69e84">
+                              <msub id="xjslc1b397865d05ef8650325c702907">
+                                <mi id="qnhr48fe3a798c0144c30cb9be257c0f">c </mi>
+                                <mn id="npgma13dc631db767fbe88d3be155375">1 </mn>
+                              </msub>
+                            </mtd>
+                            <mtd columnalign="center" id="zyrnddb9a440cd53e0c0619948aa283c">
+                              <msub id="grgm1a93f5594b690e60aca2aa0300fd">
+                                <mi id="lmrr39c7c8bedea19715c66004326c3f">c </mi>
+                                <mn id="xzhmc83400373a9ae24acff3833a2df9">2 </mn>
+                              </msub>
+                            </mtd>
+                            <mtd columnalign="center" id="eyjl1dde9df33655fa0f83aed9ab3e14">
+                              <mo id="mlwu628b06d9b33a7e3236f16bfe4ecd">… </mo>
+                            </mtd>
+                            <mtd columnalign="center" id="suth64c114a690158a9965ed9266086b">
+                              <msub id="wbcta136d94a68fc52fec31efa4f7a2e">
+                                <mi id="uvez7383f355d81df193859260c290b7">c </mi>
+                                <mi id="holc2c2d4bb224856ab295b48d4339c3">n </mi>
+                              </msub>
+                            </mtd>
+                          </mtr>
+                          <mtr id="umlud1a4f8d065f16defc9764e9b0077">
+                            <mtd columnalign="center" id="vpgfceea94e3f3fdc99bdfffa819cf5a">
+                              <msub id="rrhvc7596562007ffb3df2e0c775d42b">
+                                <mi id="uxqfc320cc0a3a882db252495a1cd1eb">c </mi>
+                                <mn id="nwod04df34817fcd6971faca95dd5854">1 </mn>
+                              </msub>
+                            </mtd>
+                            <mtd columnalign="center" id="dtewe2790bdb1be4cfbadf46128e2b73">
+                              <msub id="kvsj84d8026984187331b78ea5172d78">
+                                <mi id="umacc4c0e9f2edda822e3eec383424b1">c </mi>
+                                <mn id="drvn9d815209ba712c8bc325fc90ab83">2 </mn>
+                              </msub>
+                            </mtd>
+                            <mtd columnalign="center" id="kmsp55ffc3f9fe20ce4528c1f7b4aeb0">
+                              <msub id="trza0c8e61a8c165e64fe9e65ed33979">
+                                <mi id="pcrcacf689f3e4e73ba84187c54cef31">c </mi>
+                                <mn id="utije3815cc9e935a3de84e31d0a5529">3 </mn>
+                              </msub>
+                            </mtd>
+                            <mtd columnalign="center" id="caob290a7403e51210038247a4f9ac81">
+                              <mo id="lzue9a8584f85c2b46320985bc6c5c45">… </mo>
+                            </mtd>
+                            <mtd columnalign="center" id="zinz04fc9baa19635dc73bffeb75106a">
+                              <msub id="vdgo772eb45afb016bd5d64f311aef15">
+                                <mi id="caiz91f603e41141fab24e36041fbe79">c </mi>
+                                <mrow id="vecgabc3736f47b4f3eb4c6ce41fdf82">
+                                  <mi id="ojfs7519c952b6fa59af6a83036bfa80">n </mi>
+                                  <mo id="yjjg2cfef1db4f0f56600afc056c6039">+ </mo>
+                                  <mn id="hzmec005f3d22deca12936fded27f79c">1 </mn>
+                                </mrow>
+                              </msub>
+                            </mtd>
+                          </mtr>
+                          <mtr id="cspi2716416dceaa05a8a5d1ef46271a">
+                            <mtd columnalign="center" id="vghpe1fa9b11b594253048cce2479b88">
+                              <msub id="iyfp6686da3483ff31e7c510a76cbd62">
+                                <mi id="kjha350d96142dad37bc6cdf88d2c62d">c </mi>
+                                <mn id="gamia10f2476cfdb518216ce04fd0de5">2 </mn>
+                              </msub>
+                            </mtd>
+                            <mtd columnalign="center" id="towj9aaf513e9ab71966846e9611c2d8">
+                              <msub id="roww14ef91e80ee2bf8d7474197e20a6">
+                                <mi id="ngvt78adbc5690ae8899ff7933e29a5a">c </mi>
+                                <mn id="mneh03c79e1977bd433a75111cbf48c7">3 </mn>
+                              </msub>
+                            </mtd>
+                            <mtd columnalign="center" id="uwmq44c1698a63a810100b9272a8b936">
+                              <msub id="prmbba4bfc2145e6120d1e466762c896">
+                                <mi id="ywiyb69a4bceb3e6be1c81418b4b584d">c </mi>
+                                <mn id="qbjgacec8789274c4a3d27d9de2e76c9">4 </mn>
+                              </msub>
+                            </mtd>
+                            <mtd columnalign="center" id="laqe5198b7a4003df3de217934bbec6c">
+                              <mo id="qtcn6e134bd6fb005fa3e39b950e6a89">… </mo>
+                            </mtd>
+                            <mtd columnalign="center" id="jkgjc6f9881e2473bb9b9555645c413c">
+                              <msub id="mqza5aaf66150d3ab97e42da6ddb7874">
+                                <mi id="uwml73a9cde812242602cfdf40eee4ba">c </mi>
+                                <mrow id="foiv85ecb732a73adda78612d47ef307">
+                                  <mi id="ecnpc765de3b816884b3b46b4148882c">n </mi>
+                                  <mo id="vowkd1fc8eb4b913de2802ee3bbaf478">+ </mo>
+                                  <mn id="uowj0f562b10bf8fb40bfa5d3d2ba129">2 </mn>
+                                </mrow>
+                              </msub>
+                            </mtd>
+                          </mtr>
+                          <mtr id="tjbx8b123d6dd438dfa6195ea9399092">
+                            <mtd columnalign="center" id="vtesf6986db01cf4b6ffe9719730f9ea">
+                              <mo id="dtvlcb247680b895f5b1072081fe8e3d">⋮ </mo>
+                            </mtd>
+                            <mtd columnalign="center" id="xlvvcda129f700181cb4f621cc69938a">
+                              <mo id="lvtu132eed014efafeb0f902660a7b6d">⋮ </mo>
+                            </mtd>
+                            <mtd columnalign="center" id="tlcgd130f549961a4e0cf557c905adf0">
+                              <mo id="uxnb98aad5b4d7f704635b794ae84f6d">⋮ </mo>
+                            </mtd>
+                            <mtd columnalign="center" id="vgstc592750df6acadcac6e807c75700"></mtd>
+                            <mtd columnalign="center" id="gyve1289618466cf22b873b6be3980aa">
+                              <mo id="xstx5b6930b4ff8be434b0f96e83106f">⋮ </mo>
+                            </mtd>
+                          </mtr>
+                          <mtr id="oipt5a66b56c04672728d3764095547e">
+                            <mtd columnalign="center" id="vkske0f643e3e4a730b70f7c06cd1c50">
+                              <msub id="bdfh5462ff5e39331c10ca67a0339e6f">
+                                <mi id="dmpc345a72495d2b0e7a5a8477d3b26b">c </mi>
+                                <mi id="oamfc2280496cbbc8064e988f81fe9f2">n </mi>
+                              </msub>
+                            </mtd>
+                            <mtd columnalign="center" id="cjfgfd79b0248e32247d14c654893678">
+                              <msub id="zwql1bfc7086c399878a0a4f6f82a517">
+                                <mi id="ifdx8dd5e4b1bc67222f50e45d03eda5">c </mi>
+                                <mrow id="rsju351be0ebd4a0f86b9891f051b5ca">
+                                  <mi id="nxuv5693c791c9a1d8ee727db92a2e9e">n </mi>
+                                  <mo id="ouxla0cf613da4f0f5de16631767d66d">+ </mo>
+                                  <mn id="dtbz21a2892bb8e5bbb3187c6c6107f2">1 </mn>
+                                </mrow>
+                              </msub>
+                            </mtd>
+                            <mtd columnalign="center" id="dzcb0ec85771e6a22179ba65ade139bc">
+                              <msub id="gavf6984cf9829c2b56af4d93c7e7947">
+                                <mi id="ymiaf6d821fe0147ac8aad3e77e455e8">c </mi>
+                                <mrow id="cheb7bf2254e2448d3ea1256e0e26c97">
+                                  <mi id="gvzz0c520f50b47feab35bedc6315f9d">n </mi>
+                                  <mo id="ihch9e2a6c95577831fa46a4052aa787">+ </mo>
+                                  <mn id="dlpjeecb136c11e181387b241eeadd45">2 </mn>
+                                </mrow>
+                              </msub>
+                            </mtd>
+                            <mtd columnalign="center" id="zhib81bcb6cb54325eac5492d707399a">
+                              <mo id="qsgh46e2236cb715cf3d3b7fbafbc20c">… </mo>
+                            </mtd>
+                            <mtd columnalign="center" id="ltzjfcf20bb2008bbe4ad4692dc1e1b3">
+                              <msub id="spoq2c13632ffdbd023ff4b69eb4cfa4">
+                                <mi id="jqzuffbd0fb247272ee1128735a89d11">c </mi>
+                                <mrow id="gmlub5ee851fd133c6016c8c33b34292">
+                                  <mn id="mkzb0afdc0c244936695cf4626d1800d">2 </mn>
+                                  <mi id="opsg00bd26642cca2607067deea17573">n </mi>
+                                </mrow>
+                              </msub>
+                            </mtd>
+                          </mtr>
+                        </mtable>
+                        <mo id="mgkd4f03a6cae4e1013cba51b4ad9a6c">| </mo>
+                        <mo id="rjwr67598452030a1a05c153a6f635ac">&gt; </mo>
+                        <mn id="wheh295b8aa13ffe1d1231f1d9ff20ce">0 </mn>
+                      </mrow>
+                      <annotation-xml encoding="application/xhtml+xml" id="cyqt577952579540015dd12a4569569f" name="alternate-representation">
+                        <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style det vertical line table row cell attributes columnalign center end attributes c subscript 0 cell attributes columnalign center end attributes c subscript 1 cell attributes columnalign center end attributes c subscript 2 cell attributes columnalign center end attributes horizontal ellipsis cell attributes columnalign center end attributes c subscript n row cell attributes columnalign center end attributes c subscript 1 cell attributes columnalign center end attributes c subscript 2 cell attributes columnalign center end attributes c subscript 3 cell attributes columnalign center end attributes horizontal ellipsis cell attributes columnalign center end attributes c subscript n plus 1 end subscript row cell attributes columnalign center end attributes c subscript 2 cell attributes columnalign center end attributes c subscript 3 cell attributes columnalign center end attributes c subscript 4 cell attributes columnalign center end attributes horizontal ellipsis cell attributes columnalign center end attributes c subscript n plus 2 end subscript row cell attributes columnalign center end attributes vertical ellipsis cell attributes columnalign center end attributes vertical ellipsis cell attributes columnalign center end attributes vertical ellipsis cell attributes columnalign center end attributes blank cell attributes columnalign center end attributes vertical ellipsis row cell attributes columnalign center end attributes c subscript n cell attributes columnalign center end attributes c subscript n plus 1 end subscript cell attributes columnalign center end attributes c subscript n plus 2 end subscript cell attributes columnalign center end attributes horizontal ellipsis cell attributes columnalign center end attributes c subscript 2 n end subscript end table vertical line greater than 0" id="yyspae3bc589bc1e2e6c3f840218ba1a" src="../images/trogd0028452c5e85810ea0e18f1cd2d.png"></img>
+                      </annotation-xml>
+                    </semantics>
+                  </math>
+                </span>
+              </td>
+            </tr>
+            <tr id="ztfs6e9c2bc592a010e74a9f13cee331">
+              <td id="bpqr92c4d4f8f936e871b7aa9a720e4c">25</td>
+              <td id="xepb989e670e266497c972e47ed75238"> </td>
+              <td id="asadf5b6e3bdf39858ab8176d00308d9">
+                <span class="math" id="3_7_2_mathml_torture_testc2f2EQ_0025.png" tabindex="0">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style y subscript x subscript 2 end subscript" display="inline" id="ezuw1a364c600cb15d8bca4359aae0c5">
+                    <semantics id="zubg2856014c428ef58173fca889cae3">
+                      <mrow id="oitu494d737e22762a9c985368ba8f14">
+                        <msub id="hfjd4d866b06d8045db23c25092c6d2b">
+                          <mi id="zmwf8d2a8bd44aa2f1f3014c66a042da">y </mi>
+                          <msub id="lbgn60b80f331eb33d767fb3e23cbee2">
+                            <mi id="lnco85082279bd38db5d72a09b9a9d37">x </mi>
+                            <mn id="xxsn4942c1531b291d594eb3e2bf89e7">2 </mn>
+                          </msub>
+                        </msub>
+                      </mrow>
+                      <annotation-xml encoding="application/xhtml+xml" id="qiiv1740bbd7d5f37b5c04ebe503bb42" name="alternate-representation">
+                        <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style y subscript x subscript 2 end subscript" id="ygtyd78427f9190ec71884210d58643e" src="../images/ezuw1a364c600cb15d8bca4359aae0c5.png"></img>
+                      </annotation-xml>
+                    </semantics>
+                  </math>
+                </span>
+              </td>
+            </tr>
+            <tr id="htyz6007f6e3a286e36d523fbe96c318">
+              <td id="qnga49f1f0fcace9d88ded4859c5a122">26</td>
+              <td id="bolq05e1d3eac31c705f03639a049b82"> </td>
+              <td id="mjva56050bcb3887cee761125c857943">
+                <span class="math" id="3_7_2_mathml_torture_testc2f2EQ_0026.png" tabindex="0">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style x subscript 92 superscript 31415 plus pi" display="inline" id="pzzh68c2b4f3e2211e6ed4d9efbfdb02">
+                    <semantics id="qksy01c84c325cf73b81aa08846c3dfd">
+                      <mrow id="ctdkb3a89f7d4c50a2022c4f07035ebd">
+                        <msubsup id="wvet3295962b5fcd853f2802af727811">
+                          <mi id="auca50e614bc933bdd03573c5fd2f5e1">x </mi>
+                          <mn id="pdux1d39ec64630794056543fb301c86">92 </mn>
+                          <mn id="zjmwd052bbbf9ac6e6109cc56b65faa8">31415 </mn>
+                        </msubsup>
+                        <mo id="gwma2fc90a3f5de384dbd7075f2659aa">+ </mo>
+                        <mi id="ejlqe7225b9de4f31018ecaa0d1954df">π </mi>
+                      </mrow>
+                      <annotation-xml encoding="application/xhtml+xml" id="ebbd69988a2d93623a147575d550fbac" name="alternate-representation">
+                        <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style x subscript 92 superscript 31415 plus pi" id="ndnv5aaaf169d220a37618cd5e436082" src="../images/pzzh68c2b4f3e2211e6ed4d9efbfdb02.png"></img>
+                      </annotation-xml>
+                    </semantics>
+                  </math>
+                </span>
+              </td>
+            </tr>
+            <tr id="dekwc1b07605b275bc96ccbfb0e374b3">
+              <td id="ltsrbf71b5206a48dd8d93f307ec97ee">27</td>
+              <td id="bacu96d200822fe76690909ea73acf41"> </td>
+              <td id="xilw9be6d11d27d105251a16805acdf6">
+                <span class="math" id="3_7_2_mathml_torture_testc2f2EQ_0027.png" tabindex="0">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style x subscript y subscript b superscript a end subscript superscript z subscript c superscript d end superscript" display="inline" id="zfcz0b78928cb44184eaefe01b3d8f85">
+                    <semantics id="lretb22750b7d55e0eda391f97d8d6bd">
+                      <mrow id="jfvf2ec78dfacd599550a536bb0a9d4f">
+                        <msubsup id="bmvi2f0977a1af9bd1f495d97041bc3d">
+                          <mi id="mgyg1207a5fb630f4094e2d2b1fe800e">x </mi>
+                          <msubsup id="elmtdd08400df75488f75830fd54847e">
+                            <mi id="nlpj6d3677b01d1bd534561a820fe328">y </mi>
+                            <mi id="flds79d9e28ca28faebf1d3fb4fe1cbe">b </mi>
+                            <mi id="brnib2f81252e6b85e624a29a51774eb">a </mi>
+                          </msubsup>
+                          <msubsup id="hdfb35be7f57fa22bcd035cb83e2b941">
+                            <mi id="sair79ba2ad57ccafa448488c3f5c233">z </mi>
+                            <mi id="gvsj37c7351130405fba1e316574a1e6">c </mi>
+                            <mi id="sgke8fd07151669fc9c4644e4eec22ff">d </mi>
+                          </msubsup>
+                        </msubsup>
+                      </mrow>
+                      <annotation-xml encoding="application/xhtml+xml" id="foks6fc8aac9932e8577a0574a248e61" name="alternate-representation">
+                        <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style x subscript y subscript b superscript a end subscript superscript z subscript c superscript d end superscript" id="oqza236b00316eda2b68e3a5614fc701" src="../images/zfcz0b78928cb44184eaefe01b3d8f85.png"></img>
+                      </annotation-xml>
+                    </semantics>
+                  </math>
+                </span>
+              </td>
+            </tr>
+            <tr id="wnmi7c7fd666fc407ef1669e5cfa8f83">
+              <td id="eduma32e4022fe17bb5ac3eba7aaddcd">28</td>
+              <td id="ijeldbef51cd8510753a7b3e62785a2d"> </td>
+              <td id="dpvqf69b15079f34c246103301adeda0">
+                <span class="math" id="3_7_2_mathml_torture_testc2f2EQ_0028.png" tabindex="0">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style y subscript 3 superscript ‴" display="inline" id="wtog01e68466906161ab634d606374a8">
+                    <semantics id="gwyo8a66a5fe81edcfa189ecd9ca9964">
+                      <mrow id="gvna8df8e504e1810e47d56e6b2d850e">
+                        <msubsup id="eypn2885623986112f0e5a2f562dac69">
+                          <mi id="zpty7aaab4f50b9514238bea3bb47322">y </mi>
+                          <mn id="rxqk51e6c21d35825b868d5e6aee536e">3 </mn>
+                          <mo id="caypb9e9148ace7e6f84171d3e7c12cd">‴ </mo>
+                        </msubsup>
+                      </mrow>
+                      <annotation-xml encoding="application/xhtml+xml" id="frud525258564542fbb78d3d5f2041fb" name="alternate-representation">
+                        <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style y subscript 3 superscript ‴" id="xfnk173d83109a9d7ba090016444ddea" src="../images/wtog01e68466906161ab634d606374a8.png"></img>
+                      </annotation-xml>
+                    </semantics>
+                  </math>
+                </span>
+              </td>
+            </tr>
+            <tr id="wmoi425473c6d689fc828e1f9d1803f8">
+              <td id="ifiq5667eacb712cf29a50f5eb26e199">29</td>
+              <td id="tbhv350ba8940cc2ebf00299e63a18a7"> </td>
+              <td id="bnvqf6fdd801b8b97543a1c6a405ad7f">
+                <span class="math" id="3_7_2_mathml_torture_testc2f2EQ_0029.png" tabindex="0">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style lim for n not stretchy rightwards arrow plus ∞ of fraction numerator square root of 2 pi n end root over denominator n factorial end fraction left parenthesis n over e right parenthesis to the power of n" display="inline" id="ouehf171bd088f7403ddd8c58e5f7cf8">
+                    <semantics id="rayf823eb5631fc93990e0bfcc3ad9ca">
+                      <mrow id="vseiaea9ff4fb1d25b50842483e2b11c">
+                        <munder id="gpjsa973c6cf23fb9bb67b3ef89ccaa2">
+                          <mo id="lqlk45e7e9b4c7787ac54c172dd26faa" lspace="0em" rspace="0em">lim </mo>
+                          <mrow id="cjys7f980267133b36e854e4a4cdf8db">
+                            <mi id="oqtk954fca0b8e902b3ce2db1c93452f">n </mi>
+                            <mo id="jkgie4111f4fca0ed1f5a9a8924e0d6c" stretchy="false">→ </mo>
+                            <mo id="fcyx70c54cf98aac860873c6fcec073a">+ </mo>
+                            <mn id="ynjf53218dc0270939e8d52da447e900">∞ </mn>
+                          </mrow>
+                        </munder>
+                        <mfrac id="kyrv1d5632cba55796dab01d09fd337e">
+                          <msqrt id="pxegd6024651965ac3014384a123ace2">
+                            <mrow id="ujlm01972b24907d5241a64663cbd22e">
+                              <mn id="uykr2c95b97350ba0000391c4b97ba37">2 </mn>
+                              <mi id="idcwe93b5907eb3d5c5c1af230d67eeb">π </mi>
+                              <mi id="llck725fb5088802b9db2ca5769acdc4">n </mi>
+                            </mrow>
+                          </msqrt>
+                          <mrow id="mctta4120fe543f82ccadd84da90e301">
+                            <mi id="cosu522846e5ca976cd3f28dfdd3038a">n </mi>
+                            <mo id="jyrn22a7208e3d67f697257790a3a3a9">! </mo>
+                          </mrow>
+                        </mfrac>
+                        <msup id="arqq9f53ed8fd7aff4cb36e7ae9b1b0b">
+                          <mrow id="hmjn246e15cd733b15fd661e95b6f481">
+                            <mo id="gqsg38f9ccd77fd03a41dca543924362">( </mo>
+                            <mfrac id="jkfd8d2d2a93b78c029eb830d83c9a7e">
+                              <mi id="xvwc8541b61546fb9f2626386d48a16b">n </mi>
+                              <mi id="trbz07e1fc5b22a3a8d00c218578eb38">e </mi>
+                            </mfrac>
+                            <mo id="flzw06bfb21055ab6440d6270ceacc93">) </mo>
+                          </mrow>
+                          <mi id="rygvdf456c69ef6a27accd07fd9895bd">n </mi>
+                        </msup>
+                      </mrow>
+                      <annotation-xml encoding="application/xhtml+xml" id="qyup9aaae556c05227e3743c2f77dfb9" name="alternate-representation">
+                        <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style lim for n not stretchy rightwards arrow plus ∞ of fraction numerator square root of 2 pi n end root over denominator n factorial end fraction left parenthesis n over e right parenthesis to the power of n" id="shuc8568c35e970330cd60dcf9782636" src="../images/ouehf171bd088f7403ddd8c58e5f7cf8.png"></img>
+                      </annotation-xml>
+                    </semantics>
+                  </math>
+                </span>
+              </td>
+            </tr>
+            <tr id="aydg8557ca3326de9972bb31f7ff7126">
+              <td id="izaf1e96bea16dd43d3a599a92e98291">30</td>
+              <td id="trjlfb7285ff0c76375da39d8b1371b1"> </td>
+              <td id="kuqpde73c3c5e940266bddc799358e66">
+                <span class="math" id="3_7_2_mathml_torture_testc2f2EQ_0030.png" tabindex="0">
+                  <math xmlns="http://www.w3.org/1998/Math/MathML" alttext="inline style det not stretchy left parenthesis A not stretchy right parenthesis equals sum for sigma ∊ S subscript n of ϵ not stretchy left parenthesis sigma not stretchy right parenthesis product from i equals 1 to n of a subscript i comma sigma subscript i end subscript" display="inline" id="iube4003bf9ed778a2be423932eb7d03">
+                    <semantics id="tfxa7a68de033d6315d7c7308ed57cd4">
+                      <mrow id="iuyy815555caf2ff6be79f42a34993b4">
+                        <mrow id="dzub55b771232af3d87cf4f64cf03304">
+                          <mo id="qfbh9d5e5e0d85eb9541981e1eb0b014" lspace="0em" rspace="0em">det </mo>
+                          <mo id="ixyc22c9f64dae8523830ac2f6c120b8" stretchy="false">( </mo>
+                          <mi id="btuxd72e155e0ed05fed83e921bcaf44">A </mi>
+                          <mo id="jqvd96fd6a8f03876e474e6ad1c17db7" stretchy="false">) </mo>
+                        </mrow>
+                        <mo id="psxi46de519e2893e057a4346b082ef4">= </mo>
+                        <munder id="hqdxf8d51c58a8a6d478a45e1241868d">
+                          <mo id="nwls03e840ba48f5ca207abc1151a214">∑ </mo>
+                          <mrow id="yngx520311503f5ed58f388151c6b021">
+                            <mi id="fkaxd5fbb60ff967ea1105a6f478980e">σ </mi>
+                            <mo id="wkve01cee355852d0f25bc3a4419e10f">∊ </mo>
+                            <msub id="ijxu0f4b43aa78ddec7760815ea7067c">
+                              <mi id="cjjw423f6befef0473f7ce8fcc082c5d">S </mi>
+                              <mi id="meaef3c35f82fb315d7b0ee6e24c07ad">n </mi>
+                            </msub>
+                          </mrow>
+                        </munder>
+                        <mrow id="dzyyc69dbd5ad7622f10b215cc1e6ca1">
+                          <mi id="jvere0d26a7dd863479c822356014876">ϵ </mi>
+                          <mo id="qtyfb2aa7d544df91256a73af2db4a9b" stretchy="false">( </mo>
+                          <mi id="eyxjbbb89e059208195cf9de226ffc82">σ </mi>
+                          <mo id="jkvac1c5774b9f38062f65e8eefb7323" stretchy="false">) </mo>
+                        </mrow>
+                        <mrow id="ukhzea7565108ac0d38cd3430f15875f">
+                          <munderover id="xcehfacdeb3f69edfee1fbe5142538b1">
+                            <mo id="aivfd8aca73164cc64f407763949d5f3">∏ </mo>
+                            <mrow id="vfvk8b2b3a691e2f485c94520442dff9">
+                              <mi id="njkl8f652be4499de08f3315950e4dea">i </mi>
+                              <mo id="qipp4cd259b773f81ea7c5ddc80a1623">= </mo>
+                              <mn id="cphy9732f351bf4128bc4f154614043b">1 </mn>
+                            </mrow>
+                            <mi id="jbco51761baa168c6ee3c04ef1e4bf0b">n </mi>
+                          </munderover>
+                          <msub id="gfjb82d7bf5afb6e8b31232afd4b0f97">
+                            <mi id="xody0ba8a1f400bfb269a29027375142">a </mi>
+                            <mrow id="uafh41526a06936d81e9fa3954624bf6">
+                              <mi id="vrwfc1c57435bc478c0d38c60b7e6378">i </mi>
+                              <mo id="gsyp2d2f58460a865a90d48934753818">, </mo>
+                              <msub id="hbpxc1ea2e541349a6e164837df8aa46">
+                                <mi id="eqms56e28e5e2e79a9604375b53c7eae">σ </mi>
+                                <mi id="fuub3a4e348308c245ba2b1eb2033f82">i </mi>
+                              </msub>
+                            </mrow>
+                          </msub>
+                        </mrow>
+                      </mrow>
+                      <annotation-xml encoding="application/xhtml+xml" id="yrjkc9603b593c129ad2e9ec790454f6" name="alternate-representation">
+                        <img xmlns="http://www.w3.org/1999/xhtml" alt="inline style det not stretchy left parenthesis A not stretchy right parenthesis equals sum for sigma ∊ S subscript n of ϵ not stretchy left parenthesis sigma not stretchy right parenthesis product from i equals 1 to n of a subscript i comma sigma subscript i end subscript" id="oaqsfa3fc0e4f761e5e9ddb7a6c0d809" src="../images/iube4003bf9ed778a2be423932eb7d03.png"></img>
+                      </annotation-xml>
+                    </semantics>
+                  </math>
+                </span>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+    </section>
+  </body>
+</html>

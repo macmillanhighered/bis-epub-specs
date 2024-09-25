@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:svg="http://www.w3.org/2000/svg" xmlns:epub="http://www.idpf.org/2007/ops" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" id="eb626c4477d73ad0bd4fad0a30cf7d31">
+  <head>
+    <meta charset="utf-8"></meta>
+    <meta name="process" content="final"></meta>
+    <meta name="schema" content="3.3"></meta>
+    <link href="../css/flat_mac_printisbn.css" type="text/css" rel="stylesheet"></link>
+    <link href="../css/common/lm_ui.css" type="text/css" rel="stylesheet"></link>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"></meta>
+    <link href="../css/common/lm_ui.css" type="text/css" rel="stylesheet"></link>
+    <title>732 Icons in headings</title>
+  </head>
+  <body epub:type="bodymatter" class="bodymatter" data-lo-framework-id="">
+    <section class="sect1" data-cfititle="7.3. Figure" id="ch07_04">
+      <header id="iwvucc35c3c9c92d9659fbb65f2ed665">
+        <h2 class="a-head v1" epub:type="title" id="gnjff80b8ae57bd04017cb040b2bedd1"><span epub:type="pagebreak" role="doc-pagebreak" id="page32" aria-label="page 32"></span><span class="ordinal" id="tkvhfdb22bd1a87071aac32809aae9af">7.3. </span>Figure</h2>
+      </header>
+      <p class="noindent" id="lrotf64d3d504d5c24768b64537d89aa">All images that are considered non-decorative or display will require a <code class="language-html" id="vumfc4adcf424631c2c40d33ecdd9761">figure</code> class be added to the coding of the EPUB. Including this <code class="language-html" id="cntf277c2707301671486f9b75944d8b">figure</code> class has no special meaning in the Flat Accessible EPUB but is required for conversion steps beyond this initial flat EPUB.</p>
+      <pre tabindex="0" id="ffyj19eb22a837c6d5b4b4c6a65d44a4">
+        <code class="language-html" id="iepk2444a8ca53e18ab32d67938b6831">&lt;figure class="figure lm_img_lightbox num c3 main-flow"  id="fri_9781319065669_4ErYqI5gOB"&gt; &lt;img class="figure" id="fri_9781319065669_8VZZQRrkk9" src=".../image/ch01fig2.png" alt="The alt text for this image"/&gt; &lt;figcaption id="fri_9781319065669_Scf5jHvTwm"&gt; &lt;p class="noindent" id="fri_9781319065669_4BcnNtESGx"&gt;&lt;span epub:type="label" class="label" id="fri_9781319065669_AEtePczV8c"&gt;Figure &lt;/span&gt;&lt;span epub:type"ordinal" class="ordinal" id="fri_9781319065669_yrbW0HgSIh"&gt;1.2 &lt;/span&gt;Figure Title&lt;/p&gt; &lt;p class="noindent" id="fri_9781319065669_06Tsu1BzY1"&gt;This is the caption text&lt;/p&gt; &lt;p epub:type="noindent" id="fri_9781319065669_R91P5rRb5Q"&gt;&lt;span epub:type="label" class="label" id="fri_9781319065669_naf0ccowMZ"&gt;Source:&lt;/span&gt;&lt;span class="credit" id="fri_9781319065669_mK2skEiKfC"&gt;This is the source text&lt;/span&gt;&lt;/p&gt; &lt;/figcaption&gt; &lt;/figure&gt; &lt;aside class="hidden" id="fri_9781319065669_qGrPUn069A" title="hidden"&gt; &lt;p class="noindent" id="fri_9781319065669_jGu9W3AOxp"&gt;This is a sample content for Long ALTtext&lt;/p&gt; &lt;/aside&gt;</code>
+      </pre>
+      <p class="noindent" id="tqll7e5b2ae7e059fb08eede4ad6aee7">Code figures that are offset from the narrative (secondary content) so that the reader has the option to skip around them without interruption.</p>
+      <ul class="ul-bullet-list" id="hnxr469e428fe1963c870d7fff64804f">
+        <li id="hrnadf5f74234a6830f54ae074d5ee95">Use the figure element to encapsulate images, charts, code samples and other secondary content with related captions and descriptions.</li>
+        <li id="mcicaa46cc72d88c59e919725cc5b199">If a page break occurs anywhere within a <code class="language-html" id="qzrcd62cfa7180cf6e92f8e6d4880bf9">&lt;figure&gt;</code> tag, it should be moved outside to follow the complete element.</li>
+        <li id="cqvp3b1a2a1e4d13c9ebaf6ff159d83b">The <code class="language-html" id="bbzo44dbdcbd18947668754240c37f20">figcaption</code> element is used to identify figure captions. It must appear as the first or last element within the <code class="language-html" id="mpds16e2fdaffde32a1edb12b847befd">figure</code> element.</li>
+        <li id="slcx6ca7f7a79a75b0cf28a5442086f1">Numbered figures should be placed under the paragraph in which they are called out and after any glossary key terms and standalone equations. See <a href="mac_printisbn_ch05_05.xhtml#ch05_05_01" class="crossref" id="s28397ff-1fdf-3417-89b9-5a185de95c8a">Glossary</a> </li>
+        <li id="huir286de893a8afed8a9319607dfada">There is no need for an extra anchor element for the figure ID.</li>
+      </ul>
+      <p class="noindent" id="mcmmc74e047b9dcd99dcd7605fba297f">
+        <a class="external" id="xgts1235519af22b201917b06b489bf2" href="http://kb.daisy.org/publishing/docs/html/images.html">http://kb.daisy.org/publishing/docs/html/images.html</a>
+      </p>
+      <section class="sect2" id="lpbs3126941bbe54bf59d197e4c7901a" data-cfititle="Examples in EPUB">
+        <header id="yfxx24292d5b6de57406ed1d98bd833f">
+          <h3 class="b-head" id="wvwe72215ae9e039f13e88a63456691a">Examples in EPUB</h3>
+        </header>
+        <p class="noindent" id="hxqea41dd502a3455ebfe1ec93c956f1">
+          <strong class="important" id="xeyi5ec24f020fa325e0fb395f450000">Print Sample</strong>
+        </p>
+        <p class="noindent" id="soyu123d041c29ac059ba377a7ce7a76">
+          <strong class="important" id="soyu123d041c29ac059ba377a7ce7a77">Numbered Figure</strong>
+        </p>
+        <figure class="figure lm_img_lightbox unnum c3 center" data-pswp-uid="1" id="unfig03_6">
+          <img alt="image to come" class="figure" data-med="https://content.macmillan-learning.com/frost/assets/images/ldyace7e9868079f9d90c1c9afcda7d7/ldyace7e9868079f9d90c1c9afcda7d7_Image2020-09-28_16-59_figure-num-print.png" data-med-size="947x369" data-size="947x369" id="kgfh66bc2dedc48ca007e84968a54364" role="link" src="../images/ldyace7e9868079f9d90c1c9afcda7d7_Image2020-09-28_16-59_figure-num-print.png"></img>
+        </figure>
+        <p class="noindent" id="juos7e243df6baefb4018e5a981dfb12">
+          <strong class="important" id="soyu123d041c29ac059ba377a7ce7a78">Unnumbered Figure</strong>
+        </p>
+        <figure class="figure lm_img_lightbox unnum c3 center" data-pswp-uid="2" id="unfig03_6a">
+          <img alt="image to come" class="figure" data-med="https://content.macmillan-learning.com/frost/assets/images/sjay55bf4c39cfcd07dbb46c22a4a167/sjay55bf4c39cfcd07dbb46c22a4a167_Image2020-09-28_16-59_figure-unnum-print.png" data-med-size="944x476" data-size="944x476" id="kgfh66bc2dedc49ca007e84968a54364" role="link" src="../images/sjay55bf4c39cfcd07dbb46c22a4a167_Image2020-09-28_16-59_figure-unnum-print.png"></img>
+        </figure>
+        <p class="noindent" id="hxqea41dd502a3455ebfe1ec93c956fc">
+          <strong class="important" id="xeyi5ec24f020fa325e0fb395f450001">HTML Coding Sample</strong>
+        </p>
+        <ul class="ul-no-mark" id="kwrsabcaf84d99fb9bc8927040d11c43">
+          <li id="dvuc64ae5fc5eb384f2ab6c32416463b">
+            <pre tabindex="0" id="mqmu312f416d48e488c8bb41e47a6f81">
+              <code class="language-html" id="stge998adcf1cdb2c9f60013a65d1d70">&lt;figure class="figure lm_img_lightbox num c3 main-flow" id="dav_9781319347970_YsXGmV4caD"&gt; &lt;img class="figure" src="../images/myerspsy13e_01_03_01006.png" alt="A line graph plots the usage of positive words in tweets on the vertical axis against the time of the day on the horizontal axis." id="dav_9781319347970_ukHO65kmOV"/&gt; &lt;figcaption id="dav_9781319347970_ON84FoqvX6"&gt; &lt;p class="noindent" id="dav_9781319347970_4uFk0NC6dB"&gt;&lt;span epub:type="label" class="label" id="dav_9781319347970_VSC2DpE8Cf"&gt;FIGURE &lt;/span&gt;&lt;span epub:type="ordinal" class="ordinal" id="dav_9781319347970_EV5NMKTtBy"&gt;1.3 &lt;/span&gt;&lt;span class="title" id="dav_9781319347970_48OD8AfWnT"&gt;Twitter message moods, by time and by day&lt;/span&gt; This graph illustrates how, without knowing anyone’s identity, researchers can use big data to study human behavior on a massive scale. It now is also possible to associate people’s moods with, for example, their locations or with the weather, and to study the spread of ideas through social networks. (Data from &lt;a epub:type="biblioref" role="doc-biblioref" class="biblioref" href="mye_9781319132101_EM_reference.xhtml#dav_9781319347970_rMxzgD31rk" id="dav_9781319347970_3NJNzvLG0P"&gt;Golder &amp; Macy, 2011&lt;/a&gt;.)&lt;/p&gt; &lt;/figcaption&gt; &lt;/figure&gt; &lt;aside class="hidden" id="dav_9781319347970_kRth2JYs8P" title="hidden34"&gt; &lt;p class="noindent" id="dav_9781319347970_tI5f6mDyuD"&gt;A line corresponds to each day of the week. In general Sunday and Saturday have the most positive words, with text stating that positive tweets were highest late Saturday night. Tuesday and Wednesday have the fewest positive words, with text stating that positive tweets were lowest on Tuesday afternoon. With regard to time of day, in general each day shows the most positive tweets around 11 P M and midnight, and the fewest positive tweets between noon to 6 P M.&lt;/p&gt;&lt;/aside&gt; ... &lt;figure class="figure lm_img_lightbox unnum c3 main-flow" id="dav_9781319347970_xHeSPfgj1T"&gt; &lt;img class="figure" src="../images/myerspsy13e_01_un04_01007.png" alt="A photo shows a lady researcher sitting behind two chimpanzees, one of them is picking lice from the other." id="dav_9781319347970_H6X52WuNTs"/&gt; &lt;figcaption id="dav_9781319347970_IiazYnBFfK"&gt; &lt;p class="noindent" id="dav_9781319347970_g5Cz13I4Rk"&gt;&lt;span class="title" id="dav_9781319347970_eyCYGVpguj"&gt;A natural observer&lt;/span&gt; “Observations, made in the natural habitat,” noted chimpanzee observer &lt;a epub:type="biblioref" role="doc-biblioref" class="biblioref" href="mye_9781319132101_EM_reference.xhtml#dav_9781319347970_HOpzEdiHjJ" id="dav_9781319347970_ISqc3P6fu2"&gt;Jane Goodall (1998)&lt;/a&gt;, “helped to show that the societies and behavior of animals are far more complex than previously supposed.”&lt;/p&gt; &lt;/figcaption&gt; &lt;/figure&gt;</code>
+            </pre>
+          </li>
+        </ul>
+        <p class="noindent" id="vvub1a5a5e7406ec5de8cb1f3114fc9a">
+          <strong class="important" id="xeyi5ec24f020fa325e0fb395f450002">HTML Coding Result</strong>
+        </p>
+        <p class="noindent" id="dnzr5fffc5fef8281a7ad216e82372f0">
+          <strong class="important" id="soyu123d041c29ac059ba377a7ce7a79">Numbered Figure</strong>
+        </p>
+        <figure class="figure lm_img_lightbox num c3 main-flow" data-pswp-uid="3" id="dav_9781319347970_YsXGmV4caD">
+          <img alt="A line graph plots the usage of positive words in tweets on the vertical axis against the time of the day on the horizontal axis." class="figure activeImg" id="dav_9781319347970_ukHO65kmOV" role="link" src="../images/yambf557f7d7ddc8957fa177a1c341eb_myerspsy13e_01_03_01006.png" data-size="1100x610" data-med="https://content.macmillan-learning.com/frost/assets/images/yambf557f7d7ddc8957fa177a1c341eb/yambf557f7d7ddc8957fa177a1c341eb_myerspsy13e_01_03_01006.png" data-med-size="1100x610"></img>
+          <figcaption id="dav_9781319347970_ON84FoqvX6">
+            <p class="noindent" id="dav_9781319347970_4uFk0NC6dB"><span class="label" epub:type="label" id="dav_9781319347970_VSC2DpE8Cf">FIGURE </span><span class="ordinal" epub:type="ordinal" id="dav_9781319347970_EV5NMKTtBy">1.3 </span><span class="title" id="dav_9781319347970_48OD8AfWnT">Twitter message moods, by time and by day</span> This graph illustrates how, without knowing anyone’s identity, researchers can use big data to study human behavior on a massive scale. It now is also possible to associate people’s moods with, for example, their locations or with the weather, and to study the spread of ideas through social networks. (Data from Golder &amp; Macy, 2011.)</p>
+          </figcaption>
+        </figure>
+        <aside class="hidden" id="dav_9781319347970_kRth2JYs8P" title="hidden34">
+          <p class="noindent" id="dav_9781319347970_tI5f6mDyuD">A line corresponds to each day of the week. In general Sunday and Saturday have the most positive words, with text stating that positive tweets were highest late Saturday night. Tuesday and Wednesday have the fewest positive words, with text stating that positive tweets were lowest on Tuesday afternoon. With regard to time of day, in general each day shows the most positive tweets around 11 P M and midnight, and the fewest positive tweets between noon to 6 P M.</p>
+        </aside>
+        <p class="noindent" id="weev3e38d61250ec010f85066f0832e4">
+          <strong class="important" id="soyu123d041c29ac059ba377a7ce7a80">Unnumbered Figure</strong>
+        </p>
+        <figure class="figure lm_img_lightbox unnum c3 main-flow" data-pswp-uid="4" id="dav_9781319347970_xHeSPfgj1T">
+          <img alt="A photo shows a lady researcher sitting behind two chimpanzees, one of them is picking lice from the other." class="figure" id="dav_9781319347970_H6X52WuNTs" role="link" src="../images/xjun0c4ec02e501505aa0a492d59c693_myerspsy13e_01_un04_01007.png"></img>
+          <figcaption id="dav_9781319347970_IiazYnBFfK">
+            <p class="noindent" id="dav_9781319347970_g5Cz13I4Rk"><span class="title" id="dav_9781319347970_eyCYGVpguj">A natural observer</span> “Observations, made in the natural habitat,” noted chimpanzee observer Jane Goodall (1998), “helped to show that the societies and behavior of animals are far more complex than previously supposed.”</p>
+          </figcaption>
+        </figure>
+      </section>
+      <section class="sect2" data-cfititle="7.3.1. Image" id="ch07_04_01">
+        <header id="dxbvfc8dbde63ca4d7949ab2f57e8426">
+          <h3 class="b-head v2" id="onvgdb8cb3156448ab3974d725007599"><span epub:type="pagebreak" role="doc-pagebreak" id="page73" aria-label="page 73"></span><span class="ordinal" id="dwuz9f96b315ae9519a13a4c98fc2918">7.3.1. </span>Image</h3>
+        </header>
+        <ul class="ul-bullet-list" id="wsnbcc02c896d07e1d208fcead6b90e4">
+          <li id="jnhz3782f5fe15c40ae94d8f5a8de403">Text alternatives must be provided for all significant images using the <code class="language-html" id="hvtx25202ba646b7af870f6bf73fb92a">alt</code> attribute</li>
+          <li id="wsnw35d81624c17daf50d200574a701f">Descriptions provided for all significant images</li>
+          <li id="nyzjaac24c63d1671e2618e2e9f9e8a6">Leave the <code class="language-html" id="gxqw2e235ac4dabf8e3cf5916cb15499">alt</code> attribute empty for all decorative images that contain no content.</li>
+          <li id="pghp2ebc8722d479b6fef34077648142">All images used in the package must be in an OEBPS subfolder called “images”. The EPUB package must not contain any unused images. Images without any callout in XHTML should be removed from the “images” folder and from the OPF file.</li>
+          <li id="pplse2e4a184a030c44b26699bdb67fb">Please refer to our separate "Image Prep for Digital Delivery" document for detailed image requirements.</li>
+          <li id="fwgdbdd140d20a443893c5cad0827c6c"><strong class="important" id="qhxh18faacffe384df41bd0c659d3b8c">Image Resolution:</strong> All images in the EPUB package must be 150 dpi.</li>
+          <li id="uplpe573a5d260396911d0f8c26a7231"><strong class="important" id="pweg8a2a6f70e7145a3dcfc38676c0e5">Image Format:</strong> All images should be in the format of PNG, except the cover image file which should be in JPEG format.</li>
+          <li id="geiq6cd8e3da0f714a9409c45daf197f"><strong class="important" id="xogh76d6cd9c684adca579bc6b5765c3">Image Size:</strong> All images should be below 4 million pixels.</li>
+          <li id="afcrd618134ebe099d90dc14a30fbc15"><strong class="important" id="jwvrd64d99b6972d654c69b7f515db59">Image Crediting:</strong> Credit information should be captured in the embedded image file only and must be removed from the surrounding text to avoid duplication of content.</li>
+          <li id="afnkb8df5fee45b510b21b6ea19a724a"><strong class="important" id="kofd403b6ebc3b5b2f2414b8e68035de">Composite Images:</strong> When images are made up of multiple parts (a, b, c), the separate image files need to be merged into one image. The callout within text would link to the combined version. If Macmillan Learning doesn’t provide the merged version of the image, the vendor is expected to perform that work. Although Macmillan Learning caption copy is typically written using the a, b, c, references, if you encounter copy that references (left, right, top, bottom), the copy may need edits. Query the Macmillan Learning project manager requesting the EPUB to resolve the issues.</li>
+          <li id="gqna32dae706f34cba8fff43338c3c35">Do not use more than one <code class="language-html" id="doyg979794e09ccc00c510f30aa0b9a0">&lt;img&gt;</code> inside a single <code class="language-html" id="mndk4cef13a87c24e66f0c12d3a57524">&lt;figure&gt;</code>. If a set of images is grouped together and shares a caption and/or credit, it should be merged into a single composite image file as described above.</li>
+          <li id="gqna32dae706f34cba8fff46668c3c35">Images that span spreads must be captured as a single image.</li>
+          <li id="bxrs11f6c4805d4a94ab618083c6a65c">Use the sRGB color space. The CMYK and GRAY image profiles should not be used as they will result in image validation errors.</li>
+          <li id="sjua0e519add3c38da0e6aac254460f2">Use PNG format for all images, including: 	<ul class="ul-bullet-list" id="roedf922bfbdf400b593737590ec3b7a"><li id="lpegbd8f28e0cdb8b19900b03eac1e4f">line art/vector images</li><li id="cofe37171750bfd5e061053cf1374db3">fallback images for math equations</li><li id="kmrv2b80db9585070c2a2e126c0db668">bitmap images containing text</li></ul></li>
+          <li id="vflh41d57120a686a537a2fda7695500">Use PNG format with type-optimized anti-aliasing. Note: for any image with <code class="language-html" id="gtdb9b5612fabc3424937419b9ed572f">&lt;figure&gt;</code> element and <code class="language-html" id="rdhn34b79577fbd2e26d59abaad8f783">class=”lm_img_lightbox”</code> attribute, the included PNG file should not have a transparent background, because it will not display correctly in the pop-up window in the enhanced EPUB version.</li>
+          <li id="kixie5e44818d257b64a868b44e6e1b0">Images should not exceed 2000 pixels in width.</li>
+          <li id="ofcrd980e3f8b833fca1fd790b4b7b31">Create dingbats and icons as transparent PNG files with no white background.</li>
+          <li id="ohhx1e19d0e25ea81b096c96e5818d3a">Any ebook with 10 images or more should have some image compression software run on the images folder. This is to reduce EPUB file size and thus make it easier and faster to load on a variety of devices.</li>
+        </ul>
+        <p class="noindent" id="vhgv334e0903a1b037c30c50c4804808">
+          <a class="external" href="http://kb.daisy.org/publishing/docs/html/images.html" id="enqr389bfe4035d1824d01f7295f9d52">http://kb.daisy.org/publishing/docs/html/images.html</a>
+        </p>
+        <section class="sect3" data-cfititle="Image Icons" id="qwrk7d462533e0449fd35f63b95bf023">
+          <header id="ugiq230a6bec56a4776fa24e57490eba">
+            <h4 class="c-head" id="wvspc7505c55ff9a5c7647d4743169e5">Image Icons</h4>
+          </header>
+          <p class="noindent" id="bzkj02c7ae6082fe9a62242ab3fda053">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450003">Print Sample</strong>
+          </p>
+          <figure class="figure lm_img_lightbox unnum c3 center" id="unfig03_6d">
+            <img alt="image to come" class="figure" id="ufmg71d3528d80f9972ca59537500db4" src="../images/isgk4ca906d2d3f61217443442d6175a_Image2020-09-28_16-59_img-icon-print.png"></img>
+          </figure>
+          <p class="noindent" id="bzkj02c7ae6082fe9a62242ab3fda05a">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450004">HTML Coding Sample</strong>
+          </p>
+          <ul class="ul-no-mark" id="slqk38bd952a1e5e125be478f8755fac">
+            <li id="ymxhd2944f7eb167e40ed4b74d9d7f56">
+              <pre tabindex="0" id="ihkq68b1d8566a5b230a0d32b610f028">
+                <code class="language-html" id="groc684b9fa28c5bcdd864cd6cc40aaa">&lt;aside class="learning-resources c3 main-flow v2" epub:type="learning-resources" id="ch12_sec_v1" title="learning-resources 01"&gt; &lt;ul class="ul-no-mark" id="ytpzd321c1770e6d9cdc03721da72c20"&gt; &lt;li class="learning-resource" epub:type="learning-resource" id="ysgsc8dea46d6201c6ee1f2e9643f582"&gt;&lt;img alt="Icon: Launch Pad" class="size-large inline" id="jbzf24a0f641ff39b527a20c440a87e1" src="../images/itmga2a79a00fd001fef2ec9eac24297_Comer10e_sp_pg153b.png"&gt;&lt;/img&gt; Visit &lt;i class="semantic-i" id="kyvod92f1b42dcc9fae7a2618d711d01"&gt;LaunchPad&lt;/i&gt; to access the e-book, Clinical Choices, videos, activities, and LearningCurve, as well as study aids including flashcards, FAQs, and research exercises.&lt;/li&gt; &lt;/ul&gt; &lt;/aside&gt; </code>
+              </pre>
+            </li>
+          </ul>
+          <p class="noindent" id="bgge623ae4a010ee68f994cb6f9a0e24">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450005">HTML Coding Result</strong>
+          </p>
+          <aside class="learning-resources c3 main-flow v2" epub:type="learning-resources" id="ch12_sec_v1" title="learning-resources 01">
+            <ul class="ul-no-mark" id="ytpzd321c1770e6d9cdc03721da72c20">
+              <li class="learning-resource" epub:type="learning-resource" id="ysgsc8dea46d6201c6ee1f2e9643f582"><img alt="Icon: Launch Pad" class="size-large inline" id="jbzf24a0f641ff39b527a20c440a87e1" src="../images/itmga2a79a00fd001fef2ec9eac24297_Comer10e_sp_pg153b.png"></img> Visit <i class="semantic-i" id="kyvod92f1b42dcc9fae7a2618d711d01">LaunchPad</i> to access the e-book, Clinical Choices, videos, activities, and LearningCurve, as well as study aids including flashcards, FAQs, and research exercises.</li>
+            </ul>
+          </aside>
+        </section>
+      </section>
+      <section class="sect2" data-cfititle="7.3.2. Icons in headings" id="ch07_04_02">
+        <header id="kery1865e3cef60df63823550b047c2f">
+          <h3 class="b-head v2" id="uprefddb5123989326fafe0f00232bbc"><span class="ordinal" id="uprefddb5123989326fafe0f00232bbd">7.3.2. </span>Icons in headings</h3>
+        </header>
+        <p class="noindent" id="mlwm561fdbe6e9cc4d4b27425ef0f177">When an icon image is required to float beside a heading, place the icon <strong class="important" id="snfa9abfaa6247295c743fb5be2305eb">after</strong> the header element and apply the classes <code class="language-html" id="yrajad5eb18099d185cb6df6583d2760">"decorative"</code> and <code class="language-html" id="ujre9578449327044c06aeb393e9194a">"logo"</code>. The icon image <strong class="important" id="snsz1e72dd9a1d6785aaaaed3c675f7e">must not</strong> be placed inside of the header element, as this interferes with CFI generation. The Universal SCSS has been updated accordingly.</p>
+        <p class="noindent" id="ujez580b26f70bfcca4934655296759f">Sample mark-up:</p>
+        <pre tabindex="0" id="wqzd8f7f54c7d9a1a02c00ba04516cd3">
+          <code class="language-html" id="ukmo794de92e7637d7571347c9b5e537">&lt;header id="fri_9781319065669_GL9z0lpFPL"&gt; &lt;h3 class="b-head" id="fri_9781319065669_AKkRLDOlG4"&gt; &lt;span epub:type="label" class="label" id="fri_9781319065669_04CnXQyKp4"&gt;ENGAGE &lt;/span&gt; &lt;/h3&gt; &lt;p epub:type="subtitle" class="subtitle" id="fri_9781319065669_04CnXQyKp4"&gt;Making a recursive writing process work for you&lt;/p&gt; &lt;/header&gt; &lt;img class="decorative logo" id="fri_9781319065669_04CnXQyKp4" src="../images/loop1_engageALT.png" alt="" role="presentation" aria-hidden="true" /&gt;</code>
+        </pre>
+        <p class="noindent" id="sefg7f37b634f2528c06026a663631af">The icon will be forced to <code class="language-html" id="aeqj6390c9f2ed635c9f4f620069f1f3">"float"</code> (not a true float) to the left of the header. This allows the header to be the first element. A media query has been included for narrower widths. Due to technical limitations, the icon cannot appear directly before the header at narrower widths and must appear after.</p>
+      </section>
+      <section class="sect2" data-cfititle="7.3.3. Decorative Image Treatment" id="ch07_04_03">
+        <header id="lokfcd43d15a7142599f75e8232484d7">
+          <h3 class="b-head v2" id="yezz68d5bd3a27df8672cfa4c9efba0d"><span class="ordinal" id="uprefddb5123989326fafe0f00232bbe">7.3.3. </span>Decorative Image Treatment</h3>
+        </header>
+        <p class="noindent" id="tayjb43879a870fc3f8cb88d95299e7c">Any image that is set as in-line (icons for example) should NOT use the <code class="language-html" id="cunra5bef31eac92a6e04cacc00b1086">&lt;figure&gt;</code> tag. Any image that is considered decorative must be tagged with role set to <code class="language-html" id="hdpi5ecbca98c145695d7153c0ad7c84">“presentation”</code>  and alt text set to null.</p>
+        <pre tabindex="0" id="kzhxc52f43d8d5e28c8776e82d6260af">
+          <code class="language-html" id="ysau029ca8166726cbc23bdc0134e2a1">&lt;img class="decorative size-med left" id="fri_9781319065669_4ErYqI5gOB" src="imagename.png" role="presentation" aria-hidden=”true” alt=""/&gt;</code>
+        </pre>
+        <p class="noindent" id="nmvf3d671489b8ab51b27061199f78fa">Decorative images must also be tagged with the label <code class="language-html" id="uwpde641cb59f79c854c30d6eacee59f">aria-hidden="true"</code>.</p>
+        <p class="noindent" id="korod20045859933e433de2029407d4d">See <a class="crossref" href="mac_printisbn_ch07_04.xhtml#spec-37" id="spec-37">6.13 Use Image Descriptions and Alt Text</a> for further details.</p>
+      </section>
+      <section class="sect2" data-cfititle="7.3.4. QR Code Treatment" id="ch07_04_04">
+        <header id="fprv23d1baed3f83ba013f43dd205afa">
+          <h3 class="b-head v2" id="sankabca706e81c59c74193403c13f81"><span class="ordinal" id="uprefddb5123989326fafe0f00232bbf">7.3.4. </span>QR Code Treatment</h3>
+        </header>
+        <p class="noindent" id="epdu5b6b246b273bac3ef0a2bda44d2f">If part or whole image includes a QR code, the following will need to be adjusted to remove and replace instance of QR code:</p>
+        <ul class="ul-bullet-list" id="aexh22f47389e7a667b65c4513147919">
+          <li id="iobv32d0d87e495868dc90df242fadfa">If QR occurs by itself in an image, please omit image from EPUB and replace with link that was provided by QR code as href in EPUB</li>
+          <li id="auks6f04d3400b9b58c8be7c58586047">If QR code is part of composite image please update image to delete QR code and update alt text to remove mention.  Include link that was provided by QR code as href in EPUB.</li>
+        </ul>
+      </section>
+      <section class="sect2" data-cfititle="7.3.5. Special Images" id="ch07_04_05">
+        <header id="csvo583675d42cd9724e949f6aa69202">
+          <h3 class="b-head v2" id="kgmybded34b0e0f31ca661427ed21eb3"><span class="ordinal" id="uprefddb5123989326fafe0f00232bbg">7.3.5. </span>Special Images</h3>
+        </header>
+        <p class="noindent" id="kgas2c6d588d1bf6042c8f6b606799d9">data-widget attribute may be used to enable automation. The data-widget attribute may have the value of dataset or multiplevideo. This is to automate the creation of dataset and multi-video widgets.</p>
+      </section>
+      <section class="sect2" data-cfititle="Examples in EPUB (Inline Images)" id="fctgb4438c1a3ca94ecdf7f785ee2441">
+        <header id="jhhfa90b8aafd91331be1ba0693788dc">
+          <h3 class="b-head" id="bvgp749d768e435c1b0465ef950e392a">Examples in EPUB (Inline Images)</h3>
+        </header>
+        <p class="noindent" id="bzkj02c7ae6082fe9a62242ab3fda056">
+          <strong class="important" id="xeyi5ec24f020fa325e0fb395f450006">Print Sample</strong>
+        </p>
+        <figure class="figure lm_img_lightbox unnum c3 center" id="unfig03_6az">
+          <img alt="image to come" class="figure" id="kgfh66bc2dedc48ca007e84968a54365" src="../images/srmr82d646d2c1199e8a982c37ace869_axelrodconcise9e_17_Page_414_24506.png"></img>
+        </figure>
+        <figure class="figure lm_img_lightbox unnum c3 center" id="unfig03_6ax">
+          <img alt="image to come" class="figure" id="kgfh65bc2dedc48ca007e84968a54364" src="../images/gkgq913f5c1572984fc594a2ea3e4b1c_hackerpocket9e_16954_pt01_pg_04b.png"></img>
+        </figure>
+        <figure class="figure lm_img_lightbox unnum c3 center" id="unfig03_6bb">
+          <img alt="image to come" class="figure" id="kgfh67bc2dedc48ca007e84968a54364" src="../images/dmbe1e075e155c9d82f9bc45ecd718ad_hackerpocket9e_16954_pt02_pg_19.png"></img>
+        </figure>
+        <p class="noindent" id="kdwb1e2f60424ca2167c335ba53ba02a">
+          <strong class="important" id="xeyi5ec24f020fa325e0fb395f450007">HTML Coding Sample</strong>
+        </p>
+        <ul class="ul-no-mark" id="nmwz36632e6dd173a0425755ea341c42">
+          <li id="jqbu37c4a4cdbc97c7f6fe1e69a329d3">
+            <pre tabindex="0" id="byyea56c8610a8e9bc0bee2df10f6373">
+              <code class="language-html" id="zlvo499d3aa73372199486dc7cf0d50b"> &lt;p class="noindent" id="ris_9781319306670_Tp2PZ3BEzz"&gt; &lt;img alt="An example shows works cited entry for a two-container source (an article in a journal and a database)." class="inline c5" id="ris_9781319306670_hhjB6q0Vx0" src="../images/srmr82d646d2c1199e8a982c37ace869_axelrodconcise9e_17_Page_414_24506.png"&gt;&lt;/img&gt; &lt;/p&gt; &lt;p class="noindent" id="ris_9781319306670_Tp2PZ3BEzy"&gt; &lt;img alt="Two examples depict how to replace passive voice words with active voice words in a sentence." class="inline c5" id="dia_9781319327569_q5YfVV6yB5" src="../images/gkgq913f5c1572984fc594a2ea3e4b1c_hackerpocket9e_16954_pt01_pg_04b.png"&gt;&lt;/img&gt; &lt;/p&gt; &lt;p class="noindent" id="ris_9781319306670_Tp2PZ3BEzx"&gt; &lt;img alt="Three sentences illustrate examples of words between subject and verb." class="inline c5" id="dia_9781319327569_VtNbu8FeLK" src="../images/dmbe1e075e155c9d82f9bc45ecd718ad_hackerpocket9e_16954_pt02_pg_19.png"&gt;&lt;/img&gt; &lt;/p&gt; </code>
+            </pre>
+          </li>
+        </ul>
+        <p class="noindent" id="ikhb0bde6787214cd96b4fa64665f3bc">
+          <strong class="important" id="xeyi5ec24f020fa325e0fb395f450008">HTML Coding Result</strong>
+        </p>
+        <p class="noindent" id="ris_9781319306670_Tp2PZ3BEzz">
+          <img alt="An example shows works cited entry for a two-container source (an article in a journal and a database)." class="inline c5" id="ris_9781319306670_hhjB6q0Vx0" src="../images/srmr82d646d2c1199e8a982c37ace869_axelrodconcise9e_17_Page_414_24506.png"></img>
+        </p>
+        <p class="noindent" id="ris_9781319306670_Tp2PZ3BEzy">
+          <img alt="Two examples depict how to replace passive voice words with active voice words in a sentence." class="inline c5" id="dia_9781319327569_q5YfVV6yB5" src="../images/gkgq913f5c1572984fc594a2ea3e4b1c_hackerpocket9e_16954_pt01_pg_04b.png"></img>
+        </p>
+        <p class="noindent" id="ris_9781319306670_Tp2PZ3BEzx">
+          <img alt="Three sentences illustrate examples of words between subject and verb." class="inline c5" id="dia_9781319327569_VtNbu8FeLK" src="../images/dmbe1e075e155c9d82f9bc45ecd718ad_hackerpocket9e_16954_pt02_pg_19.png"></img>
+        </p>
+      </section>
+    </section>
+  </body>
+</html>

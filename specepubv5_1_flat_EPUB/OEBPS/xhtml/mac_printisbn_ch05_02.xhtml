@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<html xmlns:svg="http://www.w3.org/2000/svg" xmlns:epub="http://www.idpf.org/2007/ops" xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en" id="a1aa9c60a8333c7f9d487a86792be4f6">
+  <head>
+    <meta charset="utf-8"></meta>
+    <meta name="process" content="final"></meta>
+    <meta name="schema" content="3.3"></meta>
+    <link href="../css/flat_mac_printisbn.css" type="text/css" rel="stylesheet"></link>
+    <link href="../css/common/lm_ui.css" type="text/css" rel="stylesheet"></link>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5"></meta>
+    <link href="../css/common/lm_ui.css" type="text/css" rel="stylesheet"></link>
+    <title>511 Deep Nesting</title>
+  </head>
+  <body epub:type="bodymatter" class="bodymatter" data-lo-framework-id="">
+    <section class="sect1" id="ch05_02" data-cfititle="5.1. Structured Components">
+      <header id="nppt5e0a3b22e99e9559abfcdac39381">
+        <h2 class="a-head v1" id="gdxb7cbc6c5039e4f679067e49272639"><span epub:type="pagebreak" role="doc-pagebreak" id="page17" aria-label="page 17"></span><span class="ordinal" id="gdxb7cbc6c5039e4f679067e49273639">5.1. </span>Structured Components</h2>
+      </header>
+      <p class="noindent" id="dymhe0a5145aa1ee3111cd2ba7b73011">When <code class="language-html" id="pseo6545e890901de45ab443b20474a8">aside</code>, <code class="language-html" id="rltn80dc6ca956a48201d1a6f0d9579a">article</code> and <code class="language-html" id="gaqw78aeaf6b8e49b0488a170a7a6cfa">nav</code> elements with headings are included in a section, the heading rank MUST start one level lower than the containing section (e.g., if a <code class="language-html" id="musp82139031a6a2a8d1a643e45e0489">section</code> has an <code class="language-html" id="bzvg90d1d265131135faf681af3ed569">h3</code> heading, an <code class="language-html" id="ircib318c79d150db79f93603fc3b93b">aside</code> within it will start with an <code class="language-html" id="ruftfef47d6786e037916595632671f2">h4</code> heading).</p>
+      <p class="noindent" id="oizy706f1bf7860c97c013efa63e6883">
+        <strong class="important" id="gngr70e8b69a01ec3e6bf485bf0471aa">Coding Samples</strong>
+      </p>
+      <p class="noindent" id="qkns0e8f04f711e6a9e8c1290bb9447c">Example - Defining a section is a chapter with a heading</p>
+      <pre tabindex="0" id="qkns0e8f04f711e6a9e8c1290bb9447d">
+        <code class="language-html" id="qkns0e8f04f711e6a9e8c1290bb9447h">&lt;section epub:type="chapter" class="chapter" id="fri_9781319065669_udH1LHMwmI" role="doc-chapter"&gt; 	&lt;header id="fri_9781319065669_sM0ZKXRvpM"&gt; 		&lt;h1 epub:type="title" class="title" id="fri_9781319065669_jnGiACw4VU"&gt;&lt;span epub:type="label" class="label" id="fri_9781319065669_SDDIpPhmsC"&gt;Chapter &lt;/span&gt;&lt;span epub:type="ordinal" class="ordinal" id="fri_9781319065669_mkOIRBtVK8"&gt;1 &lt;/span&gt;Loomings.&lt;/h1&gt; 	&lt;/header&gt; 	&lt;p class="intro" id="fri_9781319065669_5oZscfkeJc"&gt;Call me Ishmael. &amp;#8230;&lt;/p&gt; … &lt;/section&gt;</code>
+      </pre>
+      <p class="noindent" id="zzri370221fa5053a213b2fe12866657">If a <code class="language-html" id="deomaa0eecc7adc6d372a795c1116665">section</code> does not have a heading, include an <code class="language-html" id="mnuy2fd7a38242404ba3b78ac5705de3">aria-label</code> attribute on the <code class="language-html" id="fzbj5b6c3832cdb6f474ea64c7c10756">section</code> to identify its purpose.</p>
+      <p class="noindent" id="etvn7be71e73448768316ecfb7f6fbff">Example - aria-label attribute</p>
+      <pre tabindex="0" id="qkns0e8f04f711e6a9e8c1290bb9447e">
+        <code class="language-html" id="qkns0e8f04f711e6a9e8c1290bb9447i">&lt;section epub:type="introduction" class="introduction" id="fri_9781319065669_JzUzE2BdSJ" role="doc-introduction" aria-label="introduction"&gt; &lt;p class="noindent" id="fri_9781319065669_PbY5SLjk68"&gt;It was a dark and stormy night &amp;#8230; &lt;/p&gt; … &lt;/section&gt;</code>
+      </pre>
+      <p class="noindent" id="tmdbbe08dfeebd7851b6ca88e679a2dd">A <code class="language-html" id="djha3be024f696dbd473d4958255ed56">section</code> can be divided into subsections by nesting the <code class="language-html" id="mofgc9fa1a684d8115265ba67d3a3761">section</code> element, but once the first subsection is introduced only additional subsections are allowed to follow it</p>
+      <p class="noindent" id="rryo6590255072dd83adbd2d25651035">Example — if a <code class="language-html" id="hggz9c560ab733bbd980d81b2b6fa4df">section</code> starts with <code class="language-html" id="bowib296f6900e802f596facbbe0ce83">&lt;h1&gt;</code> then subsection must not start with <code class="language-html" id="ljwrd070374d3f1b0429da1ba36be983">&lt;h1&gt;</code> again it must be started with <code class="language-html" id="fbxl5723ea4c93615cbc5f94ea0d48d6">&lt;h2&gt;,&lt;h3&gt;&lt;h4&gt;..&lt;h6&gt;</code>.</p>
+      <p class="noindent" id="pkjg31725371e3feec34eab58004e046">Example - Subsections must be contiguous.</p>
+      <pre tabindex="0" id="qkns0e8f04f711e6a9e8c1290bb9447f">
+        <code class="language-html" id="qkns0e8f04f711e6a9e8c1290bb9447j">&lt;section epub:type="introduction" class="introduction" id="fri_9781319065669_dfLiXtyhRM" role="doc-introduction"&gt; &lt;header id="fri_9781319065669_dv8JrOpwLB"&gt; 	&lt;h1 epub:type="title" class="title" id="fri_9781319065669_B0VTt7HAQg"&gt;Section 1&lt;/h1&gt; &lt;/header&gt; 	&lt;p class="noindent" id="fri_9781319065669_imqdWs7bO1"&gt;…&lt;/p&gt; 	&lt;section class="subsect1" id="fri_9781319065669_54Xq0X8o2w"&gt;     &lt;header id="fri_9781319065669_AL3PPUMsMg"&gt; 			&lt;h2 class="level1" id="fri_9781319065669_5RS9mGxk3G"&gt;Subsection 1&lt;/h2&gt; 	&lt;/header&gt; 	… 	&lt;/section&gt; 	&lt;section class="subsect1" id="fri_9781319065669_L01zJSQhBi"&gt;     &lt;header id="fri_9781319065669_plFsxKhbCM"&gt; 			&lt;h2 class="level1" id="fri_9781319065669_m743DhzI0g"&gt;Subsection 2&lt;/h2&gt; 	&lt;/header&gt; 	… 	&lt;/section&gt; &lt;/section&gt;</code>
+      </pre>
+      <p class="noindent" id="nqiwc34c7e20b325cc147a0c5606b4c3">Example — If a section starts with <code class="language-html" id="cbuufbc93738e406a708dc517004c551">&lt;h2&gt;</code> then subsection must not start with <code class="language-html" id="pbltd03c74fcc66190d9dbfbfa01d5e2">&lt;h2&gt;</code> again it must be started with <code class="language-html" id="yyjr7d3075a4ea537b5b7de0a4f98e55">&lt;h3&gt;,&lt;h4&gt;..&lt;h6&gt;</code>.</p>
+      <pre tabindex="0" id="qkns0e8f04f711e6a9e8c1290bb9448x">
+        <code class="language-html" id="qkns0e8f04f711e6a9e8c1290bb9447k">&lt;section epub:type="introduction" class="introduction" id="fri_9781319065669_XkJXbyMhws" role="doc-introduction"&gt; &lt;header id="fri_9781319065669_aY7Ypna3a0"&gt; 	&lt;h2 epub:type="title" class="title" id="fri_9781319065669_FF5QkR0ew7"&gt;Section 1&lt;/h2&gt; &lt;/header&gt; 	&lt;p class="noindent" id="fri_9781319065669_5HelQP19ZY"&gt;…&lt;/p&gt; 	&lt;section class="subsect1" id="fri_9781319065669_FVteIKaDaH"&gt; 	    &lt;header id="fri_9781319065669_h94NzFiTOG"&gt; 			&lt;h3 class="level1" id="fri_9781319065669_9H6udt2ONR"&gt;Subsection 1&lt;/h3&gt; 		&lt;/header&gt; 	… 	&lt;/section&gt; 	&lt;section class="subsect1" id="fri_9781319065669_dTdRbGbxFi"&gt; 	    &lt;header id="fri_9781319065669_oSu101hTga"&gt; 			&lt;h3 class="level1" id="fri_9781319065669_H7hOT44YYj"&gt;Subsection 2&lt;/h3&gt; 		&lt;/header&gt; 	… 	&lt;/section&gt; &lt;/section&gt;</code>
+      </pre>
+      <p class="noindent" id="jvrf658b235e978e4afbfb5a7ce68511"><strong class="important" id="hnhe5641bf0cabfa06406dde8ac02e76">NOTE:</strong> The restriction against content between section elements exists to reduce the confusion that can arise when content is read by assistive technologies, as it is not always clear what section the continuation of content belongs to.</p>
+      <section class="sect2" id="ch05_02_01" data-cfititle="5.1.1. Deep Nesting">
+        <header id="qdiof633fbf85f06679fc86107968184">
+          <h3 class="b-head v2" id="sfpd4deed23a19be290af0da2c620c05"><span class="ordinal" id="gdxb7cbc6c5039e4f679067e49273640">5.1.1. </span>Deep Nesting</h3>
+        </header>
+        <p class="noindent" id="aufvc7b70b858ff8dd1e3598648ee44f">When the document hierarchy exceeds six levels of nesting, re-use the <code class="language-html" id="bcoj5ca641f7dfe126ba68a5d6e162ff">h6</code> element for the seventh nesting level and deeper. Avoid deep nesting of content, if possible, as the flattened structure below the sixth heading level impacts on the ability of users of assistive technologies (AT) to move through the document without repeatedly returning to the table of contents.</p>
+        <p class="noindent" id="wlso7d0be3999a7eff60ecf09312477a">Do not use heading elements where the heading does not reflect the document hierarchy, as this use will impact on movement by AT users (e.g., inside figure captions).</p>
+        <p class="noindent" id="yckidee6fcd6341cf9ebe6e847b13f9d">Sectioning content should not have as its only direct descendent (child) element another sectioning content of the same type. For example, a section should not be the only child of a section, and an aside should not be the only child of an aside. Doing so is semantically unnecessary and serves to complicate the structure of the book. Note that this restriction does not apply to div. Please refer to the tagging guidelines 3.1 section 13, Untitled Sections.</p>
+      </section>
+      <section class="sect2" data-cfititle="5.1.2. Titled Sections" id="ch05_02_02">
+        <header id="ufhgf4009262a74f519f4217f21cf243">
+          <h3 class="b-head v2" id="ftirca19f78c100efabbb19de6231a1b"><span class="ordinal" id="vezlb432f364f3e5f5db5d0eac805e30">5.1.2. </span>Titled Sections</h3>
+        </header>
+        <p class="noindent" id="ghnw210058dac6b2491568ce46f441a7"><a class="external" href="https://www.w3.org/TR/2016/REC-html51-20161101/sections.html#elementdef-h1" id="xaqqe5c8cea06f197d0b10a10407bf4c">[HTML5] heading elements</a> must be used to provide headings only for <a class="crossref" href="mac_printisbn_ch05_02.xhtml#spec-33" id="spec-33">[HTML5] sectioning content</a> (including the <code class="language-html" id="eijxe8779557b2a4e063862a15e72a7d">body</code> element).</p>
+        <p class="noindent" id="pmfe472e33a1d9aef77790f792863130">When using a heading element for a section, the rank must reflect the nesting of that section within the document hierarchy (as noted in <a class="external" href="http://w3c.github.io/html/sections.html#headings-and-sections" id="mlcjf4e60753a5f9bc35f52ceecc5222">4.3.10 Headings and sections [HTML5]</a>). For example, a top-level section will have an <code class="language-html" id="oozf12da57fbd52e38db071b92563997">h1</code> heading, child sections of it will have <code class="language-html" id="trwnf771dac9fbab04698a4ed40cd479">h2</code> headings, and so on. Note that untitled sections are included when determining the current heading rank (see <a class="crossref" href="mac_printisbn_ch05_02.xhtml#spec-35" id="spec-35">3.10.3 Untitled Sections</a> for more information).</p>
+        <p class="noindent" id="imjd8d4cd3060825cf346a9234352a29">The heading does not have to be the first element of the section, and may be included inside a [HTML5] <code class="language-html" id="bqtf410af965127028928407cbf89fe8">header</code> element. If the section also includes a subtitle in a separate element, both the heading and subtitle must be enclosed in a <code class="language-html" id="rzegca6ed58405664a061961e690f7cb">header</code>.</p>
+        <pre tabindex="0" id="jfok7862bea6ac2f8e00277794dce712">
+          <code class="language-html" id="qmom69c3bde59308a8c2048aa1d3e6b5">&lt;section epub:type="chapter" class="chapter" id="fri_9781319065669_eVbIaagB1n" role="doc-chapter"&gt; &lt;header id="fri_9781319065669_LwWNoIjON9"&gt; 	&lt;h1 epub:type="title" class="title" id="fri_9781319065669_Dxi5OQToLl"&gt;&lt;span epub:type="label" class="label" id="fri_9781319065669_6kr8vCzWUf"&gt;Chapter &lt;/span&gt;&lt;span epub:type="ordinal" class="ordinal" id="fri_9781319065669_rWNSvdovxL"&gt;1 &lt;/span&gt;The Battle&lt;/h1&gt; 	&lt;p epub:type="subtitle" class="subtitle" id="fri_9781319065669_LVU2ZxvHSQ" role="doc-subtitle"&gt;Once More Unto the Breach&lt;/p&gt; &lt;/header&gt; ... &lt;/section&gt;</code>
+        </pre>
+        <section class="sect3" data-cfititle="5.1.2.1. Hierarchy" id="ch05_02_02_01">
+          <header id="tceuec8ab63adffd2398a3853ab7e118">
+            <h4 class="c-head v3" id="ehas9718779478992994057d5c70ac20"><span class="ordinal" id="gdxb7cbc6c5039e4f679067e49273641">5.1.2.1. </span>Hierarchy</h4>
+          </header>
+          <p class="noindent" id="dcnn576b21beba4e584bf760a68e3011">
+            <strong class="important" id="cvac2a1d90051d98a4b05b74ce8f0bb2">For titles that have parts:</strong>
+          </p>
+          <ul class="ul-bullet-list" id="buhca55e11831ba7083c4781342c28a6">
+            <li id="ddzbed5c15d4e5f37fd40f4d20eb549f">Title = <code class="language-html" id="mlqh82b93cfb166ced0cdd9fb9540954">&lt;h1&gt;</code>  	<ul class="ul-bullet-list" id="fkem224ff5fda4d7389c995e2ac667d1"><li id="mkcwd512fd03b5114cd414fde34a762c">Part =  <code class="language-html" id="drye717627ba60bbad5718d391c38a64">&lt;h1&gt;</code>  		<ul class="ul-bullet-list" id="ljglf84c8795c5656323f96dc638f16d"><li id="orvee54b7edd7669a16025a62aa85066">Chapter =   <code class="language-html" id="atej22dfea54042bdffcead78c188311">&lt;h2&gt;</code>  			<ul class="ul-bullet-list" id="ohdn01d2a932ebe2ab9c13dd77239f4c"><li id="ltiw6e9b9790bb5afe64850cee044d92">A-head =   <code class="language-html" id="nyquf5e56ef595c89a52c7f6d134e711">&lt;h3&gt;</code>  				<ul class="ul-bullet-list" id="gjoi3e0acf5c4163e7f0ad482618c74e"><li id="euvp1c2dcabd5ca2eb2458cf82de9874">B-head =   <code class="language-html" id="fwsc0afcb3cc24e02e8cf16b162fe6df">&lt;h4&gt;</code></li></ul></li></ul></li></ul></li></ul></li>
+          </ul>
+          <p class="noindent" id="hqog3303d4f79518909920437991a693">
+            <strong class="important" id="lpan18d622bab8f52ce9f9afff457c6c">For titles that do not have parts:</strong>
+          </p>
+          <ul class="ul-bullet-list" id="iect07e8979c7361e26b7b63eaa87471">
+            <li id="oeqo34351b5e772eb8a5f434d848e86b">Title = <code class="language-html" id="zmrld1ab6c2964e369fb804732420983">&lt;h1&gt;</code>  	<ul class="ul-bullet-list" id="xatl1aa7ee210da5b5947fb72dfbf928"><li id="ptiv7315e56d70cd878f74e1f946840d">Chapter =   <code class="language-html" id="jdxqa47d2bac6e49c81239e29ed007e8">&lt;h1&gt;</code>  		<ul class="ul-bullet-list" id="ljga15f669424458d3093f4335447ab4"><li id="fblz2e4cf9e2688ddca8edfa19b76fe4">A-head =   <code class="language-html" id="oayab4a8190fc2f2017b45cf5a7e847b">&lt;h2&gt;</code>  			<ul class="ul-bullet-list" id="ydbq084f6adf7aa6cee92c7781c160b5"><li id="ulpf2e04b0c0c3d635f7a298628ca783">B-head =   <code class="language-html" id="ejaf5150c67f526255f753840d731a67">&lt;h3&gt;</code></li></ul></li></ul></li></ul></li>
+          </ul>
+          <p class="noindent" id="hgha51f06b992931ce63413be32105a6">For the title of a book, use <code class="language-html" id="ifva85c301646a0ba49f133279abf017">&lt;h1&gt;</code> as long as the page has an <code class="language-html" id="vznq7470ced26b364ca25ca0d5a2961d">epub:type</code> attribute with value " <code class="language-html" id="iypa73024af296b8a0f3c6296660ef93">titlepage</code>". The title defined in the OPF is considered by reading systems as the title of the book.</p>
+          <p class="noindent" id="kpenaa0af837b028014abbd03c76130a">When aside elements with headings are included in a section, the heading rank MUST start one level lower than the containing section (e.g., if a section has an <code class="language-html" id="qlavf73f7bba92e6bd577b158ba3bd90">h2</code> heading, an aside within it will start with an <code class="language-html" id="bymb7b3887706aea22615f7fe8317c17">h3</code> heading)</p>
+          <ul class="ul-bullet-list" id="vheze894d7e277deede51f19cab1cd47">
+            <li id="canjbaae6857cbaf76df18bea9ca48d6">Title = <code class="language-html" id="uvgff5d494c5fdc88691251579afe6e3">&lt;h1&gt;</code>  	<ul class="ul-bullet-list" id="vmlcacf1cf0e1db70d608d55acd06e21"><li id="jubrde85e077b40f61ca2fbf110055d3">Chapter =  <code class="language-html" id="eblnb07f858b6bbf48b8212503216c94">&lt;h1&gt;</code>  		<ul class="ul-bullet-list" id="ynce1fedc98080ebef870ff957b84afb"><li id="hqjd7ebf7d6ba3ccd4cb404d6fdaf24a">A-head = <code class="language-html" id="gaqm4a3b040d15789ea779f96d420592">&lt;h2&gt;</code>  			<ul class="ul-bullet-list" id="eotk1a463b701cb0e941ac3b0da9aaf3"><li id="trgp194113e2ca8918a9a8022fc1eb1f">Aside = <code class="language-html" id="pzaw8902d91b41def9f78af42ca92ffd">&lt;h3&gt;</code></li></ul></li></ul></li></ul></li>
+          </ul>
+          <p class="noindent" id="rwai46f4c00f9ed676478832b4911a76">Subheadings should be marked up using a <code class="language-html" id="lmtraa1607034858755c9de54728f1d4">&lt;p&gt;</code> with an <code class="language-html" id="mpdnb5d24829ec95074ea49f1a87cb83">epub:type</code> attribute having the value " <code class="language-html" id="ywlu468b74a9fcb1a51b4b109f44bd85">subtitle</code>"  and an ARIA role attribute "doc-subtitle" and the heading and subheading should be wrapped inside a <code class="language-html" id="vzyoc4cf68e96605b02b05fe7a1dd23a">&lt;header&gt;</code>.</p>
+          <pre tabindex="0" id="zldaa3ff587c05e654479b509163a7dc">
+            <code class="language-html" id="ntpo9178b05b6b3e8cb9d955d594b112">&lt;header id="fri_9781319065669_RdYzoOntv7"&gt; 	&lt;h1 epub:type="title" class="title" id="fri_9781319065669_Usk7yvTIms"&gt;&lt;span epub:type="label" class="label" id="fri_9781319065669_7GspN1dTcr"&gt;Section &lt;/span&gt;&lt;span epub:type="ordinal" class="ordinal" id="fri_9781319065669_fjfyKXeLY1"&gt;1.1 &lt;/span&gt;... &lt;/h1&gt; 	&lt;p epub:type="subtitle" class="subtitle" id="fri_9781319065669_uMjaRwBD0x" role="doc-subtitle"&gt;...&lt;/p&gt; &lt;/header&gt;</code>
+          </pre>
+          <p class="noindent" id="pgixd900dfc83960b3f975ae75f1cda4">
+            <strong class="important" id="oqzmfaef9f68066ccfb1ab061fc22df0">NOTE</strong>
+          </p>
+          <p class="noindent" id="kiaya06b964d538ef6846503f5fb5cf9">See <a class="external" href="https://www.w3.org/TR/2016/REC-html51-20161101/common-idioms-without-dedicated-elements.html#subheadings-subtitles-alternative-titles-and-taglines" id="haer87a6c7a078972b385f75be5a482c">4.12.1 Subheadings, subtitles, alternative titles and taglines [HTML5]</a> for additional markup patterns for subtitles.</p>
+          <p class="noindent" id="tnbg5d27acb0191a9dc20cac58818a3c">The application of headings must reflect the hierarchy regardless of how the content has been chunked for distribution (i.e., it is not necessary that the first section in each file begin with an <code class="language-html" id="ebxhc2de6107e57a0147f44fd7cc1fd6">h1</code>).</p>
+          <p class="noindent" id="dgkzaed5d79dfb83869c7eb42ce9fc97">The <a class="external" href="http://www.idpf.org/epub/profiles/edu/spec/#id.5tpdu658uluu" id="xnfr4f3e08811fc65a48e1df2f8bfbdb">[ARIA] </a><code class="language-html" id="zvxs654918416481d08ebcc49a4c9c40">aria-label</code>  attribute MUST NOT be included on a <code class="language-html" id="xedg0d385be8f587e18441a8f1ce8ad7">section</code> if it provides the same text already available in a ranked heading, as it can lead to duplicate announcement of the heading to users of assistive technologies.</p>
+        </section>
+        <section class="sect3" data-cfititle="Examples in EPUB (sect1 to sect5, a-head to e-head)" id="lcdc8948c6568f7a4599088464708666">
+          <header id="vmrs68dfaedc90a4643bc0ee75ad2b98">
+            <h4 class="c-head v3" id="zysi29032b3cf369f1075009f09fec0e">Examples in EPUB (sect1 to sect5, a-head to e-head)</h4>
+          </header>
+          <p class="noindent" id="pgixd900dfc83960b3f975ae75f8cda4">5.1.2. Titled Sections at the top of this page represents the styling for an a-head. The section above represents a b-head style.</p>
+          <p class="noindent" id="ppkrd41ff7561b25585f8c1add234d85">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450000">Print Sample</strong>
+          </p>
+          <figure class="figure lm_img_lightbox unnum c3 center" id="unfig03x_6">
+            <img alt="image to come" class="figure" id="kgfx66bc3dedc48ca007e84968a54364" src="../images/oudq7a602ae4e6aee3ea0b410a8b5fd5_Image2020-09-28_16-59_section-aheads-print.png"></img>
+          </figure>
+          <p class="noindent" id="eknf37c547d50189b9e1e200ecd667ba">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450001">HTML Coding Sample</strong>
+          </p>
+          <ul class="ul-no-mark" id="wftga13c5128f94594e524d15b68743a">
+            <li id="ibft8a4f9e09504cd21b5dcf24b585ad">
+              <pre tabindex="0" id="tmle9014ebbd686fddfbc474ecb4a5b0">
+                <code class="language-html" id="asyr868073aa3dc60deb9445b8843b17">&lt;section class="sect1" id="dav_9781319347970_p2usYcZDuy"&gt; &lt;header id="dav_9781319347970_sBhuI0gJsy"&gt; 	&lt;h2 class="a-head v1" id="dav_9781319347970_TnaQGEqW8t"&gt;Research Strategies: How Psychologists Ask and Answer Questions&lt;/h2&gt; &lt;/header&gt; &lt;p class="noindent" id="duhkea3fe6075b4deb93fccc3c9f8b5f"&gt;...&lt;/p&gt; &lt;section class="sect2" id="dav_9781319347970_Bj1kg8Ktrj"&gt; 	&lt;header id="dav_9781319347970_PytofIj2CO"&gt; 		&lt;h3 class="b-head v3" id="dav_9781319347970_zemlx2Fov0"&gt;The Scientific Method&lt;/h3&gt; 	&lt;/header&gt; 	&lt;p class="noindent" id="vnnlb26d93800a220047a65fc507805e"&gt;...&lt;/p&gt; 	&lt;section class="sect3" id="dav_9781319347970_RBmWXH40ep"&gt; 		&lt;header id="dav_9781319347970_SQvfBG6Ti1"&gt; 			&lt;h4 class="c-head v2" id="dav_9781319347970_j8OpZXvzo4"&gt;Description&lt;/h4&gt; 		&lt;/header&gt; 		&lt;p class="noindent" id="gjmf762c114ed9bc8bc5a414e31a89d1"&gt;...&lt;/p&gt; 		&lt;section class="sect4" id="dav_9781319347970_79iiH5yvCh"&gt; 			&lt;header id="dav_9781319347970_lBzmfACJuv"&gt; 				&lt;h5 class="d-head cap v1" id="dav_9781319347970_r32OzoOw0A"&gt;The Survey&lt;/h5&gt; 			&lt;/header&gt; 			&lt;p class="noindent" id="ckid93229a4e53a27d5132c25d9175f3"&gt;...&lt;/p&gt; 			&lt;section class="sect5" id="dav_9781319347970_ZhACCInumg"&gt; 				&lt;header id="dav_9781319347970_XOEgkqi21Y"&gt; 					&lt;h6 class="e-head v1" id="dav_9781319347970_AtHZ3LOCrE"&gt;Wording Effects&lt;/h6&gt; 				&lt;/header&gt; 			&lt;/section&gt; 		&lt;/section&gt; 	&lt;/section&gt; &lt;/section&gt; &lt;/section&gt;</code>
+              </pre>
+            </li>
+          </ul>
+        </section>
+      </section>
+      <section class="sect2" data-cfititle="5.1.3. Untitled Sections" id="ch05_02_03">
+        <header id="auelf79396de85c7d00c711b9702a52d">
+          <h3 class="b-head v2" id="lzuqa8ef86897d570eb280f099de9a54"><span class="ordinal" id="ivxzf6fda8048f492b08db911586b939">5.1.3. </span>Untitled Sections</h3>
+        </header>
+        <p class="noindent" id="quizb771a601fc0b7b04dff700bb0eed">If a section of content in the document hierarchy does not have an explicit heading (e.g., an untitled introduction) ‒ or sectioning is used to group significant content, such as learning objectives, that a user using an assistive technology would need access to ‒ the <a class="external" href="http://www.idpf.org/epub/profiles/edu/spec/#id.5tpdu658uluu" id="psbme2770e26422ea538290b367051f0">[ARIA] </a><code class="language-html" id="mcyc1674083bee279d332a3669f51e03">aria-label</code> attribute MUST be used to provide an accessible name.</p>
+        <p class="noindent" id="lgzm4fdd2bdc8831b8973fa1dc849bde">That name must be descriptive and intelligible to a reader. Adding this attribute allows users of assistive technologies to navigate to the section despite the lack of a heading, in addition to giving meaningful context.</p>
+        <p class="noindent" id="elfi04f54a4e04dcb5c0d7fd21b86e8f">The <code class="language-html" id="mylv64e0915c24b74418f5f386af2306">aria-label</code> attribute must contain a value unique to the XHTML page it appears on. Otherwise it risks confusing a user of assistive technology if there are two or more sections with the same title.</p>
+        <p class="noindent" id="opop05d57df8362d8b9d1d46ea7fe584">Please note that even if there is an untitled section, the heading ranks must be sequential. Skipping heading rankings makes subsequent headings unreachable by assistive technology.</p>
+        <ul class="ul-bullet-list" id="fgxx4b455cf4feb86e76801a916bb137">
+          <li id="fgxx4b455cf4feb86e76802a916bb137">section <ul class="ul-bullet-list" id="fgxx4b455cf4feb86e76803a916bb137"><li id="fgxx4b455cf4feb86e76804a916bb137">header <ul class="ul-bullet-list" id="fgxx4b455cf4feb86e76805a916bb137"><li id="fgxx4b455cf4feb86e76806a916bb137">h1</li></ul></li></ul><ul class="ul-bullet-list" id="fgxx4b455cf4feb86e76807a916bb137"><li id="fgxx4b455cf4feb86e76808a916bb137">section <ul class="ul-bullet-list" id="fgxx4b455cf4feb86e76809a916bb137"><li id="fgxx4b455cf4feb86e76810a916bb137">header <ul class="ul-bullet-list" id="fgxx4b455cf4feb86e76811a916bb137"><li id="fgxx4b455cf4feb86e76812a916bb137">h2</li></ul></li><li id="fgxx4b455cf4feb86e76813a916bb137">section (aria-label) <ul class="ul-bullet-list" id="fgxx4b455cf4feb86e76814a916bb137"><li id="fgxx4b455cf4feb86e76815a916bb137">section <ul class="ul-bullet-list" id="fgxx4b455cf4feb86e76816a916bb137"><li id="fgxx4b455cf4feb86e76817a916bb137">header <ul class="ul-bullet-list" id="fgxx4b455cf4feb86e76818a916bb137"><li id="fgxx4b455cf4feb86e76819a916bb137">h3</li></ul></li></ul></li></ul></li></ul></li></ul></li>
+        </ul>
+      </section>
+      <section class="sect2" data-cfititle="5.1.4. Heading Examples" id="ch05_02_04">
+        <header id="apld41fae668838079208840ecaf2f03">
+          <h3 class="b-head v2" id="tkbg61556d95385449a3903c30fb4552"><span class="ordinal" id="gdxb7cbc6c5039e4f679067e49273642">5.1.4. </span>Heading Examples</h3>
+        </header>
+        <section class="sect3" data-cfititle="5.1.4.1. End of Section" id="ch05_02_04_01">
+          <header id="wtgv26595b52d4624055510a4e8e0449">
+            <h4 class="c-head v3" id="krov879bf6be9d6e83b742c911f617b3"><span class="ordinal" id="gdxb7cbc6c5139e4f679067e49273642">5.1.4.1. </span>End of Section</h4>
+          </header>
+          <p class="noindent" id="zede564ccea64b3fc5ce2f0ce7715da8">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450002">Print Sample</strong>
+          </p>
+          <figure class="figure lm_img_lightbox unnum c3 center" id="unfig03_6a">
+            <img alt="image to come" class="figure" id="odjfe4cd2ff6baed5e37b4e0218f0530" src="../images/cmuia785bb9200efbf30fb8295fca939_Image2020-09-28_16-59_section-eos-print.png"></img>
+          </figure>
+          <p class="noindent" id="cilx397a76155470e34067fc138d104d">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450003">HTML Coding Sample</strong>
+          </p>
+          <ul class="ul-no-mark" id="ztsh599597d7eacd0a8bd00d484416a8">
+            <li id="rvqka812d289eb547b3add8830756813">
+              <pre tabindex="0" id="utyi0a6e4bbf6718f7b2d573f352d6ba">
+                <code class="language-html" id="fjeubbc227c6cca968676a0a9a18dda9"><strong class="important" id="qkns0e8f04f711e6a9e8c1290bb9457c">&lt;section class</strong> &lt;header id="dav_9781319347970_tSdiCBAEgv"&gt; 	&lt;h5 class="title v1" epub:type="title" id="dav_9781319347970_7afUGwdHll"&gt;&lt;span class="label" epub:type="label" id="dav_9781319347970_SNMVewr2Ra"&gt;REVIEW &lt;/span&gt;Research Strategies: How Psychologists Ask and Answer Questions&lt;/h5&gt; &lt;/header&gt; &lt;section class="learning-objectives v1" data-cfititle="Learning objectives" epub:type="learning-objectives" id="dav_9781319347970_0tsM77ZvCj"&gt; 	&lt;header id="dav_9781319347970_eOkJ1JVvcK"&gt; 		&lt;h6 class="title cap v1" epub:type="title" id="dav_9781319347970_Z0QkYgFREF"&gt;Learning objectives&lt;/h6&gt; 	&lt;/header&gt; 	&lt;p class="noindent" epub:type="learning-objective" id="dav_9781319347970_K7nG5di3m8"&gt;&lt;strong class="important" id="dav_9781319347970_6iFCHD2Dt5"&gt;Test Yourself&lt;/strong&gt; Answer these repeated Learning Objective Questions on your own (before checking the answers in Appendix D) to improve your retention of the concepts (McDaniel et al., 2009, 2015).&lt;/p&gt; 	&lt;p class="noindent" id="ccun73c95015fa27e8cf13d853dd77be"&gt;...&lt;/p&gt; &lt;/section&gt; &lt;section class="learning-outcomes v1" data-cfititle="Terms and Concepts to Remember" epub:type="learning-outcomes" id="dav_9781319347970_fKy46Ww2nC"&gt; 	&lt;header id="dav_9781319347970_3geHpxJDVP"&gt; 		&lt;h6 class="title v1 cap" epub:type="title" id="dav_9781319347970_NkVq0KAlxQ"&gt;Terms and Concepts to Remember&lt;/h6&gt; 	&lt;/header&gt; 	&lt;p class="noindent" epub:type="learning-outcome" id="dav_9781319347970_dS0sIOM8Dt"&gt;&lt;strong class="important" id="dav_9781319347970_7dvZO2xALj"&gt;Test Yourself&lt;/strong&gt; Write down the definition in your own words, then check your answer.&lt;/p&gt; 	&lt;p class="noindent" id="uhwg5ca960502b1e191b81ead4e4feda"&gt;...&lt;/p&gt; &lt;/section&gt; &lt;/section&gt;</code>
+              </pre>
+            </li>
+          </ul>
+          <p class="noindent" id="oyse46c7af2f3ed0cee5784b67675126">
+            <strong class="important" id="xeyi5ec24f020fa325e0fb395f450004">HTML Coding Result</strong>
+          </p>
+          <section class="end-of-section" data-cfititle="REVIEW Research Strategies: How Psychologists Ask and Answer Questions" id="dav_9781319347970_jBPiGD8C5h">
+            <header id="dav_9781319347970_tSdiCBAEgv">
+              <h5 class="title v1" epub:type="title" id="dav_9781319347970_7afUGwdHll"><span class="label" epub:type="label" id="dav_9781319347970_SNMVewr2Ra">REVIEW </span>Research Strategies: How Psychologists Ask and Answer Questions</h5>
+            </header>
+            <section class="learning-objectives v1" data-cfititle="Learning objectives" epub:type="learning-objectives" id="dav_9781319347970_0tsM77ZvCj">
+              <header id="dav_9781319347970_eOkJ1JVvcK">
+                <h6 class="title v1" epub:type="title" id="dav_9781319347970_Z0QkYgFREF">Learning objectives</h6>
+              </header>
+              <p class="noindent" epub:type="learning-objective" id="dav_9781319347970_K7nG5di3m8"><strong class="important" id="dav_9781319347970_6iFCHD2Dt5">Test Yourself</strong> Answer these repeated Learning Objective Questions on your own (before checking the answers in Appendix D) to improve your retention of the concepts (McDaniel et al., 2009, 2015).</p>
+              <p class="noindent" id="ccun73c95015fa27e8cf13d853dd77be">...</p>
+            </section>
+            <section class="learning-outcomes v1" data-cfititle="Terms and Concepts to Remember" epub:type="learning-outcomes" id="dav_9781319347970_fKy46Ww2nC">
+              <header id="dav_9781319347970_3geHpxJDVP">
+                <h6 class="title v1" epub:type="title" id="dav_9781319347970_NkVq0KAlxQ">Terms and Concepts to Remember</h6>
+              </header>
+              <p class="noindent" epub:type="learning-outcome" id="dav_9781319347970_dS0sIOM8Dt"><strong class="important" id="dav_9781319347970_7dvZO2xALj">Test Yourself</strong> Write down the definition in your own words, then check your answer.</p>
+              <p class="noindent" id="uhwg5ca960502b1e191b81ead4e4feda">...</p>
+            </section>
+          </section>
+        </section>
+      </section>
+      <section id="pseo6545e691901de45ab443b20474a8" class="sect2" data-cfititle="5.1.5. CFI and Navigation Titling">
+        <header id="pseo6545e691911de45ab443b20474a8">
+          <h3 id="pseo6545e691921de45ab443b20474a8" class="b-head v2"><span id="pseo6545e691931de45ab443b20474a8" class="ordinal">5.1.5. </span>CFI and Navigation Titling</h3>
+        </header>
+        <p id="pseo6545e691941de45ab443b20474a8" class="noindent">Macmillan Learning uses <strong id="pseo6545e691951de45ab443b20474a8" class="important">Canonical Fragment Identifiers </strong>or <strong id="pseo6545e691961de45ab443b20474a8" class="important">CFIs</strong> to integrate readings from EPUBs into courses. The CFI identifier marks a specific point in an EPUB and allows us to create links (sometimes called locators) that go to that point or that open a snippet (a small portion of) the EPUB. CFIs are created based on logic of nesting and schema naming of <code id="pseo6545e691971de45ab443b20474a8" class="language-html">&lt;section&gt;</code> and <code id="pseo6545e691981de45ab443b20474a8" class="language-html">&lt;aside&gt;</code> elements. </p>
+        <p id="pseo6545e691991de45ab443b20474a8" class="noindent">The name for the CFI is generated on ingest to Frost and a new attribute is added to <code id="pseo6545e692001de45ab443b20474a8" class="language-html">&lt;section&gt;</code> elements and <code id="pseo6545e692011de45ab443b20474a8" class="language-html">&lt;asides&gt;</code>, <code id="pseo6545e692021de45ab443b20474a8" class="language-html">data-cfititle</code>. This is generated based on the value in <code id="pseo6545e692031de45ab443b20474a8" class="language-html">&lt;header&gt;</code> element and will pick up the value, casing and all.</p>
+        <p id="pseo6545e692041de45ab443b20474a8" class="noindent">In some cases, MPMs and Editors will request that this CFI be different from this logic in Casing or in Value. For example, an A-head does not include an ordinal, but it is required to in the navigation and CFI title, so the A-head name is "Drafting a Paper" but in the navigation and/or attribute data-cfititle, it is "1.1 Drafting a Paper". Therefore the <code id="pseo6545e692051de45ab443b20474a8" class="language-html">h2.a-head</code> or <code id="pseo6545e692061de45ab443b20474a8" class="language-html">h3.a-head</code> element is the "Drafting a Paper" and the parent <code id="pseo6545e692071de45ab443b20474a8" class="language-html">&lt;section&gt;</code> has an attribute <code id="pseo6545e692081de45ab443b20474a8" class="language-html">data-cfititle="1.1 Drafting a Paper"</code> </p>
+        <section id="pseo6545e692091de45ab443b20474a8" class="sect3" data-cfititle="5.1.5.1. Adding data-cfititle attribute">
+          <header id="pseo6545e692101de45ab443b20474a8">
+            <h4 id="pseo6545e692111de45ab443b20474a8" class="c-head v3"><span id="pseo6545e692121de45ab443b20474a8" class="ordinal">5.1.5.1. </span>Adding data-cfititle attribute</h4>
+          </header>
+          <ul id="pseo6545e692131de45ab443b20474a8" class="ul-bullet-list">
+            <li id="pseo6545e692141de45ab443b20474a8">data-cfititle attributes should be added only to <code id="pseo6545e692151de45ab443b20474a8" class="language-html">&lt;section&gt;</code> or <code id="pseo6545e692161de45ab443b20474a8" class="language-html">&lt;aside&gt;</code> elements.</li>
+            <li id="pseo6545e692171de45ab443b20474a8">If the content is already in Frost, the attribute will already be included, so the value can be updated directly in the code. If this request is done ahead of Frost ingestion then an attribute will need to be added</li>
+          </ul>
+        </section>
+        <section id="pseo6545e692181de45ab443b20474a8" class="sect3" data-cfititle="5.1.5.2. Conventions">
+          <header id="pseo6545e692191de45ab443b20474a8">
+            <h4 id="pseo6545e692201de45ab443b20474a8" class="c-head v3"><span id="pseo6545e692211de45ab443b20474a8" class="ordinal">5.1.5.2. </span>Conventions</h4>
+          </header>
+          <ul id="pseo6545e692221de45ab443b20474a8" class="ul-bullet-list">
+            <li id="pseo6545e692231de45ab443b20474a8">Follow rules on casing. If content is in all capitals, use appropriate styling to obtain the all-caps or small-caps style and render the data-cfititle attribute value in title case. </li>
+            <li id="pseo6545e692241de45ab443b20474a8">Subtitles should be divided by a ":" (colon) between the main heading and subtitle</li>
+            <li id="pseo6545e692251de45ab443b20474a8">Special characters in attribute should be written as entities: <ol id="pseo6545e692261de45ab443b20474a8" class="ol-alpha-lc"><li id="pseo6545e692271de45ab443b20474a8">double quotes (<code id="pseo6545e692281de45ab443b20474a8" class="language-html">"</code>) should be <code id="pseo6545e692291de45ab443b20474a8" class="language-html">&amp;quot;</code></li><li id="pseo6545e692301de45ab443b20474a8">ampersand (<code id="pseo6545e692311de45ab443b20474a8" class="language-html">&amp;</code>) should be <code id="pseo6545e692321de45ab443b20474a8" class="language-html">&amp;amp;</code></li><li id="pseo6545e692331de45ab443b20474a8">single quotes (<code id="pseo6545e692341de45ab443b20474a8" class="language-html">'</code>) should be <code id="pseo6545e692351de45ab443b20474a8" class="language-html">&amp;apos;</code></li><li id="pseo6545e692361de45ab443b20474a8">less than (<code id="pseo6545e692371de45ab443b20474a8" class="language-html">&lt;</code>) should be <code id="pseo6545e692381de45ab443b20474a8" class="language-html">&amp;lt;</code></li><li id="pseo6545e692391de45ab443b20474a8">greater than (<code id="pseo6545e692401de45ab443b20474a8" class="language-html">&gt;</code>) should be <code id="pseo6545e692411de45ab443b20474a8" class="language-html">&amp;gt;</code></li><li id="pseo6545e692421de45ab443b20474a8">Left single quotation mark (<code id="pseo6545e692431de45ab443b20474a8" class="language-html">‘</code>) should be <code id="pseo6545e692451de45ab443b20474a81" class="language-html">&amp;lsquo;</code></li><li id="pseo6545e692441de45ab443b20474a8">Right single quotation mark (<code id="pseo6545e692451de45ab443b20474a8" class="language-html">’</code>) should be <code id="pseo6545e692451de45ab443b20474a82" class="language-html">&amp;rsquo;</code></li><li id="pseo6545e692461de45ab443b20474a8">Left double quotation mark (<code id="pseo6545e692471de45ab443b20474a8" class="language-html">“</code>) should be <code id="pseo6545e692451de45ab443b20474a813" class="language-html">&amp;ldquo;</code></li><li id="pseo6545e692481de45ab443b20474a8">Right double quotation mark (<code id="pseo6545e692491de45ab443b20474a8" class="language-html">“</code>) should be <code id="pseo6545e692451de45ab443b20474a814" class="language-html">&amp;rdquo;</code></li></ol></li>
+            <li id="pseo6545e692501de45ab443b20474a8">If a heading contains MathML, follow the conventions for converting titles in navigation. Markup must not be included in the data-cfititle attribute value. Math must either be spelled out according to alt text or rendered as HTML entities, following the rules against using specific entities (for instance, vulgar fractions) which are enforced by Schematron.</li>
+          </ul>
+        </section>
+      </section>
+    </section>
+  </body>
+</html>

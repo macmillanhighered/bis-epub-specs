@@ -1,0 +1,1888 @@
+@charset "UTF-8";
+/* 
+Macmillan Learning EPUB CSS 3.0
+This was created using Macmillan Accessible EPUB Specification 5.1
+*/
+/* CSS Theme 4 */
+/* for Schema 3.3 */
+/* Optimized for EPUB3 Profiles */
+/* Audience: Higher Education */
+/* Standard fonts.
+========================================================================== */
+/* SERIF
+========================================================================== */
+@font-face {
+  font-family: SourceSerifPro;
+  src: url("fonts/SourceSerifPro-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: SourceSerifPro;
+  src: url("fonts/SourceSerifPro-Semibold.ttf");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: SourceSerifPro;
+  src: url("fonts/SourceSerifPro-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: SourceSerifPro;
+  src: url("fonts/SourceSerifPro-It.ttf");
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-family: SourceSerifPro;
+  src: url("fonts/SourceSerifPro-SemiboldIt.ttf");
+  font-style: italic;
+  font-weight: 600;
+}
+@font-face {
+  font-family: SourceSerifPro;
+  src: url("fonts/SourceSerifPro-BoldIt.ttf");
+  font-style: italic;
+  font-weight: 700;
+}
+/* SANS-SERIF
+========================================================================== */
+@font-face {
+  font-family: SourceSansPro;
+  src: url("fonts/SourceSansPro-ExtraLight.ttf");
+  font-style: normal;
+  font-weight: 200;
+}
+@font-face {
+  font-family: SourceSansPro;
+  src: url("fonts/SourceSansPro-ExtraLightItalic.ttf");
+  font-style: italic;
+  font-weight: 200;
+}
+@font-face {
+  font-family: SourceSansPro;
+  src: url("fonts/SourceSansPro-Light.ttf");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: SourceSansPro;
+  src: url("fonts/SourceSansPro-LightItalic.ttf");
+  font-style: italic;
+  font-weight: 300;
+}
+@font-face {
+  font-family: SourceSansPro;
+  src: url("fonts/SourceSansPro-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: SourceSansPro;
+  src: url("fonts/SourceSansPro-Italic.ttf");
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-family: SourceSansPro;
+  src: url("fonts/SourceSansPro-Semibold.ttf");
+  font-style: normal;
+  font-weight: 600;
+}
+@font-face {
+  font-family: SourceSansPro;
+  src: url("fonts/SourceSansPro-SemiboldItalic.ttf");
+  font-style: italic;
+  font-weight: 600;
+}
+@font-face {
+  font-family: SourceSansPro;
+  src: url("fonts/SourceSansPro-Bold.ttf");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: SourceSansPro;
+  src: url("fonts/SourceSansPro-BoldItalic.ttf");
+  font-style: italic;
+  font-weight: 700;
+}
+@font-face {
+  font-family: SourceSansPro;
+  src: url("fonts/SourceSansPro-Black.ttf");
+  font-style: normal;
+  font-weight: 900;
+}
+@font-face {
+  font-family: SourceSansPro;
+  src: url("fonts/SourceSansPro-BlackItalic.ttf");
+  font-style: italic;
+  font-weight: 900;
+}
+/* MONOSPACE
+========================================================================== */
+@font-face {
+  font-family: CourierNew;
+  src: url("fonts/CourierNew.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: Courier;
+  src: url("fonts/Courier.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+/* HANDWRITING
+========================================================================== */
+@font-face {
+  font-family: Kalam;
+  src: url("fonts/Kalam-Regular.ttf");
+  font-style: normal;
+  font-weight: 400;
+}
+/* Global styles ======== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: SourceSerifPro, serif;
+  font-size: 1.06rem;
+  line-height: 1.6;
+  padding: 2em;
+  -webkit-hyphenate-limit-before: 3;
+  -webkit-hyphenate-limit-after: 2;
+  -webkit-hyphenate-limit-lines: 2;
+  /* epub3 only */
+  max-width: 1124px;
+  margin: auto;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+p.extdesc-icon {
+  text-align: right;
+}
+
+/* Spacing around elements ===== */
+/* add spacing above these elements */
+section.assessments + p, section.reading + p, button + p, section.scene + p, p + p, section.practice + p, aside + p, div + p, aside.bibliography * + ul, figure + p, table + ol, table + ul, aside, h1, section h2, section h3, section h4, section h5, section h6, figure, img.main-flow, img.center, div.copyright, div.productnumber, div.publisher, header + img.decorative, p + div.informalequation, section, table, .attribution + div.poem, header + div.poem, table + p, div + div.poem > p.stanza-start, header + div.notes, p.attribution + div, div.page figure + p.indent {
+  margin-top: 1.5rem;
+  margin-bottom: 0;
+}
+
+/* minimize spacing above these elements */
+ul + p, ol + p, aside p, li.question, header + p, li > p, aside p + div.informalequation, header + img.decorative, section.glossary dt, dt.hidden + dd, li.li-complex, ul li.biblioentry, p.eq-number + figure, div.page ol + p.indent, div.page ul + p.indent {
+  margin-top: 1rem;
+  margin-bottom: 0;
+}
+
+/* remove all spacing around these elements */
+li > div.informalequation + p, aside p.subtitle:first-child, aside.subdiv1:first-child, aside p:only-child, .subtitle, figure img, aside h1, aside h2, aside h3, aside h4, aside h5, aside h6, figure aside.ftnote, figure aside.footnotes, p.subtitle + .a-head, p.subtitle + .b-head, p.subtitle + .c-head, p.subtitle + .d-head, p.subtitle + .e-head, p.verse, section.copyright-page p, aside.bibliography ul, header, section.toc-brief ul, section.toc-brief ol, section.toc ul, section.toc ol, section.toc-brief ul li, section.toc-brief ol li, section.toc ul li, section.toc ol li, aside dl.glossary, nav li, p.eq-number, body h1:first-child, body h2:first-child, body h3:first-child, body section:first-child, aside.learning-objectives, .assessments .title, aside p.non-hierarchical-head:first-child, div.page p.indent, aside.learning-outcomes .title,
+aside.learning-resources .title,
+aside.learning-standards .title,
+aside.learning-objectives .title, section.learning-outcomes .title,
+section.learning-resources .title,
+section.learning-objectives .title,
+section.learning-standards .title {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
+
+/* borders ===== */
+/* remove the border on these elements */
+aside.glossary, aside.footnotes, aside.ftnote, aside.bibliography {
+  border-width: 0;
+}
+
+/* heading elements ===== */
+/* heading 1 elements */
+/* heading 2 elements */
+body.frontmatter > section body.backmatter > section section.end-of-section > header > .title, .a-head, body.backmatter > section:not(.extdesc-sect) > header > .title, body.frontmatter > section > header > .title, section.end-of-section > header > .title {
+  font-family: SourceSansPro, sans-serif;
+  font-size: 2.25rem;
+  font-weight: 600;
+  line-height: 1.1;
+}
+
+/* heading 3 elements */
+body.frontmatter section.subsect1 > header > .level1, body.backmatter section.subsect1 > header > .level1, section.landmarks > header > .title,
+section.introduction > header > .title,
+section.contributors > header > .title,
+section.afterword > header > .title,
+section.conclusion > header > .title,
+section.prologue > header > .title,
+section.epilogue > header > .title,
+section.learning-objective > header > .title,
+section.learning-objectives > header > .title,
+section.learning-outcomes > header > .title,
+section.learning-resources > header > .title,
+section.learning-standards > header > .title,
+section.practice > header > .title,
+section.assessments > header > .title,
+section.example > header > .title,
+section.summary > header > .title,
+section.reading > header > .title,
+section.student-writing > header > .title,
+section.section-appendix > header > .title,
+section.section-index > header > .title,
+section.section-bibliography > header > .title,
+section.section-glossary > header > .title,
+section.act > header > .title,
+aside.case-study > header > .title, .b-head,
+.a-head + p.subtitle,
+nav > .title {
+  font-family: SourceSansPro, sans-serif;
+  font-size: 1.85rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* heading 4 elements */
+section.appendix-group > .title,
+section.index-group > .title, body.bodymatter section.scene > header > .title,
+aside > header > .title, body.frontmatter section.subsect2 > header > .level2, body.backmatter section.subsect2 > header > .level2, body.bodymatter section.subsect1 > header > .level1,
+aside.case-study > header > .level1, section.practice section.subsect1 > header > .level1, section.example section.subsect1 > header > .level1, section.landmarks > header > .title + p.subtitle,
+section.introduction > header > .title + p.subtitle,
+section.contributors > header > .title + p.subtitle,
+section.afterword > header > .title + p.subtitle,
+section.conclusion > header > .title + p.subtitle,
+section.prologue > header > .title + p.subtitle,
+section.epilogue > header > .title + p.subtitle,
+section.learning-objective > header > .title + p.subtitle,
+section.learning-objectives > header > .title + p.subtitle,
+section.learning-outcomes > header > .title + p.subtitle,
+section.learning-resources > header > .title + p.subtitle,
+section.learning-standards > header > .title + p.subtitle,
+section.practice > header > .title + p.subtitle,
+section.assessments > header > .title + p.subtitle,
+section.example > header > .title + p.subtitle,
+section.summary > header > .title + p.subtitle,
+section.reading > header > .title + p.subtitle,
+section.student-writing > header > .title + p.subtitle,
+section.section-appendix > header > .title + p.subtitle,
+section.section-index > header > .title + p.subtitle,
+section.section-bibliography > header > .title + p.subtitle,
+section.section-glossary > header > .title + p.subtitle,
+section.act > header > .title + p.subtitle, .c-head,
+.b-head + p.subtitle, body.backmatter > section.extdesc-sect > header > .title, p.subtitle {
+  font-family: SourceSansPro, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+/* heading 5 elements */
+section.practice section.subsect2 > header > .level2, section.example section.subsect2 > header > .level2, body.bodymatter section.subsect1 > header > .level1 + p.subtitle,
+aside > header > .title + p.subtitle, body.bodymatter section.subsect2 > header > .level2,
+aside.case-study aside.subdiv2 > header > .level2, body.frontmatter section.subsect3 > header > .level3,
+body.frontmatter section.subsect2 > header > .level2 + p.subtitle,
+body.backmatter section.subsect3 > header > .level3,
+body.backmatter section.subsect2 > header > .level2 + p.subtitle, .d-head,
+.c-head + p.subtitle,
+aside.subdiv1 > header > .level1,
+div > header > .title, aside.learning-objectives > header > .title,
+aside.learning-outcomes > header > .title,
+aside.learning-resources > header > .title,
+aside.learning-standards > header > .title {
+  font-family: SourceSansPro, sans-serif;
+  font-size: 1.25rem;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+/* heading 6 elements */
+body.bodymatter section.subsect2 > header > .level2 + p.subtitle,
+aside.subdiv1 > header > .level1 + p.subtitle, body.bodymatter section.subsect3 > header > .level3,
+aside.case-study aside.subdiv3 > header > .level3, body.frontmatter section.subsect3 > header > .level3 + p.subtitle,
+body.frontmatter section.subsect4 > header > .level4,
+body.backmatter section.subsect3 > header > .level3 + p.subtitle,
+body.backmatter section.subsect4 > header > .level4, section.practice section.subsect3 > header > .level3, section.example section.subsect3 > header > .level3, .e-head,
+.d-head + p.subtitle,
+aside.subdiv2 > header > .level2,
+div > header > .level1, aside.learning-objectives > div > header > .level1,
+aside.learning-outcomes > div > header > .level1,
+aside.learning-resources > div > header > .level1 aside.learning-standards > div > header > .title {
+  font-family: SourceSansPro, sans-serif;
+  font-size: 1.06rem;
+  font-weight: 600;
+}
+
+/* assessment and learning-outcome styles shared btwn sections and asides ============ */
+aside.assessments,
+aside.practice, section.assessments,
+section.practice {
+  box-sizing: border-box;
+  padding: 1em 1em 1.3125em 1em;
+  border-color: #080808;
+  background-color: #f3f3f3;
+}
+
+/* dark background color */
+/* light text for dark background color */
+section.chapter > header a, section.chapter > header a:link, section.chapter > header a:active, section.chapter > header a:visited, section.chapter > header, aside.case-study > header a, aside.case-study > header a:link, aside.case-study > header a:active, aside.case-study > header a:visited, aside.case-study > header .title, aside.case-study > header .subtitle, aside.case-study > header {
+  color: #f3f3f3;
+}
+
+/* light background color */
+/* base colors (theme group, td, th, notice) */
+aside.v1.notice {
+  border-color: #45A5B5;
+}
+aside.v2.notice {
+  border-color: #B79E25;
+}
+aside.v3.notice {
+  border-color: #EF5656;
+}
+aside.v4.notice {
+  border-color: #68B75F;
+}
+
+aside.t1.notice {
+  border-color: #45A5B5;
+}
+aside.t2.notice {
+  border-color: #B79E25;
+}
+aside.t3.notice {
+  border-color: #EF5656;
+}
+aside.t4.notice {
+  border-color: #68B75F;
+}
+
+th.v1, td.v1, div.v1.group, aside.v1.notice {
+  background-color: #cff3f9;
+}
+th.v2, td.v2, div.v2.group, aside.v2.notice {
+  background-color: #fffbd7;
+}
+th.v3, td.v3, div.v3.group, aside.v3.notice {
+  background-color: #ffe7e5;
+}
+th.v4, td.v4, div.v4.group, aside.v4.notice {
+  background-color: #daf4d4;
+}
+
+th.t1, td.t1, aside.t1.notice {
+  background-color: #cff3f9;
+}
+th.t2, td.t2, aside.t2.notice {
+  background-color: #fffbd7;
+}
+th.t3, td.t3, aside.t3.notice {
+  background-color: #ffe7e5;
+}
+th.t4, td.t4, aside.t4.notice {
+  background-color: #daf4d4;
+}
+
+aside.learning-outcomes,
+aside.learning-resources,
+aside.learning-standards,
+aside.learning-objectives, section.learning-outcomes,
+section.learning-resources,
+section.learning-objectives,
+section.learning-standards {
+  border-left: 0;
+  border-right: 0;
+  box-sizing: border-box;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  margin-top: 1rem;
+  border-top: 0.125rem solid #dddddd;
+  border-bottom: 0.125rem solid #dddddd;
+}
+/* footnote-text elements ===== */
+aside.bibliography ul {
+  list-style: none;
+  font-size: 0.8rem;
+  color: #565656;
+  font-family: SourceSansPro, sans-serif;
+}
+
+/* underlined elements ===== */
+dfn.keytermglo {
+  text-decoration: underline;
+}
+
+/* clear ===== */
+header, .left + .left, .right + .right, div:after, aside:after, section:after, div, aside, section {
+  clear: both;
+}
+
+/* clearfix hack: prevents overflow of block elements within block elements ===== */
+div:after, aside:after, section:after {
+  content: "";
+  display: table;
+}
+
+/* hyphens ===== */
+h1, h2, h3, h4, h5, h6, p.non-hierarchical-head, section.titlepage, section.halftitlepage, p.center {
+  hyphens: none;
+  -webkit-hyphens: none;
+  -moz-hyphens: none;
+  -epub-hyphens: none;
+  -ms-hyphens: none;
+}
+
+/* column widths
+========================================================================== */
+.c1 {
+  max-width: 179.52px;
+}
+
+.c2 {
+  max-width: 316.8px;
+}
+
+.c3 {
+  max-width: 633.6px;
+}
+
+.c4 {
+  max-width: 813.12px;
+}
+
+.c5 {
+  width: 100%;
+  max-width: 100%;
+  clear: both;
+}
+
+/* alignments
+========================================================================== */
+p.left {
+  text-align: left;
+}
+
+p.right {
+  text-align: right;
+}
+
+p.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* center alignment ----------*/
+figure.center, table.center, div.center, aside.center {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* alignment and size on figure and img  elements
+========================================================================== */
+/* image sizes */
+figure.intro {
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+/* Styling for characters styles and other typography.
+========================================================================== */
+.hanging-indent, p.verse, p.stanza-start, .bibliography {
+  text-indent: -1.4em;
+  padding-left: 1.4em;
+}
+
+p.pre {
+  white-space: pre;
+}
+
+p.center {
+  text-align: center;
+}
+
+p.intro {
+  font-family: SourceSansPro, sans-serif;
+}
+
+div.page p.indent, dd > p:not(:first-child), dd > p.indent, div.example p.indent, div.poem p.indent {
+  text-indent: 1.5625em;
+}
+
+/* keep span (to be used under strict circumstances) ==================== */
+.keep {
+  white-space: nowrap;
+  word-break: keep-all;
+}
+
+/* Styling for frontmatter-specific typography.
+========================================================================== */
+/* frontmatter and backmatter main titles */
+body.backmatter > section:not(.extdesc-sect) > header, body.frontmatter > section > header, section.end-of-section > header {
+  width: 100%;
+}
+body.backmatter > section:not(.extdesc-sect) > header > .title, body.frontmatter > section > header > .title, section.end-of-section > header > .title {
+  padding: 0.625rem 0.9375rem;
+  width: 100%;
+}
+body.backmatter > section:not(.extdesc-sect) > header > .subtitle, body.frontmatter > section > header > .subtitle, section.end-of-section > header > .subtitle {
+  padding-left: 0.9375rem;
+  padding-bottom: 0.625rem;
+}
+
+body.backmatter > section:not(.extdesc-sect) > header, body.frontmatter > section:not(.extdesc-sect) > header {
+  background-color: #eeeeee;
+  /* theme only */
+}
+
+section.end-of-section > header {
+  background-color: #eeeeee;
+  /* theme only */
+}
+
+/* title and halftitle pages */
+section.titlepage, section.halftitlepage {
+  text-align: center;
+}
+section.titlepage div.group p > strong, section.halftitlepage div.group p > strong {
+  font-size: 1.25rem;
+}
+section.titlepage header > p, section.titlepage header div.group > p, section.halftitlepage header > p, section.halftitlepage header div.group > p {
+  margin: 0;
+  padding: 0;
+  font-size: 1.06rem;
+}
+section.titlepage header > .center, section.halftitlepage header > .center {
+  margin-left: auto;
+  margin-right: auto;
+}
+section.titlepage header > .title, section.halftitlepage header > .title {
+  margin-bottom: 0;
+}
+section.titlepage header > .title + .subtitle, section.halftitlepage header > .title + .subtitle {
+  font-size: 1.5rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Styling for subsections
+========================================================================== */
+section.bibliography, section.section-bibliography {
+  font-size: 0.9rem;
+  font-family: SourceSansPro, sans-serif;
+  line-height: 1.5;
+}
+
+/* examples */
+section.example {
+  font-family: SourceSerifPro, serif;
+}
+
+section.example {
+  border-bottom: 0.0625rem solid #080808;
+  margin-bottom: 1.5625em;
+  padding-bottom: 0.625em;
+}
+section.example > header {
+  border-bottom: 0.0625rem solid #080808;
+  padding-bottom: 0.625em;
+  margin-bottom: 1.5625em;
+  width: 100%;
+}
+
+/* General styling for nav elements.
+========================================================================== */
+* + nav {
+  margin-top: 1.5625em;
+}
+
+nav.toc-brief > header > .title,
+nav.toc > header > .title {
+  font-family: SourceSansPro, sans-serif;
+  font-size: 1.5rem;
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+nav.page-list ol {
+  list-style-type: none;
+}
+
+/* Styling for all variations of lists
+========================================================================== */
+ol, ul {
+  list-style-position: outside;
+  margin-bottom: 0;
+  text-indent: 0;
+}
+ol + header, ul + header {
+  margin-top: 1rem;
+}
+
+/* ordered lists */
+.ol-alpha-uc {
+  list-style-type: upper-alpha;
+}
+
+.ol-alpha-lc {
+  list-style-type: lower-alpha;
+}
+
+.ol-roman-lc {
+  list-style-type: lower-roman;
+}
+
+.ol-roman-uc {
+  list-style-type: upper-roman;
+}
+
+/* unordered lists */
+.ul-square {
+  list-style-type: square;
+}
+
+.ul-checklist {
+  list-style: none;
+}
+.ul-checklist > li {
+  text-indent: -0.9375em;
+  margin-left: 0.9375em;
+}
+.ul-checklist > li:before {
+  content: "✓";
+  margin: 0 0.3125em 0 0;
+}
+
+.ul-arrow {
+  list-style: none;
+}
+.ul-arrow > li {
+  text-indent: -1em;
+  margin-left: 1em;
+}
+.ul-arrow > li:before {
+  content: "►";
+  font-size: 0.75rem;
+  margin: 0 0.3125em 0 0;
+}
+
+/* unmarked lists */
+.ul-no-mark {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.ul-no-mark ul, .ul-no-mark ol {
+  margin-left: 1.875em;
+}
+
+/* TOC Lists */
+section.toc li, section.toc-brief li {
+  padding: 3px 0;
+}
+section.toc ul, section.toc ol, section.toc-brief ul, section.toc-brief ol {
+  list-style-type: none;
+  margin-left: 1.875em;
+  margin-bottom: 1.5625em;
+}
+section.toc ul ul, section.toc ul ol, section.toc ol ul, section.toc ol ol, section.toc-brief ul ul, section.toc-brief ul ol, section.toc-brief ol ul, section.toc-brief ol ol {
+  margin-top: 0.1875em;
+  margin-bottom: 0;
+}
+
+/* Definitions */
+dd {
+  -webkit-margin-start: 0;
+  margin-left: 0;
+}
+
+/* Glossary Lists */
+aside dl.glossary {
+  list-style: none;
+  color: #565656;
+  font-family: SourceSansPro, sans-serif;
+}
+
+section.glossary {
+  font-size: 0.9rem;
+}
+section.glossary dt {
+  font-family: SourceSerifPro, serif;
+}
+section.glossary dd {
+  font-family: SourceSerifPro, serif;
+}
+
+dt.hidden, dt.hidden > dfn, dfn.hidden {
+  display: none;
+}
+
+dfn, dt {
+  font-style: normal;
+  font-weight: bold;
+}
+
+/* Additional cases */
+li img {
+  vertical-align: text-top;
+}
+
+li aside {
+  margin-top: 1rem;
+}
+
+/* lists in tables */
+table ul, table ol, table ul li, table ol li, aside ul li, aside ol li {
+  margin-top: 0;
+}
+
+table ul, table ol {
+  padding-left: 1em;
+}
+
+/* nested list */
+li > ul, li > ol {
+  padding-left: 1.25em;
+}
+li > ul > li, li > ol > li {
+  margin-top: 0;
+}
+li > ul.ul-arrow, li > ul.ul-checklist {
+  padding-left: 0.25em;
+}
+
+/* Styling for blockquotes
+========================================================================== */
+blockquote {
+  font-family: inherit;
+  margin-left: 1.563em;
+  font-size: 90%;
+}
+blockquote blockquote {
+  font-size: 100%;
+}
+
+p.attribution {
+  margin-top: 0.625em;
+  font-size: 90%;
+}
+
+p.attribution + p.attribution {
+  margin-top: 0;
+}
+
+/* Styling for all variations of aside elements
+========================================================================== */
+aside {
+  border: 0.0625rem solid;
+  line-height: 1.5;
+  font-size: 0.9rem;
+  box-sizing: border-box;
+  padding: 16px;
+  font-family: SourceSansPro, sans-serif;
+}
+aside.c1, aside.c2, aside.c3, aside.c4, aside.c5 {
+  max-width: 633.6px;
+}
+aside p, aside li {
+  color: #565656;
+}
+
+aside.subdiv1,
+aside.subdiv2,
+aside.subdiv3,
+aside.subdiv4 {
+  padding: 0;
+  border-width: 0;
+  border-style: none;
+}
+
+/* assessments */
+/* bibliography */
+aside.bibliography {
+  background-color: transparent;
+}
+
+aside.case-study {
+  font-family: SourceSansPro, sans-serif;
+  padding: 1em;
+  background-color: transparent;
+  margin-bottom: 1.5625em;
+  border-width: 2px;
+  border-style: solid;
+  border-color: #080808;
+  /* theme only */
+}
+aside.case-study > header {
+  margin-left: -16px;
+  padding-left: 16px;
+  padding-right: 8px;
+  background-color: #080808;
+}
+/* footnotes */
+aside.footnotes, aside.ftnote {
+  color: #565656;
+  padding: 0;
+  font-family: SourceSansPro, sans-serif;
+  background-color: transparent;
+}
+
+/* glossary */
+aside.glossary {
+  padding: 0;
+  background-color: transparent;
+}
+
+aside > aside.glossary {
+  padding-left: 1rem;
+}
+
+/* help or tip */
+aside.tip {
+  font-family: SourceSansPro, sans-serif;
+  padding: 1em;
+  /* theme only */
+  background-color: #eeeeee;
+  border-color: #dddddd;
+}
+aside.tip.c1 {
+  width: 179.52px;
+}
+aside.tip.c2 {
+  width: 316.8px;
+}
+aside.tip.c3 {
+  width: 633.6px;
+}
+
+/* learning outcomes */
+/* notices */
+aside.notice {
+  font-family: SourceSansPro, sans-serif;
+  padding: 1em;
+}
+
+/* pullquotes */
+aside.pullquote {
+  background-color: transparent;
+  border-style: solid;
+  box-sizing: border-box;
+  font-size: 1.25rem;
+  padding: 1em;
+  padding-left: 1.5625em;
+  border-width: 0em 0em 0em 0.125em;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  border-left-color: #dddddd;
+}
+
+/* Frost iframes */
+iframe {
+  border: none !important;
+}
+iframe.savi_app, iframe.ext-gadget {
+  min-width: 100%;
+  max-width: 100%;
+  min-height: 350px;
+}
+iframe.ext-gadget {
+  display: block;
+  padding: 5px;
+}
+
+/* Styling for all variations of div elements
+========================================================================== */
+/* poetry */
+div.poem p.indent {
+  margin-top: 0;
+}
+div.poem > div.poem {
+  margin-left: 2em;
+  padding-top: 0;
+  padding-bottom: 0;
+}
+div.poem > div.poem p.stanza-start:first-child {
+  margin-top: 1rem;
+}
+
+/* Styling for div in example sections
+========================================================================== */
+div.page {
+  font-size: 80%;
+  margin: 0.625em;
+  background: #ffffff;
+  box-shadow: 0 0.0625em 0.375em rgba(0, 0, 0, 0.4);
+  box-sizing: border-box;
+  padding: 3.125em;
+  margin-bottom: 3.125em;
+}
+div {
+  box-sizing: border-box;
+}
+
+div.notes {
+  padding: 0;
+  font-family: SourceSansPro, sans-serif;
+}
+
+div.step {
+  border-top: 0.0625rem solid #dddddd;
+  padding-top: 0.625em;
+  margin-top: 0.625em;
+}
+
+div.group {
+  padding: 1em;
+}
+
+div.example {
+  padding: 1em;
+}
+div.example blockquote {
+  margin-top: 0;
+}
+
+/* line numbering
+========================================================================== */
+aside.reading {
+  border: 0;
+  padding-left: 1.75rem;
+  padding-right: 1.75rem;
+}
+aside.reading span.line-number {
+  margin-left: -2rem;
+}
+
+.reading .introduction {
+  background-color: #f3f3f3;
+  padding: 1em;
+  font-family: SourceSansPro, sans-serif;
+}
+.reading span.line-number {
+  float: left;
+  text-align: right;
+  padding-left: 0rem;
+  line-height: 1.5;
+  color: #565656;
+  font-family: SourceSansPro, sans-serif;
+  font-size: 0.8rem;
+  margin-left: -2rem;
+}
+.reading li > span.line-number {
+  margin-left: -4.5rem;
+}
+.reading li.hanging-indent > span.line-number {
+  margin-left: -5.5rem;
+}
+.reading div.poem div.poem span.line-number {
+  margin-left: -5.15em;
+}
+
+/* ===== hr ===== */
+hr.bar, hr.dots {
+  border-top: 0.0625rem solid #dddddd;
+  margin-top: 1.5625em;
+  margin-bottom: 2.5em;
+  max-width: 316.8px;
+}
+
+/* ==== drama ==== */
+div.stage-direction {
+  margin-top: 1rem;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* ==== code samples ==== */
+code.language-html, code.language-css {
+  background: #f3f3f3;
+  font-family: CourierNew, Courier, monospace;
+  white-space: break-spaces;
+}
+
+pre {
+  background-color: #f3f3f3;
+  overflow-x: auto;
+  padding: 2rem;
+}
+
+/* General styling for images.
+========================================================================== */
+img {
+  /* epub3 only */
+  max-width: 100%;
+}
+
+figure {
+  max-width: 1124px;
+  padding-bottom: 0;
+  margin-left: 0;
+}
+figure.num {
+  border: 0.0625rem solid #dddddd;
+}
+figure.intro, figure.unnum, figure.table {
+  border: 0;
+}
+figure img.figure {
+  margin-left: auto;
+  margin-right: auto;
+}
+figure p.extdesc-icon {
+  background-color: #eeeeee;
+  text-align: right;
+  margin-top: 0;
+  padding: 0 0.25rem 0.25rem 0;
+  margin-right: 0;
+  max-width: 100%;
+}
+figure figcaption {
+  background-color: #eeeeee;
+  font-size: 0.8rem;
+  color: #565656;
+  font-family: SourceSansPro, sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0.0625em 0.9375em 0.9375em 0.9375em;
+}
+figure figcaption > p {
+  margin-top: 0.625em;
+  margin-bottom: 0;
+  text-align: left;
+}
+figure figcaption span.label, figure figcaption span.ordinal, figure figcaption span.title {
+  font-weight: 600;
+  color: #080808;
+}
+
+/* enhancement caption */
+div.enhancement-caption {
+  background-color: #eeeeee;
+  font-size: 0.8rem;
+  color: #565656;
+  font-family: SourceSansPro, sans-serif;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0.0625em 0.9375em 0.9375em 0.9375em;
+}
+div.enhancement-caption span.label, div.enhancement-caption span.ordinal, div.enhancement-caption span.title {
+  font-weight: 600;
+  color: #080808;
+}
+
+/* chapter and part opener images */
+section.chapter > figure.intro, section.part > figure.intro {
+  margin-top: 0;
+  border-top-width: 0;
+}
+
+/* figures in lists */
+li figure {
+  margin-bottom: 1.5625em;
+}
+
+li img {
+  margin-bottom: 1em;
+}
+
+/* inline images */
+img.decorative {
+  vertical-align: bottom;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+img.size-small, img.size-med, img.size-large {
+  padding: 0;
+  vertical-align: middle;
+}
+
+img.size-small {
+  max-height: 1.06rem;
+}
+
+img.size-med {
+  max-height: 1.5rem;
+}
+
+img.size-large {
+  max-height: 1.85rem;
+}
+
+/* highlights ==================== */
+span.highlight, mark {
+  background: #f3f3f3;
+}
+
+span.highlight-red, mark.highlight-red {
+  background: #FFE0E0;
+  margin: 0em 0.125em 0em 0.125em;
+  padding: 0em 0.125em 0em 0.125em;
+  border-left: 0.125rem dotted #e7404e;
+  border-right: 0.125rem dotted #e7404e;
+}
+
+span.highlight-yellow, mark.highlight-yellow {
+  background: #faf2a9;
+  margin: 0em 0.125em 0em 0.125em;
+  padding: 0em 0.125em 0em 0.125em;
+  border-left: 0.125rem solid #c5a827;
+  border-right: 0.125rem solid #c5a827;
+}
+
+span.highlight-green, mark.highlight-green {
+  background: #acdba2;
+  margin: 0em 0.125em 0em 0.125em;
+  padding: 0em 0.125em 0em 0.125em;
+  border-left: 0.125rem dashed #58794d;
+  border-right: 0.125rem dashed #58794d;
+}
+
+span.highlight-teal, mark.highlight-teal {
+  background: #a2d6dd;
+  margin: 0em 0.125em 0em 0.125em;
+  padding: 0em 0.125em 0em 0.125em;
+  border-left: 0.1875rem double #4b7a7c;
+  border-right: 0.1875rem double #4b7a7c;
+}
+
+span.highlight-blue, mark.highlight-blue {
+  background: #b0daff;
+  margin: 0em 0.125em 0em 0.125em;
+  padding: 0em 0.125em 0em 0.125em;
+  border-left: 0.1875rem dashed #1b92dc;
+  border-right: 0.1875rem dashed #1b92dc;
+}
+
+span.highlight-purple, mark.highlight-purple {
+  background: #e5c6e3;
+  margin: 0em 0.125em 0em 0.125em;
+  padding: 0em 0.125em 0em 0.125em;
+  border-left: 0.1875rem dotted #8c678c;
+  border-right: 0.1875rem dotted #8c678c;
+}
+
+/* underlines ==================== */
+span.underline {
+  border-bottom: 0.0625rem solid;
+  border-color: initial;
+}
+
+span.dbl-underline {
+  border-bottom: 0.1875rem double;
+}
+
+span.underline-red {
+  border-bottom: 0.125rem dotted #ef5656;
+}
+
+span.underline-yellow {
+  border-bottom: 0.125rem solid #e5d676;
+}
+
+span.underline-green {
+  border-bottom: 0.125rem dashed #68b75f;
+}
+
+span.underline-teal {
+  border-bottom: 0.1875rem double #45a5b5;
+}
+
+span.underline-blue {
+  border-bottom: 0.1875rem dashed #3192d3;
+}
+
+span.underline-purple {
+  border-bottom: 0.1875rem dotted #b286af;
+}
+
+/* color text ==================== */
+/* makes text red */
+span.incorrect {
+  color: #a51426;
+}
+
+/* makes text green */
+span.correct {
+  color: #3b822e;
+}
+
+/* desmos graph colors =============== */
+*[data-profile=enhanced] span.desmos-text-darkblue {
+  color: #232D84;
+}
+*[data-profile=enhanced] span.desmos-text-lightblue {
+  color: #0073BC;
+}
+*[data-profile=enhanced] span.desmos-text-gray {
+  color: #6A6C6C;
+}
+*[data-profile=enhanced] span.desmos-text-medblue {
+  color: #005CA8;
+}
+*[data-profile=enhanced] span.desmos-text-red {
+  color: #CD1F3A;
+}
+*[data-profile=enhanced] span.desmos-text-purple {
+  color: #912583;
+}
+*[data-profile=enhanced] span.desmos-text-green {
+  color: #007537;
+}
+*[data-profile=enhanced] span.desmos-text-brown {
+  color: #8E5303;
+}
+*[data-profile=enhanced] span.desmos-text-orange {
+  color: #C1440E;
+}
+
+/* write on lines ==================== */
+span.fill-in {
+  display: inline-block;
+  min-width: 3.125rem;
+  border-bottom: 0.0625rem solid #080808;
+}
+span.fill-in.character {
+  width: 1rem;
+  min-width: 1rem;
+}
+span.fill-in.word {
+  width: 6.25rem;
+  text-align: center;
+}
+span.fill-in.line {
+  display: block;
+  width: 95%;
+  margin-top: 1.25rem;
+}
+span.fill-in.multiline {
+  display: block;
+  width: 100%;
+  margin-top: 1.25rem;
+  height: 3.75rem;
+}
+span.fill-in.multiline:before, span.fill-in.multiline:after {
+  content: "";
+  display: block;
+  width: 100%;
+  border-top: 0.0625rem solid #080808;
+  height: 1.875rem;
+}
+
+li > span.fill-in.line {
+  display: inline-block;
+  margin-top: 0;
+  margin-right: 0.15%;
+}
+
+/* font changes ==================== */
+span.serif {
+  font-family: SourceSerifPro, serif;
+}
+
+span.sans-serif {
+  font-family: SourceSansPro, sans-serif;
+}
+
+.student-tt {
+  font-family: CourierNew, Courier, monospace;
+}
+
+.cap, .smallcap {
+  font-variant: small-caps;
+  letter-spacing: 1px;
+}
+
+.strikethrough {
+  text-decoration: line-through;
+}
+
+.student-entry, .student-hw {
+  font-family: Kalam;
+}
+
+small {
+  font-size: 90%;
+}
+
+/* dialogue ==================== */
+span.speaker {
+  margin-right: 1rem;
+}
+
+/* inline elements ==================== */
+a, a:link, a:active, a:visited {
+  color: #035b83;
+  overflow-wrap: break-word;
+  text-decoration: underline;
+}
+
+strong {
+  font-weight: 700;
+}
+
+strong.bold-semi {
+  font-weight: 600;
+}
+
+em {
+  font-style: italic;
+}
+
+sup {
+  font-size: 0.75rem;
+  position: relative;
+  line-height: 0;
+}
+
+sub {
+  font-size: 0.75rem;
+  position: relative;
+  line-height: 0;
+  margin-top: -0.0625em;
+}
+
+/* Styling for all variations of table elements
+========================================================================== */
+table {
+  font-family: SourceSansPro, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  padding: 0.625em 0.625em 0.375em 0.625em;
+  vertical-align: top;
+  text-align: left;
+  font-size: 0.8rem;
+  border-bottom: 0.0625rem solid #dddddd;
+}
+th[rowspan].middle, td[rowspan].middle {
+  vertical-align: middle;
+}
+th[rowspan].bottom, td[rowspan].bottom {
+  vertical-align: bottom;
+}
+
+th {
+  margin-bottom: 0;
+  font-weight: 700;
+}
+
+td {
+  padding-bottom: 0.6875em;
+}
+
+td.right, th.right {
+  text-align: right;
+}
+
+td.center, th.center {
+  text-align: center;
+}
+
+.rule-r {
+  border-right: 0.125rem solid #080808;
+}
+
+.rule-b {
+  border-bottom: 0.125rem solid #080808;
+}
+
+/* table options ====================== */
+table.zebra tr:nth-child(odd) {
+  background: #f3f3f3;
+}
+
+table.sectioned thead {
+  background: #eeeeee;
+}
+
+table.fixed {
+  table-layout: fixed;
+}
+
+/* tables with borders ======================*/
+caption.border, table.border {
+  border: 0.0625rem solid #dddddd;
+}
+
+table.border tr:first-of-type {
+  border-top: 0.0625rem solid #dddddd;
+}
+table.border td, table.border th {
+  border-left: 0.0625rem solid #dddddd;
+}
+table.border > tr > td:last-child, table.border > tr > th:last-child {
+  border-right: 0.0625rem solid #dddddd;
+}
+
+/* table captions ======================= */
+table > caption {
+  text-align: left;
+  padding-left: 0.625em;
+  line-height: 1.2;
+}
+table > caption span.ordinal, table > caption span.label, table > caption span.title {
+  font-size: 1.06rem;
+  font-weight: 700;
+}
+
+table.border > caption, table.border > caption.border {
+  border-bottom: 0;
+}
+
+table > caption > p {
+  font-size: 0.9rem;
+  font-family: SourceSansPro, sans-serif;
+  margin-top: 0;
+  text-align: left;
+  padding: 0.3125em 0.625em 0.3125em 0em;
+}
+
+/*  table positions  */
+div.overflow {
+  overflow-x: auto;
+}
+
+li table {
+  margin-bottom: 1em;
+  vertical-align: text-top;
+}
+
+figure > table {
+  margin: 0;
+}
+figure > table > caption > p {
+  padding: 0.3125em 0.625em 0.3125em 0.625em;
+}
+
+/* Styling for equations and other math objects
+========================================================================== */
+div.informalequation {
+  font-family: STIX;
+  overflow-y: auto;
+  white-space: nowrap;
+  word-break: keep-all;
+  padding: 5px;
+}
+li div.informalequation:first-child {
+  display: inline-block;
+  vertical-align: top;
+}
+
+.smallcap > span.math, .cap > span.math {
+  text-transform: none;
+  font-variant: normal;
+  letter-spacing: normal;
+}
+
+span.math {
+  font-family: STIX;
+  white-space: nowrap;
+  word-break: keep-all;
+}
+span.math:only-child {
+  vertical-align: top;
+}
+
+li > p > span.math:only-child {
+  vertical-align: baseline;
+}
+
+span.chemistry {
+  word-break: keep-all;
+}
+
+p.eq-number {
+  text-align: right;
+}
+div.informalequation + p.eq-number, span.math + p.eq-number {
+  line-height: 0;
+}
+
+td p.eq-number, th p.eq-number {
+  padding: 0.5em;
+}
+
+/* chapter and part main titles */
+section.part > header {
+  color: initial;
+  background-color: #eeeeee;
+}
+
+section.chapter > header {
+  background-color: #080808;
+}
+section.part > header, section.chapter > header {
+  padding: 1.5625em;
+  position: relative;
+  width: 100%;
+  box-sizing: border-box;
+}
+section.part > header span.title, section.chapter > header span.title {
+  display: block;
+}
+section.part > header > p.subtitle, section.chapter > header > p.subtitle {
+  font-family: SourceSerifPro, serif;
+  margin-bottom: 0;
+  font-size: 1.25rem;
+}
+section.part > header > .title, section.chapter > header > .title {
+  font-family: SourceSerifPro, serif;
+  font-size: 2.5rem;
+  /* higherEducation level */
+  font-weight: 600;
+  line-height: 1.1;
+}
+section.part > header > .title + p.subtitle, section.chapter > header > .title + p.subtitle {
+  margin-top: 1.875em;
+}
+section.part > header > .title span.label, section.part > header > .title span.ordinal, section.chapter > header > .title span.label, section.chapter > header > .title span.ordinal {
+  font-family: SourceSansPro, sans-serif;
+  font-size: 1.5rem;
+  /* higherEducation level */
+  letter-spacing: 0.25em;
+}
+section.part > header > .title span.label, section.chapter > header > .title span.label {
+  font-variant: small-caps;
+}
+
+/* General styling for headings.
+Styles specific to a type of section or box will be grouped with those styles.
+========================================================================== */
+header {
+  page-break-after: avoid;
+}
+
+h1, h2, h3, h4, h5, h6, p.non-hierarchical-head {
+  /* epub3 only */
+  font-weight: 400;
+  font-family: SourceSansPro, sans-serif;
+}
+
+.a-head {
+  color: #080808;
+  /* theme headings only */
+}
+
+.b-head {
+  color: #080808;
+  /* theme headings only */
+}
+
+.c-head {
+  color: #080808;
+  /* theme headings only */
+}
+
+/* main subtitles */
+p.subtitle {
+  padding-top: 0;
+}
+
+.title + p.subtitle {
+  margin-top: 0.3125em;
+}
+
+/* head-note */
+p.head-note {
+  font-family: SourceSansPro, sans-serif;
+}
+
+/* subheadings */
+/* non-hierarchical head =============== */
+p.non-hierarchical-head {
+  font-weight: 600;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-size: 80%;
+}
+p.non-hierarchical-head + p, p.non-hierarchical-head + ol, p.non-hierarchical-head + ul {
+  margin-top: 0;
+}
+p.non-hierarchical-head + .ul-arrow, p.non-hierarchical-head + .ul-checklist {
+  margin-left: 0;
+  padding-left: 0;
+}
+p.non-hierarchical-head + .student-tt ol, p.non-hierarchical-head + .student-tt ul {
+  margin-top: 0;
+}
+
+section.example .title, section.reading .title {
+  color: #080808;
+  /* theme heading colors for special sections */
+}
+
+aside .title, aside .level1, aside .level2, aside .level3, aside .level4 {
+  color: #565656;
+  /* theme heading colors for aside headings */
+}
+
+@media (min-width: 1030px) {
+  /* Media queries for responsive sizing, epub3 only ===== */
+  /* max width ------five columns (two marginal, 3 main body) -------------*/
+  section > p,
+section > header,
+section > ol, section > dl,
+section > ul, div.copyright, div.publisher, div.productnumber,
+section.chapter > nav, section.part > nav, section.reading > nav, section.toc > nav, section.toc-brief ul,
+section.toc > ul, section > aside, section.extdesc-sect .title {
+    max-width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section > blockquote {
+    margin-left: 23%;
+    max-width: 57%;
+  }
+
+  div > section > blockquote {
+    margin-left: 1.563em;
+    max-width: 100%;
+  }
+
+  section.c1 blockquote, section.c2 blockquote, section.c3 blockquote, section.c4 blockquote, section.c5 blockquote {
+    margin-left: 1.563rem;
+    max-width: 100%;
+  }
+
+  section.c5 > header, section.end-of-section > header {
+    width: 100%;
+  }
+
+  p, blockquote, ol, ul {
+    max-width: 710px;
+  }
+
+  div > section > p, div > section > header, section.c4 > header, section.c5 > header, aside.c3 > aside.c3,
+section.c3 > header, section.c4 > header, section.c5 > header, section.c3 > section.reading header,
+section.c3 > section.reading p,
+section.example p, section.example header, section.example ol,
+section.example ul, section.example aside.glossary, section.example dl,
+section.example section.subsect1 > header, section.example section.subsect1 > p,
+section.example section.subsect2 > header, section.example section.subsect2 > p,
+section.example section.subsect3 > header, section.example section.subsect3 > p,
+section.example section.subsect4 > header, section.example section.subsect4 > p,
+section.example section.subsect5 > header, section.example section.subsect5 > p,
+body.frontmatter > section > header, body.backmatter > section > header, div.enhancement-caption > p, figcaption > p, aside > aside {
+    max-width: 100%;
+  }
+
+  section.chapter > figure.intro, section.part > figure.intro {
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  figure.intro > figcaption, figure.intro > div.enhancement-caption, section.chapter > nav, section.part > nav, figure.intro + *, section.chapter > nav, section.part > nav, section.learning-objectives {
+    clear: both;
+  }
+
+  figure.left, img.left, div.left {
+    float: left;
+    text-align: left;
+    margin-right: 1em;
+    margin-left: 0;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+
+  figure.right, img.right, div.right {
+    float: right;
+    text-align: left;
+    margin-left: 1em;
+    margin-right: 0;
+    margin-bottom: 1em;
+    margin-top: 1em;
+  }
+
+  section > aside, section > img.main-flow, section > figure.main-flow, section > div.main-flow, section.main-flow, section > table.main-flow, section > div.poem {
+    margin-left: 20%;
+  }
+
+  section.main-flow aside.main-flow {
+    margin-left: 0;
+  }
+
+  .main-flow > iframe.savi_app, .sect1 > iframe.savi_app, .sect2 > iframe.savi_app, .sect3 > iframe.savi_app, .sect4 > iframe.savi_app, .sect5 > iframe.savi_app {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    min-width: 60%;
+  }
+
+  /* columned lists */
+  div.col2, div.col3, div.col4 {
+    margin-top: 1rem;
+    column-gap: 30px;
+  }
+  div.col2 ol:first-child, div.col2 ul:first-child, div.col3 ol:first-child, div.col3 ul:first-child, div.col4 ol:first-child, div.col4 ul:first-child {
+    margin-top: 0;
+  }
+
+  .list-col2, .list-col3, .list-col4 {
+    list-style-position: inside;
+    column-gap: 30px;
+  }
+  .list-col2 li, .list-col3 li, .list-col4 li {
+    break-inside: avoid-column;
+  }
+
+  div.col2, .list-col2 {
+    columns: 2;
+  }
+
+  div.col3, .list-col3 {
+    columns: 3;
+  }
+
+  div.col4, .list-col4 {
+    columns: 4;
+  }
+
+  section.scene > p.hanging-indent {
+    max-width: 55%;
+  }
+  section.scene > p.noindent {
+    max-width: 50%;
+  }
+
+  div.stage-direction {
+    max-width: 60%;
+  }
+
+  /* icon alignment */
+  section.subsect1 > header + img.decorative,
+section.subsect2 > header + img.decorative,
+section.subsect3 > header + img.decorative,
+section.subsect4 > header + img.decorative,
+section.reading > header + img.decorative,
+section.introduction > header + img.decorative,
+section.chapter > header + img.decorative,
+section.part > header + img.decorative,
+section.sect1 > header + img.decorative,
+section.sect2 > header + img.decorative,
+section.sect3 > header + img.decorative,
+section.sect4 > header + img.decorative,
+section.sect5 > header + img.decorative,
+section.practice > header + img.decorative,
+section.summary > header + img.decorative {
+    margin-left: 20%;
+  }
+}
+@media (min-width: 710px) and (max-width: 1029px) {
+  /* medium width -----1 main text column with floats. epub3 only-------------------*/
+  body {
+    max-width: 709px;
+  }
+
+  section > p,
+section > header,
+section > ol,
+section > ul, section.main-flow, aside.main-flow:not(.tip), div.stage-direction, pre {
+    max-width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  section.scene > p.hanging-indent {
+    max-width: 95%;
+  }
+  section.scene > p.noindent {
+    max-width: 87.5%;
+  }
+
+  figure.c2, img.c2, div.c2 {
+    width: 50%;
+  }
+
+  aside, .c3, .c4, .c5 {
+    width: 100%;
+  }
+
+  figure.left, img.left, div.left {
+    float: left;
+    text-align: left;
+    margin-right: 25px;
+    margin-left: 0px;
+    margin-bottom: 25px;
+    margin-top: 25px;
+  }
+
+  figure.right, img.right, div.right {
+    float: right;
+    text-align: left;
+    margin-left: 1.5625em;
+    margin-right: 0;
+    margin-bottom: 1.5625em;
+    margin-top: 1.5625em;
+  }
+
+  section.chapter > header + figure {
+    margin-bottom: 1.25em;
+  }
+
+  /* columned lists */
+  div.col2, div.col3, div.col4 {
+    margin-top: 1rem;
+    column-gap: 30px;
+  }
+  div.col2 ol:first-child, div.col2 ul:first-child, div.col3 ol:first-child, div.col3 ul:first-child, div.col4 ol:first-child, div.col4 ul:first-child {
+    margin-top: 0;
+  }
+
+  .list-col2, .list-col3, .list-col4 {
+    list-style-position: inside;
+    column-gap: 30px;
+  }
+  .list-col2 li, .list-col3 li, .list-col4 li {
+    break-inside: avoid-column;
+  }
+
+  div.col2, .list-col2, div.col3, .list-col3, div.col4, .list-col4 {
+    columns: 2;
+  }
+}
+@media (max-width: 709px) {
+  /* mobile width ------------single column no floats, epub3 only----------------*/
+  .c3, .c4, .c5 {
+    width: 100% !important;
+    max-width: 100% !important;
+  }
+
+  .c1 {
+    min-width: 50%;
+  }
+
+  .c2 {
+    min-width: 75%;
+  }
+
+  aside, figure, section, div, table, img {
+    float: none;
+    margin-left: 0;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    hyphens: auto;
+    -webkit-hyphens: auto;
+    -moz-hyphens: auto;
+    -epub-hyphens: auto;
+    -ms-hyphens: auto;
+  }
+
+  section.scene > p.hanging-indent, section.scene > p.noindent {
+    max-width: 90%;
+    padding: 0;
+    text-indent: 0;
+    margin-right: auto;
+    margin-left: auto;
+  }
+}
+
+/*# sourceMappingURL=theme_4_he_epub.css.map */
